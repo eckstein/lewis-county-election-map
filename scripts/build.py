@@ -8,10 +8,11 @@ For each configured election this writes, under site/data/:
                 and only uses the snapshot if the feed can't be reached.
   elections.json  list of elections for the page's selector
 
-Ballot returns come from the SOS "Daily Ballot Status Report" (matchback). The SOS
-page that links to it is behind bot protection, so download the file in a browser
-and drop it (zip, csv or txt) into data/matchback/<election id>/. The newest file
-there is used. Only precinct totals are written out - never voter-level rows.
+Ballot returns come from the SOS "Daily Ballot Status Report" (matchback). For the
+current election the build downloads the county's file from a fixed SOS URL into
+data/matchback/<election id>/; a file dropped there by hand (zip, csv or txt) also
+works. The newest file there is used. Only precinct totals are written out - never
+voter-level rows.
 
 Usage:
   python scripts/build.py                 build once
@@ -21,8 +22,10 @@ Usage:
 import argparse
 import csv
 import datetime as dt
+import email.utils
 import io
 import json
+import os
 import sys
 import time
 import urllib.request
@@ -43,10 +46,14 @@ COUNTY_SLUG = "lewis-county-wa"
 RESULTS_API = "https://results.votewa.gov/results/public/api/elections"
 SOS_FILES = "https://www.sos.wa.gov/sites/default/files"
 
-# Newest first; the page opens on the first one.
+# Newest first; the page opens on the first one. "matchback" is the SOS file for
+# whatever election is current, so it's only used when its Election column
+# matches "matchback_election".
 ELECTIONS = [
     {"id": "20261103", "name": "2026 General",
-     "shapefile": f"{SOS_FILES}/2026-10/Statewide_Precincts_2026General_0.zip"},
+     "shapefile": f"{SOS_FILES}/2026-10/Statewide_Precincts_2026General_0.zip",
+     "matchback": f"{SOS_FILES}/current_election/Lewis.csv",
+     "matchback_election": "General Nov 3 2026"},
     {"id": "20260804", "name": "2026 Primary",
      "shapefile": f"{SOS_FILES}/2026-09/Statewide_Precincts_2026Primary_0.zip"},
 ]
@@ -191,6 +198,39 @@ def build_results(election):
 
 # ----------------------------------------------------------------- matchback
 
+def download_matchback(election):
+    url = election.get("matchback")
+    if not url:
+        return
+    try:
+        req = urllib.request.Request(url, headers=UA)
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            body = resp.read()
+            modified = resp.headers.get("Last-Modified")
+    except Exception as exc:
+        log(f"  ! matchback download failed ({exc!r}); using files already in data/matchback/")
+        return
+
+    text_head = body[:4096].decode("utf-8-sig", errors="replace")
+    rows = list(csv.reader(io.StringIO(text_head)))
+    if len(rows) < 2 or "Election" not in rows[0]:
+        log("  ! matchback download isn't the expected CSV (bot check page?); skipping it")
+        return
+    found = norm(rows[1][rows[0].index("Election")])
+    if found != norm(election["matchback_election"]):
+        log(f"  ! matchback file is for '{found}', not '{election['matchback_election']}'; skipping it")
+        return
+
+    path = MATCHBACK / election["id"] / Path(url).name
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(body)
+    if modified:
+        # Date the file by when the state published it, not when we fetched it.
+        stamp = email.utils.parsedate_to_datetime(modified).timestamp()
+        os.utime(path, (stamp, stamp))
+    log(f"  downloaded matchback {path.name} ({len(body):,} bytes, published {modified})")
+
+
 def latest_matchback(election_id):
     folder = MATCHBACK / election_id
     files = [p for p in folder.glob("*") if p.suffix.lower() in (".zip", ".csv", ".txt")]
@@ -316,6 +356,7 @@ def build_election(election):
     log(f"[{election['id']}] {election['name']}")
     boundaries = build_boundaries(election)
     summary, precincts, contests = build_results(election)
+    download_matchback(election)
     returns, returned_by_precinct = build_returns(election["id"], boundaries)
 
     names = [f["properties"]["name"] for f in boundaries["features"]]

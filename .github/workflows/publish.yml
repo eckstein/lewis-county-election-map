@@ -1,15 +1,19 @@
-# Publishes site/ to GitHub Pages on every push to main. The page pulls results
-# live from the county feed, so nothing here runs on a schedule; push after
-# running scripts/build.py to publish new ballot-return totals.
+# Publishes site/ to GitHub Pages. Results load live in the browser, so this
+# only has to keep the daily ballot-return totals current: every hour it
+# downloads the county's matchback file from the Secretary of State, and when
+# the precinct totals change it commits them and republishes. Pushes to main
+# publish too. The voter-level file is never committed.
 name: Publish map
 
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "20 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -18,15 +22,45 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      deploy: ${{ steps.commit.outputs.deploy }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/build.py
+      - id: commit
+        name: Commit new ballot-return totals
+        run: |
+          if git diff --quiet -- data/returns; then
+            echo "No new ballot returns."
+            echo "deploy=${{ github.event_name != 'schedule' }}" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/returns site/data
+            git commit -m "Update ballot returns"
+            git pull --rebase
+            git push
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.commit.outputs.deploy == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
   deploy:
+    needs: build
+    if: needs.build.outputs.deploy == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: site
       - id: deployment
         uses: actions/deploy-pages@v4

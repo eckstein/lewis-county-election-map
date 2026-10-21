@@ -355,7 +355,7 @@ function renderStatus() {
     results = `Results: live from ${source}${d.results.official ? " (<b>final</b>)" : ""}, county update ${when(d.results.lastUpdated)}. ` +
       `Checked ${state.liveCheckedAt ? state.liveCheckedAt.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }) : "–"}.`;
   }
-  const returns = d.returns.available ? `Ballot returns: ${esc(d.returns.source)}, loaded ${when(d.returns.fileTime)}.` : null;
+  const returns = d.returns.available ? `Ballot returns: state matchback file posted ${when(d.returns.fileTime)}.` : null;
   $("status").innerHTML = [results, returns].filter(Boolean).join("<br>");
 }
 
@@ -398,6 +398,7 @@ async function loadElection(id) {
   state.live = null;
   state.userPickedLayer = false;
   state.layerName = defaultLayer(data);
+  state.breaks = rateBreaks();  // styleFor needs these for the first draw
 
   state.geoLayer?.remove();
   state.geoLayer = L.geoJSON(geo, {
