@@ -34,8 +34,8 @@ To change and redeploy the Worker:
 cd worker && npx wrangler@4 deploy
 ```
 
-Cloudflare's free plan allows 100,000 Worker requests a day. Each open copy of the map makes about 2-3 a minute.
-If the limit is reached, the map falls back to the direct feed until the daily reset.
+The Cloudflare account is on the Workers Paid plan (10 million requests a month included). Each open copy of the
+map makes about 2-3 requests a minute. If the Worker ever fails, the map falls back to the direct feed.
 
 ## Running it locally
 
