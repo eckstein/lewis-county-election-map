@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lewis County Election Map</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="panel">
+    <header>
+      <h1>Lewis County Election Map</h1>
+      <p class="sub">Ballot returns and results by precinct</p>
+    </header>
+
+    <section class="controls">
+      <label>Election
+        <select id="election"></select>
+      </label>
+      <div class="seg" role="radiogroup" aria-label="Map layer">
+        <button data-layer="returned" role="radio">Returned</button>
+        <button data-layer="counted" role="radio">Counted</button>
+        <button data-layer="results" role="radio">Results</button>
+      </div>
+      <label id="contest-wrap">Contest
+        <select id="contest"></select>
+      </label>
+    </section>
+
+    <section id="notice" class="notice" hidden></section>
+    <section id="summary" class="card"></section>
+    <section id="detail" class="card"><p class="muted">Click a precinct for details.</p></section>
+
+    <footer id="status" class="status"></footer>
+  </aside>
+  <main id="map"></main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

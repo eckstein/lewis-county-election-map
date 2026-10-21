@@ -1,0 +1,7 @@
+# Downloaded shapefiles
+data/cache/
+# Matchback files contain voter-level records - never commit them
+data/matchback/**
+!data/matchback/**/
+!data/matchback/README.md
+__pycache__/
