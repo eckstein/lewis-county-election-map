@@ -63,8 +63,17 @@ select {
 .notice { background: #fff8e6; border: 1px solid #f0dca8; border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.45; }
 .notice code { font-size: 12px; background: #fff; padding: 1px 4px; border-radius: 3px; }
 
-.find { display: flex; flex-direction: column; gap: 4px; }
-.find label { font-size: 12px; font-weight: 600; color: var(--muted); }
+/* "Find your precinct": one line that opens the search form. */
+.find { display: flex; flex-direction: column; gap: 6px; }
+.find-toggle {
+  align-self: flex-start; font: inherit; font-size: 14px; font-weight: 600; color: var(--accent);
+  background: none; border: 0; padding: 0; cursor: pointer;
+}
+.find-toggle::before { content: "🔍 "; }
+.find-toggle::after { content: " ▾"; font-size: 11px; }
+.find-toggle[aria-expanded="true"]::after { content: " ▴"; }
+.find-toggle:hover { text-decoration: underline; }
+.find-form { display: flex; flex-direction: column; gap: 4px; }
 .find-row { display: flex; gap: 6px; }
 .find-row input {
   flex: 1; min-width: 0; font: inherit; font-size: 14px; padding: 7px 8px;
@@ -84,13 +93,19 @@ select {
 .find-msg { margin: 0; font-size: 12px; color: var(--muted); }
 .find-msg:empty { display: none; }
 .find-msg.error { color: #a1301f; }
-
-.view-actions { display: flex; gap: 16px; }
-.open-table {
-  font: inherit; font-size: 13px; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer;
+.find-clear {
+  font: inherit; font-size: 12px; color: var(--accent); background: none; border: 0; padding: 0;
+  margin-left: 6px; cursor: pointer; text-decoration: underline;
 }
-.open-table::before { content: "▦ "; }
-.open-table:hover { text-decoration: underline; }
+
+/* Share and Table, floating in the map's top-right corner. */
+.map-actions { display: flex; gap: 6px; }
+.map-actions button {
+  font: inherit; font-size: 13px; padding: 6px 10px; border: 0; border-radius: 6px; cursor: pointer;
+  background: #fff; color: var(--text); box-shadow: 0 1px 4px rgba(0,0,0,.25);
+}
+.map-actions button:hover { color: var(--accent); }
+.map-actions button.done { color: #14532d; background: #e6f4ea; }
 
 /* Table view: over the map on desktop, full screen on phones. */
 .table-view {
@@ -116,13 +131,6 @@ select {
 #table tbody tr:hover td { background: #f1f6fb; }
 #table tfoot td { font-weight: 600; background: #fafaf8; position: sticky; bottom: 0; }
 #table td small { color: var(--muted); margin-left: 4px; }
-
-.share {
-  align-self: flex-start; font: inherit; font-size: 13px; color: var(--accent);
-  background: none; border: 0; padding: 0; cursor: pointer;
-}
-.share::before { content: "🔗 "; }
-.share:hover { text-decoration: underline; }
 
 /* Time of the county's latest count; "new" when it changed while the page was open. */
 .updated {

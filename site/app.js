@@ -62,6 +62,18 @@ const legend = L.control({ position: "bottomright" });
 legend.onAdd = () => L.DomUtil.create("div", "legend");
 legend.addTo(map);
 
+// Share and Table float in the map's top-right corner.
+const mapActions = L.control({ position: "topright" });
+mapActions.onAdd = () => {
+  const el = L.DomUtil.create("div", "map-actions");
+  el.innerHTML = `<button id="share" type="button">🔗 Share this view</button>` +
+    `<button id="open-table" type="button" aria-haspopup="dialog">▦ Table</button>`;
+  L.DomEvent.disableClickPropagation(el);
+  L.DomEvent.disableScrollPropagation(el);
+  return el;
+};
+mapActions.addTo(map);
+
 // --------------------------------------------------------------- data access
 
 async function getJSON(url, bust = true) {
@@ -727,20 +739,33 @@ function readUrl(q) {
   if (f) state.selected = f.feature.properties.name;
 }
 
-async function shareView() {
-  const url = location.href;
-  const btn = $("share");
+// Copies the link to this view. The Clipboard API needs a secure context and
+// focus; the hidden-textarea copy covers older browsers.
+async function copyText(text) {
   try {
-    if (navigator.share && matchMedia("(pointer: coarse)").matches) {
-      await navigator.share({ title: document.title, url });
-      return;
-    }
-    await navigator.clipboard.writeText(url);
-    btn.textContent = "Link copied";
+    await navigator.clipboard.writeText(text);
+    return true;
   } catch {
-    btn.textContent = "Copy the address bar";
+    const ta = Object.assign(document.createElement("textarea"), { value: text, readOnly: true });
+    ta.style.cssText = "position:fixed;opacity:0;";
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand("copy");
+    ta.remove();
+    return ok;
   }
-  setTimeout(() => { btn.textContent = "Share this view"; }, 2000);
+}
+
+async function shareView() {
+  const btn = $("share");
+  const ok = await copyText(location.href);
+  btn.textContent = ok ? "✓ Link copied" : "Copy the address bar";
+  btn.classList.toggle("done", ok);
+  clearTimeout(shareView.timer);
+  shareView.timer = setTimeout(() => {
+    btn.textContent = "🔗 Share this view";
+    btn.classList.remove("done");
+  }, 2500);
 }
 
 // ------------------------------------------------------------------ loading
@@ -953,9 +978,28 @@ let findMarker = null;
 // selected precinct to the front, which would otherwise cover the dot.
 map.createPane("found").style.zIndex = 460;
 
-function findMessage(text, error = false) {
+function findMessage(text, error = false, clearable = false) {
   $("find-msg").textContent = text;
   $("find-msg").classList.toggle("error", error);
+  if (clearable) $("find-msg").insertAdjacentHTML("beforeend", `<button class="find-clear" type="button">Clear</button>`);
+}
+
+// Clearing the search (the box's x, emptying it, or Clear) removes the dot,
+// deselects the precinct and zooms back out to the whole county.
+function clearFind() {
+  findMarker?.remove();
+  findMarker = null;
+  $("find-address").value = "";
+  findMessage("");
+  if (state.selected) selectPrecinct(null);
+  state.needsFit = true;
+  fitToPrecincts();
+}
+
+function toggleFind(open = $("find").hidden) {
+  $("find").hidden = !open;
+  $("find-toggle").setAttribute("aria-expanded", String(open));
+  if (open) $("find-address").focus();
 }
 
 function showLocation(lng, lat, label) {
@@ -967,7 +1011,7 @@ function showLocation(lng, lat, label) {
   }
   findMarker = L.circleMarker([lat, lng], { pane: "found", radius: 7, color: "#fff", weight: 3, fillColor: "#c43b3b", fillOpacity: 1 })
     .bindTooltip(esc(label)).addTo(map);
-  findMessage(`${label} is in precinct ${layer.feature.properties.name}.`);
+  findMessage(`${label} is in precinct ${layer.feature.properties.name}.`, false, true);
   map.flyToBounds(layer.getBounds(), { maxZoom: 13, padding: [24, 24], duration: 0.6 });
   selectPrecinct(layer.feature.properties.name);
 }
@@ -1009,6 +1053,10 @@ function findMe() {
 
 $("find").addEventListener("submit", (e) => { e.preventDefault(); findAddress($("find-address").value.trim()); });
 $("locate").addEventListener("click", findMe);
+$("find-toggle").addEventListener("click", () => toggleFind());
+// The search box's built-in x (or deleting the text) empties it: clear the result.
+$("find-address").addEventListener("input", (e) => { if (!e.target.value && (findMarker || $("find-msg").textContent)) clearFind(); });
+$("find-msg").addEventListener("click", (e) => { if (e.target.closest(".find-clear")) clearFind(); });
 
 $("election").addEventListener("change", (e) => loadElection(e.target.value));
 $("contest").addEventListener("change", (e) => { state.contestId = e.target.value; renderAll(); loadBreakdown(); });

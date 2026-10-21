@@ -25,15 +25,17 @@
       <p class="sub">Ballots received and results by precinct</p>
     </header>
 
-    <form id="find" class="find" role="search">
-      <label for="find-address">Find your precinct</label>
-      <div class="find-row">
-        <input id="find-address" type="search" placeholder="Street address, city" autocomplete="street-address" required>
-        <button type="submit">Find</button>
-      </div>
-      <button id="locate" class="locate" type="button">Use my location</button>
-      <p id="find-msg" class="find-msg" aria-live="polite"></p>
-    </form>
+    <div class="find">
+      <button id="find-toggle" class="find-toggle" type="button" aria-expanded="false" aria-controls="find">Find your precinct</button>
+      <form id="find" class="find-form" role="search" hidden>
+        <div class="find-row">
+          <input id="find-address" type="search" aria-label="Street address" placeholder="Street address, city" autocomplete="street-address" required>
+          <button type="submit">Find</button>
+        </div>
+        <button id="locate" class="locate" type="button">Use my location</button>
+        <p id="find-msg" class="find-msg" aria-live="polite"></p>
+      </form>
+    </div>
 
     <section class="controls">
       <label>Election
@@ -47,10 +49,6 @@
       <label id="contest-wrap">Contest
         <select id="contest"></select>
       </label>
-      <div class="view-actions">
-        <button id="share" class="share" type="button">Share this view</button>
-        <button id="open-table" class="open-table" type="button" aria-haspopup="dialog">Table</button>
-      </div>
     </section>
 
     <div id="updated" class="updated" role="status" hidden></div>
