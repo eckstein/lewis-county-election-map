@@ -1,8 +1,15 @@
 // Lewis County election map: precinct choropleth of ballot returns, ballots
-// counted and contest results. Data comes from site/data/, written by
-// scripts/build.py; the page re-reads it every REFRESH_MS.
+// counted and contest results.
+//
+// Results come live from the county's results.votewa.gov feed, which allows
+// cross-origin requests: the summary every LIVE_MS, and precinct results for the
+// contest being viewed. site/data/ (written by scripts/build.py) holds the
+// boundaries, the daily ballot-return totals, and a results snapshot used when
+// the live feed can't be reached.
 
-const REFRESH_MS = 2 * 60 * 1000;
+const RESULTS_API = "https://results.votewa.gov/results/public/api/elections/lewis-county-wa";
+const LIVE_MS = 60 * 1000;
+const STATIC_MS = 5 * 60 * 1000;
 const SEQ = ["#dbe8f4", "#a8c8e4", "#6fa3d0", "#3a7bb8", "#15508e"];
 const OPTION_COLORS = ["#2d6fb5", "#c4572a", "#3a8a55", "#7a4fb8", "#b48a1c", "#2b8a8a", "#a8326e", "#5d6b78"];
 const PARTY_COLORS = { DEM: "#2d6fb5", REP: "#c43b3b" };
@@ -12,15 +19,21 @@ const fmt = new Intl.NumberFormat("en-US");
 const pct = (n, d) => (d > 0 ? (100 * n) / d : null);
 const pctText = (v) => (v == null ? "–" : `${v.toFixed(1)}%`);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const norm = (s) => String(s ?? "").toUpperCase().split(/\s+/).filter(Boolean).join(" ");
+const en = (list) => (list || []).find((t) => t.languageId === "en")?.text ?? list?.[0]?.text ?? "";
+const when = (t) => t ? new Date(t).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : "–";
 
 const state = {
   elections: [],
   electionId: null,
   data: null,
   layerName: null,
-  contestIdx: 0,
+  userPickedLayer: false,
+  contestId: null,
   selected: null,
   geoLayer: null,
+  live: null,          // true/false after the first live check
+  liveCheckedAt: null,
 };
 
 const $ = (id) => document.getElementById(id);
@@ -44,9 +57,9 @@ legend.addTo(map);
 
 // --------------------------------------------------------------- data access
 
-async function getJSON(path) {
-  const res = await fetch(`${path}?t=${Date.now()}`, { cache: "no-store" });
-  if (!res.ok) throw new Error(`${path}: ${res.status}`);
+async function getJSON(url, bust = true) {
+  const res = await fetch(bust ? `${url}?t=${Date.now()}` : url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`${url}: ${res.status}`);
   return res.json();
 }
 
@@ -55,7 +68,8 @@ function precinct(name) {
 }
 
 function contest() {
-  return state.data?.contests[state.contestIdx];
+  const contests = state.data?.contests || [];
+  return contests.find((c) => c.id === state.contestId) || contests[0];
 }
 
 // Colors go to options in order of countywide votes so the front-runners always
@@ -77,6 +91,102 @@ function optionColors(c) {
   });
   c._colors = colors;
   return colors;
+}
+
+// ------------------------------------------------------------- live results
+
+// Merge the county feed's summary into state.data. Precinct results for a
+// contest are kept until fresh ones load, so the map doesn't flash gray.
+async function fetchLive() {
+  const id = state.electionId;
+  const feed = await getJSON(`${RESULTS_API}/${id}/data`, false);
+  if (id !== state.electionId) return;
+  const d = state.data;
+  const el = feed.election;
+  const changed = el.lastUpdated !== d.results.lastUpdated || !state.live;
+
+  for (const row of feed.voterTurnout || []) {
+    const p = (d.precincts[norm(row.precinctName)] ||= {});
+    p.registered = row.voterRegistration || 0;
+    p.counted = row.ballotsCast || 0;
+  }
+  Object.assign(d.results, {
+    asOf: el.asOf,
+    lastUpdated: el.lastUpdated,
+    official: !!el.isOfficialResults,
+    hasPrecinctResults: !!el.includePrecinctResults,
+    ballotsCast: el.ballotsCast || 0,
+    registered: (feed.voterTurnout || []).reduce((sum, r) => sum + (r.voterRegistration || 0), 0),
+  });
+
+  const previous = new Map(d.contests.map((c) => [c.id, c]));
+  d.contests = (feed.ballotItems || []).map((item) => {
+    const old = previous.get(item.id);
+    const options = item.summaryResults.ballotOptions;
+    return {
+      id: item.id,
+      name: en(item.name),
+      type: item.contestType,
+      total: item.voteTotal || 0,
+      options: options.map((o) => ({ name: en(o.name), party: o.party?.abbreviation, votes: o.voteCount || 0 })),
+      optionIds: options.map((o) => o.id),
+      precincts: old?.precincts || {},
+      loaded: !changed && !!old?.loaded,
+    };
+  });
+}
+
+async function loadBreakdown() {
+  const c = contest();
+  if (!c || c.loaded || c.loading || !state.live || !state.data.results.hasPrecinctResults) return;
+  c.loading = true;
+  try {
+    const detail = await getJSON(`${RESULTS_API}/${state.electionId}/data/ballot-item/${c.id}`, false);
+    const precincts = {};
+    for (const row of detail.ballotItemWithBreakdown?.breakdownResults || []) {
+      const votes = new Map(row.ballotOptions.map((o) => [o.id, o.voteCount || 0]));
+      precincts[norm(en(row.precinct.name))] = c.optionIds.map((i) => votes.get(i) || 0);
+    }
+    c.precincts = precincts;
+    c.loaded = true;
+    if (c === contest()) renderAll();
+  } catch (err) {
+    console.warn("precinct results failed", err);
+  } finally {
+    c.loading = false;
+  }
+}
+
+async function refreshLive() {
+  try {
+    await fetchLive();
+    state.live = true;
+  } catch (err) {
+    console.warn("live results failed; showing snapshot", err);
+    state.live = false;
+  }
+  state.liveCheckedAt = new Date();
+  if (!state.userPickedLayer) state.layerName = defaultLayer(state.data);
+  renderAll();
+  loadBreakdown();
+}
+
+// Ballot-return totals change once a day, when a new build is published.
+async function refreshStatic() {
+  try {
+    const fresh = await getJSON(`data/${state.electionId}.json`);
+    if (fresh.id !== state.electionId || fresh.generatedAt === state.data.generatedAt) return;
+    const d = state.data;
+    d.generatedAt = fresh.generatedAt;
+    d.returns = fresh.returns;
+    for (const [name, p] of Object.entries(fresh.precincts)) {
+      const target = (d.precincts[name] ||= {});
+      for (const key of ["returned", "accepted", "challenged"]) target[key] = p[key];
+    }
+    renderAll();
+  } catch (err) {
+    console.warn("returns refresh failed", err);
+  }
 }
 
 // ------------------------------------------------------------------- styling
@@ -221,15 +331,15 @@ function renderNotice() {
   const d = state.data;
   let msg = "";
   if (state.layerName === "returned" && !d.returns.available) {
-    msg = `No ballot return (matchback) file loaded for this election yet. Download the Daily Ballot Status Report from the
-      <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/ballot-status-reports" target="_blank" rel="noopener">Secretary of State</a>,
-      drop it in <code>data/matchback/${esc(d.id)}/</code>, and the next build will pick it up.`;
+    msg = `No ballot return (matchback) totals published for this election yet. They're added once a day from the
+      <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/ballot-status-reports" target="_blank" rel="noopener">Secretary of State's</a>
+      Daily Ballot Status Report.`;
   } else if (state.layerName === "counted" && !d.results.ballotsCast) {
-    msg = `No ballots counted yet. Counts appear here once the county posts its first results on election night.`;
+    msg = `No ballots counted yet. Counts appear here as soon as the county posts its first results on election night.`;
   } else if (state.layerName === "results" && !d.results.hasPrecinctResults) {
     msg = d.results.ballotsCast
       ? `The county hasn't published precinct-level results for this election yet. Countywide totals are shown at left.`
-      : `No results yet. They appear here once the county posts its first count on election night.`;
+      : `No results yet. They appear here as soon as the county posts its first count on election night.`;
   }
   $("notice").hidden = !msg;
   $("notice").innerHTML = msg;
@@ -237,25 +347,29 @@ function renderNotice() {
 
 function renderStatus() {
   const d = state.data;
-  const when = (iso) => iso ? new Date(iso).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : "–";
-  const parts = [
-    `Results feed: ${d.results.official ? "<b>final</b>, " : ""}as of ${when(d.results.asOf)} (<a href="${esc(d.results.url)}" target="_blank" rel="noopener">source</a>)`,
-    d.returns.available ? `Returns file: ${esc(d.returns.source)}, saved ${when(d.returns.fileTime)}` : null,
-    `Data built ${when(d.generatedAt)} · page checks for updates every ${REFRESH_MS / 60000} min`,
-  ];
-  $("status").innerHTML = parts.filter(Boolean).join("<br>");
+  const source = `<a href="https://results.votewa.gov/results/public/lewis-county-wa/elections/${esc(d.id)}" target="_blank" rel="noopener">county results</a>`;
+  let results;
+  if (state.live === false) {
+    results = `<b>Live ${source} unreachable</b> - showing a snapshot from ${when(d.generatedAt)}. Retrying every minute.`;
+  } else {
+    results = `Results: live from ${source}${d.results.official ? " (<b>final</b>)" : ""}, county update ${when(d.results.lastUpdated)}. ` +
+      `Checked ${state.liveCheckedAt ? state.liveCheckedAt.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }) : "–"}.`;
+  }
+  const returns = d.returns.available ? `Ballot returns: ${esc(d.returns.source)}, loaded ${when(d.returns.fileTime)}.` : null;
+  $("status").innerHTML = [results, returns].filter(Boolean).join("<br>");
 }
 
 function renderControls() {
   document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-checked", String(b.dataset.layer === state.layerName)));
   $("contest-wrap").hidden = state.layerName !== "results";
   const sel = $("contest");
-  const names = state.data.contests.map((c) => c.name);
-  if (sel.dataset.for !== state.data.id) {
-    sel.innerHTML = names.map((n, i) => `<option value="${i}">${esc(n)}</option>`).join("");
-    sel.dataset.for = state.data.id;
+  const key = state.data.contests.map((c) => c.id).join(",");
+  if (sel.dataset.key !== key) {
+    sel.innerHTML = state.data.contests.map((c) => `<option value="${c.id}">${esc(c.name)}</option>`).join("");
+    sel.dataset.key = key;
   }
-  sel.value = String(state.contestIdx);
+  const c = contest();
+  if (c) sel.value = c.id;
 }
 
 function renderAll() {
@@ -280,7 +394,9 @@ async function loadElection(id) {
   state.electionId = id;
   state.data = data;
   state.selected = null;
-  state.contestIdx = 0;
+  state.contestId = null;
+  state.live = null;
+  state.userPickedLayer = false;
   state.layerName = defaultLayer(data);
 
   state.geoLayer?.remove();
@@ -291,10 +407,22 @@ async function loadElection(id) {
       layer.on("click", () => { state.selected = f.properties.name; renderDetail(); restyle(); });
     },
   }).addTo(map);
-  map.invalidateSize();
-  map.fitBounds(state.geoLayer.getBounds(), { padding: [12, 12] });
+  state.needsFit = true;
+  fitToPrecincts();
   renderAll();
+  await refreshLive();
 }
+
+// Fitting while the map has no size (page loaded in a hidden tab) zooms all the
+// way in, so wait until the container has real dimensions.
+function fitToPrecincts() {
+  map.invalidateSize();
+  const size = map.getSize();
+  if (!state.needsFit || !state.geoLayer || !size.x || !size.y) return;
+  map.fitBounds(state.geoLayer.getBounds(), { padding: [12, 12] });
+  state.needsFit = false;
+}
+new ResizeObserver(fitToPrecincts).observe($("map"));
 
 function tooltipFor(name) {
   const p = precinct(name);
@@ -310,28 +438,22 @@ function tooltipFor(name) {
   return `<b>${esc(name)}</b><br>${line}`;
 }
 
-async function refresh() {
-  try {
-    const data = await getJSON(`data/${state.electionId}.json`);
-    if (data.generatedAt !== state.data.generatedAt) {
-      state.data = data;
-      renderAll();
-    }
-  } catch (err) {
-    console.warn("refresh failed", err);
-  }
-}
-
 // ------------------------------------------------------------------- events
 
 $("election").addEventListener("change", (e) => loadElection(e.target.value));
-$("contest").addEventListener("change", (e) => { state.contestIdx = Number(e.target.value); renderAll(); });
+$("contest").addEventListener("change", (e) => { state.contestId = e.target.value; renderAll(); loadBreakdown(); });
 document.querySelectorAll(".seg button").forEach((b) =>
-  b.addEventListener("click", () => { state.layerName = b.dataset.layer; renderAll(); }));
+  b.addEventListener("click", () => {
+    state.layerName = b.dataset.layer;
+    state.userPickedLayer = true;
+    renderAll();
+    loadBreakdown();
+  }));
 
 (async function init() {
   state.elections = await getJSON("data/elections.json");
   $("election").innerHTML = state.elections.map((e) => `<option value="${e.id}">${esc(e.name)}</option>`).join("");
   await loadElection(state.elections[0].id);
-  setInterval(refresh, REFRESH_MS);
+  setInterval(refreshLive, LIVE_MS);
+  setInterval(refreshStatic, STATIC_MS);
 })();

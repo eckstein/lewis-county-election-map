@@ -2,8 +2,10 @@
 
 For each configured election this writes, under site/data/:
   <id>.geojson  precinct boundaries (from the Secretary of State statewide shapefile)
-  <id>.json     per-precinct registration, ballots returned (matchback), ballots
-                counted and contest results (from results.votewa.gov)
+  <id>.json     per-precinct ballots returned (matchback), plus a snapshot of
+                registration, ballots counted and contest results from
+                results.votewa.gov. The page loads results live from that feed
+                and only uses the snapshot if the feed can't be reached.
   elections.json  list of elections for the page's selector
 
 Ballot returns come from the SOS "Daily Ballot Status Report" (matchback). The SOS
@@ -230,7 +232,7 @@ def build_returns(election_id, boundaries):
     """Precinct return totals from the newest matchback file.
 
     The totals are saved to data/returns/<id>.json, which is committed, so builds
-    that have no matchback file (the GitHub Actions run) reuse the last totals.
+    on a machine without the matchback file reuse the last totals.
     """
     saved = RETURNS / f"{election_id}.json"
     path = latest_matchback(election_id)
