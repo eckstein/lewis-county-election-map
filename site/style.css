@@ -41,7 +41,7 @@ select {
   padding: 7px 8px; border: 1px solid var(--line); border-radius: 6px; background: #fff;
 }
 
-.seg { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
+.seg { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
 .seg button {
   font: inherit; font-size: 13px; padding: 7px 0; border: 0; background: #fff; color: var(--text); cursor: pointer;
 }
@@ -63,11 +63,19 @@ select {
 .notice { background: #fff8e6; border: 1px solid #f0dca8; border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.45; }
 .notice code { font-size: 12px; background: #fff; padding: 1px 4px; border-radius: 3px; }
 
-.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; margin: 0; }
-.stats div { min-width: 0; }
-.stats dt { font-size: 12px; color: var(--muted); }
-.stats dd { margin: 1px 0 0; font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; }
-.stats dd small { font-size: 12px; font-weight: 400; color: var(--muted); }
+.layer-desc { margin: -4px 0 0; font-size: 12px; color: var(--muted); }
+
+/* Ballot progress: counted, received but not yet counted, not returned. */
+.progress-text { margin: 0 0 8px; font-size: 14px; line-height: 1.45; }
+.progress-text .muted { font-size: 13px; }
+.progress { display: flex; height: 10px; border-radius: 5px; overflow: hidden; background: #e6e6e1; }
+.seg-counted { background: #15508e; }
+.seg-received { background: #8fb6dc; }
+.seg-rest { background: #e6e6e1; }
+.progress-key { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; font-size: 12px; color: var(--muted); }
+.progress-key i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.challenged { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+.challenged b { color: var(--text); font-weight: 600; }
 
 .bars { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .bars li { font-size: 13px; }

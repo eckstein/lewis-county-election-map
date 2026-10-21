@@ -11,7 +11,7 @@
   <aside class="panel">
     <header>
       <h1>Lewis County Election Map</h1>
-      <p class="sub">Ballot returns and results by precinct</p>
+      <p class="sub">Ballots received and results by precinct</p>
     </header>
 
     <section class="controls">
@@ -19,10 +19,10 @@
         <select id="election"></select>
       </label>
       <div class="seg" role="radiogroup" aria-label="Map layer">
-        <button data-layer="returned" role="radio">Returned</button>
-        <button data-layer="counted" role="radio">Counted</button>
+        <button data-layer="returned" role="radio">Ballots received</button>
         <button data-layer="results" role="radio">Results</button>
       </div>
+      <p id="layer-desc" class="layer-desc"></p>
       <label id="contest-wrap">Contest
         <select id="contest"></select>
       </label>

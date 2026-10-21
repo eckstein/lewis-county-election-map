@@ -1,10 +1,14 @@
 # Lewis County Election Map
 
-An interactive map of Lewis County, WA showing three things by precinct:
+An interactive map of Lewis County, WA with two views by precinct:
 
-- **Returned**: ballots returned, as a share of registered voters (from the state matchback file)
-- **Counted**: ballots counted once results start (from the county results feed)
+- **Ballots received**: ballots the county has received, as a share of registered voters (from the state matchback
+  file)
 - **Results**: who leads each contest in each precinct, shaded by the size of the lead
+
+The countywide summary and each precinct's details card describe where ballots stand in a sentence and a bar:
+counted, received but not yet counted, and not returned. Before 8 p.m. on Election Day nothing is counted, so they
+show ballots received and when counting begins.
 
 ## How it updates
 

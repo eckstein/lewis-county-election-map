@@ -1,5 +1,5 @@
-// Lewis County election map: precinct choropleth of ballot returns, ballots
-// counted and contest results.
+// Lewis County election map: precinct choropleth of ballots received and
+// contest results.
 //
 // Results come live from the county's results.votewa.gov feed: the summary
 // every LIVE_MS, and precinct results for the contest being viewed. site/data/
@@ -259,13 +259,12 @@ async function refreshStatic() {
 
 // ------------------------------------------------------------------- styling
 
-// Rate layers: share of registered voters, binned on a scale that stretches to
-// the current maximum so early returns (5-20%) still show contrast.
+// Returned layer: share of registered voters, binned on a scale that stretches
+// to the current maximum so early returns (5-20%) still show contrast.
 function rateFor(name) {
   const p = precinct(name);
-  const n = state.layerName === "returned" ? p.returned : p.counted;
-  if (n == null || !p.registered) return null;
-  return pct(n, p.registered);
+  if (p.returned == null || !p.registered) return null;
+  return pct(p.returned, p.registered);
 }
 
 function rateBreaks() {
@@ -332,9 +331,8 @@ function renderLegend() {
       `<div><i style="background:${NO_DATA}"></i>No precinct results</div>`;
     return;
   }
-  const label = state.layerName === "returned" ? "Ballots returned" : "Ballots counted";
   let lo = 0;
-  el.innerHTML = `<b>${label}, % of registered</b>` +
+  el.innerHTML = `<b>Ballots received, % of registered voters</b>` +
     state.breaks.map((b, i) => {
       const row = `<div><i style="background:${SEQ[i]}"></i>${Math.round(lo)}–${Math.round(b)}%</div>`;
       lo = b;
@@ -372,20 +370,55 @@ function compareBars(options, local, wide, colors) {
     `<p class="muted compare-totals">Votes: ${fmt.format(localTotal)} in Lewis · ${fmt.format(wideTotal)} ${wide.tag === "State" ? "statewide" : "districtwide"}</p>`;
 }
 
-function statBlock(rows) {
-  return `<dl class="stats">` + rows.map(([label, value, note]) =>
-    `<div><dt>${label}</dt><dd>${value}${note ? ` <small>${note}</small>` : ""}</dd></div>`).join("") + `</dl>`;
+// Where ballots stand, in a sentence and a bar: counted, received but not yet
+// counted, and not returned. Received comes from the state's daily file and
+// counted from the live feed, so on election night counted can briefly run
+// ahead of received; the sentence then just reports the count.
+function ballotProgress({ registered, received, counted, challenged }, place, brief = false) {
+  const d = state.data;
+  const hasReceived = d.returns.available && received != null;
+  const counting = d.results.ballotsCast > 0;
+  const ofVoters = `of the ${fmt.format(registered)} registered voters in ${place}`;
+  const later = d.results.official ? "These results are final." : "The county will post more results in the coming days.";
+  let lead, follow;
+  if (!counting) {
+    lead = hasReceived
+      ? `<b>${fmt.format(received)} ballots received</b> — ${pctText(pct(received, registered))} ${ofVoters}.`
+      : `<b>${fmt.format(registered)} registered voters</b> in ${place}.`;
+    follow = `Counting begins at ${releaseTime(d.id)}.`;
+  } else if (hasReceived && received > counted) {
+    lead = `<b>${fmt.format(counted)} of ${fmt.format(received)} ballots counted</b> — ${fmt.format(received - counted)} received ballots are still being processed.`;
+    follow = later;
+  } else {
+    lead = `<b>${fmt.format(counted)} ballots counted</b> — ${pctText(pct(counted, registered))} ${ofVoters}.`;
+    follow = later;
+  }
+
+  const countedShare = counting ? Math.min(100, pct(counted, registered) || 0) : 0;
+  const receivedShare = hasReceived ? Math.max(0, Math.min(100 - countedShare, pct(received - (counting ? counted : 0), registered) || 0)) : 0;
+  const key = [
+    counting && `<span><i class="seg-counted"></i>Counted</span>`,
+    hasReceived && `<span><i class="seg-received"></i>${counting ? "Received, not yet counted" : "Received"}</span>`,
+    `<span><i class="seg-rest"></i>${d.results.official ? "Didn't vote" : "Not returned yet"}</span>`,
+  ].filter(Boolean).join("");
+
+  return `<p class="progress-text">${lead}${brief ? "" : `<br><span class="muted">${follow}</span>`}</p>` +
+    `<div class="progress" aria-hidden="true"><div class="seg-counted" style="width:${countedShare}%"></div>` +
+    `<div class="seg-received" style="width:${receivedShare}%"></div></div>` +
+    `<div class="progress-key">${key}</div>` +
+    (hasReceived && challenged ? `<p class="challenged">Challenged: <b>${fmt.format(challenged)}</b></p>` : "");
 }
 
 function renderSummary() {
   const d = state.data;
-  const reg = d.results.registered;
-  const rows = [["Registered", fmt.format(reg)]];
-  if (d.returns.available) rows.push(["Returned", fmt.format(d.returns.returned), pctText(pct(d.returns.returned, reg))]);
-  rows.push(["Counted", fmt.format(d.results.ballotsCast), pctText(pct(d.results.ballotsCast, reg))]);
-  if (d.returns.available && d.returns.challenged) rows.push(["Challenged", fmt.format(d.returns.challenged)]);
+  const progress = ballotProgress({
+    registered: d.results.registered,
+    received: d.returns.returned,
+    counted: d.results.ballotsCast,
+    challenged: d.returns.challenged,
+  }, "Lewis County");
 
-  let html = `<h2>Countywide</h2>` + statBlock(rows);
+  let html = `<h2>Countywide</h2>` + progress;
   const c = contest();
   if (state.layerName === "results" && c) {
     const local = c.options.map((o) => o.votes);
@@ -405,13 +438,15 @@ function renderDetail() {
   if (!name) { el.innerHTML = `Click a precinct on the map for its details.`; return; }
   const feat = state.geoLayer?.getLayers().find((l) => l.feature.properties.name === name)?.feature.properties || {};
   const p = precinct(name);
-  const rows = [["Registered", p.registered != null ? fmt.format(p.registered) : "–"]];
-  if (state.data.returns.available) rows.push(["Returned", fmt.format(p.returned || 0), pctText(pct(p.returned || 0, p.registered))]);
-  rows.push(["Counted", p.counted != null ? fmt.format(p.counted) : "–", pctText(pct(p.counted, p.registered))]);
-  if (state.data.returns.available && p.challenged) rows.push(["Challenged", fmt.format(p.challenged)]);
+  const progress = ballotProgress({
+    registered: p.registered || 0,
+    received: p.returned,
+    counted: p.counted || 0,
+    challenged: p.challenged,
+  }, "this precinct", true);
 
   let html = `<div class="detail-head"><h3>${esc(name)}</h3><button class="close" type="button" aria-label="Close precinct details" title="Close (Esc)">&times;</button></div>` +
-    `<p class="muted" style="margin-bottom:10px">Precinct ${esc(feat.num ?? "")} · LD ${esc(feat.ld ?? "–")} · CD ${esc(feat.cd ?? "–")}</p>` + statBlock(rows);
+    `<p class="muted" style="margin-bottom:10px">Precinct ${esc(feat.num ?? "")} · LD ${esc(feat.ld ?? "–")} · CD ${esc(feat.cd ?? "–")}</p>` + progress;
   const c = contest();
   if (state.layerName === "results" && c) {
     const votes = c.precincts[name];
@@ -432,22 +467,13 @@ function renderNotice() {
   const d = state.data;
   let msg = "";
   if (state.layerName === "returned" && !d.returns.available) {
-    msg = `No ballot return (matchback) totals published for this election yet. They're added once a day from the
+    msg = `Ballots-received figures aren't available for this election. For current elections they're added once a day from the
       <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/ballot-status-reports" target="_blank" rel="noopener">Secretary of State's</a>
-      Daily Ballot Status Report.`;
-  } else if (state.layerName === "counted" && !d.results.ballotsCast) {
-    // Returned ballots are in hand but not tallied; say so, or the two
-    // numbers in the summary look contradictory.
-    const returned = d.returns.available && d.returns.returned;
-    msg = (returned
-      ? `<b>${fmt.format(returned)}</b> ballots have been returned so far, but none have been counted yet. `
-      : `No ballots counted yet. `) +
-      `Washington counties don't release vote counts until ${releaseTime(d.id)}.` +
-      (returned ? ` Until then, the Returned tab shows ballots coming in.` : "");
+      ballot status report.`;
   } else if (state.layerName === "results" && !d.results.hasPrecinctResults) {
     msg = d.results.ballotsCast
-      ? `The county hasn't published precinct-level results for this election yet. Countywide totals are shown at left.`
-      : `No results yet. Washington counties don't release vote counts until ${releaseTime(d.id)}; results appear here as soon as the county posts its first count.`;
+      ? `The county hasn't published results by precinct yet. Countywide totals are shown below.`
+      : `No results yet. The map fills in once counting starts at ${releaseTime(d.id)}.`;
   }
   $("notice").hidden = !msg;
   $("notice").innerHTML = msg;
@@ -463,13 +489,16 @@ function renderStatus() {
     results = `Results: live from ${source}${d.results.official ? " (<b>final</b>)" : ""}, county update ${when(d.results.lastUpdated)}. ` +
       `Checked ${state.liveCheckedAt ? state.liveCheckedAt.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }) : "–"}.`;
   }
-  const returns = d.returns.available ? `Ballot returns: state matchback file posted ${when(d.returns.fileTime)}.` : null;
+  const returns = d.returns.available ? `Ballots received: state data posted ${when(d.returns.fileTime)}.` : null;
   $("status").innerHTML = [results, returns].filter(Boolean).join("<br>");
 }
 
 function renderControls() {
   document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-checked", String(b.dataset.layer === state.layerName)));
   $("contest-wrap").hidden = state.layerName !== "results";
+  $("layer-desc").textContent = state.layerName === "results"
+    ? "Votes counted so far, updated live."
+    : "Ballots the county has received, updated daily.";
   const sel = $("contest");
   const key = state.data.contests.map((c) => c.id).join(",");
   if (sel.dataset.key !== key) {
@@ -492,8 +521,7 @@ function renderAll() {
 // ------------------------------------------------------------------ loading
 
 function defaultLayer(d) {
-  if (d.results.hasPrecinctResults) return "results";
-  if (d.results.ballotsCast) return "counted";
+  if (d.results.ballotsCast) return "results";
   return "returned";
 }
 
@@ -562,8 +590,8 @@ function tooltipFor(name) {
     line = lead ? `${esc(contest().options[lead.idx].name)} ${(100 * lead.share).toFixed(1)}%`
       : contest()?.precincts[name] ? "No votes reported" : "No precinct results for this contest";
   } else {
-    const n = state.layerName === "returned" ? p.returned : p.counted;
-    line = n == null ? "No data" : `${fmt.format(n)} of ${fmt.format(p.registered || 0)} · ${pctText(pct(n, p.registered))}`;
+    line = p.returned == null ? "No data"
+      : `${fmt.format(p.returned)} of ${fmt.format(p.registered || 0)} voters · ${pctText(pct(p.returned, p.registered))}`;
   }
   return `<b>${esc(name)}</b><br>${line}`;
 }
