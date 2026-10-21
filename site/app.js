@@ -263,9 +263,48 @@ async function refreshLive() {
   }
   state.liveCheckedAt = new Date();
   if (!state.userPickedLayer) state.layerName = defaultLayer(state.data);
+  const posted = state.data.results.lastUpdated;
+  const isNew = state.live && state.lastSeenUpdate && posted !== state.lastSeenUpdate;
+  if (state.live) state.lastSeenUpdate = posted;
   renderAll();
   loadBreakdown();
+  if (isNew) announceNewResults();
 }
+
+// ------------------------------------------------------- new results cue
+
+// The county posts counts in batches on election night. When a batch lands
+// while the page is open, mark it: a "New results" banner, a flash on the
+// totals, and a dot in the tab title if the page is in the background.
+const BASE_TITLE = document.title;
+
+function renderUpdated() {
+  const d = state.data;
+  const el = $("updated");
+  el.hidden = !d.results.ballotsCast;
+  if (el.hidden) return;
+  const time = new Date(d.results.lastUpdated).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  const day = new Date(d.results.lastUpdated).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  el.classList.toggle("new", !!state.newResults);
+  el.textContent = state.newResults
+    ? `New results posted at ${time}`
+    : d.results.official ? `Final results, certified` : `Latest county count: ${day}, ${time}`;
+}
+
+function announceNewResults() {
+  state.newResults = true;
+  renderUpdated();
+  const summary = $("summary");
+  summary.classList.remove("flash");
+  void summary.offsetWidth;  // restart the animation
+  summary.classList.add("flash");
+  if (document.hidden) document.title = `● New results · ${BASE_TITLE}`;
+  // Back to the plain timestamp after a few minutes.
+  clearTimeout(announceNewResults.timer);
+  announceNewResults.timer = setTimeout(() => { state.newResults = false; renderUpdated(); }, 5 * 60 * 1000);
+}
+
+document.addEventListener("visibilitychange", () => { if (!document.hidden) document.title = BASE_TITLE; });
 
 // Ballot-return totals change once a day, when a new build is published.
 async function refreshStatic() {
@@ -575,6 +614,7 @@ function renderControls() {
 }
 
 function renderAll() {
+  renderUpdated();
   renderControls();
   renderNotice();
   renderSummary();
@@ -648,6 +688,8 @@ async function loadElection(id, linkParams = null) {
   state.contestId = null;
   state.live = null;
   state.wide = new Map();
+  state.lastSeenUpdate = null;
+  state.newResults = false;
   state.userPickedLayer = false;
   state.layerName = defaultLayer(data);
   state.breaks = rateBreaks();  // styleFor needs these for the first draw

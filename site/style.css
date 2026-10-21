@@ -92,6 +92,17 @@ select {
 .share::before { content: "🔗 "; }
 .share:hover { text-decoration: underline; }
 
+/* Time of the county's latest count; "new" when it changed while the page was open. */
+.updated {
+  display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 8px;
+  font-size: 13px; background: #f1f4f7; color: var(--muted);
+}
+.updated::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #9aa4ae; flex: none; }
+.updated.new { background: #e6f4ea; color: #14532d; font-weight: 600; }
+.updated.new::before { background: #1f9d55; animation: pulse 1.6s ease-out 4; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(31,157,85,.6); } 100% { box-shadow: 0 0 0 10px rgba(31,157,85,0); } }
+#summary.flash { animation: flash 1.2s ease-out; }
+
 .layer-desc { margin: -4px 0 0; font-size: 12px; color: var(--muted); }
 
 /* Ballot progress: counted, received but not yet counted, not returned. */
