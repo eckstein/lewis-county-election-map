@@ -65,6 +65,16 @@ select {
 .bars .num { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
 .bars .track { height: 6px; background: #efefec; border-radius: 3px; margin-top: 3px; overflow: hidden; }
 .bars .fill { height: 100%; border-radius: 3px; }
+.compare-key { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.compare-key i { display: inline-block; width: 16px; height: 6px; border-radius: 3px; margin-right: 5px; vertical-align: 1px; background: #55595e; }
+.compare-key i.k-wide { opacity: 0.4; }
+.bars.compare { gap: 10px; }
+.pair { display: grid; grid-template-columns: 52px 1fr 46px; align-items: center; gap: 6px; margin-top: 3px; }
+.pair .tag { font-size: 11px; color: var(--muted); }
+.pair .track { margin-top: 0; }
+.pair .num { text-align: right; font-size: 12px; font-variant-numeric: tabular-nums; color: var(--muted); }
+.pair.wide .fill { opacity: 0.4; }
+.compare-totals { margin-top: 10px; font-size: 12px; }
 .swatch { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; vertical-align: 0; }
 
 .status { margin-top: auto; font-size: 12px; color: var(--muted); line-height: 1.5; }

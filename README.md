@@ -11,6 +11,9 @@ An interactive map of Lewis County, WA showing three things by precinct:
 - **Results and ballots counted** load live in the viewer's browser from the county's `results.votewa.gov` feed. The
   page checks it every minute, and loads precinct results for the contest being viewed. The feed allows requests
   from any site (`Access-Control-Allow-Origin: *`), so no server or scheduled job is involved.
+- **Multi-county contests** (statewide measures and races, legislative and congressional districts, the library
+  district) show Lewis County's result next to the statewide or whole-district result in the summary panel. Those
+  totals come from the state feed, loaded alongside the county one.
 - **Ballot returns** are precinct totals in `site/data/<id>.json`, updated automatically from the state's daily
   file (see below). The page re-reads that file every 5 minutes.
 - If the live feed can't be reached, the page falls back to the results snapshot saved in `site/data/` by the last
@@ -64,6 +67,7 @@ published, and `.gitignore` keeps the raw files out of git.
 |---|---|
 | Precinct boundaries | SOS statewide precinct shapefile for each election, filtered to Lewis (cached in `data/cache/`) |
 | Registered voters, ballots counted, results | `https://results.votewa.gov/results/public/api/elections/lewis-county-wa/<id>/data`, plus `/data/ballot-item/<contest id>` for precinct results |
+| Statewide / whole-district totals for multi-county contests | `https://results.votewa.gov/results/public/api/elections/washington/<id>/data`, matched to Lewis contests by their `parentId` and to candidates by name |
 | Ballots returned | SOS Daily Ballot Status Report (matchback): `https://www.sos.wa.gov/sites/default/files/current_election/Lewis.csv` |
 
 ## Adding an election

@@ -8,6 +8,9 @@
 // the live feed can't be reached.
 
 const RESULTS_API = "https://results.votewa.gov/results/public/api/elections/lewis-county-wa";
+// Totals for contests that extend beyond the county (statewide measures and
+// races, legislative and congressional districts) come from the state feed.
+const STATE_API = "https://results.votewa.gov/results/public/api/elections/washington";
 const LIVE_MS = 60 * 1000;
 const STATIC_MS = 5 * 60 * 1000;
 const SEQ = ["#dbe8f4", "#a8c8e4", "#6fa3d0", "#3a7bb8", "#15508e"];
@@ -34,6 +37,7 @@ const state = {
   geoLayer: null,
   live: null,          // true/false after the first live check
   liveCheckedAt: null,
+  wide: new Map(),     // parent contest id -> totals across every county it covers
 };
 
 const $ = (id) => document.getElementById(id);
@@ -130,10 +134,48 @@ async function fetchLive() {
       total: item.voteTotal || 0,
       options: options.map((o) => ({ name: en(o.name), party: o.party?.abbreviation, votes: o.voteCount || 0 })),
       optionIds: options.map((o) => o.id),
+      parentId: item.parentId,
+      counties: (item.crossCounties || []).length,
       precincts: old?.precincts || {},
       loaded: !changed && !!old?.loaded,
     };
   });
+
+  if (d.contests.some((c) => c.parentId && c.counties > 1)) {
+    try {
+      await fetchWide(id);
+    } catch (err) {
+      console.warn("statewide totals failed; keeping last ones", err);
+    }
+  }
+}
+
+// Totals across all counties for each multi-county contest, keyed by the
+// statewide contest id that county contests point to with parentId.
+async function fetchWide(id) {
+  const feed = await getJSON(`${STATE_API}/${id}/data`, false);
+  if (id !== state.electionId) return;
+  for (const item of feed.ballotItems || []) {
+    state.wide.set(item.id, {
+      total: item.voteTotal || 0,
+      votes: new Map(item.summaryResults.ballotOptions.map((o) => [norm(en(o.name)), o.voteCount || 0])),
+      lastUpdated: feed.election.lastUpdated,
+    });
+  }
+}
+
+// The wider race's votes lined up with this contest's options, or null when the
+// contest is county-only or the state totals haven't loaded.
+function wideFor(c) {
+  const wide = c.parentId && c.counties > 1 && state.wide.get(c.parentId);
+  if (!wide) return null;
+  const statewide = c.counties >= 39;
+  return {
+    label: statewide ? "Statewide" : `Whole district (${c.counties} counties)`,
+    tag: statewide ? "State" : "District",
+    total: wide.total,
+    votes: c.options.map((o) => wide.votes.get(norm(o.name)) || 0),
+  };
 }
 
 async function loadBreakdown() {
@@ -285,6 +327,25 @@ function bars(options, votes, colors) {
   }).join("") + `</ul>`;
 }
 
+// Each option gets two bars: its share in Lewis County and in the whole race.
+function compareBars(options, local, wide, colors) {
+  const sum = (v) => v.reduce((a, b) => a + b, 0);
+  const localTotal = sum(local);
+  const wideTotal = sum(wide.votes);
+  const bar = (tag, votes, total, color, cls) => {
+    const share = total ? (100 * votes) / total : 0;
+    return `<div class="pair ${cls}" title="${fmt.format(votes)} votes"><span class="tag">${tag}</span>` +
+      `<div class="track"><div class="fill" style="width:${share}%;background:${color}"></div></div>` +
+      `<span class="num">${share.toFixed(1)}%</span></div>`;
+  };
+  return `<div class="compare-key"><span><i class="k-local"></i>Lewis County</span><span><i class="k-wide"></i>${esc(wide.label)}</span></div>` +
+    `<ul class="bars compare">` + options.map((o, i) =>
+      `<li><div class="row"><span class="name"><span class="swatch" style="background:${colors[i]}"></span>${esc(o.name)}${o.party ? ` <span class="muted">${esc(o.party)}</span>` : ""}</span></div>` +
+      bar("Lewis", local[i], localTotal, colors[i], "local") +
+      bar(wide.tag, wide.votes[i], wideTotal, colors[i], "wide") + `</li>`).join("") + `</ul>` +
+    `<p class="muted compare-totals">Votes: ${fmt.format(localTotal)} in Lewis · ${fmt.format(wideTotal)} ${wide.tag === "State" ? "statewide" : "districtwide"}</p>`;
+}
+
 function statBlock(rows) {
   return `<dl class="stats">` + rows.map(([label, value, note]) =>
     `<div><dt>${label}</dt><dd>${value}${note ? ` <small>${note}</small>` : ""}</dd></div>`).join("") + `</dl>`;
@@ -301,8 +362,10 @@ function renderSummary() {
   let html = `<h2>Countywide</h2>` + statBlock(rows);
   const c = contest();
   if (state.layerName === "results" && c) {
+    const local = c.options.map((o) => o.votes);
+    const wide = wideFor(c);
     html += `<h3 style="margin-top:14px;font-size:15px">${esc(c.name)}</h3>` +
-      bars(c.options, c.options.map((o) => o.votes), optionColors(c));
+      (wide ? compareBars(c.options, local, wide, optionColors(c)) : bars(c.options, local, optionColors(c)));
   }
   $("summary").innerHTML = html;
 }
@@ -396,6 +459,7 @@ async function loadElection(id) {
   state.selected = null;
   state.contestId = null;
   state.live = null;
+  state.wide = new Map();
   state.userPickedLayer = false;
   state.layerName = defaultLayer(data);
   state.breaks = rateBreaks();  // styleFor needs these for the first draw
