@@ -516,6 +516,56 @@ function renderAll() {
   renderDetail();
   renderStatus();
   restyle();
+  writeUrl();
+}
+
+// ---------------------------------------------------------- shareable links
+
+// The view lives in the address bar (?e=20261103&view=results&contest=sheriff&p=12),
+// so a copied or shared link opens the same election, tab, contest and precinct.
+const slug = (s) => norm(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+function featureFor(name) {
+  return state.geoLayer?.getLayers().find((l) => l.feature.properties.name === name)?.feature.properties;
+}
+
+function writeUrl() {
+  if (!state.data) return;
+  const q = new URLSearchParams({ e: state.electionId, view: state.layerName === "results" ? "results" : "received" });
+  const c = contest();
+  if (state.layerName === "results" && c) q.set("contest", slug(c.name));
+  const num = state.selected && featureFor(state.selected)?.num;
+  if (num != null) q.set("p", num);
+  const url = `${location.pathname}?${q}`;
+  if (url !== location.pathname + location.search) history.replaceState(null, "", url);
+}
+
+// Apply ?view, ?contest and ?p from a shared link once the election has loaded.
+function readUrl(q) {
+  if (q.get("view")) {
+    state.layerName = q.get("view") === "results" ? "results" : "returned";
+    state.userPickedLayer = true;
+  }
+  const c = state.data.contests.find((x) => slug(x.name) === q.get("contest"));
+  if (c) state.contestId = c.id;
+  const f = state.geoLayer.getLayers().find((l) => String(l.feature.properties.num) === q.get("p"));
+  if (f) state.selected = f.feature.properties.name;
+}
+
+async function shareView() {
+  const url = location.href;
+  const btn = $("share");
+  try {
+    if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+      await navigator.share({ title: document.title, url });
+      return;
+    }
+    await navigator.clipboard.writeText(url);
+    btn.textContent = "Link copied";
+  } catch {
+    btn.textContent = "Copy the address bar";
+  }
+  setTimeout(() => { btn.textContent = "Share this view"; }, 2000);
 }
 
 // ------------------------------------------------------------------ loading
@@ -525,7 +575,7 @@ function defaultLayer(d) {
   return "returned";
 }
 
-async function loadElection(id) {
+async function loadElection(id, linkParams = null) {
   const [geo, data] = await Promise.all([getJSON(`data/${id}.geojson`), getJSON(`data/${id}.json`)]);
   state.electionId = id;
   state.data = data;
@@ -545,6 +595,7 @@ async function loadElection(id) {
       layer.on("click", () => selectPrecinct(state.selected === f.properties.name ? null : f.properties.name));
     },
   }).addTo(map);
+  if (linkParams) readUrl(linkParams);
   state.needsFit = true;
   fitToPrecincts();
   renderAll();
@@ -556,6 +607,7 @@ function selectPrecinct(name) {
   state.selected = name;
   renderDetail();
   restyle();
+  writeUrl();
   if (name) {
     const el = $("detail");
     el.scrollIntoView({ block: "nearest", behavior: "smooth" });
@@ -601,6 +653,7 @@ function tooltipFor(name) {
 $("election").addEventListener("change", (e) => loadElection(e.target.value));
 $("contest").addEventListener("change", (e) => { state.contestId = e.target.value; renderAll(); loadBreakdown(); });
 $("detail").addEventListener("click", (e) => { if (e.target.closest(".close")) selectPrecinct(null); });
+$("share").addEventListener("click", shareView);
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && state.selected) selectPrecinct(null); });
 document.querySelectorAll(".seg button").forEach((b) =>
   b.addEventListener("click", () => {
@@ -613,7 +666,10 @@ document.querySelectorAll(".seg button").forEach((b) =>
 (async function init() {
   state.elections = await getJSON("data/elections.json");
   $("election").innerHTML = state.elections.map((e) => `<option value="${e.id}">${esc(e.name)}</option>`).join("");
-  await loadElection(state.elections[0].id);
+  const link = new URLSearchParams(location.search);
+  const first = state.elections.find((e) => e.id === link.get("e"))?.id || state.elections[0].id;
+  $("election").value = first;
+  await loadElection(first, link);
   setInterval(refreshLive, LIVE_MS);
   setInterval(refreshStatic, STATIC_MS);
 })();

@@ -21,7 +21,7 @@
 <body>
   <aside class="panel">
     <header>
-      <h1>Lewis County Election Map</h1>
+      <h1>Lewis County Election Map <span class="badge" title="Not an official county or state site">Unofficial</span></h1>
       <p class="sub">Ballots received and results by precinct</p>
     </header>
 
@@ -37,13 +37,26 @@
       <label id="contest-wrap">Contest
         <select id="contest"></select>
       </label>
+      <button id="share" class="share" type="button">Share this view</button>
     </section>
 
     <section id="detail" aria-live="polite"></section>
     <section id="notice" class="notice" hidden></section>
     <section id="summary" class="card"></section>
 
-    <footer id="status" class="status"></footer>
+    <footer class="status">
+      <div id="status"></div>
+      <p class="about">
+        An unofficial map, not affiliated with Lewis County or the Washington Secretary of State. Data comes from
+        <a href="https://results.votewa.gov/results/public/lewis-county-wa" target="_blank" rel="noopener">Lewis County election results</a>
+        and the Secretary of State's
+        <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/ballot-status-reports" target="_blank" rel="noopener">ballot status reports</a>
+        and <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/reports-data-and-statistics/precinct-shapefiles" target="_blank" rel="noopener">precinct boundaries</a>.
+        Official results are certified by the
+        <a href="https://elections.lewiscountywa.gov/" target="_blank" rel="noopener">Lewis County Auditor</a>.
+        <a href="https://github.com/eckstein/lewis-county-election-map" target="_blank" rel="noopener">Source code</a>.
+      </p>
+    </footer>
   </aside>
   <main id="map"></main>
 
