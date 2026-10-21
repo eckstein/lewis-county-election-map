@@ -25,6 +25,16 @@
       <p class="sub">Ballots received and results by precinct</p>
     </header>
 
+    <form id="find" class="find" role="search">
+      <label for="find-address">Find your precinct</label>
+      <div class="find-row">
+        <input id="find-address" type="search" placeholder="Street address, city" autocomplete="street-address" required>
+        <button type="submit">Find</button>
+      </div>
+      <button id="locate" class="locate" type="button">Use my location</button>
+      <p id="find-msg" class="find-msg" aria-live="polite"></p>
+    </form>
+
     <section class="controls">
       <label>Election
         <select id="election"></select>
@@ -54,6 +64,8 @@
         and <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/reports-data-and-statistics/precinct-shapefiles" target="_blank" rel="noopener">precinct boundaries</a>.
         Official results are certified by the
         <a href="https://elections.lewiscountywa.gov/" target="_blank" rel="noopener">Lewis County Auditor</a>.
+        Addresses you search for are looked up by the U.S. Census Bureau's geocoder and aren't stored; "Use my
+        location" stays on your device.
         <a href="https://github.com/eckstein/lewis-county-election-map" target="_blank" rel="noopener">Source code</a>.
       </p>
     </footer>

@@ -648,7 +648,91 @@ function tooltipFor(name) {
   return `<b>${esc(name)}</b><br>${line}`;
 }
 
+// --------------------------------------------------------- find my precinct
+
+// An address is geocoded by the U.S. Census Bureau through the Worker (the
+// Census service sends no CORS header); "Use my location" stays on the device.
+// Either way the point is matched to a precinct here in the browser.
+
+function inRing(x, y, ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i], [xj, yj] = ring[j];
+    if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+
+function precinctAt(lng, lat) {
+  for (const layer of state.geoLayer.getLayers()) {
+    const g = layer.feature.geometry;
+    const polys = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
+    if (polys.some(([outer, ...holes]) => inRing(lng, lat, outer) && !holes.some((h) => inRing(lng, lat, h)))) return layer;
+  }
+  return null;
+}
+
+let findMarker = null;
+// Its own pane, above the precincts and their labels: restyle() brings the
+// selected precinct to the front, which would otherwise cover the dot.
+map.createPane("found").style.zIndex = 460;
+
+function findMessage(text, error = false) {
+  $("find-msg").textContent = text;
+  $("find-msg").classList.toggle("error", error);
+}
+
+function showLocation(lng, lat, label) {
+  findMarker?.remove();
+  const layer = precinctAt(lng, lat);
+  if (!layer) {
+    findMessage(`${label} isn't in Lewis County.`, true);
+    return;
+  }
+  findMarker = L.circleMarker([lat, lng], { pane: "found", radius: 7, color: "#fff", weight: 3, fillColor: "#c43b3b", fillOpacity: 1 })
+    .bindTooltip(esc(label)).addTo(map);
+  findMessage(`${label} is in precinct ${layer.feature.properties.name}.`);
+  map.flyToBounds(layer.getBounds(), { maxZoom: 13, padding: [24, 24], duration: 0.6 });
+  selectPrecinct(layer.feature.properties.name);
+}
+
+async function findAddress(text) {
+  if (!PROXY) { findMessage("Address search isn't available right now.", true); return; }
+  // The geocoder needs a state; most people will type just "street, city".
+  const query = /\b(WA|Washington)\b|\b\d{5}\b/i.test(text) ? text : `${text}, WA`;
+  const btn = $("find").querySelector("button[type=submit]");
+  btn.disabled = true;
+  findMessage("Looking up that address…");
+  try {
+    const { matches } = await getJSON(`${PROXY}/geocode?address=${encodeURIComponent(query)}`, false);
+    if (!matches?.length) {
+      findMessage("Couldn't find that address. Try including the city, like “123 Main St, Chehalis”.", true);
+      return;
+    }
+    const m = matches[0];
+    showLocation(m.lng, m.lat, m.address.replace(/, \d{5}$/, ""));
+  } catch (err) {
+    console.warn("geocode failed", err);
+    findMessage("The address lookup isn't responding. Please try again in a moment.", true);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function findMe() {
+  if (!navigator.geolocation) { findMessage("Your browser can't share its location.", true); return; }
+  findMessage("Finding your location…");
+  navigator.geolocation.getCurrentPosition(
+    (pos) => showLocation(pos.coords.longitude, pos.coords.latitude, "Your location"),
+    () => findMessage("Couldn't get your location. You can type an address instead.", true),
+    { enableHighAccuracy: true, timeout: 10000 },
+  );
+}
+
 // ------------------------------------------------------------------- events
+
+$("find").addEventListener("submit", (e) => { e.preventDefault(); findAddress($("find-address").value.trim()); });
+$("locate").addEventListener("click", findMe);
 
 $("election").addEventListener("change", (e) => loadElection(e.target.value));
 $("contest").addEventListener("change", (e) => { state.contestId = e.target.value; renderAll(); loadBreakdown(); });

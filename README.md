@@ -29,7 +29,9 @@ The results.votewa.gov cache intermittently serves responses without the `Access
 the browser then blocks them. Sometimes this lasts a while: in testing, one feed failed 20 of 20 times in a row.
 The page therefore fetches the feeds through a small Cloudflare Worker (`worker/`), at
 `https://lc-results-proxy.zacharyeckstein.workers.dev`. It fetches the feed server-side and always adds the
-header. It only passes through the three feed paths the map uses. If the Worker fails, the page goes to the feed
+header. It only passes through the three feed paths the map uses, plus `/geocode?address=`, which forwards
+"find my precinct" searches to the U.S. Census Bureau geocoder (no CORS header there either) without caching or
+logging them. If the Worker fails, the page goes to the feed
 directly, with retries.
 
 To change and redeploy the Worker:
