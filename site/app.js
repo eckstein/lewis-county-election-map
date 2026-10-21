@@ -421,6 +421,13 @@ function renderDetail() {
   $("detail").innerHTML = html;
 }
 
+// Counties can't tabulate or release results before 8 p.m. on Election Day
+// (RCW 29A.40.110, per the Secretary of State).
+function releaseTime(electionId) {
+  const day = new Date(+electionId.slice(0, 4), +electionId.slice(4, 6) - 1, +electionId.slice(6, 8));
+  return `8 p.m. on Election Day (${day.toLocaleDateString("en-US", { month: "short", day: "numeric" })})`;
+}
+
 function renderNotice() {
   const d = state.data;
   let msg = "";
@@ -429,11 +436,18 @@ function renderNotice() {
       <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/ballot-status-reports" target="_blank" rel="noopener">Secretary of State's</a>
       Daily Ballot Status Report.`;
   } else if (state.layerName === "counted" && !d.results.ballotsCast) {
-    msg = `No ballots counted yet. Counts appear here as soon as the county posts its first results on election night.`;
+    // Returned ballots are in hand but not tallied; say so, or the two
+    // numbers in the summary look contradictory.
+    const returned = d.returns.available && d.returns.returned;
+    msg = (returned
+      ? `<b>${fmt.format(returned)}</b> ballots have been returned so far, but none have been counted yet. `
+      : `No ballots counted yet. `) +
+      `Washington counties don't release vote counts until ${releaseTime(d.id)}.` +
+      (returned ? ` Until then, the Returned tab shows ballots coming in.` : "");
   } else if (state.layerName === "results" && !d.results.hasPrecinctResults) {
     msg = d.results.ballotsCast
       ? `The county hasn't published precinct-level results for this election yet. Countywide totals are shown at left.`
-      : `No results yet. They appear here as soon as the county posts its first count on election night.`;
+      : `No results yet. Washington counties don't release vote counts until ${releaseTime(d.id)}; results appear here as soon as the county posts its first count.`;
   }
   $("notice").hidden = !msg;
   $("notice").innerHTML = msg;
