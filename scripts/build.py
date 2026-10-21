@@ -167,6 +167,8 @@ def build_results(election):
             "name": text(item["name"]),
             "type": item.get("contestType"),
             "total": item.get("voteTotal") or 0,
+            "parentId": item.get("parentId"),
+            "counties": len(item.get("crossCounties") or []),
             "options": [{"name": text(o["name"]), "party": (o.get("party") or {}).get("abbreviation"),
                          "votes": o.get("voteCount") or 0} for o in options],
             "precincts": {},

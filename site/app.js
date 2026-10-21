@@ -102,10 +102,38 @@ function contest() {
   return contests.find((c) => c.id === state.contestId) || contests[0];
 }
 
+// Ballot measures (Yes/No, Approved/Rejected, Levy Yes/Levy No, ...) get a
+// diverging scale instead of leader colors: teal for yes, orange for no,
+// darker further from 50/50. Bins are the yes share's upper bounds.
+const MEASURE_BINS = [
+  [0.35, "#b4541f", "no", "65%+"],
+  [0.45, "#dd8a52", "no", "55–65%"],
+  [0.50, "#f3c9a6", "no", "50–55%"],
+  [0.55, "#a8dcd6", "yes", "50–55%"],
+  [0.65, "#4fa8a0", "yes", "55–65%"],
+  [1.01, "#1b6f69", "yes", "65%+"],
+];
+
+// Index of the "yes" option for a two-option measure, or -1.
+function yesIndex(c) {
+  if (c?.type !== "BallotMeasure" || c.options.length !== 2) return -1;
+  const yes = /\b(yes|approved?|for|maintained)\b/i;
+  const no = /\b(no|rejected?|against|repealed)\b/i;
+  const [a, b] = c.options.map((o) => o.name);
+  if (yes.test(a) && no.test(b)) return 0;
+  if (no.test(a) && yes.test(b)) return 1;
+  return -1;
+}
+
 // Colors go to options in order of countywide votes so the front-runners always
 // get distinct hues; each party's top vote-getter gets the party color.
 function optionColors(c) {
   if (c._colors) return c._colors;
+  const yi = yesIndex(c);
+  if (yi >= 0) {
+    c._colors = yi === 0 ? [MEASURE_BINS[5][1], MEASURE_BINS[0][1]] : [MEASURE_BINS[0][1], MEASURE_BINS[5][1]];
+    return c._colors;
+  }
   const rank = c.options.map((_, i) => i).sort((a, b) => c.options[b].votes - c.options[a].votes);
   const free = OPTION_COLORS.filter((col) => !Object.values(PARTY_COLORS).includes(col));
   const usedParties = new Set();
@@ -294,6 +322,12 @@ function styleFor(feature) {
   if (state.layerName === "results") {
     const lead = leaderFor(name);
     if (!lead) return { ...base, fillColor: NO_DATA };
+    const yi = yesIndex(contest());
+    if (yi >= 0) {
+      const votes = contest().precincts[name];
+      const yesShare = votes[yi] / lead.total;
+      return { ...base, fillColor: MEASURE_BINS.find(([max]) => yesShare < max)[1], fillOpacity: 0.9 };
+    }
     if (lead.tied) return { ...base, fillColor: "#9a9a96" };
     const colors = optionColors(contest());
     // Darker = bigger lead. 30% share or less is lightest, 80%+ is solid.
@@ -322,13 +356,22 @@ function renderLegend() {
   if (state.layerName === "results") {
     const c = contest();
     if (!c) { el.innerHTML = ""; return; }
+    const yi = yesIndex(c);
+    if (yi >= 0) {
+      const names = { yes: c.options[yi].name, no: c.options[1 - yi].name };
+      el.innerHTML = `<b>Winning side by precinct</b>` +
+        [...MEASURE_BINS].reverse().map(([, color, side, range]) =>
+          `<div><i style="background:${color}"></i>${esc(names[side])} ${range}</div>`).join("") +
+        `<div><i style="background:${NO_DATA}"></i>No results for this precinct</div>`;
+      return;
+    }
     const colors = optionColors(c);
     const leaders = new Set(Object.keys(c.precincts).map((n) => leaderFor(n)?.idx));
     const shown = c.options.map((o, i) => [o, i]).filter(([, i]) => leaders.has(i) || !Object.keys(c.precincts).length);
     el.innerHTML = `<b>Leader by precinct</b>` +
       shown.map(([o, i]) => `<div><i style="background:${colors[i]}"></i>${esc(o.name)}</div>`).join("") +
       `<div class="muted" style="margin-top:4px">Darker = larger lead</div>` +
-      `<div><i style="background:${NO_DATA}"></i>No precinct results</div>`;
+      `<div><i style="background:${NO_DATA}"></i>No results for this precinct</div>`;
     return;
   }
   let lo = 0;
@@ -493,6 +536,23 @@ function renderStatus() {
   $("status").innerHTML = [results, returns].filter(Boolean).join("<br>");
 }
 
+// Sections for the contest picker, matched on contest names, in ballot order.
+const GROUPS = [
+  ["Statewide measures", (c) => c.type === "BallotMeasure" && c.counties >= 39],
+  ["Federal", (c) => /\bU\.?S\.? (Representative|Senator)|Congressional/i.test(c.name)],
+  ["State legislature", (c) => /Legislative District|State (Representative|Senator)/i.test(c.name)],
+  ["Courts", (c) => /Court|Judge|Justice/i.test(c.name)],
+  ["County offices", (c) => /^(Assessor|Auditor|Clerk|Coroner|Prosecuting Attorney|Sheriff|Treasurer)$|County Commissioner/i.test(c.name)],
+  ["Party precinct committee officers", (c) => /Precinct Committee Officer/i.test(c.name)],
+  ["Local measures and districts", () => true],
+];
+
+function contestGroups(contests) {
+  const groups = GROUPS.map(([label]) => [label, []]);
+  for (const c of contests) groups[GROUPS.findIndex(([, test]) => test(c))][1].push(c);
+  return groups.filter(([, list]) => list.length);
+}
+
 function renderControls() {
   document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-checked", String(b.dataset.layer === state.layerName)));
   $("contest-wrap").hidden = state.layerName !== "results";
@@ -500,9 +560,14 @@ function renderControls() {
     ? "Votes counted so far, updated live."
     : "Ballots the county has received, updated daily.";
   const sel = $("contest");
-  const key = state.data.contests.map((c) => c.id).join(",");
+  // Rebuild when live data arrives too: the saved snapshot has no county counts.
+  const key = state.data.contests.map((c) => `${c.id}:${c.counties}`).join(",");
   if (sel.dataset.key !== key) {
-    sel.innerHTML = state.data.contests.map((c) => `<option value="${c.id}">${esc(c.name)}</option>`).join("");
+    sel.innerHTML = contestGroups(state.data.contests).map(([group, list]) =>
+      `<optgroup label="${esc(group)}">` + list.map((c) => {
+        const vs = c.counties >= 39 ? " · vs. statewide" : c.counties > 1 ? " · vs. district" : "";
+        return `<option value="${c.id}">${esc(c.name)}${vs}</option>`;
+      }).join("") + `</optgroup>`).join("");
     sel.dataset.key = key;
   }
   const c = contest();
