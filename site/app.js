@@ -396,9 +396,13 @@ function renderSummary() {
   $("summary").innerHTML = html;
 }
 
+// The precinct card sits right under the controls, so it's in view when a
+// precinct is clicked; with nothing selected it collapses to a one-line hint.
 function renderDetail() {
   const name = state.selected;
-  if (!name) { $("detail").innerHTML = `<p class="muted">Click a precinct for details.</p>`; return; }
+  const el = $("detail");
+  el.className = name ? "card detail" : "hint";
+  if (!name) { el.innerHTML = `Click a precinct on the map for its details.`; return; }
   const feat = state.geoLayer?.getLayers().find((l) => l.feature.properties.name === name)?.feature.properties || {};
   const p = precinct(name);
   const rows = [["Registered", p.registered != null ? fmt.format(p.registered) : "–"]];
@@ -406,7 +410,8 @@ function renderDetail() {
   rows.push(["Counted", p.counted != null ? fmt.format(p.counted) : "–", pctText(pct(p.counted, p.registered))]);
   if (state.data.returns.available && p.challenged) rows.push(["Challenged", fmt.format(p.challenged)]);
 
-  let html = `<h3>${esc(name)}</h3><p class="muted" style="margin-bottom:10px">Precinct ${esc(feat.num ?? "")} · LD ${esc(feat.ld ?? "–")} · CD ${esc(feat.cd ?? "–")}</p>` + statBlock(rows);
+  let html = `<div class="detail-head"><h3>${esc(name)}</h3><button class="close" type="button" aria-label="Close precinct details" title="Close (Esc)">&times;</button></div>` +
+    `<p class="muted" style="margin-bottom:10px">Precinct ${esc(feat.num ?? "")} · LD ${esc(feat.ld ?? "–")} · CD ${esc(feat.cd ?? "–")}</p>` + statBlock(rows);
   const c = contest();
   if (state.layerName === "results" && c) {
     const votes = c.precincts[name];
@@ -495,13 +500,27 @@ async function loadElection(id) {
     style: styleFor,
     onEachFeature: (f, layer) => {
       layer.bindTooltip(() => tooltipFor(f.properties.name), { sticky: true });
-      layer.on("click", () => { state.selected = f.properties.name; renderDetail(); restyle(); });
+      layer.on("click", () => selectPrecinct(state.selected === f.properties.name ? null : f.properties.name));
     },
   }).addTo(map);
   state.needsFit = true;
   fitToPrecincts();
   renderAll();
   await refreshLive();
+}
+
+// Clicking a precinct again, the close button or Esc clears the selection.
+function selectPrecinct(name) {
+  state.selected = name;
+  renderDetail();
+  restyle();
+  if (name) {
+    const el = $("detail");
+    el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    el.classList.remove("flash");
+    void el.offsetWidth;  // restart the highlight animation
+    el.classList.add("flash");
+  }
 }
 
 // Fitting while the map has no size (page loaded in a hidden tab) zooms all the
@@ -533,6 +552,8 @@ function tooltipFor(name) {
 
 $("election").addEventListener("change", (e) => loadElection(e.target.value));
 $("contest").addEventListener("change", (e) => { state.contestId = e.target.value; renderAll(); loadBreakdown(); });
+$("detail").addEventListener("click", (e) => { if (e.target.closest(".close")) selectPrecinct(null); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && state.selected) selectPrecinct(null); });
 document.querySelectorAll(".seg button").forEach((b) =>
   b.addEventListener("click", () => {
     state.layerName = b.dataset.layer;

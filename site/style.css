@@ -49,6 +49,17 @@ select {
 .seg button[aria-checked="true"] { background: var(--accent); color: #fff; }
 
 .card { border: 1px solid var(--line); border-radius: 8px; padding: 12px; }
+.hint { font-size: 13px; color: var(--muted); padding: 2px 2px 0; }
+.detail { border-left: 3px solid var(--accent); scroll-margin: 12px; }
+.detail.flash { animation: flash 0.9s ease-out; }
+@keyframes flash { from { background: #e6f0fa; } to { background: var(--panel); } }
+.detail-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.close {
+  flex: none; width: 28px; height: 28px; margin: -4px -6px 0 0;
+  border: 0; border-radius: 6px; background: transparent; color: var(--muted);
+  font-size: 22px; line-height: 1; cursor: pointer;
+}
+.close:hover, .close:focus-visible { background: #efefec; color: var(--text); }
 .notice { background: #fff8e6; border: 1px solid #f0dca8; border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.45; }
 .notice code { font-size: 12px; background: #fff; padding: 1px 4px; border-radius: 3px; }
 
