@@ -691,6 +691,7 @@ function renderAll() {
   renderStatus();
   restyle();
   writeUrl();
+  renderTable();
 }
 
 // ---------------------------------------------------------- shareable links
@@ -824,6 +825,105 @@ function tooltipFor(name) {
   return `<b>${esc(name)}</b><br>${line}`;
 }
 
+// ---------------------------------------------------------------- table view
+
+// A sortable table of every precinct for the current tab (and contest), with
+// a countywide total row and a CSV download of exactly what's shown.
+state.sort = { key: "name", dir: 1 };
+
+function tableModel() {
+  const d = state.data;
+  const precincts = state.geoLayer.getLayers().map((l) => l.feature.properties);
+  const c = contest();
+  if (state.layerName === "results" && c) {
+    const totalFor = (votes) => (votes ? votes.reduce((a, b) => a + b, 0) : null);
+    const columns = [
+      { key: "name", label: "Precinct" },
+      { key: "total", label: "Votes", num: true },
+      ...c.options.map((o, i) => ({ key: `o${i}`, label: o.name, num: true, pctOf: "total" })),
+    ];
+    // Only precincts with results: district contests cover a few precincts, and
+    // the county withholds some tiny ones.
+    const rows = precincts.filter((f) => c.precincts[f.name]).map((f) => {
+      const votes = c.precincts[f.name];
+      const row = { name: f.name, num: f.num, total: totalFor(votes) };
+      c.options.forEach((_, i) => { row[`o${i}`] = votes[i]; });
+      return row;
+    });
+    const total = { name: "Lewis County", total: c.options.reduce((a, o) => a + o.votes, 0) };
+    c.options.forEach((o, i) => { total[`o${i}`] = o.votes; });
+    const title = rows.length ? `${c.name} — results by precinct` : `${c.name} — no precinct results yet`;
+    return { title, file: slug(c.name), columns, rows, total };
+  }
+
+  const columns = [
+    { key: "name", label: "Precinct" },
+    { key: "ld", label: "Leg. district", num: true },
+    { key: "registered", label: "Registered voters", num: true },
+    ...(d.returns.available ? [
+      { key: "returned", label: "Ballots received", num: true, pctOf: "registered" },
+      { key: "challenged", label: "Challenged", num: true },
+    ] : []),
+    ...(d.results.ballotsCast ? [{ key: "counted", label: "Ballots counted", num: true, pctOf: "registered" }] : []),
+  ];
+  const rows = precincts.map((f) => {
+    const p = precinct(f.name);
+    return { name: f.name, num: f.num, ld: f.ld, registered: p.registered ?? null, returned: p.returned ?? 0,
+      challenged: p.challenged ?? 0, counted: p.counted ?? 0 };
+  });
+  const total = { name: "Lewis County", ld: null, registered: d.results.registered, returned: d.returns.returned,
+    challenged: d.returns.challenged, counted: d.results.ballotsCast };
+  return { title: "Ballots received by precinct", file: "ballots-received", columns, rows, total };
+}
+
+function renderTable() {
+  if ($("table-view").hidden) return;
+  const m = tableModel();
+  const { key, dir } = state.sort;
+  const col = m.columns.find((c) => c.key === key) || m.columns[0];
+  m.rows.sort((a, b) => {
+    const x = a[col.key], y = b[col.key];
+    if (x == null || y == null) return x == null ? (y == null ? 0 : 1) : -1;  // blanks last
+    return (col.num ? x - y : String(x).localeCompare(String(y), "en", { numeric: true })) * dir;
+  });
+  const cell = (row, c) => {
+    const v = row[c.key];
+    if (c.key === "name") return esc(v);
+    if (v == null) return "–";
+    const share = c.pctOf && row[c.pctOf] ? `<small>${pctText(pct(v, row[c.pctOf]))}</small>` : "";
+    return fmt.format(v) + share;
+  };
+  $("table-title").textContent = m.title;
+  $("table").innerHTML =
+    `<thead><tr>${m.columns.map((c) => `<th scope="col" data-key="${c.key}"${c.key === col.key ? ` aria-sort="${dir > 0 ? "ascending" : "descending"}"` : ""}>${esc(c.label)}</th>`).join("")}</tr></thead>` +
+    `<tbody>${m.rows.map((r) => `<tr data-name="${esc(r.name)}">${m.columns.map((c) => `<td>${cell(r, c)}</td>`).join("")}</tr>`).join("")}</tbody>` +
+    `<tfoot><tr>${m.columns.map((c) => `<td>${cell(m.total, c)}</td>`).join("")}</tr></tfoot>`;
+}
+
+function csvText(m) {
+  const quote = (v) => (v == null ? "" : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
+  const header = ["Precinct", "Precinct number", ...m.columns.slice(1).map((c) => c.label)];
+  const lines = [header, ...m.rows.map((r) => [r.name, r.num, ...m.columns.slice(1).map((c) => r[c.key])]),
+    [m.total.name, "", ...m.columns.slice(1).map((c) => m.total[c.key])]];
+  return lines.map((l) => l.map(quote).join(",")).join("\r\n");
+}
+
+function downloadCsv() {
+  const m = tableModel();
+  const blob = new Blob([csvText(m)], { type: "text/csv" });
+  const a = Object.assign(document.createElement("a"), {
+    href: URL.createObjectURL(blob),
+    download: `lewis-county-${state.electionId}-${m.file}.csv`,
+  });
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+function openTable(open) {
+  $("table-view").hidden = !open;
+  if (open) { renderTable(); $("table-close").focus(); } else { $("open-table").focus(); }
+}
+
 // --------------------------------------------------------- find my precinct
 
 // An address is geocoded by the U.S. Census Bureau through the Worker (the
@@ -934,7 +1034,30 @@ $("summary").addEventListener("pointerleave", () => {
   $("summary").querySelectorAll(".chart-tip").forEach((t) => { t.hidden = true; });
   $("summary").querySelectorAll(".hit.on").forEach((h) => h.classList.remove("on"));
 });
-document.addEventListener("keydown", (e) => { if (e.key === "Escape" && state.selected) selectPrecinct(null); });
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  if (!$("table-view").hidden) openTable(false);
+  else if (state.selected) selectPrecinct(null);
+});
+$("open-table").addEventListener("click", () => openTable(true));
+$("table-close").addEventListener("click", () => openTable(false));
+$("csv").addEventListener("click", downloadCsv);
+$("table").addEventListener("click", (e) => {
+  const th = e.target.closest("th[data-key]");
+  if (th) {
+    const key = th.dataset.key;
+    state.sort = { key, dir: state.sort.key === key ? -state.sort.dir : key === "name" ? 1 : -1 };
+    renderTable();
+    return;
+  }
+  const tr = e.target.closest("tbody tr");
+  if (tr) {
+    openTable(false);
+    const layer = state.geoLayer.getLayers().find((l) => l.feature.properties.name === tr.dataset.name);
+    if (layer) map.flyToBounds(layer.getBounds(), { maxZoom: 13, padding: [24, 24], duration: 0.6 });
+    selectPrecinct(tr.dataset.name);
+  }
+});
 document.querySelectorAll(".seg button").forEach((b) =>
   b.addEventListener("click", () => {
     state.layerName = b.dataset.layer;

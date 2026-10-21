@@ -85,6 +85,38 @@ select {
 .find-msg:empty { display: none; }
 .find-msg.error { color: #a1301f; }
 
+.view-actions { display: flex; gap: 16px; }
+.open-table {
+  font: inherit; font-size: 13px; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer;
+}
+.open-table::before { content: "▦ "; }
+.open-table:hover { text-decoration: underline; }
+
+/* Table view: over the map on desktop, full screen on phones. */
+.table-view {
+  position: fixed; top: 0; right: 0; bottom: 0; left: 360px; z-index: 1000;
+  display: flex; flex-direction: column; background: var(--panel); border-left: 1px solid var(--line);
+}
+.table-view[hidden] { display: none; }
+.table-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 16px 18px 10px; border-bottom: 1px solid var(--line); }
+.table-head h2 { font-size: 16px; text-transform: none; letter-spacing: 0; color: var(--text); margin: 0; }
+.table-head .muted { margin: 2px 0 0; font-size: 12px; }
+.table-actions { display: flex; align-items: center; gap: 8px; flex: none; }
+#csv { font: inherit; font-size: 13px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--text); cursor: pointer; }
+#csv:hover { border-color: var(--accent); color: var(--accent); }
+.table-scroll { flex: 1; overflow: auto; }
+#table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+#table th, #table td { padding: 7px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; text-align: right; }
+#table th:first-child, #table td:first-child { text-align: left; position: sticky; left: 0; background: var(--panel); }
+#table thead th { position: sticky; top: 0; z-index: 1; background: #f3f3f0; font-weight: 600; cursor: pointer; user-select: none; }
+#table thead th:first-child { z-index: 2; background: #f3f3f0; }
+#table thead th[aria-sort="ascending"]::after { content: " ▲"; font-size: 9px; }
+#table thead th[aria-sort="descending"]::after { content: " ▼"; font-size: 9px; }
+#table tbody tr { cursor: pointer; }
+#table tbody tr:hover td { background: #f1f6fb; }
+#table tfoot td { font-weight: 600; background: #fafaf8; position: sticky; bottom: 0; }
+#table td small { color: var(--muted); margin-left: 4px; }
+
 .share {
   align-self: flex-start; font: inherit; font-size: 13px; color: var(--accent);
   background: none; border: 0; padding: 0; cursor: pointer;
@@ -179,4 +211,5 @@ select {
   .legend div { display: inline-block; margin-right: 8px; white-space: nowrap; }
   .legend i { width: 10px; height: 8px; margin-right: 4px; }
   .leaflet-control-attribution { font-size: 9px; }
+  .table-view { left: 0; border-left: 0; }
 }

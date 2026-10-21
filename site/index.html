@@ -47,7 +47,10 @@
       <label id="contest-wrap">Contest
         <select id="contest"></select>
       </label>
-      <button id="share" class="share" type="button">Share this view</button>
+      <div class="view-actions">
+        <button id="share" class="share" type="button">Share this view</button>
+        <button id="open-table" class="open-table" type="button" aria-haspopup="dialog">Table</button>
+      </div>
     </section>
 
     <div id="updated" class="updated" role="status" hidden></div>
@@ -72,6 +75,20 @@
     </footer>
   </aside>
   <main id="map"></main>
+
+  <div id="table-view" class="table-view" role="dialog" aria-modal="true" aria-labelledby="table-title" hidden>
+    <div class="table-head">
+      <div>
+        <h2 id="table-title"></h2>
+        <p class="muted">Click a column to sort. Click a precinct to see it on the map.</p>
+      </div>
+      <div class="table-actions">
+        <button id="csv" type="button">Download CSV</button>
+        <button id="table-close" class="close" type="button" aria-label="Close table" title="Close (Esc)">&times;</button>
+      </div>
+    </div>
+    <div class="table-scroll"><table id="table"></table></div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="app.js"></script>
