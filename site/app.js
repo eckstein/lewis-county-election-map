@@ -67,6 +67,21 @@ async function getJSON(url, bust = true) {
   return res.json();
 }
 
+// The results.votewa.gov cache sometimes serves copies without the
+// Access-Control-Allow-Origin header (about a third of requests in testing,
+// whatever the query string), and the browser then blocks the response. Each
+// attempt is independent, so retry a few times before giving up.
+async function getFeed(url, attempts = 5) {
+  for (let i = 1; ; i++) {
+    try {
+      return await getJSON(url, false);
+    } catch (err) {
+      if (i >= attempts) throw err;
+      await new Promise((r) => setTimeout(r, 400 * i));
+    }
+  }
+}
+
 function precinct(name) {
   return state.data?.precincts[name] || {};
 }
@@ -103,7 +118,7 @@ function optionColors(c) {
 // contest are kept until fresh ones load, so the map doesn't flash gray.
 async function fetchLive() {
   const id = state.electionId;
-  const feed = await getJSON(`${RESULTS_API}/${id}/data`, false);
+  const feed = await getFeed(`${RESULTS_API}/${id}/data`);
   if (id !== state.electionId) return;
   const d = state.data;
   const el = feed.election;
@@ -153,7 +168,7 @@ async function fetchLive() {
 // Totals across all counties for each multi-county contest, keyed by the
 // statewide contest id that county contests point to with parentId.
 async function fetchWide(id) {
-  const feed = await getJSON(`${STATE_API}/${id}/data`, false);
+  const feed = await getFeed(`${STATE_API}/${id}/data`);
   if (id !== state.electionId) return;
   for (const item of feed.ballotItems || []) {
     state.wide.set(item.id, {
@@ -183,7 +198,7 @@ async function loadBreakdown() {
   if (!c || c.loaded || c.loading || !state.live || !state.data.results.hasPrecinctResults) return;
   c.loading = true;
   try {
-    const detail = await getJSON(`${RESULTS_API}/${state.electionId}/data/ballot-item/${c.id}`, false);
+    const detail = await getFeed(`${RESULTS_API}/${state.electionId}/data/ballot-item/${c.id}`);
     const precincts = {};
     for (const row of detail.ballotItemWithBreakdown?.breakdownResults || []) {
       const votes = new Map(row.ballotOptions.map((o) => [o.id, o.voteCount || 0]));
