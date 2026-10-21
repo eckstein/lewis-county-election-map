@@ -69,7 +69,8 @@
         Official results are certified by the
         <a href="https://elections.lewiscountywa.gov/" target="_blank" rel="noopener">Lewis County Auditor</a>.
         Addresses you search for are looked up by the U.S. Census Bureau's geocoder and aren't stored; "Use my
-        location" stays on your device.
+        location" stays on your device. Visits are counted with Cloudflare Web Analytics, which uses no cookies
+        and doesn't track individuals.
         <a href="https://github.com/eckstein/lewis-county-election-map" target="_blank" rel="noopener">Source code</a>.
       </p>
     </footer>
@@ -92,5 +93,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="app.js"></script>
+  <!-- Cloudflare Web Analytics: cookie-free visit counts. The token identifies the site; it isn't a secret. -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "aafe9ad38ead4d3689446bed4373c6c2"}'></script>
 </body>
 </html>
