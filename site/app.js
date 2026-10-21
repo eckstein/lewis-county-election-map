@@ -529,7 +529,13 @@ function fitToPrecincts() {
   map.invalidateSize();
   const size = map.getSize();
   if (!state.needsFit || !state.geoLayer || !size.x || !size.y) return;
-  map.fitBounds(state.geoLayer.getBounds(), { padding: [12, 12] });
+  // Fit at an exact zoom: the map's 0.25 zoom step would round down and leave
+  // up to ~15% extra margin, which shows on a phone. Leaflet applies the step
+  // in both calls, so lift it while fitting.
+  const snap = map.options.zoomSnap;
+  map.options.zoomSnap = 0;
+  map.fitBounds(state.geoLayer.getBounds(), { padding: [8, 8], animate: false });
+  map.options.zoomSnap = snap;
   state.needsFit = false;
 }
 new ResizeObserver(fitToPrecincts).observe($("map"));

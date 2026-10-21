@@ -95,8 +95,18 @@ select {
 .legend b { display: block; margin-bottom: 4px; }
 .legend i { display: inline-block; width: 14px; height: 10px; margin-right: 6px; vertical-align: -1px; border-radius: 2px; }
 
-@media (max-width: 760px) {
+/* Stacked layout for phones and portrait tablets: beside a 360px panel, the map
+   would be narrow and tall, with the county a thin band in the middle. */
+@media (max-width: 900px) {
   body { flex-direction: column-reverse; }
-  #map { height: 55vh; flex: none; }
+  /* Lewis County is about three times wider than tall, so a tall map on a
+     phone is mostly empty space around it. */
+  #map { height: clamp(260px, 72vw, 50vh); flex: none; }
   .panel { width: 100%; height: auto; flex: 1; border-right: 0; border-top: 1px solid var(--line); padding: 14px 16px; }
+  /* A compact legend strip so it doesn't cover the short map. */
+  .legend { max-width: calc(100vw - 24px); padding: 5px 8px; font-size: 11px; line-height: 1.4; }
+  .legend b { margin-bottom: 1px; }
+  .legend div { display: inline-block; margin-right: 8px; white-space: nowrap; }
+  .legend i { width: 10px; height: 8px; margin-right: 4px; }
+  .leaflet-control-attribution { font-size: 9px; }
 }
