@@ -114,6 +114,17 @@ select {
 .seg-rest { background: #e6e6e1; }
 .progress-key { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; font-size: 12px; color: var(--muted); }
 .progress-key i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.chart { position: relative; margin-top: 16px; }
+.chart-title { font-size: 13px; font-weight: 600; margin: 0 0 4px; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .hit { fill: transparent; cursor: default; }
+.chart .hit.on { fill: rgba(29, 92, 143, 0.06); }
+.chart-value { font-size: 11px; font-weight: 600; fill: var(--text); font-variant-numeric: tabular-nums; }
+.chart-axis { font-size: 10px; fill: var(--muted); }
+.chart-tip {
+  position: absolute; pointer-events: none; white-space: nowrap; padding: 4px 8px; border-radius: 5px;
+  font-size: 12px; background: #1f2328; color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
 .challenged { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
 .challenged b { color: var(--text); font-weight: 600; }
 

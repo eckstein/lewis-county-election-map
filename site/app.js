@@ -491,6 +491,52 @@ function ballotProgress({ registered, received, counted, challenged }, place, br
     (hasReceived && challenged ? `<p class="challenged">Challenged: <b>${fmt.format(challenged)}</b></p>` : "");
 }
 
+// Columns of ballots received per day (by the date the county received them).
+// Days with none are filled in so the dates stay evenly spaced; the latest day
+// is labeled and every column has a hover tooltip.
+function receivedChart(daily) {
+  if (!daily?.length) return "";
+  const counts = new Map(daily);
+  const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  const parse = (s) => new Date(`${s}T00:00`);
+  const days = [];
+  for (let d = parse(daily[0][0]); d <= parse(daily.at(-1)[0]); d.setDate(d.getDate() + 1)) {
+    days.push([new Date(d), counts.get(iso(d)) || 0]);
+  }
+  const label = (d) => d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+
+  const W = 320, H = 110, TOP = 20, BOTTOM = 20, plotH = H - TOP - BOTTOM;
+  const max = Math.max(...days.map(([, n]) => n), 1);
+  const slot = W / days.length;
+  const bw = Math.max(2, Math.min(24, slot - 2));
+  const cols = days.map(([d, n], i) => {
+    const x = i * slot + (slot - bw) / 2;
+    const h = (n / max) * plotH;
+    const y = TOP + plotH - h;
+    const r = Math.min(4, h, bw / 2);
+    const shape = h > 0
+      ? `<path d="M${x},${TOP + plotH} V${y + r} Q${x},${y} ${x + r},${y} H${x + bw - r} Q${x + bw},${y} ${x + bw},${y + r} V${TOP + plotH} Z" fill="#3a7bb8"/>`
+      : "";
+    const tip = `${label(d)}: ${fmt.format(n)} ballot${n === 1 ? "" : "s"}`;
+    return shape + `<rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H - BOTTOM}" data-tip="${esc(tip)}"><title>${esc(tip)}</title></rect>`;
+  }).join("");
+
+  const [lastDay, lastN] = days.at(-1);
+  const lastX = (days.length - 1) * slot + slot / 2;
+  const lastY = TOP + plotH - (lastN / max) * plotH - 5;
+  const total = days.reduce((a, [, n]) => a + n, 0);
+
+  return `<div class="chart">` +
+    `<h3 class="chart-title">Ballots received each day</h3>` +
+    `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Ballots received each day, ${fmt.format(total)} in all, ${fmt.format(lastN)} on ${label(lastDay)}">` +
+    `<line x1="0" x2="${W}" y1="${TOP + plotH + 0.5}" y2="${TOP + plotH + 0.5}" stroke="#d6d6d1" stroke-width="1"/>` +
+    cols +
+    `<text x="${Math.max(20, Math.min(lastX, W - 20))}" y="${lastY}" text-anchor="middle" class="chart-value">${fmt.format(lastN)}</text>` +
+    `<text x="0" y="${H - 4}" class="chart-axis">${label(days[0][0])}</text>` +
+    (days.length > 1 ? `<text x="${W}" y="${H - 4}" text-anchor="end" class="chart-axis">${label(lastDay)}</text>` : "") +
+    `</svg><div class="chart-tip" hidden></div></div>`;
+}
+
 function renderSummary() {
   const d = state.data;
   const progress = ballotProgress({
@@ -501,6 +547,7 @@ function renderSummary() {
   }, "Lewis County");
 
   let html = `<h2>Countywide</h2>` + progress;
+  if (state.layerName === "returned" && d.returns.available) html += receivedChart(d.returns.daily);
   const c = contest();
   if (state.layerName === "results" && c) {
     const local = c.options.map((o) => o.votes);
@@ -845,6 +892,26 @@ $("election").addEventListener("change", (e) => loadElection(e.target.value));
 $("contest").addEventListener("change", (e) => { state.contestId = e.target.value; renderAll(); loadBreakdown(); });
 $("detail").addEventListener("click", (e) => { if (e.target.closest(".close")) selectPrecinct(null); });
 $("share").addEventListener("click", shareView);
+
+// Hover tooltip for chart columns (each has a data-tip and a wide hit area).
+$("summary").addEventListener("pointermove", (e) => {
+  const hit = e.target.closest("[data-tip]");
+  const chart = e.target.closest(".chart");
+  const tip = chart?.querySelector(".chart-tip");
+  chart?.querySelectorAll(".hit.on").forEach((h) => h !== hit && h.classList.remove("on"));
+  if (!tip) return;
+  if (!hit) { tip.hidden = true; return; }
+  hit.classList.add("on");
+  const box = chart.getBoundingClientRect();
+  tip.textContent = hit.dataset.tip;
+  tip.hidden = false;
+  tip.style.left = `${Math.min(e.clientX - box.left + 10, box.width - tip.offsetWidth)}px`;
+  tip.style.top = `${e.clientY - box.top - 34}px`;
+});
+$("summary").addEventListener("pointerleave", () => {
+  $("summary").querySelectorAll(".chart-tip").forEach((t) => { t.hidden = true; });
+  $("summary").querySelectorAll(".hit.on").forEach((h) => h.classList.remove("on"));
+});
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && state.selected) selectPrecinct(null); });
 document.querySelectorAll(".seg button").forEach((b) =>
   b.addEventListener("click", () => {
