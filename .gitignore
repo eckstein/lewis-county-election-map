@@ -5,3 +5,7 @@ data/matchback/**
 !data/matchback/**/
 !data/matchback/README.md
 __pycache__/
+
+# Wrangler local state
+worker/.wrangler/
+node_modules/

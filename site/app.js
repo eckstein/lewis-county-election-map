@@ -1,16 +1,19 @@
 // Lewis County election map: precinct choropleth of ballot returns, ballots
 // counted and contest results.
 //
-// Results come live from the county's results.votewa.gov feed, which allows
-// cross-origin requests: the summary every LIVE_MS, and precinct results for the
-// contest being viewed. site/data/ (written by scripts/build.py) holds the
-// boundaries, the daily ballot-return totals, and a results snapshot used when
-// the live feed can't be reached.
+// Results come live from the county's results.votewa.gov feed: the summary
+// every LIVE_MS, and precinct results for the contest being viewed. site/data/
+// (written by scripts/build.py) holds the boundaries, the daily ballot-return
+// totals, and a results snapshot used when the live feed can't be reached.
 
-const RESULTS_API = "https://results.votewa.gov/results/public/api/elections/lewis-county-wa";
+// Feed requests go through our Cloudflare Worker (worker/) first, which always
+// adds the CORS header; the feed itself is the fallback. Empty skips the Worker.
+const PROXY = "https://lc-results-proxy.zacharyeckstein.workers.dev";
+const FEED = "https://results.votewa.gov/results/public/api/elections";
+const COUNTY = "lewis-county-wa";
 // Totals for contests that extend beyond the county (statewide measures and
 // races, legislative and congressional districts) come from the state feed.
-const STATE_API = "https://results.votewa.gov/results/public/api/elections/washington";
+const STATE = "washington";
 const LIVE_MS = 60 * 1000;
 const STATIC_MS = 5 * 60 * 1000;
 const SEQ = ["#dbe8f4", "#a8c8e4", "#6fa3d0", "#3a7bb8", "#15508e"];
@@ -69,12 +72,20 @@ async function getJSON(url, bust = true) {
 
 // The results.votewa.gov cache sometimes serves copies without the
 // Access-Control-Allow-Origin header (about a third of requests in testing,
-// whatever the query string), and the browser then blocks the response. Each
-// attempt is independent, so retry a few times before giving up.
-async function getFeed(url, attempts = 5) {
+// whatever the query string), and the browser then blocks the response. The
+// Worker avoids that; going direct, each attempt is independent, so retry a few
+// times before giving up.
+async function getFeed(path, attempts = 5) {
+  if (PROXY) {
+    try {
+      return await getJSON(`${PROXY}/${path}`, false);
+    } catch (err) {
+      console.warn("proxy failed; trying the feed directly", err);
+    }
+  }
   for (let i = 1; ; i++) {
     try {
-      return await getJSON(url, false);
+      return await getJSON(`${FEED}/${path}`, false);
     } catch (err) {
       if (i >= attempts) throw err;
       await new Promise((r) => setTimeout(r, 400 * i));
@@ -118,7 +129,7 @@ function optionColors(c) {
 // contest are kept until fresh ones load, so the map doesn't flash gray.
 async function fetchLive() {
   const id = state.electionId;
-  const feed = await getFeed(`${RESULTS_API}/${id}/data`);
+  const feed = await getFeed(`${COUNTY}/${id}/data`);
   if (id !== state.electionId) return;
   const d = state.data;
   const el = feed.election;
@@ -168,7 +179,7 @@ async function fetchLive() {
 // Totals across all counties for each multi-county contest, keyed by the
 // statewide contest id that county contests point to with parentId.
 async function fetchWide(id) {
-  const feed = await getFeed(`${STATE_API}/${id}/data`);
+  const feed = await getFeed(`${STATE}/${id}/data`);
   if (id !== state.electionId) return;
   for (const item of feed.ballotItems || []) {
     state.wide.set(item.id, {
@@ -198,7 +209,7 @@ async function loadBreakdown() {
   if (!c || c.loaded || c.loading || !state.live || !state.data.results.hasPrecinctResults) return;
   c.loading = true;
   try {
-    const detail = await getFeed(`${RESULTS_API}/${state.electionId}/data/ballot-item/${c.id}`);
+    const detail = await getFeed(`${COUNTY}/${state.electionId}/data/ballot-item/${c.id}`);
     const precincts = {};
     for (const row of detail.ballotItemWithBreakdown?.breakdownResults || []) {
       const votes = new Map(row.ballotOptions.map((o) => [o.id, o.voteCount || 0]));

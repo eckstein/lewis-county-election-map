@@ -19,6 +19,24 @@ An interactive map of Lewis County, WA showing three things by precinct:
 - If the live feed can't be reached, the page falls back to the results snapshot saved in `site/data/` by the last
   build, and says so.
 
+## Results proxy (Cloudflare Worker)
+
+The results.votewa.gov cache intermittently serves responses without the `Access-Control-Allow-Origin` header, and
+the browser then blocks them. Sometimes this lasts a while: in testing, one feed failed 20 of 20 times in a row.
+The page therefore fetches the feeds through a small Cloudflare Worker (`worker/`), at
+`https://lc-results-proxy.zacharyeckstein.workers.dev`. It fetches the feed server-side and always adds the
+header. It only passes through the three feed paths the map uses. If the Worker fails, the page goes to the feed
+directly, with retries.
+
+To change and redeploy the Worker:
+
+```bash
+cd worker && npx wrangler@4 deploy
+```
+
+Cloudflare's free plan allows 100,000 Worker requests a day. Each open copy of the map makes about 2-3 a minute.
+If the limit is reached, the map falls back to the direct feed until the daily reset.
+
 ## Running it locally
 
 ```bash
