@@ -537,6 +537,28 @@ function receivedChart(daily) {
     `</svg><div class="chart-tip" hidden></div></div>`;
 }
 
+// How ballots came in (drop box, mail, email) and the drop boxes by use, from
+// the matchback file's Return Method and Return Location columns.
+function howReturned(r) {
+  const methods = Object.entries(r.methods || {});
+  if (!methods.length) return "";
+  const row = (name, n, scale, value) =>
+    `<li><div class="row"><span class="name">${esc(name)}</span><span class="num">${value}</span></div>` +
+    `<div class="track"><div class="fill" style="width:${scale ? (100 * n) / scale : 0}%;background:#3a7bb8"></div></div></li>`;
+  const total = methods.reduce((a, [, n]) => a + n, 0);
+  let html = `<div class="how"><h3 class="chart-title">How ballots came in</h3><ul class="bars">` +
+    methods.map(([m, n]) => row(m, n, total, `${fmt.format(n)} · ${pctText(pct(n, total))}`)).join("") + `</ul>`;
+
+  const boxes = Object.entries(r.locations || {}).map(([name, n]) => [name.replace(/\s*Drop Box$/i, ""), n]);
+  if (boxes.length) {
+    const max = boxes[0][1];
+    const list = (items) => `<ul class="bars">` + items.map(([b, n]) => row(b, n, max, fmt.format(n))).join("") + `</ul>`;
+    html += `<h3 class="chart-title" style="margin-top:14px">Busiest drop boxes</h3>` + list(boxes.slice(0, 5)) +
+      (boxes.length > 5 ? `<details class="more"><summary>Show all ${boxes.length} drop boxes</summary>${list(boxes.slice(5))}</details>` : "");
+  }
+  return html + `</div>`;
+}
+
 function renderSummary() {
   const d = state.data;
   const progress = ballotProgress({
@@ -547,7 +569,7 @@ function renderSummary() {
   }, "Lewis County");
 
   let html = `<h2>Countywide</h2>` + progress;
-  if (state.layerName === "returned" && d.returns.available) html += receivedChart(d.returns.daily);
+  if (state.layerName === "returned" && d.returns.available) html += receivedChart(d.returns.daily) + howReturned(d.returns);
   const c = contest();
   if (state.layerName === "results" && c) {
     const local = c.options.map((o) => o.votes);

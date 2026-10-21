@@ -291,6 +291,8 @@ def build_returns(election_id, boundaries):
     counts = defaultdict(Counter)
     statuses = Counter()
     daily = Counter()
+    methods = Counter()    # drop box / mail / email ...
+    locations = Counter()  # which drop box or vote center
     unmatched = Counter()
     rows_seen = 0
 
@@ -302,6 +304,8 @@ def build_returns(election_id, boundaries):
         i_prec = find_col(header, "precinctname", "precinctcode", "precinct", avoid=("split",))
         i_status = find_col(header, "ballotstatus", "status", avoid=("voterstatus", "registration"))
         i_date = find_col(header, "receiveddate", "datereceived", "received")
+        i_method = find_col(header, "returnmethod")
+        i_location = find_col(header, "returnlocation")
         if i_prec is None:
             log(f"  ! {member}: no precinct column in header {header[:12]}...")
             continue
@@ -330,6 +334,10 @@ def build_returns(election_id, boundaries):
                 d = parse_date(row[i_date])
                 if d:
                     daily[d.isoformat()] += 1
+            if i_method is not None and len(row) > i_method:
+                methods[row[i_method].strip() or "Unknown"] += 1
+            if i_location is not None and len(row) > i_location and row[i_location].strip():
+                locations[" ".join(row[i_location].split())] += 1
 
     if unmatched:
         log(f"  ! {sum(unmatched.values())} returned ballots had unmatched precincts, e.g. {list(unmatched)[:5]}")
@@ -345,6 +353,8 @@ def build_returns(election_id, boundaries):
         "unmatched": sum(unmatched.values()),
         "statusCounts": dict(statuses),
         "daily": sorted(daily.items()),
+        "methods": dict(methods.most_common()),
+        "locations": dict(locations.most_common()),
     }
     by_precinct = {name: dict(c) for name, c in counts.items()}
     RETURNS.mkdir(parents=True, exist_ok=True)

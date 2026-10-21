@@ -125,6 +125,11 @@ select {
   position: absolute; pointer-events: none; white-space: nowrap; padding: 4px 8px; border-radius: 5px;
   font-size: 12px; background: #1f2328; color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,.2);
 }
+.how { margin-top: 18px; }
+.how .bars { margin-top: 6px; }
+.more { margin-top: 8px; font-size: 13px; }
+.more summary { color: var(--accent); cursor: pointer; }
+.more .bars { margin-top: 8px; }
 .challenged { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
 .challenged b { color: var(--text); font-weight: 600; }
 
