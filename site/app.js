@@ -2,9 +2,11 @@
 // contest results.
 //
 // Results come live from the county's results.votewa.gov feed: the summary
-// every LIVE_MS, and precinct results for the contest being viewed. site/data/
-// (written by scripts/build.py) holds the boundaries, the daily ballot-return
-// totals, and a results snapshot used when the live feed can't be reached.
+// every LIVE_MS, and precinct results for the contest being viewed. Ballot-return
+// totals for the current election come from the Worker's /returns route, which
+// totals the state's daily file as soon as it's posted. site/data/ (written by
+// scripts/build.py) holds the boundaries, the last committed ballot-return
+// totals, and a results snapshot used when the live feeds can't be reached.
 
 // Feed requests go through our Cloudflare Worker (worker/) first, which always
 // adds the CORS header; the feed itself is the fallback. Empty skips the Worker.
@@ -41,6 +43,8 @@ const state = {
   live: null,          // true/false after the first live check
   liveCheckedAt: null,
   wide: new Map(),     // parent contest id -> totals across every county it covers
+  precinctKey: null,   // matchback precinct value -> map precinct name
+  noLiveReturns: new Set(),  // elections the Worker has no /returns for
 };
 
 const $ = (id) => document.getElementById(id);
@@ -318,22 +322,72 @@ function announceNewResults() {
 
 document.addEventListener("visibilitychange", () => { if (!document.hidden) document.title = BASE_TITLE; });
 
-// Ballot-return totals change once a day, when a new build is published.
+// Ballot-return totals change once a day, when the state posts its file. Totals
+// never go back to an older file, whichever source they came from.
+function applyReturns(returns, byName) {
+  const d = state.data;
+  if (d.returns.available && returns.fileTime && d.returns.fileTime && new Date(returns.fileTime) <= new Date(d.returns.fileTime)) {
+    return false;
+  }
+  d.returns = returns;
+  for (const name of new Set([...Object.keys(d.precincts), ...Object.keys(byName)])) {
+    const p = byName[name] || {};
+    const target = (d.precincts[name] ||= {});
+    for (const key of ["returned", "accepted", "challenged"]) target[key] = p[key] || 0;
+  }
+  return true;
+}
+
+// The Worker keys precincts by the state file's own value, which can be the
+// precinct's name, number or state code, as scripts/build.py matches them.
+function precinctKeys(geo) {
+  const byName = {}, byNum = {}, byCode = {};
+  for (const { properties: p } of geo.features) {
+    byName[p.name] = p.name;
+    byNum[String(p.num)] = p.name;
+    byCode[String(p.code).toUpperCase()] = p.name;
+  }
+  return (key) => byName[key] || byCode[key] || byNum[key.replace(/^0+/, "") || "0"];
+}
+
+async function refreshLiveReturns() {
+  const id = state.electionId;
+  if (!PROXY || state.noLiveReturns.has(id)) return false;
+  const res = await fetch(`${PROXY}/returns/${id}`);
+  if (res.status === 404) { state.noLiveReturns.add(id); return false; }
+  if (!res.ok) throw new Error(`live returns: ${res.status} ${await res.text()}`);
+  const fresh = await res.json();
+  if (state.electionId !== id) return false;
+  const byName = {};
+  let unmatched = 0;
+  for (const [key, p] of Object.entries(fresh.precincts)) {
+    const name = state.precinctKey(key);
+    if (!name) { unmatched += p.returned || 0; continue; }
+    const target = (byName[name] ||= {});
+    for (const [k, n] of Object.entries(p)) target[k] = (target[k] || 0) + n;
+  }
+  if (unmatched) console.warn(`${unmatched} returned ballots had unmatched precincts`);
+  return applyReturns({ ...fresh.returns, unmatched }, byName);
+}
+
 async function refreshStatic() {
+  const id = state.electionId;
+  let changed = false;
   try {
-    const fresh = await getJSON(`data/${state.electionId}.json`);
-    if (fresh.id !== state.electionId || fresh.generatedAt === state.data.generatedAt) return;
-    const d = state.data;
-    d.generatedAt = fresh.generatedAt;
-    d.returns = fresh.returns;
-    for (const [name, p] of Object.entries(fresh.precincts)) {
-      const target = (d.precincts[name] ||= {});
-      for (const key of ["returned", "accepted", "challenged"]) target[key] = p[key];
+    changed = await refreshLiveReturns();
+  } catch (err) {
+    console.warn("live returns failed; using the published totals", err);
+  }
+  try {
+    const fresh = await getJSON(`data/${id}.json`);
+    if (fresh.id === state.electionId && fresh.generatedAt !== state.data.generatedAt) {
+      state.data.generatedAt = fresh.generatedAt;
+      if (fresh.returns.available) changed = applyReturns(fresh.returns, fresh.precincts) || changed;
     }
-    renderAll();
   } catch (err) {
     console.warn("returns refresh failed", err);
   }
+  if (changed && state.electionId === id) renderAll();
 }
 
 // ------------------------------------------------------------------- styling
@@ -779,6 +833,7 @@ async function loadElection(id, linkParams = null) {
   const [geo, data] = await Promise.all([getJSON(`data/${id}.geojson`), getJSON(`data/${id}.json`)]);
   state.electionId = id;
   state.data = data;
+  state.precinctKey = precinctKeys(geo);
   state.selected = null;
   state.contestId = null;
   state.live = null;
@@ -801,6 +856,7 @@ async function loadElection(id, linkParams = null) {
   state.needsFit = true;
   fitToPrecincts();
   renderAll();
+  refreshStatic();
   await refreshLive();
 }
 

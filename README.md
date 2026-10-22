@@ -31,7 +31,7 @@ The page therefore fetches the feeds through a small Cloudflare Worker (`worker/
 `https://lc-results-proxy.zacharyeckstein.workers.dev`. It fetches the feed server-side and always adds the
 header. It only passes through the three feed paths the map uses, plus `/geocode?address=`, which forwards
 "find my precinct" searches to the U.S. Census Bureau geocoder (no CORS header there either) without caching or
-logging them. If the Worker fails, the page goes to the feed
+logging them, and `/returns/<id>`, which serves live ballot-return totals (see below). If the Worker fails, the page goes to the feed
 directly, with retries.
 
 To change and redeploy the Worker:
@@ -67,7 +67,15 @@ to pick up new ballot returns. Pages is set to deploy from **GitHub Actions** (S
 ## Daily ballot returns
 
 The Secretary of State posts each county's Daily Ballot Status Report (matchback) at a fixed URL, for Lewis
-`https://www.sos.wa.gov/sites/default/files/current_election/Lewis.csv`, updated each business day after 5 p.m.
+`https://www.sos.wa.gov/sites/default/files/current_election/Lewis.csv`, updated each business day around 5 p.m.
+
+The map reads it live through the Worker: `/returns/20261103` downloads the file, checks its `Election` column,
+and returns only totals (by precinct, received date, return method and drop box), cached for 5 minutes. The page
+checks every 5 minutes, so a new file shows up within about 10 minutes of the state posting it. The election id,
+URL and expected `Election` value are in `MATCHBACK` at the top of `worker/src/index.js`.
+
+GitHub's hourly schedule is unreliable (some days it runs only every few hours), so the workflow below is now the
+fallback and the record of each day's totals in git. The page uses whichever totals come from the newer file.
 Every hour the workflow:
 
 1. Downloads that file and checks its `Election` column says `General Nov 3 2026`. The URL always holds the
@@ -98,7 +106,8 @@ published, and `.gitignore` keeps the raw files out of git.
 
 Add an entry to `ELECTIONS` in `scripts/build.py` with the results-site election id (`YYYYMMDD`) and that election's
 precinct shapefile URL from the SOS precinct shapefile page, then run the build and push. For the new current
-election, move the `matchback` and `matchback_election` keys to its entry, matching the file's `Election` column.
+election, move the `matchback` and `matchback_election` keys to its entry, matching the file's `Election` column,
+and change `MATCHBACK` in `worker/src/index.js` the same way, then redeploy the Worker.
 
 ## Notes
 
