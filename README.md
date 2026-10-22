@@ -13,15 +13,33 @@ show ballots received and when counting begins.
 ## How it updates
 
 - **Results and ballots counted** load live in the viewer's browser from the county's `results.votewa.gov` feed. The
-  page checks it every minute, and loads precinct results for the contest being viewed. The feed allows requests
+  page checks it on a schedule (below), and loads precinct results for the contest being viewed. The feed allows requests
   from any site (`Access-Control-Allow-Origin: *`), so no server or scheduled job is involved.
 - **Multi-county contests** (statewide measures and races, legislative and congressional districts, the library
   district) show Lewis County's result next to the statewide or whole-district result in the summary panel. Those
   totals come from the state feed, loaded alongside the county one.
 - **Ballot returns** are precinct totals in `site/data/<id>.json`, updated automatically from the state's daily
-  file (see below). The page re-reads that file every 5 minutes.
+  file (see below), and read live through the Worker.
 - If the live feed can't be reached, the page falls back to the results snapshot saved in `site/data/` by the last
   build, and says so.
+
+### How often the page checks
+
+The county and the state each post about once a day, so the page only checks often when something can change
+(Pacific time):
+
+| | Checks every |
+|---|---|
+| Results, election night (7:55 p.m. Election Day to 2 a.m.) | 1 minute |
+| Results, Election Day before then | 5 minutes |
+| Results, before Election Day | 15 minutes |
+| Results, after election night until certified | 5 minutes |
+| Results, once certified | 60 minutes |
+| Ballot returns, 4:30-8 p.m. (the state posts around 5) | 5 minutes |
+| Ballot returns, otherwise | 30 minutes |
+
+A tab in the background skips checks (except results on election night, so its title can flag new results) and
+catches up as soon as it's shown again. If the results feed can't be reached, it retries every 5 minutes.
 
 ## Results proxy (Cloudflare Worker)
 
@@ -41,7 +59,9 @@ cd worker && npx wrangler@4 deploy
 ```
 
 The Cloudflare account is on the Workers Paid plan (10 million requests a month included). Each open copy of the
-map makes about 2-3 requests a minute. If the Worker ever fails, the map falls back to the direct feed.
+map makes about 4-8 requests an hour, and 1-2 a minute on election night.
+Workers Caching is on (`[cache]` in `wrangler.toml`), so repeat requests are answered from Cloudflare's cache and
+the county and state sites see about one request per cache period, however many maps are open. If the Worker ever fails, the map falls back to the direct feed.
 
 ## Running it locally
 
@@ -71,7 +91,7 @@ The Secretary of State posts each county's Daily Ballot Status Report (matchback
 
 The map reads it live through the Worker: `/returns/20261103` downloads the file, checks its `Election` column,
 and returns only totals (by precinct, received date, return method and drop box), cached for 5 minutes. The page
-checks every 5 minutes, so a new file shows up within about 10 minutes of the state posting it. The election id,
+checks every 5 minutes from 4:30 to 8 p.m., so a new file shows up within about 10 minutes of the state posting it. The election id,
 URL and expected `Election` value are in `MATCHBACK` at the top of `worker/src/index.js`.
 
 GitHub's hourly schedule is unreliable (some days it runs only every few hours), so the workflow below is now the

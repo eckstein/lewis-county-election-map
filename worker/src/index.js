@@ -14,6 +14,10 @@
 // individual voters, so nothing voter-level is ever sent on. This is the same
 // totaling scripts/build.py does, so the map picks up the state's ~5 p.m. file
 // within minutes instead of waiting for the hourly GitHub build.
+//
+// Workers Caching is on (wrangler.toml), so Cloudflare serves repeat requests
+// from its cache for as long as each response's Cache-Control allows, and only
+// a miss runs this code and calls the county or the state.
 
 const UPSTREAM = "https://results.votewa.gov/results/public/api/elections";
 const GEOCODER = "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress";
@@ -27,7 +31,9 @@ const MATCHBACK = {
     election: "General Nov 3 2026",
   },
 };
-const RETURNS_TTL = 300;  // seconds to reuse a total before checking the state again
+// Totaling the file takes a moment and the state posts once a day, so
+// Cloudflare keeps each total for 5 minutes; browsers re-ask after 1.
+const RETURNS_CACHE = "public, max-age=60, s-maxage=300";
 
 // Matchback statuses that mean the ballot has not come back yet.
 const NOT_RETURNED = new Set(["", "issued", "sent", "mailed", "undeliverable", "not returned", "none"]);
@@ -181,16 +187,10 @@ function totalMatchback(text, fileTime) {
   };
 }
 
-async function returns(id, ctx) {
+async function returns(id) {
   const json = { "Content-Type": "application/json; charset=utf-8" };
   const config = MATCHBACK[id];
   if (!config) return reply('{"error":"no live returns for this election"}', 404, json);
-
-  // Totaling the file takes a moment, so keep each result for RETURNS_TTL.
-  const cache = caches.default;
-  const cacheKey = new Request(`https://returns.cache/${id}`);
-  const hit = await cache.match(cacheKey);
-  if (hit) return reply(hit.body, 200, { ...json, "Cache-Control": `public, max-age=60` });
 
   let upstream;
   try {
@@ -221,20 +221,18 @@ async function returns(id, ctx) {
   }
   delete totals.election;
 
-  const body = JSON.stringify(totals);
-  ctx.waitUntil(cache.put(cacheKey, new Response(body, { headers: { ...json, "Cache-Control": `max-age=${RETURNS_TTL}` } })));
-  return reply(body, 200, { ...json, "Cache-Control": "public, max-age=60" });
+  return reply(JSON.stringify(totals), 200, { ...json, "Cache-Control": RETURNS_CACHE });
 }
 
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request) {
     if (request.method === "OPTIONS") return reply(null, 204);
     if (request.method !== "GET") return reply("Method not allowed", 405);
 
     const { pathname, searchParams } = new URL(request.url);
     if (pathname === "/geocode") return geocode(searchParams.get("address"));
     const returnsPath = pathname.match(/^\/returns\/(\d{8})$/);
-    if (returnsPath) return returns(returnsPath[1], ctx);
+    if (returnsPath) return returns(returnsPath[1]);
     if (!ALLOWED.some((re) => re.test(pathname))) return reply("Not found", 404);
 
     let upstream;

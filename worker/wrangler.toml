@@ -2,3 +2,10 @@ name = "lc-results-proxy"
 main = "src/index.js"
 compatibility_date = "2025-09-01"
 workers_dev = true
+
+# Workers Caching: Cloudflare answers repeat requests from its cache for as long
+# as each response's Cache-Control allows (30 s for results, 5 min for ballot
+# returns), so many open maps add up to about one upstream call per interval.
+# Geocoder responses are no-store. Needs Wrangler 4.69 or later.
+[cache]
+enabled = true

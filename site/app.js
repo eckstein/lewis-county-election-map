@@ -2,7 +2,8 @@
 // contest results.
 //
 // Results come live from the county's results.votewa.gov feed: the summary
-// every LIVE_MS, and precinct results for the contest being viewed. Ballot-return
+// (how often depends on the phase of the election, see resultsEvery), and
+// precinct results for the contest being viewed. Ballot-return
 // totals for the current election come from the Worker's /returns route, which
 // totals the state's daily file as soon as it's posted. site/data/ (written by
 // scripts/build.py) holds the boundaries, the last committed ballot-return
@@ -16,8 +17,7 @@ const COUNTY = "lewis-county-wa";
 // Totals for contests that extend beyond the county (statewide measures and
 // races, legislative and congressional districts) come from the state feed.
 const STATE = "washington";
-const LIVE_MS = 60 * 1000;
-const STATIC_MS = 5 * 60 * 1000;
+const MINUTE = 60 * 1000;
 const SEQ = ["#dbe8f4", "#a8c8e4", "#6fa3d0", "#3a7bb8", "#15508e"];
 const OPTION_COLORS = ["#2d6fb5", "#c4572a", "#3a8a55", "#7a4fb8", "#b48a1c", "#2b8a8a", "#a8326e", "#5d6b78"];
 const PARTY_COLORS = { DEM: "#2d6fb5", REP: "#c43b3b" };
@@ -80,8 +80,10 @@ mapActions.addTo(map);
 
 // --------------------------------------------------------------- data access
 
-async function getJSON(url, bust = true) {
-  const res = await fetch(bust ? `${url}?t=${Date.now()}` : url, { cache: "no-store" });
+// cacheable: let the browser and Cloudflare honor the Worker's Cache-Control
+// instead of forcing a fresh copy.
+async function getJSON(url, bust = true, cacheable = false) {
+  const res = await fetch(bust ? `${url}?t=${Date.now()}` : url, { cache: cacheable ? "default" : "no-store" });
   if (!res.ok) throw new Error(`${url}: ${res.status}`);
   return res.json();
 }
@@ -94,7 +96,7 @@ async function getJSON(url, bust = true) {
 async function getFeed(path, attempts = 5) {
   if (PROXY) {
     try {
-      return await getJSON(`${PROXY}/${path}`, false);
+      return await getJSON(`${PROXY}/${path}`, false, true);
     } catch (err) {
       console.warn("proxy failed; trying the feed directly", err);
     }
@@ -269,6 +271,71 @@ async function loadBreakdown() {
   }
 }
 
+// --------------------------------------------------------------- polling
+
+// The county and the state each post about once a day, so the map only polls
+// often when something can actually change: every minute on election night,
+// and around 5 p.m. for the state's ballot file. Background tabs skip polls
+// except on election night (for the "New results" tab-title dot) and catch up
+// when they're shown again.
+const PACIFIC = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit",
+  hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+});
+
+function pacificNow() {
+  const parts = Object.fromEntries(PACIFIC.formatToParts(new Date()).map((p) => [p.type, p.value]));
+  return { day: `${parts.year}${parts.month}${parts.day}`, minutes: +parts.hour * 60 + +parts.minute };
+}
+
+// 8 p.m. Election Day until 2 a.m., with a few minutes' head start.
+function electionNight() {
+  const id = state.electionId;
+  const next = new Date(Date.UTC(+id.slice(0, 4), +id.slice(4, 6) - 1, +id.slice(6, 8) + 1));
+  const dayAfter = next.toISOString().slice(0, 10).replace(/-/g, "");
+  const { day, minutes } = pacificNow();
+  return (day === id && minutes >= 19 * 60 + 55) || (day === dayAfter && minutes < 2 * 60);
+}
+
+function resultsEvery() {
+  const r = state.data.results;
+  if (electionNight()) return MINUTE;
+  if (state.live === false) return 5 * MINUTE;   // feed unreachable; retry sooner
+  if (r.official) return 60 * MINUTE;            // certified; nothing more is coming
+  if (r.ballotsCast) return 5 * MINUTE;          // daily counts after election night
+  return pacificNow().day === state.electionId ? 5 * MINUTE : 15 * MINUTE;  // before counting starts
+}
+
+// The state posts its ballot file around 5 p.m. on business days.
+function returnsEvery() {
+  const { minutes } = pacificNow();
+  return minutes >= 16 * 60 + 30 && minutes < 20 * 60 ? 5 * MINUTE : 30 * MINUTE;
+}
+
+const polls = [];
+
+function poll(fn, every) {
+  const job = { fn, every, last: Date.now(), timer: null };
+  const run = async () => {
+    if (!document.hidden || (fn === refreshLive && electionNight())) {
+      job.last = Date.now();
+      await fn();
+    }
+    job.timer = setTimeout(run, job.every());
+  };
+  job.run = run;
+  job.timer = setTimeout(run, every());
+  polls.push(job);
+}
+
+// Back in view: catch up on anything that came due while hidden.
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) return;
+  for (const job of polls) {
+    if (Date.now() - job.last >= job.every()) { clearTimeout(job.timer); job.run(); }
+  }
+});
+
 async function refreshLive() {
   try {
     await fetchLive();
@@ -353,7 +420,7 @@ function precinctKeys(geo) {
 async function refreshLiveReturns() {
   const id = state.electionId;
   if (!PROXY || state.noLiveReturns.has(id)) return false;
-  const res = await fetch(`${PROXY}/returns/${id}`);
+  const res = await fetch(`${PROXY}/returns/${id}`);  // cacheable, like getFeed's Worker requests
   if (res.status === 404) { state.noLiveReturns.add(id); return false; }
   if (!res.ok) throw new Error(`live returns: ${res.status} ${await res.text()}`);
   const fresh = await res.json();
@@ -701,7 +768,7 @@ function renderStatus() {
   const source = `<a href="https://results.votewa.gov/results/public/lewis-county-wa/elections/${esc(d.id)}" target="_blank" rel="noopener">county results</a>`;
   let results;
   if (state.live === false) {
-    results = `<b>Live ${source} unreachable</b> - showing a snapshot from ${when(d.generatedAt)}. Retrying every minute.`;
+    results = `<b>Live ${source} unreachable</b> - showing a snapshot from ${when(d.generatedAt)}. Retrying every ${Math.round(resultsEvery() / MINUTE)} min.`;
   } else {
     results = `Results: live from ${source}${d.results.official ? " (<b>final</b>)" : ""}, county update ${when(d.results.lastUpdated)}. ` +
       `Checked ${state.liveCheckedAt ? state.liveCheckedAt.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }) : "–"}.`;
@@ -1177,6 +1244,6 @@ document.querySelectorAll(".seg button").forEach((b) =>
   const first = state.elections.find((e) => e.id === link.get("e"))?.id || state.elections[0].id;
   $("election").value = first;
   await loadElection(first, link);
-  setInterval(refreshLive, LIVE_MS);
-  setInterval(refreshStatic, STATIC_MS);
+  poll(refreshLive, resultsEvery);
+  poll(refreshStatic, returnsEvery);
 })();
