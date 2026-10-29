@@ -18,7 +18,7 @@ const COUNTY = "lewis-county-wa";
 // races, legislative and congressional districts) come from the state feed.
 const STATE = "washington";
 const MINUTE = 60 * 1000;
-const SEQ = ["#dbe8f4", "#a8c8e4", "#6fa3d0", "#3a7bb8", "#15508e"];
+const SEQ = ["#dbe8f4", "#b9d3e9", "#95bcdd", "#6fa3d0", "#4c88c0", "#2e6daa", "#15508e"];
 const OPTION_COLORS = ["#2d6fb5", "#c4572a", "#3a8a55", "#7a4fb8", "#b48a1c", "#2b8a8a", "#a8326e", "#5d6b78"];
 const PARTY_COLORS = { DEM: "#2d6fb5", REP: "#c43b3b" };
 const NO_DATA = "#d9d9d4";
@@ -459,19 +459,30 @@ async function refreshStatic() {
 
 // ------------------------------------------------------------------- styling
 
-// Returned layer: share of registered voters, binned on a scale that stretches
-// to the current maximum so early returns (5-20%) still show contrast.
+// Returned layer: share of registered voters. The bins span where most
+// precincts are right now (5th to 95th percentile), so a few points of
+// difference shows up as a different shade whether turnout is 10% or 70%.
+// The lowest and highest bins are open-ended and catch the outliers.
 function rateFor(name) {
   const p = precinct(name);
   if (p.returned == null || !p.registered) return null;
   return pct(p.returned, p.registered);
 }
 
+// Precincts with only a handful of voters swing wildly, so they don't set the scale.
+const MIN_REGISTERED_FOR_SCALE = 50;
+
 function rateBreaks() {
-  const rates = Object.keys(state.data.precincts).map(rateFor).filter((v) => v != null && v > 0);
-  const max = rates.length ? Math.max(...rates) : 100;
-  const step = [2, 5, 10, 20].find((s) => s * SEQ.length >= max) ?? 20;
-  return SEQ.map((_, i) => step * (i + 1));
+  const names = Object.keys(state.data.precincts);
+  const sized = names.filter((n) => precinct(n).registered >= MIN_REGISTERED_FOR_SCALE);
+  const rates = (sized.length ? sized : names).map(rateFor).filter((v) => v != null).sort((a, b) => a - b);
+  if (!rates.length) return SEQ.slice(1).map((_, i) => 10 * (i + 1));
+  const at = (q) => rates[Math.round(q * (rates.length - 1))];
+  const lo = at(0.05), hi = at(0.95);
+  const step = [1, 2, 3, 4, 5, 10].find((s) => s * SEQ.length >= hi - lo) ?? 15;
+  // Center the bins on the spread, then snap to the step so labels stay round.
+  const start = Math.max(0, Math.min(100 - step * SEQ.length, Math.floor((lo + hi - step * SEQ.length) / 2 / step + 0.5) * step));
+  return SEQ.slice(1).map((_, i) => start + step * (i + 1));
 }
 
 function leaderFor(name) {
@@ -509,8 +520,7 @@ function styleFor(feature) {
 
   const rate = rateFor(name);
   if (rate == null) return { ...base, fillColor: NO_DATA };
-  const breaks = state.breaks;
-  const bin = breaks.findIndex((b) => rate <= b);
+  const bin = state.breaks.findIndex((b) => rate < b);
   return { ...base, fillColor: SEQ[bin === -1 ? SEQ.length - 1 : bin] };
 }
 
@@ -546,13 +556,10 @@ function renderLegend() {
       `<div><i style="background:${NO_DATA}"></i>No results for this precinct</div>`;
     return;
   }
-  let lo = 0;
+  const b = state.breaks;
+  const label = (i) => i === 0 ? `Under ${b[0]}%` : i === b.length ? `${b[i - 1]}% or more` : `${b[i - 1]}–${b[i]}%`;
   el.innerHTML = `<b>Ballots received, % of registered voters</b>` +
-    state.breaks.map((b, i) => {
-      const row = `<div><i style="background:${SEQ[i]}"></i>${Math.round(lo)}–${Math.round(b)}%</div>`;
-      lo = b;
-      return row;
-    }).join("") +
+    SEQ.map((color, i) => `<div><i style="background:${color}"></i>${label(i)}</div>`).join("") +
     `<div><i style="background:${NO_DATA}"></i>No data</div>`;
 }
 
