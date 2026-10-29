@@ -221,3 +221,7 @@ select {
   .leaflet-control-attribution { font-size: 9px; }
   .table-view { left: 0; border-left: 0; }
 }
+
+/* Chrome focuses a precinct path on mousedown and outlines its bounding box,
+   leaving a black rectangle behind after a drag. Keep keyboard focus rings. */
+.leaflet-container .leaflet-interactive:focus:not(:focus-visible) { outline: none; }
