@@ -41,6 +41,16 @@ The county and the state each post about once a day, so the page only checks oft
 A tab in the background skips checks (except results on election night, so its title can flag new results) and
 catches up as soon as it's shown again. If the results feed can't be reached, it retries every 5 minutes.
 
+## Past elections
+
+The 2022 General predates the `results.votewa.gov` feed, so its certified results are saved in
+`data/archive/20221108/` (Lewis County precinct turnout and results, plus statewide and district totals for the
+"vs. statewide" comparison). `scripts/build.py` turns them into `site/data/20221108.json`, and the page loads them
+without contacting any feed. On that election the "Ballots received" tab shows final turnout. The CSVs were extracted
+once by `scripts/extract_2022.py` from the Secretary of State's 2022 precinct results file and, for county offices and
+local measures, the MIT Election Data and Science Lab's precinct file. Its boundaries are the August 2026 primary's
+with Winlock #1-#3 merged back into Winlock, which matches 2022's precinct list.
+
 ## Results proxy (Cloudflare Worker)
 
 The results.votewa.gov cache intermittently serves responses without the `Access-Control-Allow-Origin` header, and

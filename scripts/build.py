@@ -48,7 +48,9 @@ SOS_FILES = "https://www.sos.wa.gov/sites/default/files"
 
 # Newest first; the page opens on the first one. "matchback" is the SOS file for
 # whatever election is current, so it's only used when its Election column
-# matches "matchback_election".
+# matches "matchback_election". "archive" elections predate the results.votewa.gov
+# feed: their certified results are saved in data/archive/<id>/ (see
+# scripts/extract_2022.py) and their boundaries are committed in site/data/.
 ELECTIONS = [
     {"id": "20261103", "name": "2026 General",
      "shapefile": f"{SOS_FILES}/2026-10/Statewide_Precincts_2026General_0.zip",
@@ -56,6 +58,8 @@ ELECTIONS = [
      "matchback_election": "General Nov 3 2026"},
     {"id": "20260804", "name": "2026 Primary",
      "shapefile": f"{SOS_FILES}/2026-09/Statewide_Precincts_2026Primary_0.zip"},
+    {"id": "20221108", "name": "2022 General", "archive": True, "certified": "2022-11-29T17:00:00+00:00",
+     "source": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets"},
 ]
 
 UA = {"User-Agent": "Mozilla/5.0 (LC Elections Dashboard prototype)"}
@@ -362,6 +366,79 @@ def build_returns(election_id, boundaries):
     return returns, by_precinct
 
 
+# ------------------------------------------------------------------- archive
+
+def build_archive(election):
+    """Certified results saved as CSV in data/archive/<id>/, in the same shape the live feed gives."""
+    folder = ROOT / "data" / "archive" / election["id"]
+
+    def rows(name):
+        with open(folder / name, newline="", encoding="utf-8") as fh:
+            return list(csv.DictReader(fh))
+
+    # The "Ballots received" tab shows final turnout: ballots counted, as a share of registered voters.
+    precincts = {}
+    for r in rows("turnout.csv"):
+        cast = int(r["ballots_cast"])
+        precincts[r["precinct"]] = {"registered": int(r["registered"]), "counted": cast,
+                                    "returned": cast, "accepted": cast, "challenged": 0}
+    cast = sum(p["counted"] for p in precincts.values())
+    returns = {"available": True, "final": True, "source": "turnout.csv", "fileTime": election["certified"],
+               "returned": cast, "accepted": cast, "challenged": 0, "unmatched": 0,
+               "daily": [], "methods": {}, "locations": {}}
+
+    contests = {}
+    for r in rows("results.csv"):
+        c = contests.setdefault(r["contest_id"], {
+            "id": r["contest_id"], "name": r["contest"], "type": r["type"], "parentId": None, "counties": 0,
+            "options": {}, "precincts": defaultdict(dict), "loaded": True,
+        })
+        c["options"].setdefault(r["choice"], {"name": r["choice"], "party": r["party"] or None,
+                                              "order": int(r["order"]), "votes": 0})
+        c["options"][r["choice"]]["votes"] += int(r["votes"])
+        c["precincts"][r["precinct"]][r["choice"]] = int(r["votes"])
+
+    wide = {}
+    for r in rows("wide.csv"):
+        w = wide.setdefault(r["contest_id"], {"total": 0, "votes": {}})
+        w["total"] += int(r["votes"])
+        w["votes"][norm(r["choice"])] = int(r["votes"])
+        contests[r["contest_id"]].update(parentId=r["contest_id"], counties=int(r["counties"]))
+
+    out_contests = []
+    for c in contests.values():
+        options = sorted(c["options"].values(), key=lambda o: (o["order"], -o["votes"]))
+        names = [o["name"] for o in options]
+        c["precincts"] = {p: [v.get(n, 0) for n in names] for p, v in sorted(c["precincts"].items())}
+        c["options"] = [{k: o[k] for k in ("name", "party", "votes")} for o in options]
+        c["total"] = sum(o["votes"] for o in options)
+        out_contests.append(c)
+
+    summary = {
+        "asOf": election["certified"],
+        "lastUpdated": election["certified"],
+        "official": True,
+        "archived": True,
+        "hasPrecinctResults": True,
+        "ballotsCast": cast,
+        "registered": sum(p["registered"] for p in precincts.values()),
+        "url": election["source"],
+        "reports": [],
+    }
+    out = {
+        "id": election["id"],
+        "name": election["name"],
+        "generatedAt": election["certified"],
+        "results": summary,
+        "returns": returns,
+        "precincts": precincts,
+        "contests": out_contests,
+        "wide": wide,
+    }
+    (OUT / f"{election['id']}.json").write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
+    log(f"[{election['id']}] {election['name']}: {len(out_contests)} contests from data/archive")
+
+
 # --------------------------------------------------------------------- build
 
 def build_election(election):
@@ -405,7 +482,10 @@ def build_all():
     built = []
     for election in ELECTIONS:
         try:
-            build_election(election)
+            if election.get("archive"):
+                build_archive(election)
+            else:
+                build_election(election)
             built.append({"id": election["id"], "name": election["name"]})
         except Exception as exc:  # keep the last good file for this election
             log(f"  ! {election['id']} failed: {exc!r}")

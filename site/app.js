@@ -173,8 +173,16 @@ function optionColors(c) {
 
 // Merge the county feed's summary into state.data. Precinct results for a
 // contest are kept until fresh ones load, so the map doesn't flash gray.
+// Archived elections (before the feed) carry their certified results, and the
+// statewide and district totals, in site/data, so there's nothing to fetch.
 async function fetchLive() {
   const id = state.electionId;
+  if (state.data.results.archived) {
+    for (const [parentId, w] of Object.entries(state.data.wide || {})) {
+      state.wide.set(parentId, { total: w.total, votes: new Map(Object.entries(w.votes)), lastUpdated: state.data.results.lastUpdated });
+    }
+    return;
+  }
   const feed = await getFeed(`${COUNTY}/${id}/data`);
   if (id !== state.electionId) return;
   const d = state.data;
@@ -419,7 +427,7 @@ function precinctKeys(geo) {
 
 async function refreshLiveReturns() {
   const id = state.electionId;
-  if (!PROXY || state.noLiveReturns.has(id)) return false;
+  if (!PROXY || state.noLiveReturns.has(id) || state.data.results.archived) return false;
   const res = await fetch(`${PROXY}/returns/${id}`);  // cacheable, like getFeed's Worker requests
   if (res.status === 404) { state.noLiveReturns.add(id); return false; }
   if (!res.ok) throw new Error(`live returns: ${res.status} ${await res.text()}`);
@@ -558,7 +566,7 @@ function renderLegend() {
   }
   const b = state.breaks;
   const label = (i) => i === 0 ? `Under ${b[0]}%` : i === b.length ? `${b[i - 1]}% or more` : `${b[i - 1]}–${b[i]}%`;
-  el.innerHTML = `<b>Ballots received, % of registered voters</b>` +
+  el.innerHTML = `<b>${state.data.returns.final ? "Turnout" : "Ballots received"}, % of registered voters</b>` +
     SEQ.map((color, i) => `<div><i style="background:${color}"></i>${label(i)}</div>`).join("") +
     `<div><i style="background:${NO_DATA}"></i>No data</div>`;
 }
@@ -598,7 +606,7 @@ function compareBars(options, local, wide, colors) {
 // ahead of received; the sentence then just reports the count.
 function ballotProgress({ registered, received, counted, challenged }, place, brief = false) {
   const d = state.data;
-  const hasReceived = d.returns.available && received != null;
+  const hasReceived = d.returns.available && !d.returns.final && received != null;
   const counting = d.results.ballotsCast > 0;
   const ofVoters = `of the ${fmt.format(registered)} registered voters in ${place}`;
   const later = d.results.official ? "These results are final." : "The county will post more results in the coming days.";
@@ -774,13 +782,15 @@ function renderStatus() {
   const d = state.data;
   const source = `<a href="https://results.votewa.gov/results/public/lewis-county-wa/elections/${esc(d.id)}" target="_blank" rel="noopener">county results</a>`;
   let results;
-  if (state.live === false) {
+  if (d.results.archived) {
+    results = `Results: certified final results from the <a href="${esc(d.results.url)}" target="_blank" rel="noopener">Secretary of State</a>.`;
+  } else if (state.live === false) {
     results = `<b>Live ${source} unreachable</b> - showing a snapshot from ${when(d.generatedAt)}. Retrying every ${Math.round(resultsEvery() / MINUTE)} min.`;
   } else {
     results = `Results: live from ${source}${d.results.official ? " (<b>final</b>)" : ""}, county update ${when(d.results.lastUpdated)}. ` +
       `Checked ${state.liveCheckedAt ? state.liveCheckedAt.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }) : "–"}.`;
   }
-  const returns = d.returns.available ? `Ballots received: state data posted ${when(d.returns.fileTime)}.` : null;
+  const returns = d.returns.final ? null : d.returns.available ? `Ballots received: state data posted ${when(d.returns.fileTime)}.` : null;
   $("status").innerHTML = [results, returns].filter(Boolean).join("<br>");
 }
 
@@ -805,8 +815,8 @@ function renderControls() {
   document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-checked", String(b.dataset.layer === state.layerName)));
   $("contest-wrap").hidden = state.layerName !== "results";
   $("layer-desc").textContent = state.layerName === "results"
-    ? "Votes counted so far, updated live."
-    : "Ballots the county has received, updated daily.";
+    ? (state.data.results.archived ? "Certified final results." : "Votes counted so far, updated live.")
+    : state.data.returns.final ? "Final turnout: ballots counted, as a share of registered voters." : "Ballots the county has received, updated daily.";
   const sel = $("contest");
   // Rebuild when live data arrives too: the saved snapshot has no county counts.
   const key = state.data.contests.map((c) => `${c.id}:${c.counties}`).join(",");
