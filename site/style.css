@@ -33,6 +33,7 @@ h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
 h2 { font-size: 13px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
 h3 { font-size: 17px; margin: 0 0 2px; }
 .sub, .muted { color: var(--muted); font-size: 13px; margin: 2px 0 0; }
+.sub a { color: inherit; }
 
 .controls { display: flex; flex-direction: column; gap: 10px; }
 label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); font-weight: 600; }
