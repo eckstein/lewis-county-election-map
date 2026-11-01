@@ -162,6 +162,7 @@ select {
 .chart .hit.on { fill: rgba(29, 92, 143, 0.06); }
 .chart-value { font-size: 11px; font-weight: 600; fill: var(--text); font-variant-numeric: tabular-nums; }
 .chart-axis { font-size: 10px; fill: var(--muted); }
+.chart-dow { font-size: 9px; }
 .chart-tip {
   position: absolute; pointer-events: none; white-space: nowrap; padding: 4px 8px; border-radius: 5px;
   font-size: 12px; background: #1f2328; color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,.2);

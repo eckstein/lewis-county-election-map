@@ -652,8 +652,10 @@ function receivedChart(daily) {
     days.push([new Date(d), counts.get(iso(d)) || 0]);
   }
   const label = (d) => d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  const dayLabel = (d) => d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+  const DOW = "SMTWTFS";
 
-  const W = 320, H = 110, TOP = 20, BOTTOM = 20, plotH = H - TOP - BOTTOM;
+  const W = 320, H = 122, TOP = 20, BOTTOM = 32, plotH = H - TOP - BOTTOM;
   const max = Math.max(...days.map(([, n]) => n), 1);
   const slot = W / days.length;
   const bw = Math.max(2, Math.min(24, slot - 2));
@@ -665,8 +667,9 @@ function receivedChart(daily) {
     const shape = h > 0
       ? `<path d="M${x},${TOP + plotH} V${y + r} Q${x},${y} ${x + r},${y} H${x + bw - r} Q${x + bw},${y} ${x + bw},${y + r} V${TOP + plotH} Z" fill="#3a7bb8"/>`
       : "";
-    const tip = `${label(d)}: ${fmt.format(n)} ballot${n === 1 ? "" : "s"}`;
-    return shape + `<rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H - BOTTOM}" data-tip="${esc(tip)}"><title>${esc(tip)}</title></rect>`;
+    const tip = `${dayLabel(d)}: ${fmt.format(n)} ballot${n === 1 ? "" : "s"}`;
+    const dow = slot >= 7 ? `<text x="${i * slot + slot / 2}" y="${TOP + plotH + 11}" text-anchor="middle" class="chart-axis chart-dow">${DOW[d.getDay()]}</text>` : "";
+    return shape + dow + `<rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H - BOTTOM}" data-tip="${esc(tip)}"><title>${esc(tip)}</title></rect>`;
   }).join("");
 
   const [lastDay, lastN] = days.at(-1);
@@ -676,7 +679,7 @@ function receivedChart(daily) {
 
   return `<div class="chart">` +
     `<h3 class="chart-title">Ballots received each day</h3>` +
-    `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Ballots received each day, ${fmt.format(total)} in all, ${fmt.format(lastN)} on ${label(lastDay)}">` +
+    `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Ballots received each day, ${fmt.format(total)} in all, ${fmt.format(lastN)} on ${dayLabel(lastDay)}">` +
     `<line x1="0" x2="${W}" y1="${TOP + plotH + 0.5}" y2="${TOP + plotH + 0.5}" stroke="#d6d6d1" stroke-width="1"/>` +
     cols +
     `<text x="${Math.max(20, Math.min(lastX, W - 20))}" y="${lastY}" text-anchor="middle" class="chart-value">${fmt.format(lastN)}</text>` +
