@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About VoteMapWA</title>
+  <meta name="description" content="About VoteMapWA: an unofficial, independent election map for Lewis County, Washington, and where its data comes from.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://votemapwa.org/about.html">
+  <meta property="og:title" content="About VoteMapWA">
+  <meta property="og:image" content="https://votemapwa.org/share.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="nav.css">
+  <style>
+    :root { --bg: #f7f7f5; --panel: #fff; --text: #1f2328; --muted: #646a73; --line: #e3e3df; --accent: #1d5c8f;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); }
+    a { color: var(--accent); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 20px 16px 48px; line-height: 1.6; font-size: 16px; }
+    h1 { font-size: 26px; margin: 8px 0 4px; letter-spacing: -0.01em; }
+    h2 { font-size: 18px; margin: 28px 0 6px; }
+    .lede { font-size: 17px; color: var(--muted); margin-top: 0; }
+    ul { padding-left: 20px; }
+    li { margin: 4px 0; }
+    .note { background: #fff8e6; border: 1px solid #f0dca8; border-radius: 8px; padding: 10px 14px; font-size: 15px; }
+  </style>
+</head>
+<body>
+  <nav class="topnav" aria-label="Site">
+    <a class="brand" href="./">VoteMapWA</a>
+    <div class="links">
+      <a href="./">Lewis County map</a>
+      <a href="national.html">National races</a>
+      <a href="about.html" aria-current="page">About</a>
+    </div>
+  </nav>
+  <main class="wrap">
+    <h1>About VoteMapWA</h1>
+    <p class="lede">An independent, unofficial map of Washington election data, precinct by precinct. It starts with Lewis County.</p>
+
+    <p class="note">This site is not affiliated with Lewis County, the Washington Secretary of State, or any campaign or party.
+      Results here are unofficial until certified by the
+      <a href="https://elections.lewiscountywa.gov/" target="_blank" rel="noopener">Lewis County Auditor</a> and the
+      <a href="https://www.sos.wa.gov/elections" target="_blank" rel="noopener">Secretary of State</a>.</p>
+
+    <h2>What's here</h2>
+    <ul>
+      <li><a href="./">Lewis County map</a>: ballots received and election results for every precinct in the county, with
+        comparisons to past elections and to statewide results.</li>
+      <li><a href="national.html">National races</a>: live results for U.S. Senate, U.S. House and governor races across the
+        country, with Lewis County's own congressional race (WA-03) at the top.</li>
+    </ul>
+    <p>Only Lewis County is mapped for now. More Washington counties are coming for the 2027 elections.</p>
+
+    <h2>Where the data comes from</h2>
+    <ul>
+      <li><strong>Results</strong> come live from the county's and the state's official results feeds at
+        <a href="https://results.votewa.gov/results/public/lewis-county-wa" target="_blank" rel="noopener">results.votewa.gov</a>.
+        On election night the map checks for new numbers every minute.</li>
+      <li><strong>Ballots received</strong> come from the Secretary of State's daily
+        <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/ballot-status-reports" target="_blank" rel="noopener">ballot status report</a>,
+        usually posted around 5 p.m. That report lists individual voters, so the site only ever publishes precinct totals.</li>
+      <li><strong>Precinct boundaries</strong> are the Secretary of State's
+        <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/reports-data-and-statistics/precinct-shapefiles" target="_blank" rel="noopener">precinct shapefiles</a>.</li>
+      <li><strong>National races</strong> come from <a href="https://thepeoplestally.com/open-data/" target="_blank" rel="noopener">The People's Tally</a>
+        (CC BY 4.0), which gathers counts from state election offices. Race calls are shown only when a named source such as
+        the AP makes them, and ratings are Cook Political Report's.</li>
+      <li><strong>Past elections</strong> such as the 2022 General use certified results saved from the Secretary of State
+        and the <a href="https://electionlab.mit.edu/" target="_blank" rel="noopener">MIT Election Data and Science Lab</a>.</li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <p>There are no accounts, ads or tracking cookies. Addresses you search for are looked up by the U.S. Census Bureau's
+      geocoder and aren't stored, and "Use my location" never leaves your device. Visits are counted with Cloudflare Web
+      Analytics, which uses no cookies and doesn't track individuals.</p>
+
+    <h2>Corrections and source code</h2>
+    <p>The site is open source. If something looks wrong, or you have an idea, open an issue on
+      <a href="https://github.com/eckstein/lewis-county-election-map" target="_blank" rel="noopener">GitHub</a>.
+      For official numbers, always check the county and state sites linked above.</p>
+  </main>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "aafe9ad38ead4d3689446bed4373c6c2"}'></script>
+</body>
+</html>

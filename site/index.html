@@ -19,16 +19,25 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="topnav" aria-label="Site">
+    <a class="brand" href="./">VoteMapWA</a>
+    <div class="links">
+      <a href="./" aria-current="page">Lewis County map</a>
+      <a href="national.html">National races</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+  <div class="app">
   <aside class="panel">
     <header>
       <h1>Lewis County Election Map <span class="badge" title="Not an official county or state site">Unofficial</span></h1>
       <p class="sub">Ballots received and results by precinct. Data from the
         <a href="https://www.sos.wa.gov/elections#data_research" target="_blank" rel="noopener">WA Secretary of State</a>.</p>
       <p class="coming">Lewis County only for now. More Washington counties are coming for the 2027 elections.</p>
-      <a class="national-link" href="national.html">National races: Senate, House, Governor &rarr;</a>
     </header>
 
     <div class="find">
@@ -83,6 +92,7 @@
     </footer>
   </aside>
   <main id="map"></main>
+  </div>
 
   <div id="table-view" class="table-view" role="dialog" aria-modal="true" aria-labelledby="table-title" hidden>
     <div class="table-head">
