@@ -89,7 +89,11 @@ def main():
 
         # Registered voters, from the county results feed's turnout list.
         slug = county.lower().replace(" ", "-") + "-county-wa"
-        feed = json.loads(fetch(f"{FEED}/{slug}/20261103/data", 120)[0])
+        try:
+            feed = json.loads(fetch(f"{FEED}/{slug}/20261103/data", 120)[0])
+        except Exception as exc:  # the feed refuses some clients; registration is optional
+            print(f"  {county}: no registration ({exc})", flush=True)
+            feed = {}
         reg_unmatched = 0
         for row in feed.get("voterTurnout") or []:
             name = norm(row["precinctName"])
