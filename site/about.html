@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About VoteMap WA</title>
+  <meta name="description" content="What the Lewis County Election Map shows, where its data comes from, and how it handles your privacy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://votemapwa.org/about.html">
+  <meta property="og:title" content="About VoteMap WA">
+  <meta property="og:description" content="What the Lewis County Election Map shows, where its data comes from, and how it handles your privacy.">
+  <meta property="og:image" content="https://votemapwa.org/share.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="nav.css">
+  <style>
+    :root {
+      --bg: #f7f7f5; --panel: #fff; --text: #1f2328; --muted: #646a73; --line: #e3e3df; --accent: #1d5c8f;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); }
+    a { color: var(--accent); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 18px 16px 40px; line-height: 1.55; font-size: 15px; }
+    h1 { font-size: 24px; margin: 10px 0 4px; letter-spacing: -0.01em; }
+    h2 { font-size: 17px; margin: 26px 0 6px; }
+    p, ul { margin: 0 0 10px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    .lede { color: var(--muted); font-size: 16px; }
+    .badge { font-size: 11px; font-weight: 600; color: #8a5a00; background: #fff4d6; border: 1px solid #f0dca8; border-radius: 4px; padding: 1px 6px; vertical-align: middle; }
+    .note { background: #fff8e6; border: 1px solid #f0dca8; border-radius: 8px; padding: 10px 12px; font-size: 14px; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 6px 0 10px; }
+    th, td { text-align: left; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <nav class="topnav" aria-label="Site">
+    <a class="brand" href="./">VoteMap WA</a>
+    <ul>
+      <li><a href="./">Lewis County</a></li>
+      <li><a href="national.html">National races</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+    </ul>
+  </nav>
+  <main class="wrap">
+    <h1>About this site <span class="badge">Unofficial</span></h1>
+    <p class="lede">VoteMap WA shows Washington election data precinct by precinct, starting with Lewis County.</p>
+
+    <h2>What you can see</h2>
+    <ul>
+      <li><a href="./">Lewis County map</a>: how many ballots each precinct has returned, and who leads each contest
+        in each precinct, shaded by the size of the lead. You can compare with past elections, look up your precinct by
+        address, and open any contest as a table or download it as a CSV.</li>
+      <li><a href="national.html">National races</a>: live results for 2026 U.S. Senate, U.S. House and governor
+        races, including Lewis County's congressional district.</li>
+    </ul>
+    <p>More Washington counties are coming for the 2027 elections.</p>
+
+    <h2>Where the data comes from</h2>
+    <table>
+      <tr><th>Results and ballots counted</th><td><a href="https://results.votewa.gov/results/public/lewis-county-wa" target="_blank" rel="noopener">Lewis County election results</a>, with statewide and district totals from the Washington Secretary of State</td></tr>
+      <tr><th>Ballots received</th><td>The Secretary of State's daily <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/ballot-status-reports" target="_blank" rel="noopener">ballot status reports</a>, totaled by precinct</td></tr>
+      <tr><th>Precinct boundaries</th><td>The Secretary of State's <a href="https://www.sos.wa.gov/elections/data-research/election-data-and-maps/reports-data-and-statistics/precinct-shapefiles" target="_blank" rel="noopener">precinct shapefiles</a></td></tr>
+      <tr><th>National races</th><td><a href="https://thepeoplestally.com/" target="_blank" rel="noopener">The People's Tally</a> (open data, CC BY 4.0), with race ratings from Cook Political Report</td></tr>
+    </table>
+    <p>Results load live from these sources while the page is open. On election night the map checks every minute; the
+      rest of the time it checks less often, since the county and state each post about once a day. The state posts
+      ballot returns each business day around 5 p.m.</p>
+
+    <h2>Official results</h2>
+    <p class="note">This site isn't affiliated with Lewis County, the Washington Secretary of State, or any news
+      organization. Its numbers are unofficial until they're certified. For official results, see the
+      <a href="https://elections.lewiscountywa.gov/" target="_blank" rel="noopener">Lewis County Auditor</a> and the
+      <a href="https://www.sos.wa.gov/elections" target="_blank" rel="noopener">Secretary of State</a>.</p>
+
+    <h2>Privacy</h2>
+    <ul>
+      <li>Addresses you search for are looked up by the U.S. Census Bureau's geocoder and aren't stored or logged.</li>
+      <li>"Use my location" stays on your device.</li>
+      <li>Ballot return files list individual voters, but this site only publishes precinct totals.</li>
+      <li>Visits are counted with Cloudflare Web Analytics, which uses no cookies and doesn't track individuals.</li>
+    </ul>
+
+    <h2>Source code</h2>
+    <p>The site is open source on <a href="https://github.com/eckstein/lewis-county-election-map" target="_blank" rel="noopener">GitHub</a>.
+      Spot a problem? <a href="https://github.com/eckstein/lewis-county-election-map/issues" target="_blank" rel="noopener">Open an issue</a>.</p>
+  </main>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "aafe9ad38ead4d3689446bed4373c6c2"}'></script>
+</body>
+</html>

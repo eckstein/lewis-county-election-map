@@ -13,6 +13,7 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="nav.css">
   <style>
     :root {
       --bg: #f7f7f5; --panel: #fff; --text: #1f2328; --muted: #646a73; --line: #e3e3df; --accent: #1d5c8f;
@@ -24,8 +25,6 @@
     html, body { margin: 0; background: var(--bg); }
     a { color: var(--accent); }
     .wrap { max-width: 980px; margin: 0 auto; padding: 18px 16px 40px; }
-    .back { font-size: 14px; font-weight: 600; text-decoration: none; }
-    .back:hover { text-decoration: underline; }
     h1 { font-size: 24px; margin: 10px 0 2px; letter-spacing: -0.01em; }
     h2 { font-size: 13px; margin: 0 0 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
     .badge { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; vertical-align: middle; }
@@ -101,8 +100,15 @@
   </style>
 </head>
 <body>
+  <nav class="topnav" aria-label="Site">
+    <a class="brand" href="./">VoteMap WA</a>
+    <ul>
+      <li><a href="./">Lewis County</a></li>
+      <li><a href="national.html" aria-current="page">National races</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
   <div class="wrap">
-    <a class="back" href="./">&larr; Lewis County Election Map</a>
     <h1>2026 National Races <span class="badge" title="Not an official results site">Unofficial</span></h1>
     <p class="sub">U.S. Senate, U.S. House and governor results as states count them. Races are only marked won when a named source (such as the AP) calls them.</p>
     <p id="status" class="status" role="status">Loading results…</p>

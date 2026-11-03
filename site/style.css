@@ -13,7 +13,9 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body { margin: 0; height: 100%; background: var(--bg); }
-body { display: flex; }
+body { display: flex; flex-direction: column; }
+/* Panel and map, below the menu bar. */
+.app { flex: 1; min-height: 0; display: flex; }
 
 .panel {
   width: 360px;
@@ -34,8 +36,6 @@ h2 { font-size: 13px; margin: 0 0 8px; text-transform: uppercase; letter-spacing
 h3 { font-size: 17px; margin: 0 0 2px; }
 .sub, .muted { color: var(--muted); font-size: 13px; margin: 2px 0 0; }
 .sub a { color: inherit; }
-.national-link { display: inline-block; margin-top: 6px; font-size: 14px; font-weight: 600; color: var(--accent); text-decoration: none; }
-.national-link:hover { text-decoration: underline; }
 .coming {
   margin: 8px 0 0; padding: 5px 8px; font-size: 12px; color: var(--accent);
   background: #eef4fa; border: 1px solid #d3e2f0; border-radius: 6px;
@@ -116,7 +116,7 @@ select {
 
 /* Table view: over the map on desktop, full screen on phones. */
 .table-view {
-  position: fixed; top: 0; right: 0; bottom: 0; left: 360px; z-index: 1000;
+  position: fixed; top: var(--nav-h, 0); right: 0; bottom: 0; left: 360px; z-index: 1000;
   display: flex; flex-direction: column; background: var(--panel); border-left: 1px solid var(--line);
 }
 .table-view[hidden] { display: none; }
@@ -216,7 +216,7 @@ select {
 /* Stacked layout for phones and portrait tablets: beside a 360px panel, the map
    would be narrow and tall, with the county a thin band in the middle. */
 @media (max-width: 900px) {
-  body { flex-direction: column-reverse; }
+  .app { flex-direction: column-reverse; }
   /* Lewis County is about three times wider than tall, so a tall map on a
      phone is mostly empty space around it. */
   #map { height: clamp(260px, 72vw, 50vh); flex: none; }
