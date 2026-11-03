@@ -10,4 +10,6 @@
 .topnav .links a { color: #d6e3ef; text-decoration: none; padding: 6px 10px; border-radius: 6px; }
 .topnav .links a:hover { color: #fff; background: rgba(255,255,255,.1); }
 .topnav .links a[aria-current="page"] { color: #fff; background: rgba(255,255,255,.16); font-weight: 600; }
+.topnav .values { margin-left: auto; padding-left: 16px; font-size: 12px; color: #a9bfd3; }
+@media (max-width: 900px) { .topnav .values { display: none; } }
 @media (max-width: 480px) { .topnav .brand { display: none; } .topnav { padding: 0 6px; } .topnav .links a { padding: 6px 8px; } }
