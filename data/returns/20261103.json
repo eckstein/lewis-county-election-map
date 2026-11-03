@@ -2,14 +2,14 @@
  "returns": {
   "available": true,
   "source": "Lewis.csv",
-  "fileTime": "2026-11-02T17:38:25+00:00",
-  "returned": 24165,
-  "accepted": 23988,
-  "challenged": 177,
+  "fileTime": "2026-11-03T00:45:46+00:00",
+  "returned": 29320,
+  "accepted": 29084,
+  "challenged": 236,
   "unmatched": 0,
   "statusCounts": {
-   "Accepted": 23988,
-   "Rejected": 177
+   "Accepted": 29084,
+   "Rejected": 236
   },
   "daily": [
    [
@@ -51,491 +51,509 @@
    [
     "2026-10-30",
     2157
+   ],
+   [
+    "2026-11-02",
+    5155
    ]
   ],
   "methods": {
-   "Drop Box": 15495,
-   "Mail": 8601,
+   "Drop Box": 19623,
+   "Mail": 9628,
    "Email": 69
   },
   "locations": {
-   "Courthouse Drive-up Drop Box": 3432,
-   "Lewis County Historic Courthouse Drop Box": 3429,
-   "Centralia College Drop Box": 2344,
-   "Twin Cities Senior Center Drop Box": 1037,
-   "Napavine Drop Box": 1009,
-   "Morton Drop Box": 745,
-   "Toledo Drop Box": 738,
-   "Onalaska Drop Box": 700,
-   "Winlock Drop Box": 693,
-   "Mossyrock Drop Box": 568,
-   "Vader Drop Box": 298,
-   "Packwood Drop Box": 233,
-   "Pe Ell Drop Box": 156,
-   "Mineral Drop Box": 113
+   "Courthouse Drive-up Drop Box": 4385,
+   "Lewis County Historic Courthouse Drop Box": 3877,
+   "Centralia College Drop Box": 3012,
+   "Napavine Drop Box": 1389,
+   "Twin Cities Senior Center Drop Box": 1292,
+   "Toledo Drop Box": 1052,
+   "Winlock Drop Box": 1001,
+   "Onalaska Drop Box": 921,
+   "Morton Drop Box": 915,
+   "Mossyrock Drop Box": 704,
+   "Vader Drop Box": 401,
+   "Packwood Drop Box": 318,
+   "Pe Ell Drop Box": 215,
+   "Mineral Drop Box": 141
   }
  },
  "precincts": {
   "CENTRALIA #2": {
-   "returned": 401,
-   "accepted": 396,
-   "challenged": 5
+   "returned": 491,
+   "accepted": 485,
+   "challenged": 6
   },
   "ELK CRK": {
-   "returned": 145,
-   "accepted": 145
+   "returned": 164,
+   "accepted": 163,
+   "challenged": 1
   },
   "CENTRALIA #9": {
-   "returned": 401,
-   "accepted": 400,
-   "challenged": 1
-  },
-  "NEWAUKUM": {
-   "returned": 393,
-   "accepted": 390,
+   "returned": 497,
+   "accepted": 494,
    "challenged": 3
   },
+  "CENTRALIA #11": {
+   "returned": 464,
+   "accepted": 460,
+   "challenged": 4
+  },
+  "NEWAUKUM": {
+   "returned": 474,
+   "accepted": 467,
+   "challenged": 7
+  },
   "FOREST": {
-   "returned": 388,
-   "accepted": 387,
-   "challenged": 1
+   "returned": 464,
+   "accepted": 460,
+   "challenged": 4
+  },
+  "CHEHALIS #4": {
+   "returned": 238,
+   "accepted": 235,
+   "challenged": 3
   },
   "LOGAN": {
-   "returned": 390,
-   "accepted": 385,
-   "challenged": 5
+   "returned": 471,
+   "accepted": 465,
+   "challenged": 6
   },
   "CHEHALIS #10": {
-   "returned": 220,
-   "accepted": 218,
+   "returned": 260,
+   "accepted": 258,
    "challenged": 2
   },
   "ADNA": {
-   "returned": 620,
-   "accepted": 616,
-   "challenged": 4
+   "returned": 736,
+   "accepted": 730,
+   "challenged": 6
   },
   "SEARS": {
-   "returned": 263,
-   "accepted": 262,
-   "challenged": 1
+   "returned": 310,
+   "accepted": 308,
+   "challenged": 2
   },
   "DRYAD": {
-   "returned": 124,
-   "accepted": 123,
+   "returned": 144,
+   "accepted": 143,
    "challenged": 1
   },
   "HARMONY": {
-   "returned": 463,
-   "accepted": 456,
-   "challenged": 7
-  },
-  "ETHEL": {
-   "returned": 516,
-   "accepted": 508,
+   "returned": 539,
+   "accepted": 531,
    "challenged": 8
   },
+  "CHEHALIS #12": {
+   "returned": 453,
+   "accepted": 450,
+   "challenged": 3
+  },
+  "ETHEL": {
+   "returned": 647,
+   "accepted": 637,
+   "challenged": 10
+  },
   "BIG BOTTOM": {
-   "returned": 388,
-   "accepted": 388
+   "returned": 462,
+   "accepted": 462
   },
   "SALMON CREEK": {
-   "returned": 375,
-   "accepted": 372,
+   "returned": 467,
+   "accepted": 464,
    "challenged": 3
   },
   "WINLOCK #1": {
-   "returned": 450,
-   "accepted": 445,
-   "challenged": 5
+   "returned": 599,
+   "accepted": 592,
+   "challenged": 7
   },
   "LINCOLN CREEK": {
-   "returned": 323,
-   "accepted": 319,
-   "challenged": 4
+   "returned": 395,
+   "accepted": 390,
+   "challenged": 5
   },
   "BOISTFORT": {
-   "returned": 148,
-   "accepted": 148
+   "returned": 175,
+   "accepted": 174,
+   "challenged": 1
   },
   "ONALASKA": {
-   "returned": 467,
-   "accepted": 466,
+   "returned": 563,
+   "accepted": 562,
    "challenged": 1
   },
   "VENESS": {
-   "returned": 310,
-   "accepted": 307,
-   "challenged": 3
+   "returned": 421,
+   "accepted": 416,
+   "challenged": 5
   },
   "CINEBAR": {
-   "returned": 297,
-   "accepted": 295,
+   "returned": 368,
+   "accepted": 366,
    "challenged": 2
   },
   "CENTRALIA #8": {
-   "returned": 251,
-   "accepted": 248,
-   "challenged": 3
+   "returned": 279,
+   "accepted": 275,
+   "challenged": 4
   },
   "SKOOKUMCHUCK": {
-   "returned": 379,
-   "accepted": 376,
-   "challenged": 3
-  },
-  "CHEHALIS #12": {
-   "returned": 377,
-   "accepted": 375,
-   "challenged": 2
+   "returned": 483,
+   "accepted": 478,
+   "challenged": 5
   },
   "CENTRALIA #12": {
-   "returned": 556,
-   "accepted": 556
+   "returned": 608,
+   "accepted": 607,
+   "challenged": 1
   },
   "CHEHALIS #6": {
-   "returned": 380,
-   "accepted": 380
+   "returned": 448,
+   "accepted": 447,
+   "challenged": 1
   },
   "CREGO EAST": {
-   "returned": 438,
-   "accepted": 437,
+   "returned": 535,
+   "accepted": 534,
    "challenged": 1
   },
   "SALKUM": {
-   "returned": 367,
-   "accepted": 366,
+   "returned": 430,
+   "accepted": 429,
    "challenged": 1
   },
   "MINERAL": {
-   "returned": 259,
-   "accepted": 257,
-   "challenged": 2
-  },
-  "FORDS PRAIRIE": {
-   "returned": 371,
-   "accepted": 367,
-   "challenged": 4
-  },
-  "KLICKITAT": {
-   "returned": 219,
-   "accepted": 219
-  },
-  "EADON": {
-   "returned": 228,
-   "accepted": 228
-  },
-  "CREGO WEST": {
-   "returned": 437,
-   "accepted": 434,
+   "returned": 299,
+   "accepted": 296,
    "challenged": 3
   },
-  "EVALINE WEST": {
-   "returned": 187,
-   "accepted": 185,
-   "challenged": 2
+  "MESKILL": {
+   "returned": 89,
+   "accepted": 89
   },
-  "CHEHALIS #4": {
-   "returned": 187,
-   "accepted": 185,
-   "challenged": 2
+  "FORDS PRAIRIE": {
+   "returned": 433,
+   "accepted": 428,
+   "challenged": 5
   },
-  "CENTRALIA #4": {
-   "returned": 263,
-   "accepted": 259,
-   "challenged": 4
+  "KLICKITAT": {
+   "returned": 258,
+   "accepted": 258
   },
-  "STILLWATER WEST": {
-   "returned": 184,
-   "accepted": 184
-  },
-  "CENTRALIA #7": {
-   "returned": 156,
-   "accepted": 155,
+  "CHEHALIS #2": {
+   "returned": 176,
+   "accepted": 175,
    "challenged": 1
   },
+  "EADON": {
+   "returned": 288,
+   "accepted": 288
+  },
+  "CREGO WEST": {
+   "returned": 518,
+   "accepted": 514,
+   "challenged": 4
+  },
+  "EVALINE WEST": {
+   "returned": 245,
+   "accepted": 242,
+   "challenged": 3
+  },
+  "CENTRALIA #4": {
+   "returned": 312,
+   "accepted": 306,
+   "challenged": 6
+  },
+  "STILLWATER WEST": {
+   "returned": 249,
+   "accepted": 248,
+   "challenged": 1
+  },
+  "CENTRALIA #7": {
+   "returned": 176,
+   "accepted": 174,
+   "challenged": 2
+  },
   "MIDDLE FORK": {
-   "returned": 298,
-   "accepted": 294,
+   "returned": 348,
+   "accepted": 344,
    "challenged": 4
   },
   "CENTRALIA #13": {
-   "returned": 496,
-   "accepted": 490,
-   "challenged": 6
+   "returned": 599,
+   "accepted": 592,
+   "challenged": 7
   },
   "CHEHALIS #3": {
-   "returned": 189,
-   "accepted": 188,
+   "returned": 230,
+   "accepted": 229,
    "challenged": 1
   },
   "CENTRALIA #6": {
-   "returned": 413,
-   "accepted": 408,
-   "challenged": 5
+   "returned": 507,
+   "accepted": 501,
+   "challenged": 6
   },
   "ALPHA": {
-   "returned": 521,
-   "accepted": 520,
+   "returned": 618,
+   "accepted": 617,
    "challenged": 1
   },
   "RANDLE EAST": {
-   "returned": 306,
-   "accepted": 305,
+   "returned": 370,
+   "accepted": 369,
    "challenged": 1
+  },
+  "STEARNS CREEK": {
+   "returned": 325,
+   "accepted": 322,
+   "challenged": 3
   },
   "AGATE": {
-   "returned": 164,
-   "accepted": 164
+   "returned": 207,
+   "accepted": 207
   },
   "CLAQUATO": {
-   "returned": 348,
-   "accepted": 347,
-   "challenged": 1
-  },
-  "CHEHALIS #5": {
-   "returned": 169,
-   "accepted": 169
-  },
-  "PRESCOTT": {
-   "returned": 321,
-   "accepted": 317,
-   "challenged": 4
-  },
-  "FERRIER": {
-   "returned": 253,
-   "accepted": 251,
+   "returned": 424,
+   "accepted": 422,
    "challenged": 2
   },
-  "COWLITZ": {
-   "returned": 610,
-   "accepted": 604,
-   "challenged": 6
-  },
-  "MESKILL": {
-   "returned": 76,
-   "accepted": 76
-  },
-  "CENTRALIA #10": {
-   "returned": 147,
-   "accepted": 146,
-   "challenged": 1
-  },
-  "CHEHALIS #7": {
-   "returned": 54,
-   "accepted": 53,
+  "CHEHALIS #5": {
+   "returned": 198,
+   "accepted": 197,
    "challenged": 1
   },
   "SALZER": {
-   "returned": 188,
-   "accepted": 187,
+   "returned": 240,
+   "accepted": 238,
+   "challenged": 2
+  },
+  "PRESCOTT": {
+   "returned": 388,
+   "accepted": 384,
+   "challenged": 4
+  },
+  "FERRIER": {
+   "returned": 303,
+   "accepted": 301,
+   "challenged": 2
+  },
+  "COWLITZ": {
+   "returned": 749,
+   "accepted": 741,
+   "challenged": 8
+  },
+  "DREWS PRAIRIE": {
+   "returned": 213,
+   "accepted": 211,
+   "challenged": 2
+  },
+  "CENTRALIA #10": {
+   "returned": 185,
+   "accepted": 183,
+   "challenged": 2
+  },
+  "CHEHALIS #7": {
+   "returned": 65,
+   "accepted": 64,
    "challenged": 1
+  },
+  "SEMINARY HILL": {
+   "returned": 234,
+   "accepted": 234
   },
   "VERNDALE": {
-   "returned": 301,
-   "accepted": 295,
+   "returned": 372,
+   "accepted": 366,
    "challenged": 6
   },
-  "CHEHALIS #2": {
-   "returned": 152,
-   "accepted": 151,
-   "challenged": 1
+  "NAPAVINE #1": {
+   "returned": 636,
+   "accepted": 629,
+   "challenged": 7
   },
   "URQUHART": {
-   "returned": 180,
-   "accepted": 179,
+   "returned": 231,
+   "accepted": 230,
    "challenged": 1
   },
   "CHEHALIS #8": {
-   "returned": 223,
-   "accepted": 221,
+   "returned": 281,
+   "accepted": 279,
    "challenged": 2
   },
   "TEMPLE": {
-   "returned": 362,
-   "accepted": 358,
-   "challenged": 4
+   "returned": 431,
+   "accepted": 423,
+   "challenged": 8
   },
   "BERWICK": {
-   "returned": 104,
-   "accepted": 103,
+   "returned": 141,
+   "accepted": 140,
    "challenged": 1
   },
   "MOSSYROCK": {
-   "returned": 139,
-   "accepted": 138,
+   "returned": 159,
+   "accepted": 158,
    "challenged": 1
   },
   "CENTRALIA #5": {
-   "returned": 187,
-   "accepted": 185,
+   "returned": 235,
+   "accepted": 233,
    "challenged": 2
   },
-  "NAPAVINE #1": {
-   "returned": 488,
-   "accepted": 481,
-   "challenged": 7
-  },
   "EMERY": {
-   "returned": 153,
-   "accepted": 153
-  },
-  "MCNULTY": {
-   "returned": 76,
-   "accepted": 75,
+   "returned": 191,
+   "accepted": 190,
    "challenged": 1
   },
-  "CENTRALIA #11": {
-   "returned": 384,
-   "accepted": 380,
-   "challenged": 4
+  "MCNULTY": {
+   "returned": 91,
+   "accepted": 90,
+   "challenged": 1
   },
   "CURTIS": {
-   "returned": 149,
-   "accepted": 149
+   "returned": 192,
+   "accepted": 192
   },
   "PARCUVIA": {
-   "returned": 81,
-   "accepted": 81
+   "returned": 93,
+   "accepted": 93
   },
   "MORTON": {
-   "returned": 314,
-   "accepted": 309,
+   "returned": 368,
+   "accepted": 363,
    "challenged": 5
   },
   "JACKSON": {
-   "returned": 407,
-   "accepted": 403,
-   "challenged": 4
+   "returned": 493,
+   "accepted": 488,
+   "challenged": 5
   },
   "SILVER CREEK": {
-   "returned": 437,
-   "accepted": 434,
+   "returned": 498,
+   "accepted": 495,
    "challenged": 3
   },
-  "DREWS PRAIRIE": {
-   "returned": 160,
-   "accepted": 158,
-   "challenged": 2
-  },
   "CHEHALIS #1": {
-   "returned": 235,
-   "accepted": 235
+   "returned": 278,
+   "accepted": 277,
+   "challenged": 1
   },
   "RANDLE WEST": {
-   "returned": 236,
-   "accepted": 236
+   "returned": 288,
+   "accepted": 287,
+   "challenged": 1
   },
   "CENTRALIA #3": {
-   "returned": 178,
-   "accepted": 176,
+   "returned": 207,
+   "accepted": 205,
    "challenged": 2
   },
   "CENTRALIA #1": {
-   "returned": 171,
-   "accepted": 171
+   "returned": 192,
+   "accepted": 192
   },
   "PE ELL": {
-   "returned": 156,
-   "accepted": 155,
+   "returned": 200,
+   "accepted": 199,
    "challenged": 1
   },
   "CHEHALIS #9": {
    "returned": 13,
    "accepted": 13
   },
-  "EVALINE EAST": {
-   "returned": 106,
-   "accepted": 106
-  },
-  "WHEALDON": {
-   "returned": 233,
-   "accepted": 231,
-   "challenged": 2
-  },
-  "PACKWOOD": {
-   "returned": 109,
-   "accepted": 109
-  },
   "MEIER": {
-   "returned": 146,
-   "accepted": 145,
+   "returned": 180,
+   "accepted": 179,
    "challenged": 1
   },
+  "EVALINE EAST": {
+   "returned": 129,
+   "accepted": 129
+  },
+  "WHEALDON": {
+   "returned": 272,
+   "accepted": 268,
+   "challenged": 4
+  },
+  "PACKWOOD": {
+   "returned": 133,
+   "accepted": 133
+  },
+  "TOLEDO": {
+   "returned": 211,
+   "accepted": 209,
+   "challenged": 2
+  },
   "VADER": {
-   "returned": 141,
-   "accepted": 139,
+   "returned": 186,
+   "accepted": 184,
    "challenged": 2
   },
   "STILLWATER EAST": {
-   "returned": 128,
-   "accepted": 127,
+   "returned": 153,
+   "accepted": 152,
    "challenged": 1
-  },
-  "CHEHALIS #11": {
-   "returned": 133,
-   "accepted": 132,
-   "challenged": 1
-  },
-  "STEARNS CREEK": {
-   "returned": 275,
-   "accepted": 272,
-   "challenged": 3
-  },
-  "TOLEDO": {
-   "returned": 169,
-   "accepted": 168,
-   "challenged": 1
-  },
-  "SEMINARY HILL": {
-   "returned": 178,
-   "accepted": 178
   },
   "SOMMERVILLE": {
-   "returned": 64,
-   "accepted": 64
+   "returned": 78,
+   "accepted": 78
+  },
+  "CHEHALIS #11": {
+   "returned": 155,
+   "accepted": 154,
+   "challenged": 1
   },
   "PARADISE": {
-   "returned": 56,
-   "accepted": 56
+   "returned": 70,
+   "accepted": 70
   },
   "ROSWELL": {
-   "returned": 9,
-   "accepted": 9
-  },
-  "INDEPENDENCE": {
-   "returned": 79,
-   "accepted": 79
+   "returned": 13,
+   "accepted": 13
   },
   "MAUERMAN": {
-   "returned": 83,
-   "accepted": 83
+   "returned": 108,
+   "accepted": 108
+  },
+  "INDEPENDENCE": {
+   "returned": 91,
+   "accepted": 90,
+   "challenged": 1
   },
   "WINLOCK #3": {
-   "returned": 14,
-   "accepted": 13,
+   "returned": 18,
+   "accepted": 17,
    "challenged": 1
   },
   "GREENWOOD": {
-   "returned": 21,
-   "accepted": 21
+   "returned": 22,
+   "accepted": 22
   },
   "MELLEN": {
    "returned": 4,
    "accepted": 4
   },
   "UNION": {
-   "returned": 50,
-   "accepted": 50
+   "returned": 65,
+   "accepted": 65
   },
   "WINLOCK #2": {
-   "returned": 3,
-   "accepted": 3
+   "returned": 6,
+   "accepted": 6
   },
   "CHEHALIS #15": {
    "returned": 1,
    "accepted": 1
   },
   "EMERY NORTH": {
+   "returned": 1,
+   "accepted": 1
+  },
+  "CHEHALIS #13": {
    "returned": 1,
    "accepted": 1
   },
