@@ -45,6 +45,9 @@ const state = {
   wide: new Map(),     // parent contest id -> totals across every county it covers
   precinctKey: null,   // matchback precinct value -> map precinct name
   noLiveReturns: new Set(),  // elections the Worker has no /returns for
+  compareId: null,     // election whose turnout is shown alongside this one
+  compareData: new Map(),  // election id -> its site/data JSON
+  chartMode: "daily",  // ballots-received chart: "daily" or "cumulative"
 };
 
 const $ = (id) => document.getElementById(id);
@@ -639,11 +642,18 @@ function ballotProgress({ registered, received, counted, challenged }, place, br
     (hasReceived && challenged ? `<p class="challenged">Challenged: <b>${fmt.format(challenged)}</b></p>` : "");
 }
 
-// Columns of ballots received per day (by the date the county received them).
-// Days with none are filled in so the dates stay evenly spaced; the latest day
-// is labeled and every column has a hover tooltip.
-function receivedChart(daily) {
+// Ballots received, by the date the county received them, as columns per day
+// or as a cumulative line of turnout (share of registered voters). Days with
+// none are filled in so the dates stay evenly spaced; the latest day is labeled
+// and every day has a hover tooltip. The cumulative view also draws the
+// comparison election's turnout as a dashed reference line.
+function receivedChart(daily, registered) {
   if (!daily?.length) return "";
+  const cumulative = state.chartMode === "cumulative" && registered > 0;
+  const tabs = `<div class="chart-tabs" role="tablist" aria-label="Chart view">` +
+    [["daily", "Daily"], ["cumulative", "Cumulative"]].map(([mode, text]) =>
+      `<button type="button" role="tab" data-chart="${mode}" aria-selected="${(mode === "cumulative") === cumulative}">${text}</button>`).join("") +
+    `</div>`;
   const counts = new Map(daily);
   const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
   const parse = (s) => new Date(`${s}T00:00`);
@@ -656,6 +666,7 @@ function receivedChart(daily) {
   const DOW = "SMTWTFS";
 
   const W = 320, H = 122, TOP = 20, BOTTOM = 32, plotH = H - TOP - BOTTOM;
+  if (cumulative) return turnoutChart(days, registered, tabs, { W, H, TOP, BOTTOM, plotH, label, dayLabel });
   const max = Math.max(...days.map(([, n]) => n), 1);
   const slot = W / days.length;
   const bw = Math.max(2, Math.min(24, slot - 2));
@@ -678,7 +689,7 @@ function receivedChart(daily) {
   const total = days.reduce((a, [, n]) => a + n, 0);
 
   return `<div class="chart">` +
-    `<h3 class="chart-title">Ballots received each day</h3>` +
+    `<div class="chart-head"><h3 class="chart-title">Ballots per day</h3>${tabs}</div>` +
     `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Ballots received each day, ${fmt.format(total)} in all, ${fmt.format(lastN)} on ${dayLabel(lastDay)}">` +
     `<line x1="0" x2="${W}" y1="${TOP + plotH + 0.5}" y2="${TOP + plotH + 0.5}" stroke="#d6d6d1" stroke-width="1"/>` +
     cols +
@@ -686,6 +697,120 @@ function receivedChart(daily) {
     `<text x="0" y="${H - 4}" class="chart-axis">${label(days[0][0])}</text>` +
     (days.length > 1 ? `<text x="${W}" y="${H - 4}" text-anchor="end" class="chart-axis">${label(lastDay)}</text>` : "") +
     `</svg><div class="chart-tip" hidden></div></div>`;
+}
+
+// Running total of ballots received as a share of registered voters, with the
+// comparison election's turnout (final, or so far) as a dashed line.
+function turnoutChart(days, registered, tabs, { W, H, TOP, BOTTOM, plotH, label, dayLabel }) {
+  let sum = 0;
+  const points = days.map(([d, n]) => { sum += n; return [d, sum, pct(sum, registered)]; });
+  const cmp = compareData();
+  const ref = cmp && turnoutOf(cmp);
+  const refRate = ref?.rate;
+  const top = Math.max(points.at(-1)[2], refRate || 0, 1);
+  const step = top > 40 ? 20 : top > 20 ? 10 : 5;
+  const ymax = Math.ceil((top * 1.08) / step) * step;
+  const slot = W / days.length;
+  const xAt = (i) => (days.length === 1 ? W / 2 : i * slot + slot / 2);
+  const yAt = (v) => TOP + plotH - (v / ymax) * plotH;
+
+  let grid = "";
+  for (let v = step; v <= ymax; v += step) {
+    if (refRate != null && Math.abs(yAt(v) - yAt(refRate)) < 9) continue;  // keep the reference label clear
+    grid += `<line x1="0" x2="${W}" y1="${yAt(v)}" y2="${yAt(v)}" stroke="#ecece8" stroke-width="1"/>` +
+      `<text x="0" y="${yAt(v) - 3}" class="chart-axis">${v}%</text>`;
+  }
+  const line = points.map(([, , v], i) => `${i ? "L" : "M"}${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(" ");
+  const area = `${line} L${xAt(points.length - 1).toFixed(1)},${TOP + plotH} L${xAt(0).toFixed(1)},${TOP + plotH} Z`;
+  const hits = points.map(([d, n, v], i) => {
+    const tip = `${dayLabel(d)}: ${fmt.format(n)} ballots, ${pctText(v)} of registered voters`;
+    return `<rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H - BOTTOM}" data-tip="${esc(tip)}"><title>${esc(tip)}</title></rect>`;
+  }).join("");
+  const refLine = refRate == null ? "" :
+    `<line x1="0" x2="${W}" y1="${yAt(refRate)}" y2="${yAt(refRate)}" stroke="#c4572a" stroke-width="1.5" stroke-dasharray="4 3"/>` +
+    `<text x="${W / 2}" y="${yAt(refRate) - 4}" text-anchor="middle" class="chart-axis chart-ref">${esc(cmp.name)}${ref.final ? " final" : " so far"}: ${pctText(refRate)}</text>`;
+
+  const [lastDay, lastN, lastV] = points.at(-1);
+  const lastX = xAt(points.length - 1), lastY = yAt(lastV);
+  // Label the latest point below it when it sits right on the reference line.
+  const valueY = refRate != null && Math.abs(lastY - yAt(refRate)) < 12 && lastV <= refRate + 3 ? lastY + 14 : lastY - 6;
+  return `<div class="chart">` +
+    `<div class="chart-head"><h3 class="chart-title">Turnout so far</h3>${tabs}</div>` +
+    `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Turnout so far: ${pctText(lastV)} of registered voters (${fmt.format(lastN)} ballots) by ${dayLabel(lastDay)}${refRate == null ? "" : `, against ${pctText(refRate)} in the ${esc(cmp.name)}`}">` +
+    grid +
+    `<line x1="0" x2="${W}" y1="${TOP + plotH + 0.5}" y2="${TOP + plotH + 0.5}" stroke="#d6d6d1" stroke-width="1"/>` +
+    `<path d="${area}" fill="#3a7bb8" fill-opacity="0.15"/>` +
+    `<path d="${line}" fill="none" stroke="#3a7bb8" stroke-width="2" stroke-linejoin="round"/>` +
+    refLine +
+    `<circle cx="${lastX}" cy="${lastY}" r="3" fill="#3a7bb8"/>` +
+    `<text x="${Math.max(20, Math.min(lastX, W - 20))}" y="${valueY}" text-anchor="middle" class="chart-value">${pctText(lastV)}</text>` +
+    hits +
+    `<text x="0" y="${H - 4}" class="chart-axis">${label(days[0][0])}</text>` +
+    (days.length > 1 ? `<text x="${W}" y="${H - 4}" text-anchor="end" class="chart-axis">${label(lastDay)}</text>` : "") +
+    `</svg><div class="chart-tip" hidden></div></div>`;
+}
+
+// ---------------------------------------------------------- comparison
+
+// The comparison election picked in the sidebar, once its data has loaded.
+function compareData() {
+  return state.compareId && state.compareId !== state.electionId ? state.compareData.get(state.compareId) || null : null;
+}
+
+async function setCompare(id) {
+  state.compareId = id || null;
+  if (id && !state.compareData.has(id)) {
+    try {
+      state.compareData.set(id, await getJSON(`data/${id}.json`));
+    } catch (err) {
+      console.warn("comparison election failed to load", err);
+      state.compareId = null;
+    }
+  }
+  if (state.data && state.compareId === (id || null)) renderAll();
+}
+
+// Turnout for an election, countywide or for one precinct: ballots counted,
+// or received when more have come in than have been counted yet.
+function turnoutOf(d, name = null) {
+  const p = name ? d.precincts?.[name] : null;
+  if (name && !p) return null;
+  const registered = (name ? p.registered : d.results.registered) || 0;
+  const counted = (name ? p.counted : d.results.ballotsCast) || 0;
+  const live = d.returns?.available && !d.returns.final;
+  const received = live ? (name ? p.returned : d.returns.returned) || 0 : 0;
+  const ballots = Math.max(counted, received);
+  return { registered, ballots, rate: pct(ballots, registered), final: !!d.results.official, kind: received > counted ? "received" : "counted" };
+}
+
+// Side-by-side stats for the summary card.
+function compareTable() {
+  const cmp = compareData();
+  if (!cmp) return "";
+  const d = state.data;
+  const a = turnoutOf(d), b = turnoutOf(cmp);
+  const when = (t) => (t.final ? "final" : t.kind === "received" ? "received so far" : "counted so far");
+  const diff = a.rate != null && b.rate != null ? a.rate - b.rate : null;
+  const share = b.ballots ? pct(a.ballots, b.ballots) : null;
+  const note = !a.final && b.final && share != null
+    ? `Ballots so far are ${pctText(share)} of the ${fmt.format(b.ballots)} cast in the ${esc(cmp.name)}.`
+    : a.final && b.final && diff != null ? `Turnout is ${Math.abs(diff).toFixed(1)} points ${diff >= 0 ? "higher" : "lower"} than in the ${esc(cmp.name)}.` : "";
+  return `<div class="cmp"><h3 class="chart-title">Compared with the ${esc(cmp.name)}</h3>` +
+    `<table class="cmp-table"><thead><tr><th></th><th>${esc(d.name)}<small>${when(a)}</small></th><th>${esc(cmp.name)}<small>${when(b)}</small></th></tr></thead><tbody>` +
+    `<tr><th>Registered voters</th><td>${fmt.format(a.registered)}</td><td>${fmt.format(b.registered)}</td></tr>` +
+    `<tr><th>Ballots</th><td>${fmt.format(a.ballots)}</td><td>${fmt.format(b.ballots)}</td></tr>` +
+    `<tr><th>Turnout</th><td><b>${pctText(a.rate)}</b></td><td><b>${pctText(b.rate)}</b></td></tr>` +
+    `</tbody></table>` + (note ? `<p class="muted cmp-note">${note}</p>` : "") + `</div>`;
+}
+
+// One line for the precinct card. Precincts are matched by name, so one that
+// was created or renamed since has no comparison.
+function compareLine(name) {
+  const cmp = compareData();
+  if (!cmp) return "";
+  const t = turnoutOf(cmp, name);
+  if (!t || !t.registered) return `<p class="muted cmp-line">No ${esc(cmp.name)} figures for this precinct.</p>`;
+  return `<p class="muted cmp-line">${esc(cmp.name)}: <b>${pctText(t.rate)}</b> turnout ${t.final ? "" : "so far "}(${fmt.format(t.ballots)} of ${fmt.format(t.registered)} voters)</p>`;
 }
 
 // How ballots came in (drop box, mail, email) and the drop boxes by use, from
@@ -719,8 +844,8 @@ function renderSummary() {
     challenged: d.returns.challenged,
   }, "Lewis County");
 
-  let html = `<h2>Countywide</h2>` + progress;
-  if (state.layerName === "returned" && d.returns.available) html += receivedChart(d.returns.daily) + howReturned(d.returns);
+  let html = `<h2>Countywide</h2>` + progress + compareTable();
+  if (state.layerName === "returned" && d.returns.available) html += receivedChart(d.returns.daily, d.results.registered) + howReturned(d.returns);
   const c = contest();
   if (state.layerName === "results" && c) {
     const local = c.options.map((o) => o.votes);
@@ -748,7 +873,7 @@ function renderDetail() {
   }, "this precinct", true);
 
   let html = `<div class="detail-head"><h3>${esc(name)}</h3><button class="close" type="button" aria-label="Close precinct details" title="Close (Esc)">&times;</button></div>` +
-    `<p class="muted" style="margin-bottom:10px">Precinct ${esc(feat.num ?? "")} · LD ${esc(feat.ld ?? "–")} · CD ${esc(feat.cd ?? "–")}</p>` + progress;
+    `<p class="muted" style="margin-bottom:10px">Precinct ${esc(feat.num ?? "")} · LD ${esc(feat.ld ?? "–")} · CD ${esc(feat.cd ?? "–")}</p>` + progress + compareLine(name);
   const c = contest();
   if (state.layerName === "results" && c) {
     const votes = c.precincts[name];
@@ -820,6 +945,9 @@ function renderControls() {
   $("layer-desc").textContent = state.layerName === "results"
     ? (state.data.results.archived ? "Certified final results." : "Votes counted so far, updated live.")
     : state.data.returns.final ? "Final turnout: ballots counted, as a share of registered voters." : "Ballots the county has received, updated daily.";
+  const others = state.elections.filter((e) => e.id !== state.electionId);
+  $("compare").innerHTML = `<option value="">None</option>` + others.map((e) => `<option value="${e.id}">${esc(e.name)}</option>`).join("");
+  $("compare").value = others.some((e) => e.id === state.compareId) ? state.compareId : "";
   const sel = $("contest");
   // Rebuild when live data arrives too: the saved snapshot has no county counts.
   const key = state.data.contests.map((c) => `${c.id}:${c.counties}`).join(",");
@@ -864,6 +992,7 @@ function writeUrl() {
   if (state.layerName === "results" && c) q.set("contest", slug(c.name));
   const num = state.selected && featureFor(state.selected)?.num;
   if (num != null) q.set("p", num);
+  if (compareData()) q.set("vs", state.compareId);
   const url = `${location.pathname}?${q}`;
   if (url !== location.pathname + location.search) history.replaceState(null, "", url);
 }
@@ -920,6 +1049,7 @@ async function loadElection(id, linkParams = null) {
   const [geo, data] = await Promise.all([getJSON(`data/${id}.geojson`), getJSON(`data/${id}.json`)]);
   state.electionId = id;
   state.data = data;
+  if (state.compareId === id) state.compareId = null;
   state.precinctKey = precinctKeys(geo);
   state.selected = null;
   state.contestId = null;
@@ -1202,6 +1332,13 @@ $("find-address").addEventListener("input", (e) => { if (!e.target.value && (fin
 $("find-msg").addEventListener("click", (e) => { if (e.target.closest(".find-clear")) clearFind(); });
 
 $("election").addEventListener("change", (e) => loadElection(e.target.value));
+$("compare").addEventListener("change", (e) => setCompare(e.target.value));
+$("summary").addEventListener("click", (e) => {
+  const tab = e.target.closest("[data-chart]");
+  if (!tab) return;
+  state.chartMode = tab.dataset.chart;
+  renderSummary();
+});
 $("contest").addEventListener("change", (e) => { state.contestId = e.target.value; renderAll(); loadBreakdown(); });
 $("detail").addEventListener("click", (e) => { if (e.target.closest(".close")) selectPrecinct(null); });
 $("share").addEventListener("click", shareView);
@@ -1263,7 +1400,9 @@ document.querySelectorAll(".seg button").forEach((b) =>
   const link = new URLSearchParams(location.search);
   const first = state.elections.find((e) => e.id === link.get("e"))?.id || state.elections[0].id;
   $("election").value = first;
-  await loadElection(first, link);
+  const vs = state.elections.find((e) => e.id === link.get("vs") && e.id !== first)?.id;
+  if (vs) state.compareId = vs;
+  await Promise.all([loadElection(first, link), vs && setCompare(vs)]);
   poll(refreshLive, resultsEvery);
   poll(refreshStatic, returnsEvery);
 })();
