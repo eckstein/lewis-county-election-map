@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>National Races 2026</title>
+  <meta name="description" content="Live 2026 results for U.S. Senate, U.S. House and governor races, from the makers of the Lewis County Election Map.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://votemapwa.org/national.html">
+  <meta property="og:title" content="2026 National Races: Senate, House, Governor">
+  <meta property="og:description" content="Live 2026 results for U.S. Senate, U.S. House and governor races.">
+  <meta property="og:image" content="https://votemapwa.org/share.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <style>
+    :root {
+      --bg: #f7f7f5; --panel: #fff; --text: #1f2328; --muted: #646a73; --line: #e3e3df; --accent: #1d5c8f;
+      --d: #2f6db5; --d-soft: #dbe7f6; --r: #c23b32; --r-soft: #f6dcd9; --o: #7a6a9a; --o-soft: #e7e2ef;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text);
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html, body { margin: 0; background: var(--bg); }
+    a { color: var(--accent); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 18px 16px 40px; }
+    .back { font-size: 14px; font-weight: 600; text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+    h1 { font-size: 24px; margin: 10px 0 2px; letter-spacing: -0.01em; }
+    h2 { font-size: 13px; margin: 0 0 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+    .badge { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; vertical-align: middle; }
+    .muted { color: var(--muted); font-size: 13px; }
+    .sub { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+    .status { font-size: 13px; color: var(--muted); margin: 0 0 16px; }
+    .status.err { color: #8a5a00; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+
+    .strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+    @media (max-width: 720px) { .strip { grid-template-columns: 1fr; } }
+    .bal-h { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+    .bal-h strong { font-size: 15px; }
+    .bar { position: relative; display: flex; height: 14px; border-radius: 4px; overflow: hidden; background: #ecece8; }
+    .bar span { height: 100%; }
+    .bar .d { background: var(--d); } .bar .r { background: var(--r); } .bar .i { background: var(--o); }
+    .bar .line { position: absolute; top: -3px; bottom: -3px; left: 50%; width: 2px; background: var(--text); }
+    .bal-n { display: flex; justify-content: space-between; font-size: 13px; margin-top: 6px; }
+    .bal-n .dn { color: var(--d); font-weight: 700; } .bal-n .rn { color: var(--r); font-weight: 700; }
+    .bal .note { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+    .home { margin-bottom: 16px; border-left: 4px solid var(--accent); }
+
+    .tabs { display: flex; gap: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin-bottom: 12px; background: #fff; }
+    .tabs button { flex: 1; font: inherit; font-size: 15px; padding: 9px 0; border: 0; background: #fff; color: var(--text); cursor: pointer; }
+    .tabs button + button { border-left: 1px solid var(--line); }
+    .tabs button[aria-selected="true"] { background: var(--accent); color: #fff; font-weight: 600; }
+    .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; font-size: 14px; }
+    .filters select, .filters input[type=search] { font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+    .filters label { display: inline-flex; gap: 6px; align-items: center; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+    .section-h { margin: 18px 0 10px; }
+    .race { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+    .race-h { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+    .race-h strong { font-size: 15px; }
+    .rating { font-size: 11px; font-weight: 600; border-radius: 4px; padding: 1px 6px; white-space: nowrap; }
+    .rt0, .rt1 { background: var(--d-soft); color: #1d4a80; } .rt2 { background: #eaf1fa; color: #1d4a80; }
+    .rt3 { background: #efe8d4; color: #6b5310; }
+    .rt4 { background: #fbecea; color: #8c2a23; } .rt5, .rt6 { background: var(--r-soft); color: #8c2a23; }
+    .inc { font-size: 12px; color: var(--muted); margin: 2px 0 8px; }
+    .cands { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+    .cand { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; font-size: 14px; }
+    .cand .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .pty { display: inline-block; width: 18px; font-size: 11px; font-weight: 700; text-align: center; border-radius: 3px; color: #fff; margin-right: 6px; }
+    .pD { background: var(--d); } .pR { background: var(--r); } .pO { background: var(--o); }
+    .cand .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .cand .num small { color: var(--muted); font-size: 12px; margin-left: 4px; }
+    .cand .cbar { grid-column: 1 / -1; height: 5px; background: #ecece8; border-radius: 3px; overflow: hidden; }
+    .cand .cbar span { display: block; height: 100%; }
+    .cand.win .nm { font-weight: 700; }
+    .cand.win .nm::after { content: " ✓"; color: #1a7f37; }
+    .more { font-size: 12px; color: var(--muted); }
+    .race-f { margin-top: 8px; font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; }
+    .race-f .st-called { color: #1a7f37; font-weight: 600; }
+    .race-f .st-counting { color: #8a5a00; font-weight: 600; }
+
+    .house { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+    .hrow { display: grid; grid-template-columns: 74px 1fr 1fr 110px; gap: 10px; align-items: center; padding: 9px 12px; font-size: 14px; border-top: 1px solid var(--line); }
+    .hrow:first-child { border-top: 0; }
+    .hrow .code { font-weight: 700; }
+    .hrow .hc { min-width: 0; }
+    .hrow .hc .nm { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .hrow .hc .num { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .hrow .hc.win .nm { font-weight: 700; } .hrow .hc.win .nm::after { content: " ✓"; color: #1a7f37; }
+    .hrow .hs { text-align: right; font-size: 12px; }
+    @media (max-width: 620px) {
+      .hrow { grid-template-columns: 60px 1fr 1fr; }
+      .hrow .hs { grid-column: 1 / -1; text-align: left; }
+    }
+    .empty { padding: 16px; color: var(--muted); font-size: 14px; }
+    footer { margin-top: 28px; font-size: 12px; color: var(--muted); line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="./">&larr; Lewis County Election Map</a>
+    <h1>2026 National Races <span class="badge" title="Not an official results site">Unofficial</span></h1>
+    <p class="sub">U.S. Senate, U.S. House and governor results as states count them. Races are only marked won when a named source (such as the AP) calls them.</p>
+    <p id="status" class="status" role="status">Loading results…</p>
+
+    <section class="strip" id="strip" aria-label="Balance of power"></section>
+    <section class="card home" id="home" hidden></section>
+
+    <div class="tabs" role="tablist" aria-label="Office">
+      <button role="tab" data-office="S" aria-selected="true">Senate</button>
+      <button role="tab" data-office="H" aria-selected="false">House</button>
+      <button role="tab" data-office="G" aria-selected="false">Governor</button>
+    </div>
+    <div class="filters">
+      <label>State <select id="state"><option value="">All states</option></select></label>
+      <label id="comp-wrap"><input type="checkbox" id="comp" checked> Competitive races only</label>
+      <label id="rep-wrap"><input type="checkbox" id="rep"> Reporting only</label>
+    </div>
+    <div id="list"></div>
+
+    <footer>
+      Results and race ratings come from <a href="https://thepeoplestally.com/" target="_blank" rel="noopener">The People's Tally</a>
+      (<a href="https://thepeoplestally.com/open-data/" target="_blank" rel="noopener">open data</a>, CC BY 4.0), which gathers
+      unofficial counts from state election offices and race calls from named sources. Ratings are Cook Political Report's.
+      Numbers are unofficial until each state certifies them; follow each race's source link for the official count.
+      This page is not affiliated with The People's Tally, any state, or any news organization.
+      <a href="https://github.com/eckstein/lewis-county-election-map" target="_blank" rel="noopener">Source code</a>.
+    </footer>
+  </div>
+
+<script>
+(() => {
+  "use strict";
+  const TALLY = "https://thepeoplestally.com";
+  // /api/live has no CORS header, so the Worker relays it (and caches it for a minute).
+  const LIVE = "https://lc-results-proxy.zacharyeckstein.workers.dev/national/live";
+  const HOME = "H-WA-03"; // Lewis County's district
+  const RATINGS = ["Solid D", "Likely D", "Lean D", "Toss Up", "Lean R", "Likely R", "Solid R"];
+  const OFFICE = { S: "Senate", H: "House", G: "Governor" };
+  const STATES = { AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",DC:"District of Columbia",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming" };
+  // Seats not up this year (Senate: independents who caucus with Democrats count as D).
+  const SENATE_NOT_UP = { D: 34, R: 31 };
+  const GOV_NOT_UP = { D: 6, R: 8 }; // governors' seats not on the 2026 ballot
+
+  let core = null;          // [{id, o, st, loc, inc, incP, r, cands:[{name,p,inc}]}]
+  let snapshot = {};        // results.json races
+  let live = {};            // /api/live res, keyed by state
+  let lastOk = 0, lastErr = "";
+  const ui = { office: "S", state: "", comp: true, rep: false };
+  try { Object.assign(ui, JSON.parse(localStorage.getItem("national-ui") || "{}")); } catch (e) {}
+
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+  const fmt = (n) => (n == null ? "" : Number(n).toLocaleString("en-US"));
+  const party = (p) => { p = String(p || "").replace("!", "").toUpperCase()[0] || "O"; return p === "D" || p === "R" ? p : "O"; };
+  const lastName = (n) => String(n).replace(/,? (Jr|Sr|II|III|IV)\.?$/i, "").trim().split(" ").pop().toLowerCase();
+
+  // core.json packs races one per line: office|state[-district]|incumbent|party|rating|P:Name *#fec~...;P:Name...
+  function parseCore(text) {
+    return text.split("\n").filter(Boolean).map((line) => {
+      const f = line.split("|");
+      const o = f[0], loc = f[1];
+      const cands = (f[5] || "").split(";").filter(Boolean).map((c) => {
+        const i = c.indexOf(":");
+        const raw = c.slice(i + 1).split(/[#~]/)[0];
+        return { name: raw.replace(/\s*\*$/, "").trim(), p: party(c.slice(0, i)), inc: /\*\s*$/.test(raw), writeIn: c.slice(0, i).includes("!") };
+      });
+      return { id: o + "-" + loc, o, loc, st: loc.slice(0, 2), inc: f[2], incP: f[3], r: f[4] === "" ? null : Number(f[4]), cands };
+    });
+  }
+
+  // Results for one race: the snapshot, with live counts laid over any race not yet called.
+  function result(id) {
+    const snap = snapshot[id] || {};
+    if (snap.status === "called") return snap;
+    const st = live[id.split("-")[1]];
+    const lv = st && st.races && st.races[id];
+    if (lv) return { ...snap, ...lv, status: snap.status === "leading" ? "leading" : "counting", asof: lv.asof || st.asOf || snap.asof, src: lv.src || st.src || snap.src, url: lv.url || st.url || snap.url };
+    return snap;
+  }
+  function resultCands(res) {
+    if (!Array.isArray(res.cands)) return [];
+    return res.cands.map((c) => Array.isArray(c)
+      ? { name: String(c[0]), pct: c[1] != null ? Number(c[1]) : null, votes: c[2] != null ? Number(c[2]) : null, party: c[3], winner: false }
+      : { name: String(c.name || c.n || ""), pct: (c.pct ?? c.p) != null ? Number(c.pct ?? c.p) : null, votes: (c.votes ?? c.v) != null ? Number(c.votes ?? c.v) : null, party: c.party, winner: !!c.winner });
+  }
+
+  // Merges the candidate list with counts; returns rows sorted by votes (or by party before any count).
+  function rows(race) {
+    const res = result(race.id);
+    const counted = resultCands(res);
+    const used = new Set();
+    const out = race.cands.filter((c) => !c.writeIn).map((c) => {
+      let m = counted.find((x) => x.name.toLowerCase() === c.name.toLowerCase()) || counted.find((x) => lastName(x.name) === lastName(c.name));
+      if (m) used.add(m);
+      return { name: c.name, p: c.p, inc: c.inc, votes: m ? m.votes : null, pct: m ? m.pct : null, winner: m ? m.winner : false };
+    });
+    counted.filter((x) => !used.has(x)).forEach((x) => out.push({ name: x.name, p: party(x.party), inc: false, votes: x.votes, pct: x.pct, winner: x.winner }));
+    const total = out.reduce((s, c) => s + (c.votes || 0), 0);
+    out.forEach((c) => { if (c.pct == null && total && c.votes != null) c.pct = (c.votes / total) * 100; });
+    if (res.status === "called" && !out.some((c) => c.winner)) {
+      const w = res.winner_name ? out.find((c) => c.name.toLowerCase() === String(res.winner_name).toLowerCase() || lastName(c.name) === lastName(res.winner_name)) : null;
+      const lead = w || (res.leader ? out.filter((c) => c.p === party(res.leader)).sort((a, b) => (b.votes || 0) - (a.votes || 0))[0] : null);
+      if (lead) lead.winner = true;
+    }
+    const order = { D: 0, R: 1, O: 2 };
+    out.sort((a, b) => (b.votes ?? -1) - (a.votes ?? -1) || order[a.p] - order[b.p] || b.inc - a.inc);
+    return { res, cands: out, total, reporting: total > 0 || res.status === "called" };
+  }
+
+  function winnerParty(race) {
+    const { res, cands } = rows(race);
+    if (res.status !== "called") return null;
+    const w = cands.find((c) => c.winner);
+    return w ? w.p : res.leader ? party(res.leader) : null;
+  }
+
+  function statusLine(res, reporting) {
+    if (res.status === "called") return `<span class="st-called">Called${res.called_by ? " by " + esc(res.called_by) : ""}</span>`;
+    if (reporting) return `<span class="st-counting">Counting${res.exp != null ? " · " + esc(res.exp) + "% of expected vote" : ""}</span>`;
+    return "Not yet reported";
+  }
+  function asOf(res) {
+    if (!res.asof) return "";
+    const t = new Date(res.asof);
+    return isNaN(t) ? esc(res.asof) : t.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  }
+  function title(race) {
+    if (race.o === "H") return race.loc;
+    return STATES[race.st] + (race.loc.endsWith("-sp") ? " (special)" : "");
+  }
+  const ratingChip = (r) => (r == null ? "" : `<span class="rating rt${r}" title="Cook Political Report rating">${RATINGS[r]}</span>`);
+
+  function raceCard(race, maxCands = 4) {
+    const { res, cands, reporting } = rows(race);
+    const shown = cands.slice(0, maxCands);
+    const rest = cands.length - shown.length;
+    const list = shown.map((c) => `
+      <li class="cand${c.winner ? " win" : ""}">
+        <span class="nm"><span class="pty p${c.p}">${c.p === "O" ? "•" : c.p}</span>${esc(c.name)}${c.inc ? ' <span class="muted">(inc.)</span>' : ""}</span>
+        <span class="num">${c.pct != null ? c.pct.toFixed(1) + "%" : ""}${c.votes != null ? `<small>${fmt(c.votes)}</small>` : ""}</span>
+        ${reporting ? `<span class="cbar"><span class="p${c.p}" style="width:${Math.max(0, Math.min(100, c.pct || 0))}%"></span></span>` : ""}
+      </li>`).join("");
+    const src = res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">${esc(res.src || "Source")}</a>` : "";
+    return `<article class="race">
+      <div class="race-h"><strong>${esc(title(race))}</strong>${ratingChip(race.r)}</div>
+      <div class="inc">${race.o === "H" ? esc(STATES[race.st]) + " · " : ""}Now: ${esc(race.inc || "—")}${race.incP && race.incP.length === 1 ? " (" + esc(race.incP) + ")" : ""}</div>
+      <ul class="cands">${list}</ul>
+      ${rest > 0 ? `<div class="more">+${rest} other candidate${rest > 1 ? "s" : ""}</div>` : ""}
+      <div class="race-f"><span>${statusLine(res, reporting)}${asOf(res) ? " · " + asOf(res) : ""}</span><span>${src}</span></div>
+    </article>`;
+  }
+
+  function houseRow(race) {
+    const { res, cands, reporting } = rows(race);
+    const cell = (c) => c ? `<div class="hc${c.winner ? " win" : ""}"><span class="nm"><span class="pty p${c.p}">${c.p === "O" ? "•" : c.p}</span>${esc(c.name)}${c.inc ? " *" : ""}</span>${reporting ? `<span class="num">${c.pct != null ? c.pct.toFixed(1) + "%" : ""} ${c.votes != null ? "· " + fmt(c.votes) : ""}</span>` : ""}</div>` : "<div></div>";
+    return `<div class="hrow"><span class="code">${esc(race.loc)}<br>${ratingChip(race.r)}</span>${cell(cands[0])}${cell(cands[1])}<span class="hs">${statusLine(res, reporting)}${asOf(res) ? "<br>" + asOf(res) : ""}</span></div>`;
+  }
+
+  function balance(name, office, total, notUp, line, note) {
+    const races = core.filter((r) => r.o === office);
+    const won = { D: notUp.D, R: notUp.R, O: 0 };
+    races.forEach((r) => { const p = winnerParty(r); if (p) won[p]++; });
+    const open = total - won.D - won.R - won.O;
+    const pc = (n) => (n / total) * 100 + "%";
+    return `<div class="card bal">
+      <div class="bal-h"><strong>${name}</strong><span class="muted">${line}</span></div>
+      <div class="bar" role="img" aria-label="${name}: Democrats ${won.D}, Republicans ${won.R}, ${open} uncalled">
+        <span class="d" style="width:${pc(won.D)}"></span><span class="i" style="width:${pc(won.O)}"></span>
+        <span style="flex:1"></span><span class="r" style="width:${pc(won.R)}"></span>${office === "G" ? "" : '<span class="line"></span>'}
+      </div>
+      <div class="bal-n"><span class="dn">D ${won.D}</span><span class="muted">${open} uncalled${won.O ? " · " + won.O + " other" : ""}</span><span class="rn">R ${won.R}</span></div>
+      <div class="note">${note}</div>
+    </div>`;
+  }
+
+  function render() {
+    if (!core) return;
+    $("strip").innerHTML =
+      balance("Senate", "S", 100, SENATE_NOT_UP, "51 for control", "Seats held but not up this year are included. The vice president breaks 50–50 ties.") +
+      balance("House", "H", 435, { D: 0, R: 0 }, "218 for control", "All 435 seats are up.") +
+      balance("Governors", "G", 50, GOV_NOT_UP, "36 up this year", "Governors not up this year are included.");
+
+    const home = core.find((r) => r.id === HOME);
+    if (home) {
+      $("home").hidden = false;
+      $("home").innerHTML = `<h2>Lewis County's U.S. House race</h2>${raceCard(home).replace('<article class="race">', '<article class="race" style="border:0;padding:0">')}`;
+    }
+
+    document.querySelectorAll(".tabs button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.office === ui.office)));
+    $("state").value = ui.state;
+    $("comp").checked = ui.comp;
+    $("rep").checked = ui.rep;
+    $("comp-wrap").hidden = !!ui.state; // a single state shows all its races
+
+    let races = core.filter((r) => r.o === ui.office && (!ui.state || r.st === ui.state));
+    if (ui.rep) races = races.filter((r) => rows(r).reporting);
+    const byName = (a, b) => (STATES[a.st] || "").localeCompare(STATES[b.st] || "") || a.loc.localeCompare(b.loc);
+    const key = races.filter((r) => r.r != null && r.r >= 1 && r.r <= 5).sort((a, b) => Math.abs(a.r - 3) - Math.abs(b.r - 3) || byName(a, b));
+    const other = races.filter((r) => !key.includes(r)).sort(byName);
+    const label = OFFICE[ui.office];
+
+    let html = "";
+    if (!races.length) {
+      html = `<div class="card empty">No ${label.toLowerCase()} races match${ui.rep ? " that are reporting yet" : ""}.</div>`;
+    } else if (ui.office === "H") {
+      const show = ui.state ? races.sort(byName) : ui.comp ? key : key.concat(other);
+      html = `<div class="house">${show.map(houseRow).join("") || '<div class="empty">None.</div>'}</div>`;
+      if (!ui.state && ui.comp) html += `<p class="muted">Showing ${key.length} competitive seats (Likely, Lean or Toss Up), closest first. Uncheck "Competitive races only" for all ${core.filter((r) => r.o === "H").length}, or pick a state. * marks the incumbent.</p>`;
+    } else if (ui.state) {
+      html = `<div class="grid">${races.sort(byName).map((r) => raceCard(r, 6)).join("")}</div>`;
+    } else {
+      if (key.length) html += `<h2 class="section-h">Competitive ${label.toLowerCase()} races, closest first</h2><div class="grid">${key.map((r) => raceCard(r)).join("")}</div>`;
+      if (!ui.comp && other.length) html += `<h2 class="section-h">Other ${label.toLowerCase()} races</h2><div class="grid">${other.map((r) => raceCard(r)).join("")}</div>`;
+      if (ui.comp && other.length) html += `<p class="muted">${other.length} safe ${label.toLowerCase()} races hidden. Uncheck "Competitive races only" to see them.</p>`;
+    }
+    $("list").innerHTML = html;
+
+    const s = $("status");
+    if (lastErr && !lastOk) { s.textContent = lastErr; s.className = "status err"; }
+    else {
+      const any = core.some((r) => rows(r).reporting);
+      s.className = "status" + (lastErr ? " err" : "");
+      s.textContent = (any ? "Live results" : "No votes reported yet. Results appear here as polls close (Washington's close at 8 p.m. Pacific).") +
+        (lastOk ? ` · Checked ${new Date(lastOk).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}` : "") +
+        (lastErr ? ` · ${lastErr}` : "") + " · Updates every minute";
+    }
+  }
+
+  function save() { try { localStorage.setItem("national-ui", JSON.stringify(ui)); } catch (e) {} render(); }
+
+  async function getJSON(url) {
+    const r = await fetch(url, { cache: "no-cache" });
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }
+
+  let coreAt = 0;
+  async function refresh() {
+    const jobs = [
+      getJSON(TALLY + "/data/results.json").then((d) => { snapshot = (d && d.races) || {}; }),
+      getJSON(LIVE).then((d) => { live = (d && typeof d.res === "object" && d.res) || {}; }),
+    ];
+    if (!core || Date.now() - coreAt > 15 * 60e3) {
+      jobs.push(getJSON(TALLY + "/data/core.json").then((d) => {
+        core = parseCore(d.races);
+        coreAt = Date.now();
+        const sel = $("state");
+        if (sel.options.length === 1) {
+          [...new Set(core.map((r) => r.st))].sort((a, b) => STATES[a].localeCompare(STATES[b]))
+            .forEach((st) => sel.add(new Option(STATES[st], st)));
+        }
+      }));
+    }
+    const out = await Promise.allSettled(jobs);
+    const failed = out.filter((o) => o.status === "rejected").length;
+    if (failed < out.length && core) { lastOk = Date.now(); }
+    lastErr = !core ? "Couldn't load race data from The People's Tally. Retrying…" : failed ? "Some results couldn't be loaded; retrying" : "";
+    render();
+  }
+
+  document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => { ui.office = b.dataset.office; save(); }));
+  $("state").addEventListener("change", (e) => { ui.state = e.target.value; save(); });
+  $("comp").addEventListener("change", (e) => { ui.comp = e.target.checked; save(); });
+  $("rep").addEventListener("change", (e) => { ui.rep = e.target.checked; save(); });
+
+  refresh();
+  setInterval(() => { if (!document.hidden) refresh(); }, 60e3);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && Date.now() - lastOk > 60e3) refresh(); });
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "aafe9ad38ead4d3689446bed4373c6c2"}'></script>
+</body>
+</html>

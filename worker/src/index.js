@@ -15,6 +15,12 @@
 // totaling scripts/build.py does, so the map picks up the state's ~5 p.m. file
 // within minutes instead of waiting for the hourly GitHub build.
 //
+// /national/live relays The People's Tally live bundle
+// (thepeoplestally.com/api/live, CC BY 4.0) for the national races page. That
+// endpoint sends no CORS header, and its docs ask clients to poll no faster
+// than once a minute, so Cloudflare keeps each copy for 60 seconds and all
+// open pages together make about one upstream call a minute.
+//
 // Workers Caching is on (wrangler.toml), so Cloudflare serves repeat requests
 // from its cache for as long as each response's Cache-Control allows, and only
 // a miss runs this code and calls the county or the state.
@@ -38,6 +44,25 @@ const RETURNS_CACHE = "public, max-age=60, s-maxage=300";
 // Matchback statuses that mean the ballot has not come back yet.
 const NOT_RETURNED = new Set(["", "issued", "sent", "mailed", "undeliverable", "not returned", "none"]);
 const LEWIS_CODES = new Set(["LE", "LEWIS", "53041", "041", "21"]);
+
+const TALLY_LIVE = "https://thepeoplestally.com/api/live";
+
+async function nationalLive() {
+  const json = { "Content-Type": "application/json; charset=utf-8" };
+  let upstream;
+  try {
+    upstream = await fetch(TALLY_LIVE, {
+      headers: { Accept: "application/json", "User-Agent": "votemapwa.org national page (github.com/eckstein/lewis-county-election-map)" },
+    });
+  } catch (err) {
+    return reply('{"error":"thepeoplestally.com unreachable"}', 502, { ...json, "Cache-Control": "no-store" });
+  }
+  const type = upstream.headers.get("Content-Type") || "";
+  if (!upstream.ok || !type.includes("json")) {
+    return reply(JSON.stringify({ error: `upstream returned ${upstream.status}` }), 502, { ...json, "Cache-Control": "no-store" });
+  }
+  return reply(upstream.body, 200, { ...json, "Cache-Control": "public, max-age=30, s-maxage=60" });
+}
 
 const ALLOWED = [
   /^\/(lewis-county-wa|washington)\/\d{8}\/data$/,
@@ -233,6 +258,7 @@ export default {
     if (pathname === "/geocode") return geocode(searchParams.get("address"));
     const returnsPath = pathname.match(/^\/returns\/(\d{8})$/);
     if (returnsPath) return returns(returnsPath[1]);
+    if (pathname === "/national/live") return nationalLive();
     if (!ALLOWED.some((re) => re.test(pathname))) return reply("Not found", 404);
 
     let upstream;
