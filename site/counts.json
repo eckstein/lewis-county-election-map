@@ -1,32 +1,32 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T08:37:29+00:00",
+ "updated": "2026-11-04T08:41:30+00:00",
  "counts": {
   "S-MT": {
    "cands": {
-    "KURT ALME": 195534,
-    "ALANI BANKHEAD": 47972,
-    "KYLE AUSTIN": 7293,
-    "SETH BODNAR": 154582
+    "KURT ALME": 195633,
+    "ALANI BANKHEAD": 47978,
+    "KYLE AUSTIN": 7295,
+    "SETH BODNAR": 154619
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 331,
+    "u": 332,
     "t": 728,
     "unit": "precincts"
    }
   },
   "H-MT-01": {
    "cands": {
-    "AARON FLINT": 93891,
-    "SAM FORSTAG": 105677,
-    "NICK SHEEDY": 5674
+    "AARON FLINT": 93993,
+    "SAM FORSTAG": 105713,
+    "NICK SHEEDY": 5680
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 114,
+    "u": 115,
     "t": 346,
     "unit": "precincts"
    }
@@ -356,7 +356,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "G-SC": {
    "cands": {
@@ -1902,14 +1902,14 @@
   },
   "G-CA": {
    "cands": {
-    "Xavier Becerra": 4583626,
-    "Steve Hilton": 2562798
+    "Xavier Becerra": 4623761,
+    "Steve Hilton": 2584136
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/governor",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
-    "u": 19824,
+    "u": 20301,
     "t": 23860,
     "unit": "precincts"
    }
@@ -1921,7 +1921,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/1",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 769,
     "t": 788,
@@ -1930,12 +1930,12 @@
   },
   "H-CA-10": {
    "cands": {
-    "Mark DeSaulnier": 131342,
-    "Jeff Frese": 58785
+    "Mark DeSaulnier": 131360,
+    "Jeff Frese": 58792
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/10",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 728,
     "t": 728,
@@ -1949,7 +1949,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/11",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 453,
     "t": 453,
@@ -1958,12 +1958,12 @@
   },
   "H-CA-12": {
    "cands": {
-    "Lateefah Simon": 103784,
-    "Jamie Joyce": 25827
+    "Lateefah Simon": 106124,
+    "Jamie Joyce": 26689
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/12",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 190,
     "t": 190,
@@ -1977,7 +1977,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/13",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 974,
     "t": 974,
@@ -1986,12 +1986,12 @@
   },
   "H-CA-14": {
    "cands": {
-    "Aisha Wahab": 66151,
-    "Melissa Hernandez": 49778
+    "Aisha Wahab": 66923,
+    "Melissa Hernandez": 50891
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/14",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 351,
     "t": 351,
@@ -2005,7 +2005,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/15",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 61,
     "t": 299,
@@ -2019,7 +2019,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/16",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 242,
     "t": 337,
@@ -2028,12 +2028,12 @@
   },
   "H-CA-17": {
    "cands": {
-    "Ro Khanna": 71921,
-    "Ritesh Tandon": 30037
+    "Ro Khanna": 72129,
+    "Ritesh Tandon": 30127
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/17",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 241,
     "t": 241,
@@ -2042,40 +2042,40 @@
   },
   "H-CA-18": {
    "cands": {
-    "Zoe Lofgren": 67952,
-    "Shane Lewis": 26824
+    "Zoe Lofgren": 68049,
+    "Shane Lewis": 26847
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/18",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
-    "u": 358,
+    "u": 362,
     "t": 376,
     "unit": "precincts"
    }
   },
   "H-CA-19": {
    "cands": {
-    "Jimmy Panetta": 122362,
-    "Peter Coe Verbica": 46462
+    "Jimmy Panetta": 124120,
+    "Peter Coe Verbica": 46973
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/19",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
-    "u": 303,
+    "u": 314,
     "t": 428,
     "unit": "precincts"
    }
   },
   "H-CA-02": {
    "cands": {
-    "Jared Huffman": 98097,
-    "Robin Littau": 45627
+    "Jared Huffman": 104874,
+    "Robin Littau": 48824
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/2",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 527,
     "t": 595,
@@ -2084,14 +2084,14 @@
   },
   "H-CA-20": {
    "cands": {
-    "Vince Fong": 78149,
-    "Sandra Van Scotter": 47298
+    "Vince Fong": 82095,
+    "Sandra Van Scotter": 49528
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/20",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
-    "u": 369,
+    "u": 602,
     "t": 764,
     "unit": "precincts"
    }
@@ -2103,7 +2103,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/21",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 313,
     "t": 323,
@@ -2112,14 +2112,14 @@
   },
   "H-CA-22": {
    "cands": {
-    "Randy Villegas": 43391,
-    "David G. Valadao": 23495
+    "Randy Villegas": 45864,
+    "David G. Valadao": 24471
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/22",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
-    "u": 272,
+    "u": 465,
     "t": 575,
     "unit": "precincts"
    }
@@ -2127,13 +2127,13 @@
   "H-CA-23": {
    "cands": {
     "Jay Obernolte": 60326,
-    "Tessa Lynn Hodge": 56441
+    "Tessa Lynn Hodge": 56444
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/23",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
-    "u": 599,
+    "u": 614,
     "t": 1324,
     "unit": "precincts"
    }
@@ -2145,7 +2145,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/24",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 481,
     "t": 627,
@@ -2159,7 +2159,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/25",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 378,
     "t": 656,
@@ -2168,12 +2168,12 @@
   },
   "H-CA-26": {
    "cands": {
-    "Jacqui Irwin": 97176,
-    "Sam Gallucci": 57862
+    "Jacqui Irwin": 97303,
+    "Sam Gallucci": 57925
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/26",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 801,
     "t": 1087,
@@ -2182,12 +2182,12 @@
   },
   "H-CA-27": {
    "cands": {
-    "George Whitesides": 85348,
-    "Jason Gibbs": 50042
+    "George Whitesides": 85570,
+    "Jason Gibbs": 50127
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/27",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 378,
     "t": 378,
@@ -2196,12 +2196,12 @@
   },
   "H-CA-28": {
    "cands": {
-    "Judy Chu": 115018,
-    "April A. Verlato": 52025
+    "Judy Chu": 116466,
+    "April A. Verlato": 52632
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/28",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 316,
     "t": 391,
@@ -2210,12 +2210,12 @@
   },
   "H-CA-29": {
    "cands": {
-    "Luz Maria Rivas": 56458,
-    "Ang\u00e9lica Mar\u00eda Due\u00f1as": 33650
+    "Luz Maria Rivas": 56596,
+    "Ang\u00e9lica Mar\u00eda Due\u00f1as": 33784
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/29",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 115,
     "t": 115,
@@ -2224,12 +2224,12 @@
   },
   "H-CA-03": {
    "cands": {
-    "Ami Bera": 93837,
-    "Robb Tucker": 70880
+    "Ami Bera": 94570,
+    "Robb Tucker": 71186
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/3",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 531,
     "t": 531,
@@ -2238,12 +2238,12 @@
   },
   "H-CA-30": {
    "cands": {
-    "Laura Friedman": 119418,
-    "Scott Alan Meyers": 36738
+    "Laura Friedman": 119826,
+    "Scott Alan Meyers": 36849
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/30",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 193,
     "t": 193,
@@ -2252,12 +2252,12 @@
   },
   "H-CA-31": {
    "cands": {
-    "Gil Cisneros": 88918,
-    "Eric Ching": 47481
+    "Gil Cisneros": 91518,
+    "Eric Ching": 48987
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/31",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 340,
     "t": 360,
@@ -2266,12 +2266,12 @@
   },
   "H-CA-32": {
    "cands": {
-    "Brad Sherman": 108024,
-    "Larry Thompson": 52552
+    "Brad Sherman": 108717,
+    "Larry Thompson": 52962
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/32",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 260,
     "t": 268,
@@ -2285,7 +2285,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/33",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 292,
     "t": 491,
@@ -2294,12 +2294,12 @@
   },
   "H-CA-34": {
    "cands": {
-    "Angela Gonzales-Torres": 56049,
-    "Jimmy Gomez": 41499
+    "Angela Gonzales-Torres": 57335,
+    "Jimmy Gomez": 42144
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/34",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 116,
     "t": 116,
@@ -2308,12 +2308,12 @@
   },
   "H-CA-35": {
    "cands": {
-    "Norma J. Torres": 59270,
-    "Mike Cargile": 31461
+    "Norma J. Torres": 59725,
+    "Mike Cargile": 31686
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/35",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 199,
     "t": 272,
@@ -2322,12 +2322,12 @@
   },
   "H-CA-36": {
    "cands": {
-    "Ted W. Lieu": 129822,
-    "Houston Brignano": 51084
+    "Ted W. Lieu": 132320,
+    "Houston Brignano": 52809
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/36",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 156,
     "t": 156,
@@ -2336,12 +2336,12 @@
   },
   "H-CA-37": {
    "cands": {
-    "Sydney Kamlager-Dove": 62887,
-    "Samantha Mota": 34614
+    "Sydney Kamlager-Dove": 63981,
+    "Samantha Mota": 35711
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/37",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 140,
     "t": 140,
@@ -2350,12 +2350,12 @@
   },
   "H-CA-38": {
    "cands": {
-    "Hilda Solis": 87522,
-    "Pedro Antonio Casas": 48005
+    "Hilda Solis": 89061,
+    "Pedro Antonio Casas": 48889
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/38",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 415,
     "t": 415,
@@ -2369,7 +2369,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/39",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 210,
     "t": 210,
@@ -2383,7 +2383,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/4",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 496,
     "t": 500,
@@ -2397,7 +2397,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/40",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 558,
     "t": 558,
@@ -2406,12 +2406,12 @@
   },
   "H-CA-41": {
    "cands": {
-    "Linda S\u00e1nchez": 98019,
-    "Mitch Clemmons": 51120
+    "Linda S\u00e1nchez": 99262,
+    "Mitch Clemmons": 51762
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/41",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 281,
     "t": 281,
@@ -2420,12 +2420,12 @@
   },
   "H-CA-42": {
    "cands": {
-    "Robert Garcia": 104295,
-    "Brian Burley": 69542
+    "Robert Garcia": 105006,
+    "Brian Burley": 69800
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/42",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 402,
     "t": 402,
@@ -2434,12 +2434,12 @@
   },
   "H-CA-43": {
    "cands": {
-    "Maxine Waters": 78416,
-    "Cristian Morales": 17250
+    "Maxine Waters": 80359,
+    "Cristian Morales": 17594
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/43",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 193,
     "t": 193,
@@ -2448,12 +2448,12 @@
   },
   "H-CA-44": {
    "cands": {
-    "Nanette Diaz Barragan": 77922,
-    "Genevieve Angel": 18782
+    "Nanette Diaz Barragan": 81204,
+    "Genevieve Angel": 19941
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/44",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 179,
     "t": 179,
@@ -2462,12 +2462,12 @@
   },
   "H-CA-45": {
    "cands": {
-    "Derek Tran": 94123,
-    "Chuong V. Vo": 65178
+    "Derek Tran": 94437,
+    "Chuong V. Vo": 65396
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/45",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 424,
     "t": 424,
@@ -2481,7 +2481,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/46",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 423,
     "t": 423,
@@ -2495,7 +2495,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/47",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 561,
     "t": 561,
@@ -2509,7 +2509,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/48",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 500,
     "t": 692,
@@ -2523,7 +2523,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/49",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 519,
     "t": 699,
@@ -2532,14 +2532,14 @@
   },
   "H-CA-05": {
    "cands": {
-    "Tom McClintock": 99106,
-    "Michael Masuda": 77607
+    "Tom McClintock": 99454,
+    "Michael Masuda": 77929
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/5",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
-    "u": 383,
+    "u": 399,
     "t": 399,
     "unit": "precincts"
    }
@@ -2551,7 +2551,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/50",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 495,
     "t": 713,
@@ -2565,7 +2565,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/51",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 470,
     "t": 663,
@@ -2579,7 +2579,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/52",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 422,
     "t": 580,
@@ -2593,7 +2593,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/6",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 309,
     "t": 309,
@@ -2607,7 +2607,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/7",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 414,
     "t": 414,
@@ -2621,7 +2621,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/8",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 396,
     "t": 396,
@@ -2635,7 +2635,7 @@
    },
    "src_name": "California Secretary of State via Pushbuild",
    "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/9",
-   "at": "2026-11-04T08:21:00Z",
+   "at": "2026-11-04T08:35:00Z",
    "rep": {
     "u": 322,
     "t": 322,
@@ -2836,7 +2836,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-10": {
    "cands": {
@@ -2845,7 +2845,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-11": {
    "cands": {
@@ -2854,7 +2854,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-12": {
    "cands": {
@@ -2863,7 +2863,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-13": {
    "cands": {
@@ -2872,7 +2872,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-14": {
    "cands": {
@@ -2881,7 +2881,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-15": {
    "cands": {
@@ -2890,7 +2890,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-16": {
    "cands": {
@@ -2899,7 +2899,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-17": {
    "cands": {
@@ -2908,7 +2908,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-02": {
    "cands": {
@@ -2917,7 +2917,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-03": {
    "cands": {
@@ -2926,7 +2926,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-04": {
    "cands": {
@@ -2935,7 +2935,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-05": {
    "cands": {
@@ -2944,7 +2944,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-06": {
    "cands": {
@@ -2953,7 +2953,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-07": {
    "cands": {
@@ -2962,7 +2962,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-08": {
    "cands": {
@@ -2971,7 +2971,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-PA-09": {
    "cands": {
@@ -2980,7 +2980,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T08:33:42+00:00"
+   "at": "2026-11-04T08:40:53+00:00"
   },
   "H-TX-20": {
    "cands": {
