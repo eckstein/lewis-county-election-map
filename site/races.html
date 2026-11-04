@@ -711,6 +711,19 @@
       if (r.ok) returns = (await r.json()).returns || null;
     } catch (e) {}
   }
+  // The state feed's "Estimated Ballots Left to Count" table: {county: ballots}
+  // for counties that have posted an estimate since Election Day.
+  function ballotsLeft() {
+    const out = {};
+    for (const st of feeds.wa?.statistics || []) {
+      if (!/left to count/i.test(en(st.name))) continue;
+      for (const g of st.groups || []) for (const c of g.children || []) {
+        if (c.value != null && (c.lastUpdated || "") >= "2026-11-03") out[en(c.name)] = Number(c.value);
+      }
+    }
+    return out;
+  }
+
   function renderProgress() {
     const el = $("lc-progress");
     const ballots = feeds.lewis?.election?.ballotsCast || 0;
@@ -722,6 +735,7 @@
     const ahead = ballots >= received;
     const denom = received;
     const share = ahead ? 0 : (ballots / denom) * 100;
+    const left = ballotsLeft()["Lewis County"] ?? null;
     const asOf = returns?.fileTime ? new Date(returns.fileTime).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric", timeZone: "America/Los_Angeles" }) : "";
     el.innerHTML = `<h2>Ballots counted in Lewis County</h2>
       <div style="font-size:15px;margin-bottom:8px">${ahead
@@ -730,7 +744,8 @@
       ${ahead ? "" : `<div class="bar"><span style="width:${share}%;background:var(--accent)"></span></div>`}
       <p class="muted" style="margin-top:8px">${received
         ? `"Received" is the Secretary of State's ballot report${asOf ? ` from ${esc(asOf)}` : ""}, so ballots dropped off since then aren't in it yet, and ballots postmarked by Election Day keep arriving by mail for several days. Treat this as a rough guide; the share counted will drop as new ballots are received.`
-        : "Waiting on the state's ballots-received report."}</p>`;
+        : "Waiting on the state's ballots-received report."}</p>${left != null
+        ? `<p class="muted" style="margin-top:6px">The county estimates about <b>${fmt(left)}</b> ballots it has on hand are still to be counted.</p>` : ""}`;
   }
 
   function renderLewis() {
@@ -757,6 +772,11 @@
     const cast = el?.ballotsCast || 0, reg = el?.totalVoters || 0;
     wp.hidden = !cast;
     if (cast) wp.textContent = `${fmt(cast)} ballots counted statewide${reg ? ` (${((cast / reg) * 100).toFixed(1)}% of registered voters)` : ""}. Washington votes by mail and counts for days after Election Day, so many ballots are still to come.`;
+    const lf = ballotsLeft(), ln = Object.keys(lf).length;
+    if (ln) {
+      wp.hidden = false;
+      wp.textContent = (cast ? wp.textContent + " " : "") + `Counties estimate about ${fmt(Object.values(lf).reduce((t, v) => t + v, 0))} ballots on hand are still to be counted${ln < 39 ? ` (${ln} of 39 counties have posted an estimate so far)` : ""}. More arrive by mail for days.`;
+    }
     $("wa-status").textContent = statusText("wa", feeds.wa);
     $("wa-status").className = "status" + (failed.wa ? " err" : "");
     if (!feeds.wa) return;
