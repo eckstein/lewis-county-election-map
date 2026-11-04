@@ -904,6 +904,23 @@ function renderNotice() {
   }
   $("notice").hidden = !msg;
   $("notice").innerHTML = msg;
+
+  // Same message on the map itself, so gray precincts don't look broken.
+  let note = document.getElementById("map-note");
+  if (!note) {
+    note = document.createElement("div");
+    note.id = "map-note";
+    note.className = "map-note";
+    $("map").appendChild(note);
+    L.DomEvent.disableClickPropagation(note);
+  }
+  const mapMsg = state.layerName === "results" && !d.results.hasPrecinctResults
+    ? (d.results.ballotsCast
+      ? "No precinct results yet. The county has posted countywide totals only; the map fills in when it posts precincts."
+      : `No results yet. Counting starts at ${releaseTime(d.id)}.`)
+    : "";
+  note.hidden = !mapMsg;
+  note.textContent = mapMsg;
 }
 
 function renderStatus() {

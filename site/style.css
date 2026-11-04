@@ -29,6 +29,13 @@ body { display: flex; flex-direction: column; }
   gap: 14px;
 }
 #map { flex: 1; height: 100%; background: #dfe6ea; }
+.map-note {
+  position: absolute; top: 12px; left: 50%; transform: translateX(-50%); z-index: 1000;
+  max-width: clamp(220px, calc(100% - 470px), 340px); padding: 8px 12px; border-radius: 8px;
+  background: #fff8e1; border: 1px solid #f0d58a; color: #5b4a12; font-size: 13px; line-height: 1.4;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15); text-align: center; pointer-events: auto;
+}
+.map-note[hidden] { display: none; }
 
 h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
 h2 { font-size: 13px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
@@ -227,6 +234,7 @@ select {
   .legend i { width: 10px; height: 8px; margin-right: 4px; }
   .leaflet-control-attribution { font-size: 9px; }
   .table-view { left: 0; border-left: 0; }
+  .map-note { top: 54px; max-width: calc(100% - 70px); font-size: 12px; padding: 6px 9px; }
 }
 
 /* Chrome focuses a precinct path on mousedown and outlines its bounding box,
