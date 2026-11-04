@@ -84,6 +84,12 @@
       "by": "AP",
       "at": "2026-11-04T01:00:00Z",
       "src": "https://gvwire.com/2026/11/03/democrats-hold-senate-seats-in-delaware-illinois-massachusetts-new-jersey-and-rhode-island/"
+    },
+    "G-NY": {
+      "winner": "Kathy Hochul",
+      "by": "AP",
+      "at": "2026-11-04T02:03:00Z",
+      "src": "screenshot of AP results from Zac"
     }
   },
   "counts": {
@@ -186,6 +192,15 @@
       "cands": {
         "Stefany Shaheen": 86868,
         "Anthony DiLorenzo": 59706
+      }
+    },
+    "G-NY": {
+      "src_name": "AP via news results (hand-entered)",
+      "at": "2026-11-04T02:03:00Z",
+      "exp": 12,
+      "cands": {
+        "Kathy Hochul": 600829,
+        "Bruce Blakeman": 171138
       }
     }
   }
