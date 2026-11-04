@@ -169,6 +169,8 @@
     <footer>
       Lewis County and Washington results come live from the county's and the Secretary of State's official results feeds at
       <a href="https://results.votewa.gov/results/public/washington" target="_blank" rel="noopener">results.votewa.gov</a>.
+      Some national counts come from <a href="https://openamerica.io/elections/api/" target="_blank" rel="noopener">Open America</a>'s
+      feed of official state counts, and a few are entered by hand from state and AP results pages where no feed is available.
       National results and race ratings come from <a href="https://thepeoplestally.com/" target="_blank" rel="noopener">The People's Tally</a>
       (<a href="https://thepeoplestally.com/open-data/" target="_blank" rel="noopener">open data</a>, CC BY 4.0), which gathers
       unofficial counts from state election offices and race calls from named sources. Ratings are Cook Political Report's.
@@ -214,6 +216,7 @@
   let feeds = {};           // /api/live st: states The People's Tally has a live feed for
   let sites = {};           // core.json: each state's official elections site
   let calls = {};
+  const oa = {};            // Open America results.json by office letter: {S, G, H}
   let counts = {};
   let autoCounts = {};      // counts.json: pulled from state sites with no live feed (Montana, Oregon)          // calls.json counts: hand-entered vote totals           // calls.json: {raceId: {winner, by, at}}            // /api/live res, keyed by state
   let lastOk = 0, lastErr = "";
@@ -256,10 +259,28 @@
     const cands = Object.entries(m.cands).map(([name, votes]) => ({ name, votes: Number(votes) || 0 }));
     return { status: "counting", cands, exp: m.exp ?? null, rep: m.rep || null, asof: m.at || null, src: m.src_name || "Hand-entered from AP", url: m.url || "" };
   }
+  // Open America's feed of official state counts (openamerica.io/elections/api),
+  // keyed by office then "TX" or "TX-07".
+  function oaResult(id) {
+    const [o, st, dist] = id.split("-");
+    if (dist === "sp") return null;
+    const r = oa[o]?.races?.[dist ? `${st}-${dist}` : st];
+    if (!r || !Array.isArray(r.cands) || !r.total) return null;
+    return {
+      status: "counting",
+      cands: r.cands.map((c) => ({ name: c.n, votes: c.v, party: c.p })),
+      rep: r.pct_in ? { u: r.pct_in, t: 100, unit: "pct" } : null,
+      asof: oa[o].as_of || null,
+      src: `${STATES[st]} via Open America`,
+      url: "https://openamerica.io/elections/",
+    };
+  }
   function baseResult(id) {
     const live0 = liveResult(id);
     const hasVotes = Array.isArray(live0.cands) && live0.cands.some((c) => Number(Array.isArray(c) ? c[2] : c.votes ?? c.v) > 0);
     if (live0.status === "called" || hasVotes) return live0;
+    const fromOA = oaResult(id);
+    if (fromOA) return { ...live0, ...fromOA };
     const m = manualCounts(id);
     return m ? { ...live0, ...m } : live0;
   }
@@ -337,7 +358,7 @@
   }
   // States The People's Tally has no live feed for get a pointer to the official site instead of a count.
   function noFeed(race, reporting) {
-    if (reporting || feeds[race.st] || counts[race.id] || autoCounts[race.id] || !Object.keys(feeds).length) return "";
+    if (reporting || feeds[race.st] || counts[race.id] || autoCounts[race.id] || oaResult(race.id) || !Object.keys(feeds).length) return "";
     const url = sites[race.st];
     return `No live count for ${esc(STATES[race.st])}${url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">State results</a>` : ""}`;
   }
@@ -485,6 +506,8 @@
       // Race calls we add by hand from AP's projections (calls.json in this repo).
       getJSON("calls.json?t=" + Date.now()).then((d) => { calls = (d && d.calls) || {}; counts = (d && d.counts) || {}; }),
       getJSON("counts.json?t=" + Date.now()).then((d) => { autoCounts = (d && d.counts) || {}; }),
+      ...[["S", "senate"], ["G", "governor"], ["H", "house"]].map(([k, office]) =>
+        getJSON(`https://openamerica.io/elections/results.json?office=${office}`).then((d) => { if (d && d.races) oa[k] = d; })),
       getJSON(LIVE).then((d) => { live = (d && typeof d.res === "object" && d.res) || {}; feeds = (d && d.st) || {}; }),
     ];
     if (!core || Date.now() - coreAt > 15 * 60e3) {
