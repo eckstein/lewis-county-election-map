@@ -65,6 +65,8 @@
     .race-h strong { font-size: 15px; }
     .rating { font-size: 11px; font-weight: 600; border-radius: 4px; padding: 1px 6px; white-space: nowrap; }
     .rt0, .rt1 { background: var(--d-soft); color: #1d4a80; } .rt2 { background: #eaf1fa; color: #1d4a80; }
+    .flag-D { background: var(--d); color: #fff; } .flag-R { background: var(--r); color: #fff; } .flag-O { background: var(--o); color: #fff; }
+    .flag-hold, .flag-new { background: #ecece8; color: var(--muted); }
     .rt3 { background: #efe8d4; color: #6b5310; }
     .rt4 { background: #fbecea; color: #8c2a23; } .rt5, .rt6 { background: var(--r-soft); color: #8c2a23; }
     .inc { font-size: 12px; color: var(--muted); margin: 2px 0 8px; }
@@ -326,6 +328,16 @@
     return STATES[race.st] + (race.loc.endsWith("-sp") ? " (special)" : "");
   }
   const ratingChip = (r) => (r == null ? "" : `<span class="rating rt${r}" title="Cook Political Report rating">${RATINGS[r]}</span>`);
+  // Once a race is called, the rating gives way to whether the seat flipped.
+  const PARTY = { D: "Dem", R: "GOP", O: "Other" };
+  function raceChip(race) {
+    const w = winnerParty(race);
+    if (!w) return ratingChip(race.r);
+    const held = race.incP && race.incP.length === 1 ? race.incP : "";
+    if (!held) return `<span class="rating flag-new" title="New or redrawn seat">${PARTY[w]} win</span>`;
+    if (held === w) return `<span class="rating flag-hold" title="Same party as before">${PARTY[w]} hold</span>`;
+    return `<span class="rating flag-${w}" title="Seat changes party">${PARTY[w]} flip</span>`;
+  }
 
   function raceCard(race, maxCands = 4) {
     const { res, cands, reporting } = rows(race);
@@ -339,7 +351,7 @@
       </li>`).join("");
     const src = res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">${esc(res.src || "Source")}</a>` : "";
     return `<article class="race">
-      <div class="race-h"><strong>${esc(title(race))}</strong>${ratingChip(race.r)}</div>
+      <div class="race-h"><strong>${esc(title(race))}</strong>${raceChip(race)}</div>
       ${seatLine(race)}
       <ul class="cands">${list}</ul>
       ${rest > 0 ? `<div class="more">+${rest} other candidate${rest > 1 ? "s" : ""}</div>` : ""}
@@ -350,7 +362,7 @@
   function houseRow(race) {
     const { res, cands, reporting } = rows(race);
     const cell = (c) => c ? `<div class="hc${c.winner ? " win" : ""}"><span class="nm"><span class="pty p${c.p}">${c.p === "O" ? "•" : c.p}</span>${esc(c.name)}${c.inc ? " *" : ""}</span>${reporting ? `<span class="num">${c.pct != null ? c.pct.toFixed(1) + "%" : ""} ${c.votes != null ? "· " + fmt(c.votes) : ""}</span>` : ""}</div>` : "<div></div>";
-    return `<div class="hrow"><span class="code">${esc(race.loc)}<br>${ratingChip(race.r)}</span>${cell(cands[0])}${cell(cands[1])}<span class="hs">${statusLine(res, reporting)}${asOf(res) ? "<br>" + asOf(res) : ""}</span></div>`;
+    return `<div class="hrow"><span class="code">${esc(race.loc)}<br>${raceChip(race)}</span>${cell(cands[0])}${cell(cands[1])}<span class="hs">${statusLine(res, reporting)}${asOf(res) ? "<br>" + asOf(res) : ""}</span></div>`;
   }
 
   // Seats not up + races called (rare: certified results or a named source)
