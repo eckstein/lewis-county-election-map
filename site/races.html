@@ -145,7 +145,7 @@
     </section>
 
     <section id="lv-national" class="level" hidden>
-    <p class="sub">U.S. Senate, U.S. House and governor results as states count them. This page doesn't call races. Leaders are just who's ahead in the count so far, and a race shows as won only once a named source (such as certified results) says so.</p>
+    <p class="sub">U.S. Senate, U.S. House and governor results as states count them. Leaders are who's ahead in the count so far. A race is marked won (✓) only when the AP projects a winner, which we add by hand as calls come in.</p>
     <p id="status" class="status" role="status">Loading results…</p>
 
     <section class="strip" id="strip" aria-label="Balance of power"></section>
@@ -208,7 +208,8 @@
 
   let core = null;          // [{id, o, st, loc, inc, incP, r, cands:[{name,p,inc}]}]
   let snapshot = {};        // results.json races
-  let live = {};            // /api/live res, keyed by state
+  let live = {};
+  let calls = {};           // calls.json: {raceId: {winner, by, at}}            // /api/live res, keyed by state
   let lastOk = 0, lastErr = "";
   const ui = { office: "S", state: "", comp: true, rep: false };
   try { Object.assign(ui, JSON.parse(localStorage.getItem("national-ui") || "{}")); } catch (e) {}
@@ -236,6 +237,12 @@
   // Results for one race: the snapshot, with live counts laid over any race not yet called.
   // A call can arrive in either feed; the live feed carries manually entered network projections.
   function result(id) {
+    const base = baseResult(id);
+    const call = calls[id];
+    if (!call || base.status === "called") return base;
+    return { ...base, status: "called", winner_name: call.winner, called_by: call.by || "AP" };
+  }
+  function baseResult(id) {
     const snap = snapshot[id] || {};
     if (snap.status === "called") return snap;
     const st = live[id.split("-")[1]];
@@ -264,7 +271,8 @@
     const total = out.reduce((s, c) => s + (c.votes || 0), 0);
     out.forEach((c) => { if (c.pct == null && total && c.votes != null) c.pct = (c.votes / total) * 100; });
     if (res.status === "called" && !out.some((c) => c.winner)) {
-      const w = res.winner_name ? out.find((c) => c.name.toLowerCase() === String(res.winner_name).toLowerCase() || lastName(c.name) === lastName(res.winner_name)) : null;
+      const wn = res.winner_name ? String(res.winner_name).replace(/\s*\([^)]*\)\s*$/, "") : "";
+      const w = wn ? out.find((c) => c.name.toLowerCase() === wn.toLowerCase() || lastName(c.name) === lastName(wn)) : null;
       const lead = w || (res.leader ? out.filter((c) => c.p === party(res.leader)).sort((a, b) => (b.votes || 0) - (a.votes || 0))[0] : null);
       if (lead) lead.winner = true;
     }
@@ -374,9 +382,9 @@
   function render() {
     if (!core) return;
     $("strip").innerHTML =
-      balance("Senate", "S", 100, SENATE_NOT_UP, "51 for control", "Solid: seats not up this year. Light: leading in the count so far, not called. The vice president breaks 50–50 ties.") +
-      balance("House", "H", 435, { D: 0, R: 0 }, "218 for control", "All 435 seats are up. Light: leading in the count so far, not called.") +
-      balance("Governors", "G", 50, GOV_NOT_UP, "36 up this year", "Solid: governors not up this year. Light: leading so far, not called.");
+      balance("Senate", "S", 100, SENATE_NOT_UP, "51 for control", "Solid: seats not up this year plus called races. Light: leading, not yet called. The vice president breaks 50–50 ties.") +
+      balance("House", "H", 435, { D: 0, R: 0 }, "218 for control", "Solid: called races. Light: leading, not yet called.") +
+      balance("Governors", "G", 50, GOV_NOT_UP, "36 up this year", "Solid: governors not up this year plus called races. Light: leading, not yet called.");
 
     const home = core.find((r) => r.id === HOME);
     if (home) {
@@ -436,6 +444,8 @@
   async function refresh() {
     const jobs = [
       getJSON(TALLY + "/data/results.json").then((d) => { snapshot = (d && d.races) || {}; }),
+      // Race calls we add by hand from AP's projections (calls.json in this repo).
+      getJSON("calls.json?t=" + Date.now()).then((d) => { calls = (d && d.calls) || {}; }),
       getJSON(LIVE).then((d) => { live = (d && typeof d.res === "object" && d.res) || {}; }),
     ];
     if (!core || Date.now() - coreAt > 15 * 60e3) {
