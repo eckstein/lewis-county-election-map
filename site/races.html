@@ -252,8 +252,11 @@
     // Some states (South Carolina) count a county as reporting only once it's
     // finished, so a feed can show "0 of 46 counties" with most votes in. Then
     // use an automatic expected-vote estimate for the same race if there is one.
-    const est = autoCounts[id]?.exp;
-    if (base.rep && !Number(base.rep.u) && base.exp == null && est != null && resultCands(base).some((c) => c.votes > 0)) base = { ...base, exp: est, rep: null };
+    const a = autoCounts[id] || {};
+    if (base.rep && !Number(base.rep.u) && base.exp == null && resultCands(base).some((c) => c.votes > 0)) {
+      if (a.exp != null) base = { ...base, exp: a.exp, rep: null };
+      else if (a.rep && Number(a.rep.u) > 0) base = { ...base, rep: a.rep };
+    }
     const call = calls[id];
     if (!call || base.status === "called") return base;
     return { ...base, status: "called", winner_name: call.winner, called_by: call.by || "AP" };
