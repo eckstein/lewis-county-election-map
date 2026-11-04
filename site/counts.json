@@ -1,27 +1,27 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T04:43:29+00:00",
+ "updated": "2026-11-04T04:47:24+00:00",
  "counts": {
   "S-MT": {
    "cands": {
-    "KURT ALME": 70170,
-    "ALANI BANKHEAD": 17353,
-    "KYLE AUSTIN": 2597,
-    "SETH BODNAR": 54307
+    "KURT ALME": 86194,
+    "ALANI BANKHEAD": 20715,
+    "KYLE AUSTIN": 2984,
+    "SETH BODNAR": 63839
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 19,
+    "u": 20,
     "t": 728,
     "unit": "precincts"
    }
   },
   "H-MT-01": {
    "cands": {
-    "AARON FLINT": 27522,
-    "SAM FORSTAG": 24427,
-    "NICK SHEEDY": 1809
+    "AARON FLINT": 42738,
+    "SAM FORSTAG": 36190,
+    "NICK SHEEDY": 2489
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
@@ -33,26 +33,26 @@
   },
   "H-MT-02": {
    "cands": {
-    "TROY DOWNING": 48496,
-    "BRIAN J MILLER": 32464,
-    "PATRICK MCCRACKEN": 1537,
-    "MICHAEL D EISENHAUER": 8019
+    "TROY DOWNING": 49795,
+    "BRIAN J MILLER": 32666,
+    "PATRICK MCCRACKEN": 1563,
+    "MICHAEL D EISENHAUER": 8104
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 19,
+    "u": 20,
     "t": 383,
     "unit": "precincts"
    }
   },
   "S-OR": {
    "cands": {
-    "David Brock Smith": 515659,
-    "Jeff Merkley": 731076,
-    "Gary Lyndon Dye": 11167,
-    "Chris Henry": 22494,
-    "Write-in": 904
+    "David Brock Smith": 516524,
+    "Jeff Merkley": 731779,
+    "Gary Lyndon Dye": 11194,
+    "Chris Henry": 22541,
+    "Write-in": 908
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
@@ -86,8 +86,8 @@
   },
   "H-OR-04": {
    "cands": {
-    "Monique DeSpain": 108253,
-    "Val Hoyle": 138627,
+    "Monique DeSpain": 108262,
+    "Val Hoyle": 138631,
     "Justin Filip": 7325,
     "Write-in": 186
    },
@@ -96,10 +96,10 @@
   },
   "H-OR-05": {
    "cands": {
-    "Janelle S Bynum": 136276,
-    "Andrea Townsend": 4510,
-    "Patti Adair": 105670,
-    "Write-in": 212
+    "Janelle S Bynum": 136960,
+    "Andrea Townsend": 4556,
+    "Patti Adair": 106557,
+    "Write-in": 218
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
@@ -115,37 +115,37 @@
   },
   "G-OR": {
    "cands": {
-    "Brett Smith": 32650,
-    "Tina Kotek": 673109,
-    "Christine Drazan": 580962,
-    "Write-in": 1454
+    "Brett Smith": 32721,
+    "Tina Kotek": 673729,
+    "Christine Drazan": 581941,
+    "Write-in": 1457
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
   },
   "S-AR": {
    "cands": {
-    "Tom Cotton": 433753,
-    "Hallie Shoffner": 340276,
-    "Jeff Wadlin": 25826
+    "Tom Cotton": 465574,
+    "Hallie Shoffner": 366553,
+    "Jeff Wadlin": 28344
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 92.8
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 98.4
   },
   "S-CO": {
    "cands": {
-    "John Hickenlooper": 1214794,
-    "Mark Baisley": 705302,
-    "Bob Chew": 50615,
-    "Blake Huber": 20268,
-    "Adam Withrow": 8288,
-    "Christopher Baum": 2727
+    "John Hickenlooper": 1215941,
+    "Mark Baisley": 706748,
+    "Bob Chew": 50712,
+    "Blake Huber": 20314,
+    "Adam Withrow": 8297,
+    "Christopher Baum": 2731
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 73.5
   },
   "S-DE": {
@@ -155,7 +155,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/delaware-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 98.8
   },
   "S-GA": {
@@ -165,66 +165,66 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 93.1
   },
   "S-IA": {
    "cands": {
-    "Josh Turek": 643244,
-    "Ashley Hinson": 583403,
-    "Thomas Laehn": 38759
+    "Josh Turek": 647940,
+    "Ashley Hinson": 587410,
+    "Thomas Laehn": 39283
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 91.4
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 92.1
   },
   "S-LA": {
    "cands": {
-    "Julia Letlow": 707856,
-    "Jamie Davis": 620513
+    "Julia Letlow": 722016,
+    "Jamie Davis": 633805
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 82.7
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 84.1
   },
   "S-MN": {
    "cands": {
-    "Michele Tafoya": 587854,
-    "Peggy Flanagan": 522316,
-    "Marisa Simonetti": 18048,
-    "Rebecca Whiting": 13760
+    "Michele Tafoya": 641283,
+    "Peggy Flanagan": 567348,
+    "Marisa Simonetti": 19894,
+    "Rebecca Whiting": 15084
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 38.2
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 41.7
   },
   "S-NE": {
    "cands": {
-    "Dan Osborn": 197820,
-    "Pete Ricketts": 186228,
-    "Robin Richards": 10223,
-    "Mike Marvin": 7941,
-    "Chuck Conboy": 4583
+    "Dan Osborn": 197878,
+    "Pete Ricketts": 186451,
+    "Robin Richards": 10229,
+    "Mike Marvin": 7947,
+    "Chuck Conboy": 4587
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 48.9
   },
   "S-NC": {
    "cands": {
-    "Roy Cooper": 2431822,
-    "Michael Whatley": 1624770,
-    "Shannon Bray": 54921,
-    "Michael Dublin": 35867
+    "Roy Cooper": 2436477,
+    "Michael Whatley": 1626904,
+    "Shannon Bray": 55006,
+    "Michael Dublin": 35948
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 98.9
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 99
   },
   "S-SC": {
    "cands": {
@@ -235,39 +235,39 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 96.9
   },
   "S-SD": {
    "cands": {
-    "Mike Rounds": 99642,
-    "Brian Bengs": 62984
+    "Mike Rounds": 102952,
+    "Brian Bengs": 64594
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-dakota-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 49.7
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 51.2
   },
   "S-TX": {
    "cands": {
-    "James Talarico": 4192987,
-    "Ken Paxton": 2806533,
-    "Ted Brown": 113724
+    "James Talarico": 4209716,
+    "Ken Paxton": 2818809,
+    "Ted Brown": 114548
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 68.2
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 68.5
   },
   "S-VA": {
    "cands": {
-    "Mark Warner": 1976628,
-    "Bert Mizusawa": 1316753
+    "Mark Warner": 1988463,
+    "Bert Mizusawa": 1326457
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 89.6
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 90.2
   },
   "G-AR": {
    "cands": {
@@ -350,13 +350,13 @@
   },
   "G-PA": {
    "cands": {
-    "Josh Shapiro": 2807945,
-    "Stacy Garrity": 1802867,
-    "Ken Krawchuk": 60779
+    "Josh Shapiro": 2841651,
+    "Stacy Garrity": 1828225,
+    "Ken Krawchuk": 61496
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "G-SC": {
    "cands": {
@@ -2532,45 +2532,45 @@
   },
   "G-MD": {
    "cands": {
-    "Wes Moore and Aruna Miller": 1110555,
-    "Dan Cox and Rob Krop": 596290,
-    "Andy Ellis and Owen Silverman Andrews": 36472,
-    "Cathy White and Cathy Permut": 35011
+    "Wes Moore and Aruna Miller": 1119527,
+    "Dan Cox and Rob Krop": 606238,
+    "Andy Ellis and Owen Silverman Andrews": 37000,
+    "Cathy White and Cathy Permut": 35385
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_1.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
-    "u": 1810,
+    "u": 1852,
     "t": 1979,
     "unit": "precincts"
    }
   },
   "H-MD-01": {
    "cands": {
-    "Andy Harris": 295618,
-    "Dan Schwartz": 235122,
+    "Andy Harris": 301230,
+    "Dan Schwartz": 238176,
     "Edward Shlikas": 0
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
-    "u": 302,
+    "u": 309,
     "t": 309,
     "unit": "precincts"
    }
   },
   "H-MD-02": {
    "cands": {
-    "John \"Johnny O\" Olszewski, Jr.": 261762,
-    "Dave Wallace": 158492
+    "John \"Johnny O\" Olszewski, Jr.": 274850,
+    "Dave Wallace": 171250
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
-    "u": 192,
+    "u": 219,
     "t": 241,
     "unit": "precincts"
    }
@@ -2583,7 +2583,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
     "u": 213,
     "t": 214,
@@ -2598,7 +2598,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
     "u": 188,
     "t": 237,
@@ -2613,7 +2613,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
     "u": 199,
     "t": 227,
@@ -2622,29 +2622,29 @@
   },
   "H-MD-06": {
    "cands": {
-    "April McClain Delaney": 259454,
-    "Robin Ficker": 191496,
-    "Moshe Y. Landman": 12366
+    "April McClain Delaney": 261260,
+    "Robin Ficker": 191984,
+    "Moshe Y. Landman": 12460
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
-    "u": 209,
+    "u": 210,
     "t": 214,
     "unit": "precincts"
    }
   },
   "H-MD-07": {
    "cands": {
-    "Kweisi Mfume": 263540,
-    "Scott M. Collier": 53252
+    "Kweisi Mfume": 266106,
+    "Scott M. Collier": 53468
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
-    "u": 313,
+    "u": 320,
     "t": 338,
     "unit": "precincts"
    }
@@ -2657,7 +2657,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-03T23:30:21",
+   "at": "2026-11-03T23:39:34",
    "rep": {
     "u": 194,
     "t": 199,
@@ -2719,39 +2719,39 @@
   },
   "H-PA-01": {
    "cands": {
-    "Bob Harvie": 143872,
-    "Brian Fitzpatrick": 124803
+    "Bob Harvie": 152820,
+    "Brian Fitzpatrick": 134744
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-10": {
    "cands": {
-    "Janelle Stelson": 173741,
-    "Scott Perry": 142023
+    "Janelle Stelson": 173845,
+    "Scott Perry": 142059
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-11": {
    "cands": {
-    "Lloyd K Smucker": 166874,
-    "Nancy Mannion": 133656
+    "Lloyd K Smucker": 166905,
+    "Nancy Mannion": 133726
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-12": {
    "cands": {
-    "Summer Lee": 188402,
-    "James Hayes": 97020
+    "Summer Lee": 190032,
+    "James Hayes": 100223
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-13": {
    "cands": {
@@ -2760,16 +2760,16 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-14": {
    "cands": {
-    "Guy Reschenthaler": 151721,
-    "Alan Bradstock": 107958
+    "Guy Reschenthaler": 155279,
+    "Alan Bradstock": 109885
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-15": {
    "cands": {
@@ -2778,7 +2778,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-16": {
    "cands": {
@@ -2787,7 +2787,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-17": {
    "cands": {
@@ -2796,34 +2796,34 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-02": {
    "cands": {
-    "Brendan F Boyle": 142085,
-    "Jessica Arriaga": 34409
+    "Brendan F Boyle": 142142,
+    "Jessica Arriaga": 34434
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-03": {
    "cands": {
-    "Chris Rabb": 244591,
-    "Dennis Mahoney": 16689
+    "Chris Rabb": 245020,
+    "Dennis Mahoney": 16712
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-04": {
    "cands": {
-    "Madeleine Dean": 159785,
-    "Aurora Stuski": 77341
+    "Madeleine Dean": 174386,
+    "Aurora Stuski": 84935
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-05": {
    "cands": {
@@ -2832,16 +2832,16 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-06": {
    "cands": {
-    "Chrissy Houlahan": 188052,
-    "Marty Young": 107802
+    "Chrissy Houlahan": 188474,
+    "Marty Young": 107918
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-07": {
    "cands": {
@@ -2850,25 +2850,25 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-08": {
    "cands": {
-    "Paige Cognetti": 150244,
-    "Rob Bresnahan Jr": 124837
+    "Paige Cognetti": 152583,
+    "Rob Bresnahan Jr": 128081
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-PA-09": {
    "cands": {
-    "Dan Meuser": 148645,
-    "Rachel Wallace": 91096
+    "Dan Meuser": 149549,
+    "Rachel Wallace": 91426
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T04:39:45+00:00"
+   "at": "2026-11-04T04:46:42+00:00"
   },
   "H-TX-20": {
    "cands": {
@@ -2957,7 +2957,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 81.5
   },
   "G-AL": {
@@ -3282,13 +3282,13 @@
   },
   "S-FL-sp": {
    "cands": {
-    "Ashley Moody": 4200118,
-    "Angie Nixon": 3957021,
-    "Neil Gillespie": 94245
+    "Ashley Moody": 4200395,
+    "Angie Nixon": 3957231,
+    "Neil Gillespie": 94258
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-special-elections/florida-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 99
   },
   "G-FL": {
@@ -3481,14 +3481,14 @@
   },
   "S-IL": {
    "cands": {
-    "Juliana Stratton": 2125571,
-    "Don Tracy": 1298047,
-    "Whitfield Harrington": 54517
+    "Juliana Stratton": 2144126,
+    "Don Tracy": 1309947,
+    "Whitfield Harrington": 55067
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 76.7
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 78.5
   },
   "G-IL": {
    "cands": {
@@ -3558,14 +3558,14 @@
   },
   "S-KS": {
    "cands": {
-    "Adam Hamilton": 548930,
-    "Roger Marshall": 481110,
-    "David Graham": 31616
+    "Adam Hamilton": 549565,
+    "Roger Marshall": 484019,
+    "David Graham": 31790
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 91.4
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 92
   },
   "G-KS": {
    "cands": {
@@ -3651,7 +3651,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 99
   },
   "H-ME-01": {
@@ -3676,13 +3676,13 @@
   },
   "S-ME": {
    "cands": {
-    "Susan Collins": 187726,
-    "Troy Jackson": 187022
+    "Troy Jackson": 201650,
+    "Susan Collins": 195100
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/maine-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 47.9
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 51
   },
   "G-ME": {
    "cands": {
@@ -3749,15 +3749,15 @@
   },
   "S-MA": {
    "cands": {
-    "Ed Markey": 880036,
-    "John Deaton": 409375,
-    "Joe Tache": 32119,
-    "Shiva Ayyadurai": 30626
+    "Ed Markey": 885672,
+    "John Deaton": 414155,
+    "Joe Tache": 32290,
+    "Shiva Ayyadurai": 30899
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 47.3
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 47.7
   },
   "G-MA": {
    "cands": {
@@ -3938,17 +3938,17 @@
   },
   "S-MI": {
    "cands": {
-    "Abdul El-Sayed": 902745,
-    "Mike Rogers": 854480,
-    "Lydia Christensen": 18018,
-    "Tim Long": 8898,
-    "Douglas Marsh": 4413,
-    "Walter Kristy": 2481
+    "Abdul El-Sayed": 1017423,
+    "Mike Rogers": 952038,
+    "Lydia Christensen": 20204,
+    "Tim Long": 10010,
+    "Douglas Marsh": 4955,
+    "Walter Kristy": 2782
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 36.3
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 40.7
   },
   "G-MI": {
    "cands": {
@@ -4009,14 +4009,14 @@
   },
   "S-MS": {
    "cands": {
-    "Cindy Hyde-Smith": 424459,
-    "Scott Colom": 411933,
-    "Ty Pinkins": 18433
+    "Cindy Hyde-Smith": 436029,
+    "Scott Colom": 415989,
+    "Ty Pinkins": 18828
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/mississippi-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 87.8
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 88.9
   },
   "H-MO-01": {
    "cands": {
@@ -4129,14 +4129,14 @@
   },
   "S-NH": {
    "cands": {
-    "Chris Pappas": 298022,
-    "John Sununu": 222122,
-    "Edmond Laplante": 9651
+    "Chris Pappas": 300878,
+    "John Sununu": 224052,
+    "Edmond Laplante": 9751
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-hampshire-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 77.5
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 78.2
   },
   "G-NH": {
    "cands": {
@@ -4282,15 +4282,15 @@
   },
   "S-NJ": {
    "cands": {
-    "Cory Booker": 1719106,
-    "Justin Murphy": 980363,
-    "Veronica Fernandez": 45009,
-    "Joanne Kuniansky": 25592
+    "Cory Booker": 1758957,
+    "Justin Murphy": 994012,
+    "Veronica Fernandez": 47216,
+    "Joanne Kuniansky": 26247
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 89.7
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 91.5
   },
   "H-NM-01": {
    "cands": {
@@ -4324,13 +4324,13 @@
   },
   "S-NM": {
    "cands": {
-    "Ben Ray Lujan": 240826,
-    "Larry Marker": 160206
+    "Ben Ray Lujan": 247917,
+    "Larry Marker": 165460
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-mexico-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 53.5
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 55.2
   },
   "G-NM": {
    "cands": {
@@ -4779,15 +4779,15 @@
   },
   "S-OH-sp": {
    "cands": {
-    "Sherrod Brown": 2025113,
-    "Jon Husted": 1938692,
-    "William Redpath": 118489,
-    "Greg Levy": 84766
+    "Sherrod Brown": 2044189,
+    "Jon Husted": 1947644,
+    "William Redpath": 119128,
+    "Greg Levy": 85478
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-special-elections/ohio-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 87.6
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 88.3
   },
   "G-OH": {
    "cands": {
@@ -4864,7 +4864,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 90
   },
   "G-OK": {
@@ -4909,7 +4909,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/rhode-island-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
+   "at": "2026-11-04T04:45:11.000Z",
    "exp": 94.8
   },
   "G-RI": {
@@ -5045,7 +5045,7 @@
   },
   "S-TN": {
    "cands": {
-    "Bill Hagerty": 1088388,
+    "Bill Hagerty": 1088408,
     "Marquita Bradshaw": 860111,
     "Robert Jones": 8882,
     "Tharon Chandler": 7374,
@@ -5058,8 +5058,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 88.6
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 89.3
   },
   "G-TN": {
    "cands": {
@@ -5107,14 +5107,14 @@
   },
   "S-WV": {
    "cands": {
-    "Shelley Moore Capito": 265190,
-    "Rachel Fetty Anderson": 172673,
-    "S. Wilson": 17078
+    "Shelley Moore Capito": 265331,
+    "Rachel Fetty Anderson": 172753,
+    "S. Wilson": 17090
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/west-virginia-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 93.4
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 93.5
   },
   "H-WI-01": {
    "cands": {
@@ -5216,13 +5216,13 @@
   },
   "S-WY": {
    "cands": {
-    "Harriet Hageman": 67897,
-    "James Byrd": 33490
+    "Harriet Hageman": 78969,
+    "James Byrd": 36886
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wyoming-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 50.5
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 57.4
   },
   "G-WY": {
    "cands": {
@@ -5347,15 +5347,15 @@
   },
   "S-ID": {
    "cands": {
-    "Jim Risch": 96152,
-    "Todd Achilles": 86630,
-    "Natalie Fleming": 14122,
-    "Matt Loesby": 4468
+    "Jim Risch": 106572,
+    "Todd Achilles": 94783,
+    "Natalie Fleming": 15425,
+    "Matt Loesby": 5186
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/idaho-senate-results",
-   "at": "2026-11-04T04:37:55.000Z",
-   "exp": 29.5
+   "at": "2026-11-04T04:45:11.000Z",
+   "exp": 32.5
   },
   "G-ID": {
    "cands": {
