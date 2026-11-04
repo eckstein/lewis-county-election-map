@@ -1,6 +1,6 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T02:38:08+00:00",
+ "updated": "2026-11-04T02:41:14+00:00",
  "counts": {
   "S-MT": {
    "cands": {
@@ -125,14 +125,14 @@
   },
   "S-AR": {
    "pcts": {
-    "Hallie Shoffner": 55,
-    "Tom Cotton": 42.7
+    "Hallie Shoffner": 54.8,
+    "Tom Cotton": 42.4
    },
    "src_name": "Arkansas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z",
+   "at": "2026-11-04T02:40:20.755Z",
    "rep": {
-    "u": 0,
+    "u": 1.2,
     "t": 100,
     "unit": "pct"
    }
@@ -144,7 +144,7 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z",
+   "at": "2026-11-04T02:40:31.249Z",
    "rep": {
     "u": 35.1,
     "t": 100,
@@ -158,7 +158,7 @@
    },
    "src_name": "Delaware Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:36.660Z",
+   "at": "2026-11-04T02:40:35.970Z",
    "rep": {
     "u": 53.7,
     "t": 100,
@@ -167,51 +167,51 @@
   },
   "S-GA": {
    "pcts": {
-    "Jon Ossoff": 59.9,
-    "Mike Collins": 40.1
+    "Jon Ossoff": 59.4,
+    "Mike Collins": 40.6
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "S-IA": {
    "pcts": {
-    "Josh Turek": 61.3,
-    "Ashley Hinson": 36.3
+    "Josh Turek": 60.9,
+    "Ashley Hinson": 36.6
    },
    "src_name": "Iowa Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z",
+   "at": "2026-11-04T02:40:20.755Z",
    "rep": {
-    "u": 7.8,
+    "u": 8.1,
     "t": 100,
     "unit": "pct"
    }
   },
   "S-LA": {
    "pcts": {
-    "Julia Letlow": 52.5,
-    "Jamie Davis": 47.5
+    "Julia Letlow": 52.1,
+    "Jamie Davis": 47.9
    },
    "src_name": "Louisiana Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:31.548Z",
+   "at": "2026-11-04T02:40:33.880Z",
    "rep": {
-    "u": 1.2,
+    "u": 4.1,
     "t": 100,
     "unit": "pct"
    }
   },
   "S-MN": {
    "pcts": {
-    "Michele Tafoya": 74,
-    "Peggy Flanagan": 23.3
+    "Michele Tafoya": 69.1,
+    "Peggy Flanagan": 28.4
    },
    "src_name": "Minnesota Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:23.788Z",
+   "at": "2026-11-04T02:40:22.797Z",
    "rep": {
-    "u": 0.9,
+    "u": 1.9,
     "t": 100,
     "unit": "pct"
    }
@@ -223,7 +223,7 @@
    },
    "src_name": "Nebraska Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:33.842Z",
+   "at": "2026-11-04T02:40:35.115Z",
    "rep": {
     "u": 1.5,
     "t": 100,
@@ -232,63 +232,63 @@
   },
   "S-NC": {
    "pcts": {
-    "Roy Cooper": 59.5,
-    "Michael Whatley": 38.5
+    "Roy Cooper": 59.1,
+    "Michael Whatley": 38.9
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 61.2,
+    "u": 64.8,
     "t": 100,
     "unit": "pct"
    }
   },
   "S-SC": {
    "pcts": {
-    "Annie Andrews": 52.6,
-    "Darline Graham": 45.4
+    "Annie Andrews": 51.3,
+    "Darline Graham": 46.7
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z",
+   "at": "2026-11-04T02:40:27.778Z",
    "rep": {
-    "u": 54.8,
+    "u": 71,
     "t": 100,
     "unit": "pct"
    }
   },
   "S-SD": {
    "pcts": {
-    "Mike Rounds": 63,
-    "Brian L. Bengs": 37
+    "Mike Rounds": 62.9,
+    "Brian L. Bengs": 37.1
    },
    "src_name": "South Dakota Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:34.729Z",
+   "at": "2026-11-04T02:40:35.498Z",
    "rep": {
-    "u": 7.4,
+    "u": 8.7,
     "t": 100,
     "unit": "pct"
    }
   },
   "S-TX": {
    "pcts": {
-    "James Talarico": 56.5,
-    "Ken Paxton": 41.8
+    "James Talarico": 55.4,
+    "Ken Paxton": 42.9
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "S-VA": {
    "pcts": {
-    "Mark R. Warner": 59.8,
-    "Bert Mizusawa": 39.9
+    "Mark R. Warner": 59.9,
+    "Bert Mizusawa": 39.8
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "G-AR": {
    "pcts": {
@@ -297,7 +297,7 @@
    },
    "src_name": "Arkansas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z",
+   "at": "2026-11-04T02:38:20.875Z",
    "rep": {
     "u": 0,
     "t": 100,
@@ -311,7 +311,7 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z",
+   "at": "2026-11-04T02:38:30.771Z",
    "rep": {
     "u": 35.1,
     "t": 100,
@@ -325,7 +325,7 @@
    },
    "src_name": "Connecticut Secretary of the State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:22.238Z",
+   "at": "2026-11-04T02:38:21.079Z",
    "rep": {
     "u": 1.7,
     "t": 100,
@@ -334,23 +334,23 @@
   },
   "G-GA": {
    "pcts": {
-    "Keisha Lance Bottoms": 55.5,
-    "Rick Jackson": 44.5
+    "Keisha Lance Bottoms": 54.9,
+    "Rick Jackson": 45.1
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:38:26.750Z"
   },
   "G-IA": {
    "pcts": {
-    "Rob Sand": 66,
-    "Zach Lahn": 33.9
+    "Rob Sand": 65.7,
+    "Zach Lahn": 34.2
    },
    "src_name": "Iowa Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z",
+   "at": "2026-11-04T02:38:20.875Z",
    "rep": {
-    "u": 7.8,
+    "u": 8.1,
     "t": 100,
     "unit": "pct"
    }
@@ -362,7 +362,7 @@
    },
    "src_name": "Minnesota Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:23.788Z",
+   "at": "2026-11-04T02:38:22.909Z",
    "rep": {
     "u": 0.9,
     "t": 100,
@@ -376,7 +376,7 @@
    },
    "src_name": "Nebraska Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:33.842Z",
+   "at": "2026-11-04T02:38:37.005Z",
    "rep": {
     "u": 1.5,
     "t": 100,
@@ -384,55 +384,51 @@
    }
   },
   "G-PA": {
-   "pcts": {
-    "Josh Shapiro": 65.3,
-    "Stacy Garrity": 33.5
+   "cands": {
+    "Josh Shapiro": 1238283,
+    "Stacy Garrity": 635955,
+    "Ken Krawchuk": 22257
    },
-   "src_name": "Pennsylvania Department of State via watch.vote",
-   "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z",
-   "rep": {
-    "u": 10.5,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
   },
   "G-SC": {
    "pcts": {
-    "Alan Wilson": 50,
-    "Jermaine Johnson": 48.8
+    "Alan Wilson": 51.4,
+    "Jermaine Johnson": 47.4
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z",
+   "at": "2026-11-04T02:38:26.290Z",
    "rep": {
-    "u": 54.8,
+    "u": 71,
     "t": 100,
     "unit": "pct"
    }
   },
   "G-SD": {
    "pcts": {
-    "Larry Rhoden": 66.6,
-    "Dan Ahlers": 33.4
+    "Larry Rhoden": 66.3,
+    "Dan Ahlers": 33.7
    },
    "src_name": "South Dakota Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:34.729Z",
+   "at": "2026-11-04T02:38:38.012Z",
    "rep": {
-    "u": 7.4,
+    "u": 8.7,
     "t": 100,
     "unit": "pct"
    }
   },
   "G-TX": {
    "pcts": {
-    "Gina Hinojosa": 54.2,
-    "Greg Abbott": 44.5
+    "Gina Hinojosa": 53,
+    "Greg Abbott": 45.7
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:38:20.884Z"
   },
   "G-VT": {
    "pcts": {
@@ -441,32 +437,32 @@
    },
    "src_name": "Vermont Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:32.797Z"
+   "at": "2026-11-04T02:38:36.962Z"
   },
   "H-AR-01": {
    "pcts": {
-    "Rick Crawford": 69.2,
-    "Terri Yarbrough Green": 27.7
+    "Rick Crawford": 69,
+    "Terri Yarbrough Green": 27.9
    },
    "src_name": "Arkansas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z",
+   "at": "2026-11-04T02:40:20.755Z",
    "rep": {
-    "u": 0,
+    "u": 3.6,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-AR-04": {
    "pcts": {
-    "Bruce Westerman": 59.7,
-    "James \"Rus\" Russell III": 40.3
+    "Bruce Westerman": 60.1,
+    "James \"Rus\" Russell III": 39.9
    },
    "src_name": "Arkansas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z",
+   "at": "2026-11-04T02:40:20.755Z",
    "rep": {
-    "u": 0,
+    "u": 1,
     "t": 100,
     "unit": "pct"
    }
@@ -478,7 +474,7 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z"
+   "at": "2026-11-04T02:40:31.249Z"
   },
   "H-CO-02": {
    "pcts": {
@@ -487,7 +483,7 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z"
+   "at": "2026-11-04T02:40:31.249Z"
   },
   "H-CO-03": {
    "pcts": {
@@ -496,7 +492,7 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z"
+   "at": "2026-11-04T02:40:31.249Z"
   },
   "H-CO-04": {
    "pcts": {
@@ -505,7 +501,7 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z"
+   "at": "2026-11-04T02:40:31.249Z"
   },
   "H-CO-06": {
    "pcts": {
@@ -514,7 +510,7 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z"
+   "at": "2026-11-04T02:40:31.249Z"
   },
   "H-CO-07": {
    "pcts": {
@@ -523,16 +519,16 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z"
+   "at": "2026-11-04T02:40:31.249Z"
   },
   "H-CT-02": {
    "pcts": {
-    "Joe Courtney": 54.4,
-    "George Patrick Austin": 45.6
+    "Joe Courtney": 54.5,
+    "George Patrick Austin": 45.4
    },
    "src_name": "Connecticut Secretary of the State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:22.238Z",
+   "at": "2026-11-04T02:40:20.966Z",
    "rep": {
     "u": 6.4,
     "t": 100,
@@ -546,7 +542,7 @@
    },
    "src_name": "Connecticut Secretary of the State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:22.238Z",
+   "at": "2026-11-04T02:40:20.966Z",
    "rep": {
     "u": 1.2,
     "t": 100,
@@ -560,7 +556,7 @@
    },
    "src_name": "Delaware Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:36.660Z",
+   "at": "2026-11-04T02:40:35.970Z",
    "rep": {
     "u": 53.7,
     "t": 100,
@@ -569,30 +565,30 @@
   },
   "H-GA-01": {
    "pcts": {
-    "Amanda Hollowell": 50.3,
-    "James \"Jim\" Kingston": 49.7
+    "Amanda Hollowell": 50,
+    "James \"Jim\" Kingston": 50
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-02": {
    "pcts": {
-    "Sanford Bishop": 59.1,
-    "Matt Day": 40.9
+    "Sanford Bishop": 58.6,
+    "Matt Day": 41.4
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-03": {
    "pcts": {
-    "Brian Jack": 55.1,
-    "Maura Keller": 44.9
+    "Brian Jack": 55.2,
+    "Maura Keller": 44.8
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-04": {
    "pcts": {
@@ -601,7 +597,7 @@
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-05": {
    "pcts": {
@@ -610,25 +606,25 @@
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-06": {
    "pcts": {
-    "Lucy McBath": 82.8,
-    "Kevin E. Martin": 17.2
+    "Lucy McBath": 82.4,
+    "Kevin E. Martin": 17.6
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-07": {
    "pcts": {
-    "Rich McCormick": 55.6,
-    "Tony Kozycki": 44.4
+    "Rich McCormick": 55.7,
+    "Tony Kozycki": 44.3
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-08": {
    "pcts": {
@@ -637,52 +633,52 @@
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-09": {
    "pcts": {
-    "Andrew Clyde": 59.8,
-    "Caitlyn Gegen": 40.2
+    "Andrew Clyde": 60,
+    "Caitlyn Gegen": 40
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-10": {
    "pcts": {
-    "Houston Gaines": 53.1,
-    "Pamela \"Pam\" Delancy": 46.9
+    "Houston Gaines": 53.9,
+    "Pamela \"Pam\" Delancy": 46.1
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-11": {
    "pcts": {
-    "John Cowan": 53.8,
-    "Chris Harden": 46.2
+    "John Cowan": 53.9,
+    "Chris Harden": 46.1
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-12": {
    "pcts": {
-    "Rick W. Allen": 50.5,
-    "Ceretta Smith": 49.5
+    "Rick W. Allen": 52.2,
+    "Ceretta Smith": 47.8
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-13": {
    "pcts": {
-    "Jasmine Clark": 81.3,
-    "Jonathan Chavez": 18.7
+    "Jasmine Clark": 81.2,
+    "Jonathan Chavez": 18.8
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-GA-14": {
    "pcts": {
@@ -691,7 +687,7 @@
    },
    "src_name": "Georgia Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:28.439Z"
+   "at": "2026-11-04T02:40:25.241Z"
   },
   "H-IN-01": {
    "pcts": {
@@ -700,16 +696,16 @@
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IN-02": {
    "pcts": {
-    "Rudy Yakym": 58.5,
-    "Jamee Decio": 39.1
+    "Rudy Yakym": 59.1,
+    "Jamee Decio": 38.5
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IN-03": {
    "pcts": {
@@ -718,7 +714,7 @@
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IN-04": {
    "pcts": {
@@ -727,7 +723,7 @@
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IN-05": {
    "pcts": {
@@ -736,7 +732,7 @@
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IN-06": {
    "pcts": {
@@ -745,7 +741,7 @@
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IN-07": {
    "pcts": {
@@ -754,7 +750,7 @@
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IN-08": {
    "pcts": {
@@ -763,115 +759,115 @@
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IN-09": {
    "pcts": {
-    "Erin Houchin": 60.6,
-    "Brad A. Meyer": 36.7
+    "Erin Houchin": 52.2,
+    "Brad A. Meyer": 45.4
    },
    "src_name": "Indiana Secretary of State, Election Division via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.444Z"
+   "at": "2026-11-04T02:40:30.315Z"
   },
   "H-IA-02": {
    "pcts": {
-    "Lindsay James": 61.3,
-    "Joe Mitchell": 36.3
+    "Lindsay James": 60,
+    "Joe Mitchell": 37.2
    },
    "src_name": "Iowa Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z"
+   "at": "2026-11-04T02:40:20.755Z"
   },
   "H-IA-04": {
    "pcts": {
-    "Chris McGowan": 55.3,
-    "Dave Dawson": 44.6
+    "Chris McGowan": 52.1,
+    "Dave Dawson": 47.8
    },
    "src_name": "Iowa Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z"
+   "at": "2026-11-04T02:40:20.755Z"
   },
   "H-LA-01": {
    "pcts": {
     "Steve Scalise": 58.6,
-    "Lauren Jewett": 37.7
+    "Lauren Jewett": 37.5
    },
    "src_name": "Louisiana Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:31.548Z",
+   "at": "2026-11-04T02:40:33.880Z",
    "rep": {
-    "u": 0,
+    "u": 2.2,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-LA-02": {
    "pcts": {
-    "Troy A. Carter Sr.": 72.7,
-    "Peter Williams": 23.7
+    "Troy A. Carter Sr.": 72.4,
+    "Peter Williams": 23.8
    },
    "src_name": "Louisiana Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:31.548Z",
+   "at": "2026-11-04T02:40:33.880Z",
    "rep": {
-    "u": 0.3,
+    "u": 1.7,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-LA-03": {
    "pcts": {
-    "Clay Higgins": 57.9,
-    "John Day": 18.5
+    "Clay Higgins": 57.3,
+    "John Day": 18.9
    },
    "src_name": "Louisiana Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:31.548Z",
+   "at": "2026-11-04T02:40:33.880Z",
    "rep": {
-    "u": 1.9,
+    "u": 4,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-LA-04": {
    "pcts": {
-    "Mike Johnson": 59,
-    "Conrad Cable": 23
+    "Mike Johnson": 57.4,
+    "Conrad Cable": 24.4
    },
    "src_name": "Louisiana Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:31.548Z",
+   "at": "2026-11-04T02:40:33.880Z",
    "rep": {
-    "u": 1.9,
+    "u": 6.4,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-LA-05": {
    "pcts": {
-    "Patricia \"Pat\" Moore": 21.1,
-    "Michael Echols": 16.3
+    "Patricia \"Pat\" Moore": 21.3,
+    "Michael Echols": 16
    },
    "src_name": "Louisiana Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:31.548Z",
+   "at": "2026-11-04T02:40:33.880Z",
    "rep": {
-    "u": 1.2,
+    "u": 6.7,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-LA-06": {
    "pcts": {
-    "Blake Miguez": 23.7,
-    "Chauna Banks": 17.8
+    "Blake Miguez": 23.6,
+    "Chauna Banks": 17.7
    },
    "src_name": "Louisiana Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:31.548Z",
+   "at": "2026-11-04T02:40:33.880Z",
    "rep": {
-    "u": 1.6,
+    "u": 2.4,
     "t": 100,
     "unit": "pct"
    }
@@ -883,21 +879,21 @@
    },
    "src_name": "Minnesota Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:23.788Z",
+   "at": "2026-11-04T02:40:22.797Z",
    "rep": {
-    "u": 2.4,
+    "u": 2.5,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-NE-01": {
    "pcts": {
-    "Chris Backemeyer": 58.7,
-    "Mike Flood": 39.1
+    "Chris Backemeyer": 58.5,
+    "Mike Flood": 39.2
    },
    "src_name": "Nebraska Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:33.842Z",
+   "at": "2026-11-04T02:40:35.115Z",
    "rep": {
     "u": 0,
     "t": 100,
@@ -911,7 +907,7 @@
    },
    "src_name": "Nebraska Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:33.842Z",
+   "at": "2026-11-04T02:40:35.115Z",
    "rep": {
     "u": 0,
     "t": 100,
@@ -920,28 +916,28 @@
   },
   "H-NE-03": {
    "pcts": {
-    "Adrian Smith": 60.4,
-    "Becky Kelly Stille": 30.6
+    "Adrian Smith": 60.3,
+    "Becky Kelly Stille": 30.7
    },
    "src_name": "Nebraska Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:33.842Z",
+   "at": "2026-11-04T02:40:35.115Z",
    "rep": {
-    "u": 2.3,
+    "u": 3.2,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-NC-01": {
    "pcts": {
-    "Don Davis": 50.1,
-    "Laurie Buckhout": 46.9
+    "Don Davis": 49.8,
+    "Laurie Buckhout": 47.1
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 57.5,
+    "u": 59.6,
     "t": 100,
     "unit": "pct"
    }
@@ -953,7 +949,7 @@
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
     "u": 30.1,
     "t": 100,
@@ -967,7 +963,7 @@
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
     "u": 56.8,
     "t": 100,
@@ -976,14 +972,14 @@
   },
   "H-NC-04": {
    "pcts": {
-    "Valerie P. Foushee": 82,
-    "Mahesh (Max) Ganorkar": 16.4
+    "Valerie P. Foushee": 81.9,
+    "Mahesh (Max) Ganorkar": 16.5
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 35.9,
+    "u": 42.2,
     "t": 100,
     "unit": "pct"
    }
@@ -995,23 +991,23 @@
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 73.9,
+    "u": 74.3,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-NC-06": {
    "pcts": {
-    "Cyril Jefferson": 51.1,
-    "Addison McDowell": 48.9
+    "Cyril Jefferson": 50.8,
+    "Addison McDowell": 49.2
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 63,
+    "u": 67.1,
     "t": 100,
     "unit": "pct"
    }
@@ -1023,23 +1019,23 @@
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 50.8,
+    "u": 54.6,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-NC-08": {
    "pcts": {
-    "Mark Harris": 49.7,
-    "Colby Watson": 49.4
+    "Mark Harris": 49.8,
+    "Colby Watson": 49.3
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 73.5,
+    "u": 76.6,
     "t": 100,
     "unit": "pct"
    }
@@ -1051,7 +1047,7 @@
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
     "u": 68.6,
     "t": 100,
@@ -1060,28 +1056,28 @@
   },
   "H-NC-10": {
    "pcts": {
-    "Ashley Bell": 49.5,
-    "Pat Harrigan": 49.1
+    "Pat Harrigan": 50.3,
+    "Ashley Bell": 48.2
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 62,
+    "u": 71.1,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-NC-11": {
    "pcts": {
-    "Jamie Ager": 57.9,
-    "Jennifer Capps Balkcom": 40.6
+    "Jamie Ager": 56.8,
+    "Jennifer Capps Balkcom": 41.6
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 92.4,
+    "u": 97.9,
     "t": 100,
     "unit": "pct"
    }
@@ -1093,7 +1089,7 @@
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
     "u": 48.9,
     "t": 100,
@@ -1107,7 +1103,7 @@
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
     "u": 47.1,
     "t": 100,
@@ -1116,121 +1112,121 @@
   },
   "H-NC-14": {
    "pcts": {
-    "Lakesha Womack": 51.8,
-    "Tim Moore": 48.2
+    "Lakesha Womack": 50.9,
+    "Tim Moore": 49.1
    },
    "src_name": "North Carolina State Board of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:26.080Z",
+   "at": "2026-11-04T02:40:25.664Z",
    "rep": {
-    "u": 59.8,
+    "u": 78.1,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-SC-01": {
    "pcts": {
-    "Nancy Lacore": 52.8,
-    "Jenny Costa Honeycutt": 45.6
+    "Nancy Lacore": 52,
+    "Jenny Costa Honeycutt": 46.4
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z"
+   "at": "2026-11-04T02:40:27.778Z"
   },
   "H-SC-02": {
    "pcts": {
-    "Zyon Khalifa": 53.5,
-    "Joe Wilson": 45.4
+    "Zyon Khalifa": 50.1,
+    "Joe Wilson": 48.7
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z"
+   "at": "2026-11-04T02:40:27.778Z"
   },
   "H-SC-03": {
    "pcts": {
-    "Sheri Biggs": 62.2,
-    "Eunice Lehmacher": 36
+    "Sheri Biggs": 63.2,
+    "Eunice Lehmacher": 34.9
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z"
+   "at": "2026-11-04T02:40:27.778Z"
   },
   "H-SC-04": {
    "pcts": {
-    "William Timmons": 49.1,
-    "Courtney McClain": 48.5
+    "William Timmons": 49.7,
+    "Courtney McClain": 47.8
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z"
+   "at": "2026-11-04T02:40:27.778Z"
   },
   "H-SC-05": {
    "pcts": {
-    "Mallory Dittmer": 50.2,
-    "Wes Climer": 49.8
+    "Wes Climer": 52.3,
+    "Mallory Dittmer": 47.6
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z"
+   "at": "2026-11-04T02:40:27.778Z"
   },
   "H-SC-06": {
    "pcts": {
-    "James E Jim Clyburn": 70.4,
-    "John Peterson": 29.5
+    "James E Jim Clyburn": 68.2,
+    "John Peterson": 31.7
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z"
+   "at": "2026-11-04T02:40:27.778Z"
   },
   "H-SC-07": {
    "pcts": {
-    "Russell Fry": 55.2,
-    "John Gregory Vincent": 44.8
+    "Russell Fry": 56.1,
+    "John Gregory Vincent": 43.8
    },
    "src_name": "South Carolina State Election Commission via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:27.400Z"
+   "at": "2026-11-04T02:40:27.778Z"
   },
   "H-SD-AL": {
    "pcts": {
-    "Marty Jackley": 66.5,
-    "Nicole \"Nikki\" Gronli": 33.5
+    "Marty Jackley": 66.3,
+    "Nicole \"Nikki\" Gronli": 33.7
    },
    "src_name": "South Dakota Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:34.729Z",
+   "at": "2026-11-04T02:40:35.498Z",
    "rep": {
-    "u": 7.4,
+    "u": 8.7,
     "t": 100,
     "unit": "pct"
    }
   },
   "H-TX-01": {
    "pcts": {
-    "Nathaniel Moran": 67.2,
-    "Yolanda R. Prince": 32.8
+    "Nathaniel Moran": 67.3,
+    "Yolanda R. Prince": 32.7
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-03": {
    "pcts": {
-    "Keith Self": 78.8,
-    "Evan Hunt": 21.2
+    "Evan Hunt": 51.9,
+    "Keith Self": 48.1
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-04": {
    "pcts": {
-    "Jason Pearce": 51.4,
-    "Pat Fallon": 48.6
+    "Jason Pearce": 53.4,
+    "Pat Fallon": 46.6
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-05": {
    "pcts": {
@@ -1239,7 +1235,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-06": {
    "pcts": {
@@ -1248,16 +1244,16 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-08": {
    "pcts": {
-    "Laura Jones": 67.5,
-    "Jessica Hart Steinmann": 32.5
+    "Jessica Hart Steinmann": 52.3,
+    "Laura Jones": 47.7
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-10": {
    "pcts": {
@@ -1266,25 +1262,25 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-11": {
    "pcts": {
-    "August Pfluger": 62.3,
-    "Claire Reynolds": 37.7
+    "August Pfluger": 66.5,
+    "Claire Reynolds": 33.5
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-13": {
    "pcts": {
-    "Ronny Jackson": 64.5,
-    "Mark Nair": 35.5
+    "Ronny Jackson": 65.2,
+    "Mark Nair": 34.8
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-14": {
    "pcts": {
@@ -1293,7 +1289,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-15": {
    "pcts": {
@@ -1302,7 +1298,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-16": {
    "pcts": {
@@ -1311,7 +1307,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-17": {
    "pcts": {
@@ -1320,25 +1316,25 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-19": {
    "pcts": {
-    "Tom Sell": 72.5,
-    "Kyle Rable": 27.5
+    "Tom Sell": 72.6,
+    "Kyle Rable": 27.4
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-21": {
    "pcts": {
-    "Mark Teixeira": 59.1,
-    "Kristin Hook": 40.9
+    "Mark Teixeira": 60.6,
+    "Kristin Hook": 39.4
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-22": {
    "pcts": {
@@ -1347,16 +1343,16 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-23": {
    "pcts": {
-    "Katy Padilla Stout": 56.9,
-    "Brandon Herrera": 39.8
+    "Katy Padilla Stout": 56.3,
+    "Brandon Herrera": 40.3
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-24": {
    "pcts": {
@@ -1365,7 +1361,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-25": {
    "pcts": {
@@ -1374,7 +1370,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-26": {
    "pcts": {
@@ -1383,25 +1379,25 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-27": {
    "pcts": {
-    "Tanya Lloyd": 52.5,
-    "Michael Cloud": 47.5
+    "Tanya Lloyd": 53.6,
+    "Michael Cloud": 46.4
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-28": {
    "pcts": {
-    "Henry Cuellar": 59.3,
-    "Tano E. Tijerina": 37.7
+    "Henry Cuellar": 65.4,
+    "Tano E. Tijerina": 29.4
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-30": {
    "pcts": {
@@ -1410,7 +1406,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-31": {
    "pcts": {
@@ -1419,16 +1415,16 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-32": {
    "pcts": {
-    "Dan Barrios": 63.6,
-    "Jace Yarbrough": 36.4
+    "Dan Barrios": 63.7,
+    "Jace Yarbrough": 36.3
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-33": {
    "pcts": {
@@ -1437,25 +1433,25 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-34": {
    "pcts": {
-    "Vicente Gonzalez": 58.2,
-    "Eric Flores": 38.5
+    "Vicente Gonzalez": 50.4,
+    "Eric Flores": 45.4
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-35": {
    "pcts": {
-    "Carlos De La Cruz": 69.4,
-    "Johnny C. Garcia": 30.6
+    "Carlos De La Cruz": 64.5,
+    "Johnny C. Garcia": 35.5
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-36": {
    "pcts": {
@@ -1464,7 +1460,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-VT-AL": {
    "pcts": {
@@ -1473,7 +1469,7 @@
    },
    "src_name": "Vermont Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:32.797Z"
+   "at": "2026-11-04T02:40:34.051Z"
   },
   "H-VA-01": {
    "pcts": {
@@ -1482,16 +1478,16 @@
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-02": {
    "pcts": {
-    "Elaine G. Luria": 52.7,
+    "Elaine G. Luria": 52.6,
     "Jen A. Kiggans": 45
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-03": {
    "pcts": {
@@ -1500,25 +1496,25 @@
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-04": {
    "pcts": {
-    "Jennifer L. McClellan": 68.2,
-    "Robert P. \"Family Man\" Murray, Jr.": 30.1
+    "Jennifer L. McClellan": 68.1,
+    "Robert P. \"Family Man\" Murray, Jr.": 30.2
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-05": {
    "pcts": {
-    "Tom S. P. Perriello": 50,
-    "John J. McGuire III": 48.3
+    "Tom S. P. Perriello": 50.1,
+    "John J. McGuire III": 48.1
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-06": {
    "pcts": {
@@ -1527,34 +1523,34 @@
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-07": {
    "pcts": {
     "Eugene S. Vindman": 59.1,
-    "Doug A. Ollivant": 38.2
+    "Doug A. Ollivant": 38.4
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-08": {
    "pcts": {
-    "Donald S. Beyer, Jr.": 78.9,
-    "Tony A. Sabio": 18.2
+    "Donald S. Beyer, Jr.": 79.3,
+    "Tony A. Sabio": 17.8
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-09": {
    "pcts": {
     "H. Morgan Griffith": 65,
-    "Joy A. Powers": 34.8
+    "Joy A. Powers": 34.7
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-10": {
    "pcts": {
@@ -1563,7 +1559,7 @@
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-VA-11": {
    "pcts": {
@@ -1572,7 +1568,7 @@
    },
    "src_name": "Virginia Department of Elections via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:29.402Z"
+   "at": "2026-11-04T02:40:26.513Z"
   },
   "H-AR-03": {
    "pcts": {
@@ -1581,7 +1577,7 @@
    },
    "src_name": "Arkansas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z",
+   "at": "2026-11-04T02:40:20.755Z",
    "rep": {
     "u": 0,
     "t": 100,
@@ -1595,18 +1591,18 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z"
+   "at": "2026-11-04T02:40:31.249Z"
   },
   "H-MN-07": {
    "pcts": {
-    "Michelle Fischbach": 73.2,
-    "Erik Osberg": 26.8
+    "Michelle Fischbach": 66.4,
+    "Erik Osberg": 33.5
    },
    "src_name": "Minnesota Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:23.788Z",
+   "at": "2026-11-04T02:40:22.797Z",
    "rep": {
-    "u": 1.3,
+    "u": 2.9,
     "t": 100,
     "unit": "pct"
    }
@@ -1618,7 +1614,7 @@
    },
    "src_name": "Connecticut Secretary of the State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:22.238Z",
+   "at": "2026-11-04T02:40:20.966Z",
    "rep": {
     "u": 0.5,
     "t": 100,
@@ -1627,12 +1623,12 @@
   },
   "H-TX-02": {
    "pcts": {
-    "Shaun Finnie": 54.2,
-    "Steve Toth": 45.8
+    "Shaun Finnie": 50.1,
+    "Steve Toth": 49.9
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-07": {
    "pcts": {
@@ -1641,7 +1637,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-09": {
    "pcts": {
@@ -1650,7 +1646,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-12": {
    "pcts": {
@@ -1659,7 +1655,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-18": {
    "pcts": {
@@ -1668,7 +1664,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-29": {
    "pcts": {
@@ -1677,7 +1673,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-TX-38": {
    "pcts": {
@@ -1686,7 +1682,7 @@
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.907Z"
+   "at": "2026-11-04T02:40:20.766Z"
   },
   "H-CO-05": {
    "pcts": {
@@ -1695,7 +1691,7 @@
    },
    "src_name": "Colorado Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.697Z"
+   "at": "2026-11-04T02:40:31.249Z"
   },
   "H-CT-04": {
    "pcts": {
@@ -1704,7 +1700,7 @@
    },
    "src_name": "Connecticut Secretary of the State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:22.238Z",
+   "at": "2026-11-04T02:40:20.966Z",
    "rep": {
     "u": 0.7,
     "t": 100,
@@ -1713,12 +1709,1265 @@
   },
   "H-IA-03": {
    "pcts": {
-    "Sarah Trone Garriott": 61.6,
-    "Zach Nunn": 38.1
+    "Sarah Trone Garriott": 61.5,
+    "Zach Nunn": 38.3
    },
    "src_name": "Iowa Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T02:36:20.689Z"
+   "at": "2026-11-04T02:40:20.755Z"
+  },
+  "H-MN-08": {
+   "pcts": {
+    "Pete Stauber": 68.4,
+    "Trina Swanson": 31.6
+   },
+   "src_name": "Minnesota Secretary of State via watch.vote",
+   "url": "https://watch.vote/midterms/2026",
+   "at": "2026-11-04T02:40:22.797Z",
+   "rep": {
+    "u": 2.3,
+    "t": 100,
+    "unit": "pct"
+   }
+  },
+  "G-AZ": {
+   "cands": {
+    "Andy Biggs": 0,
+    "Katie Hobbs": 0,
+    "Risa Lombardo": 0,
+    "Teri Ann Hourihan": 0,
+    "Gertritrude Gonzalez": 0,
+    "Alice Novoa": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 15,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-01": {
+   "cands": {
+    "Thomas \"Jay\" Feely IV": 0,
+    "Amish Shah": 0,
+    "Monica Alponte": 0,
+    "Dev Gupta": 0,
+    "Gage Dylan Thunder": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 1,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-02": {
+   "cands": {
+    "Eli Crane": 0,
+    "Jonathan Nez": 0,
+    "Curtis Goodwin": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 9,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-03": {
+   "cands": {
+    "Yassamin Ansari": 0,
+    "David Redkey": 0,
+    "Alan Aversa": 0,
+    "Jacob Parkman": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 1,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-04": {
+   "cands": {
+    "Zuhdi Jasser": 0,
+    "Greg Stanton": 0,
+    "Tisha Benoit": 0,
+    "Steven Sanders": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 1,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-05": {
+   "cands": {
+    "Mark Lamb": 0,
+    "Elizabeth Lee": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 2,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-06": {
+   "cands": {
+    "Juan Ciscomani": 0,
+    "JoAnna Mendoza": 0,
+    "Jereme Lance Peters": 0,
+    "Gary Swing": 0,
+    "Michael Dorland": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 5,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-07": {
+   "cands": {
+    "Daniel Francis Butierez Sr.": 0,
+    "Adelita Grijalva": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 6,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-08": {
+   "cands": {
+    "Abraham \"Abe\" Hamadeh": 0,
+    "Bernadette Greene-Placentia": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 1,
+    "unit": "counties"
+   }
+  },
+  "H-AZ-09": {
+   "cands": {
+    "Paul Gosar": 0,
+    "Danielle \"Dani\" Sterbinsky": 0,
+    "G. Seville Hatch": 0,
+    "William Perry": 0
+   },
+   "src_name": "Arizona Secretary of State via Pushbuild",
+   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+   "at": "2026-11-03T21:59:20.3975629Z",
+   "rep": {
+    "u": 0,
+    "t": 4,
+    "unit": "counties"
+   }
+  },
+  "G-CA": {
+   "cands": {
+    "Xavier Becerra": 0,
+    "Steve Hilton": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/governor",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 23860,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-01": {
+   "cands": {
+    "Mike McGuire": 0,
+    "James Gallagher": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/1",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 788,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-10": {
+   "cands": {
+    "Mark DeSaulnier": 0,
+    "Jeff Frese": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/10",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 728,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-11": {
+   "cands": {
+    "Connie Chan": 0,
+    "Scott Wiener": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/11",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 453,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-12": {
+   "cands": {
+    "Jamie Joyce": 0,
+    "Lateefah Simon": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/12",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 190,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-13": {
+   "cands": {
+    "Adam Gray": 0,
+    "Kevin Lincoln": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/13",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 974,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-14": {
+   "cands": {
+    "Melissa Hernandez": 0,
+    "Aisha Wahab": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/14",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 351,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-15": {
+   "cands": {
+    "Kevin Mullin": 0,
+    "Charles Hoelter": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/15",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 299,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-16": {
+   "cands": {
+    "Sam Liccardo": 0,
+    "Peter Sundin Soul\u00e9": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/16",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 337,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-17": {
+   "cands": {
+    "Ro Khanna": 0,
+    "Ritesh Tandon": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/17",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 241,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-18": {
+   "cands": {
+    "Zoe Lofgren": 0,
+    "Shane Lewis": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/18",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 376,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-19": {
+   "cands": {
+    "Jimmy Panetta": 0,
+    "Peter Coe Verbica": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/19",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 428,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-02": {
+   "cands": {
+    "Jared Huffman": 0,
+    "Robin Littau": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/2",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 595,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-20": {
+   "cands": {
+    "Sandra Van Scotter": 0,
+    "Vince Fong": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/20",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 764,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-21": {
+   "cands": {
+    "Jim Costa": 0,
+    "Kyle Kirkland": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/21",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 323,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-22": {
+   "cands": {
+    "Randy Villegas": 0,
+    "David G. Valadao": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/22",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 575,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-23": {
+   "cands": {
+    "Tessa Lynn Hodge": 0,
+    "Jay Obernolte": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/23",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 1324,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-24": {
+   "cands": {
+    "Salud Carbajal": 0,
+    "Bob Smith": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/24",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 627,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-25": {
+   "cands": {
+    "Raul Ruiz": 0,
+    "Joe Males": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/25",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 656,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-26": {
+   "cands": {
+    "Jacqui Irwin": 0,
+    "Sam Gallucci": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/26",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 1087,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-27": {
+   "cands": {
+    "George Whitesides": 0,
+    "Jason Gibbs": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/27",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 378,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-28": {
+   "cands": {
+    "Judy Chu": 0,
+    "April A. Verlato": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/28",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 391,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-29": {
+   "cands": {
+    "Ang\u00e9lica Mar\u00eda Due\u00f1as": 0,
+    "Luz Maria Rivas": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/29",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 115,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-03": {
+   "cands": {
+    "Ami Bera": 0,
+    "Robb Tucker": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/3",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 531,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-30": {
+   "cands": {
+    "Laura Friedman": 0,
+    "Scott Alan Meyers": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/30",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 193,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-31": {
+   "cands": {
+    "Gil Cisneros": 0,
+    "Eric Ching": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/31",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 360,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-32": {
+   "cands": {
+    "Brad Sherman": 0,
+    "Larry Thompson": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/32",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 268,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-33": {
+   "cands": {
+    "Pete Aguilar": 0,
+    "Stephanie M. Vargas": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/33",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 491,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-34": {
+   "cands": {
+    "Jimmy Gomez": 0,
+    "Angela Gonzales-Torres": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/34",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 116,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-35": {
+   "cands": {
+    "Norma J. Torres": 0,
+    "Mike Cargile": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/35",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 272,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-36": {
+   "cands": {
+    "Ted W. Lieu": 0,
+    "Houston Brignano": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/36",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 156,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-37": {
+   "cands": {
+    "Sydney Kamlager-Dove": 0,
+    "Samantha Mota": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/37",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 140,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-38": {
+   "cands": {
+    "Hilda Solis": 0,
+    "Pedro Antonio Casas": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/38",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 415,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-39": {
+   "cands": {
+    "Mark Takano": 0,
+    "Steve Manos": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/39",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 210,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-04": {
+   "cands": {
+    "Eric Jones": 0,
+    "Mike Thompson": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/4",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 500,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-40": {
+   "cands": {
+    "Ken Calvert": 0,
+    "Young Kim": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/40",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 558,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-41": {
+   "cands": {
+    "Linda S\u00e1nchez": 0,
+    "Mitch Clemmons": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/41",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 281,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-42": {
+   "cands": {
+    "Robert Garcia": 0,
+    "Brian Burley": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/42",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 402,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-43": {
+   "cands": {
+    "Maxine Waters": 0,
+    "Cristian Morales": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/43",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 193,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-44": {
+   "cands": {
+    "Nanette Diaz Barragan": 0,
+    "Genevieve Angel": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/44",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 179,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-45": {
+   "cands": {
+    "Derek Tran": 0,
+    "Chuong V. Vo": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/45",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 424,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-46": {
+   "cands": {
+    "Lou Correa": 0,
+    "David Pan": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/46",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 423,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-47": {
+   "cands": {
+    "Dave Min": 0,
+    "Jenny Rae Le Roux": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/47",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 561,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-48": {
+   "cands": {
+    "Marni von Wilpert": 0,
+    "Jim Desmond": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/48",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 692,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-49": {
+   "cands": {
+    "Mike Levin": 0,
+    "Armen Kurdian": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/49",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 699,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-05": {
+   "cands": {
+    "Michael Masuda": 0,
+    "Tom McClintock": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/5",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 399,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-50": {
+   "cands": {
+    "Scott Peters": 0,
+    "Steve Cohen": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/50",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 713,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-51": {
+   "cands": {
+    "Sara Jacobs": 0,
+    "Ricardo Cabrera": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/51",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 663,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-52": {
+   "cands": {
+    "Juan Vargas": 0,
+    "Jeff Belle": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/52",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 580,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-06": {
+   "cands": {
+    "Richard Pan": 0,
+    "Kevin Kiley": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/6",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 309,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-07": {
+   "cands": {
+    "Doris Matsui": 0,
+    "Mai Vang": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/7",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 414,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-08": {
+   "cands": {
+    "John Garamendi": 0,
+    "Rudy Recile": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/8",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 396,
+    "unit": "precincts"
+   }
+  },
+  "H-CA-09": {
+   "cands": {
+    "Josh Harder": 0,
+    "John McBride": 0
+   },
+   "src_name": "California Secretary of State via Pushbuild",
+   "url": "https://electionresults.sos.ca.gov/returns/us-rep/district/9",
+   "at": "2026-11-03T02:28:00Z",
+   "rep": {
+    "u": 0,
+    "t": 322,
+    "unit": "precincts"
+   }
+  },
+  "G-MD": {
+   "cands": {
+    "Wes Moore and Aruna Miller": 0,
+    "Dan Cox and Rob Krop": 0,
+    "Andy Ellis and Owen Silverman Andrews": 0,
+    "Cathy White and Cathy Permut": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_1.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 1979,
+    "unit": "precincts"
+   }
+  },
+  "H-MD-01": {
+   "cands": {
+    "Dan Schwartz": 0,
+    "Andy Harris": 0,
+    "Edward Shlikas": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 309,
+    "unit": "precincts"
+   }
+  },
+  "H-MD-02": {
+   "cands": {
+    "John \"Johnny O\" Olszewski, Jr.": 0,
+    "Dave Wallace": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 241,
+    "unit": "precincts"
+   }
+  },
+  "H-MD-03": {
+   "cands": {
+    "Sarah Elfreth": 0,
+    "Berney Flowers": 0,
+    "Robert L. Coffman": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 214,
+    "unit": "precincts"
+   }
+  },
+  "H-MD-04": {
+   "cands": {
+    "Glenn F. Ivey": 0,
+    "George E. McDermott": 0,
+    "Sam Husseini": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 237,
+    "unit": "precincts"
+   }
+  },
+  "H-MD-05": {
+   "cands": {
+    "Adrian Boafo": 0,
+    "Chris Chaffee": 0,
+    "Mildred Marie Hall": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 227,
+    "unit": "precincts"
+   }
+  },
+  "H-MD-06": {
+   "cands": {
+    "April McClain Delaney": 0,
+    "Robin Ficker": 0,
+    "Moshe Y. Landman": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 214,
+    "unit": "precincts"
+   }
+  },
+  "H-MD-07": {
+   "cands": {
+    "Kweisi Mfume": 0,
+    "Scott M. Collier": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 338,
+    "unit": "precincts"
+   }
+  },
+  "H-MD-08": {
+   "cands": {
+    "Jamie Raskin": 0,
+    "Cheryl Riley": 0,
+    "Nancy Wallace": 0
+   },
+   "src_name": "Maryland State Board of Elections via Pushbuild",
+   "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
+   "at": "2026-11-03T16:24:46",
+   "rep": {
+    "u": 0,
+    "t": 199,
+    "unit": "precincts"
+   }
+  },
+  "G-NV": {
+   "cands": {
+    "Aaron D. Ford": 0,
+    "Danielle Ford": 0,
+    "Joseph Lombardo": 0,
+    "None of These Candidates": 0
+   },
+   "src_name": "Nevada Secretary of State via Pushbuild",
+   "url": "https://silverstateelection.nv.gov/",
+   "at": "2026-10-28T22:17:11.7580571Z"
+  },
+  "H-NV-01": {
+   "cands": {
+    "Carrie Buck": 0,
+    "Afzal Khan": 0,
+    "Steven John": 0,
+    "Dina Titus": 0
+   },
+   "src_name": "Nevada Secretary of State via Pushbuild",
+   "url": "https://silverstateelection.nv.gov/",
+   "at": "2026-10-28T22:17:11.7580571Z"
+  },
+  "H-NV-02": {
+   "cands": {
+    "Teresa F. F. Benitez-Thompson": 0,
+    "Lynn Chapman": 0,
+    "David Flippo": 0
+   },
+   "src_name": "Nevada Secretary of State via Pushbuild",
+   "url": "https://silverstateelection.nv.gov/",
+   "at": "2026-10-28T22:17:11.7580571Z"
+  },
+  "H-NV-03": {
+   "cands": {
+    "Jon Kamerath": 0,
+    "Suzanne Lee": 0,
+    "Martin O'Donnell": 0
+   },
+   "src_name": "Nevada Secretary of State via Pushbuild",
+   "url": "https://silverstateelection.nv.gov/",
+   "at": "2026-10-28T22:17:11.7580571Z"
+  },
+  "H-NV-04": {
+   "cands": {
+    "Russell Best": 0,
+    "Steven Horsford": 0,
+    "William Johnson": 0,
+    "Cody Whipple": 0
+   },
+   "src_name": "Nevada Secretary of State via Pushbuild",
+   "url": "https://silverstateelection.nv.gov/",
+   "at": "2026-10-28T22:17:11.7580571Z"
+  },
+  "H-PA-01": {
+   "cands": {
+    "Bob Harvie": 80399,
+    "Brian Fitzpatrick": 48291
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-10": {
+   "cands": {
+    "Janelle Stelson": 52640,
+    "Scott Perry": 36380
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-11": {
+   "cands": {
+    "Nancy Mannion": 75411,
+    "Lloyd K Smucker": 62469
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-12": {
+   "cands": {
+    "Summer Lee": 87438,
+    "James Hayes": 32669
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-13": {
+   "cands": {
+    "John Joyce": 103487,
+    "Beth Farnham": 50633
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-14": {
+   "cands": {
+    "Guy Reschenthaler": 49024,
+    "Alan Bradstock": 43320
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-15": {
+   "cands": {
+    "Glenn Gt Thompson": 74530,
+    "Ray Bilger": 45458
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-16": {
+   "cands": {
+    "Justin Wagner": 43957,
+    "Mike Kelly": 32166
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-17": {
+   "cands": {
+    "Chris Deluzio": 107973,
+    "Tony Guy": 45401
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-02": {
+   "cands": {
+    "Brendan F Boyle": 60045,
+    "Jessica Arriaga": 18876
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-03": {
+   "cands": {
+    "Chris Rabb": 65879,
+    "Dennis Mahoney": 4805
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-04": {
+   "cands": {
+    "Madeleine Dean": 77087,
+    "Aurora Stuski": 20626
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-05": {
+   "cands": {
+    "Mary Gay Scanlon": 62243,
+    "Nick Manganaro": 12406
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-06": {
+   "cands": {
+    "Chrissy Houlahan": 78499,
+    "Marty Young": 27151
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-07": {
+   "cands": {
+    "Bob Brooks": 77911,
+    "Ryan Mackenzie": 39653
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-08": {
+   "cands": {
+    "Paige Cognetti": 99995,
+    "Rob Bresnahan Jr": 62498
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
+  },
+  "H-PA-09": {
+   "cands": {
+    "Dan Meuser": 65152,
+    "Rachel Wallace": 46563
+   },
+   "src_name": "Pennsylvania Department of State via Pushbuild",
+   "url": "https://www.electionreturns.pa.gov/",
+   "at": "2026-11-04T02:39:45+00:00"
   }
  }
 }
