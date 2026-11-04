@@ -651,15 +651,22 @@
     if (wide) {
       const wt = wide.opts.reduce((a, o) => a + o.votes, 0);
       const label = wide.counties >= 39 || c.counties >= 39 ? "Statewide" : `Whole district (${c.counties} counties)`;
+      // Counties report on their own schedules; say so until they all have. The feed
+      // can show 0 units while votes are in, so only say it once a unit is counted.
+      const ru = wide.reporting?.reportingUnits, tu = wide.reporting?.totalUnits;
+      const partial = tu && ru > 0 && ru < tu ? ` <span class="muted">(${fmt(ru)} of ${fmt(tu)} counties reporting so far)</span>` : "";
       wideLine = `<div class="wide">${label}: ${wt ? wide.opts.filter((o) => !o.writeIn || o.votes).sort((a, b) => b.votes - a.votes).slice(0, 3)
-        .map((o) => `<b>${esc(o.name)}</b> ${((o.votes / wt) * 100).toFixed(1)}%`).join(" · ") + ` · ${fmt(wt)} votes` : "no votes counted yet"}</div>`;
+        .map((o) => `<b>${esc(o.name)}</b> ${((o.votes / wt) * 100).toFixed(1)}%`).join(" · ") + ` · ${fmt(wt)} votes` : "no votes counted yet"}${partial}</div>`;
     }
+    // On the Washington tab a card is the whole contest, so say how many of its counties have reported.
+    const ou = c.reporting?.reportingUnits, ot = c.reporting?.totalUnits;
+    const own = !wide && c.counties > 1 && ot && ou > 0 && ou < ot ? ` <span class="muted">· ${fmt(ou)} of ${fmt(ot)} counties reporting</span>` : "";
     const desc = c.desc ? `<details class="desc"><summary>What it does</summary>${esc(c.desc)}</details>` : "";
     return `<article class="race">
       <div class="race-h"><strong>${esc(c.name)}</strong></div>
       ${desc}
       <ul class="cands" style="margin-top:6px">${list}</ul>
-      <div class="race-f"><span>${reporting ? `<span class="st-counting">${fmt(total)} votes counted</span>` : "Not yet reported"}</span></div>
+      <div class="race-f"><span>${reporting ? `<span class="st-counting">${fmt(total)} votes counted</span>${own}` : "Not yet reported"}</span></div>
       ${wideLine}
     </article>`;
   }
