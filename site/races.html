@@ -211,6 +211,8 @@
   let core = null;          // [{id, o, st, loc, inc, incP, r, cands:[{name,p,inc}]}]
   let snapshot = {};        // results.json races
   let live = {};
+  let feeds = {};           // /api/live st: states The People's Tally has a live feed for
+  let sites = {};           // core.json: each state's official elections site
   let calls = {};           // calls.json: {raceId: {winner, by, at}}            // /api/live res, keyed by state
   let lastOk = 0, lastErr = "";
   const ui = { office: "S", state: "", comp: true, rep: false };
@@ -316,6 +318,12 @@
     const text = open ? `Open seat${p ? ", held by " + p : ""}` : "";
     return st || text ? `<div class="inc">${[st, text].filter(Boolean).join(" · ")}</div>` : '<div style="height:6px"></div>';
   }
+  // States The People's Tally has no live feed for get a pointer to the official site instead of a count.
+  function noFeed(race, reporting) {
+    if (reporting || feeds[race.st] || !Object.keys(feeds).length) return "";
+    const url = sites[race.st];
+    return `No live count for ${esc(STATES[race.st])}${url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">State results</a>` : ""}`;
+  }
   function asOf(res) {
     if (!res.asof) return "";
     const t = new Date(res.asof);
@@ -350,19 +358,20 @@
         ${reporting ? `<span class="cbar"><span class="p${c.p}" style="width:${Math.max(0, Math.min(100, c.pct || 0))}%"></span></span>` : ""}
       </li>`).join("");
     const src = res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">${esc(res.src || "Source")}</a>` : "";
+    const nf = res.status === "called" ? "" : noFeed(race, reporting);
     return `<article class="race">
       <div class="race-h"><strong>${esc(title(race))}</strong>${raceChip(race)}</div>
       ${seatLine(race)}
       <ul class="cands">${list}</ul>
       ${rest > 0 ? `<div class="more">+${rest} other candidate${rest > 1 ? "s" : ""}</div>` : ""}
-      <div class="race-f"><span>${statusLine(res, reporting)}${asOf(res) ? " · " + asOf(res) : ""}</span><span>${src}</span></div>
+      <div class="race-f">${nf ? `<span>${nf}</span>` : `<span>${statusLine(res, reporting)}${asOf(res) ? " · " + asOf(res) : ""}</span><span>${src}</span>`}</div>
     </article>`;
   }
 
   function houseRow(race) {
     const { res, cands, reporting } = rows(race);
     const cell = (c) => c ? `<div class="hc${c.winner ? " win" : ""}"><span class="nm"><span class="pty p${c.p}">${c.p === "O" ? "•" : c.p}</span>${esc(c.name)}${c.inc ? " *" : ""}</span>${reporting ? `<span class="num">${c.pct != null ? c.pct.toFixed(1) + "%" : ""} ${c.votes != null ? "· " + fmt(c.votes) : ""}</span>` : ""}</div>` : "<div></div>";
-    return `<div class="hrow"><span class="code">${esc(race.loc)}<br>${raceChip(race)}</span>${cell(cands[0])}${cell(cands[1])}<span class="hs">${statusLine(res, reporting)}${asOf(res) ? "<br>" + asOf(res) : ""}</span></div>`;
+    return `<div class="hrow"><span class="code">${esc(race.loc)}<br>${raceChip(race)}</span>${cell(cands[0])}${cell(cands[1])}<span class="hs">${(res.status !== "called" && noFeed(race, reporting)) || statusLine(res, reporting) + (asOf(res) ? "<br>" + asOf(res) : "")}</span></div>`;
   }
 
   // Seats not up + races called (rare: certified results or a named source)
@@ -458,11 +467,12 @@
       getJSON(TALLY + "/data/results.json").then((d) => { snapshot = (d && d.races) || {}; }),
       // Race calls we add by hand from AP's projections (calls.json in this repo).
       getJSON("calls.json?t=" + Date.now()).then((d) => { calls = (d && d.calls) || {}; }),
-      getJSON(LIVE).then((d) => { live = (d && typeof d.res === "object" && d.res) || {}; }),
+      getJSON(LIVE).then((d) => { live = (d && typeof d.res === "object" && d.res) || {}; feeds = (d && d.st) || {}; }),
     ];
     if (!core || Date.now() - coreAt > 15 * 60e3) {
       jobs.push(getJSON(TALLY + "/data/core.json").then((d) => {
         core = parseCore(d.races);
+        sites = d.sites || {};
         coreAt = Date.now();
         const sel = $("state");
         if (sel.options.length === 1) {
