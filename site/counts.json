@@ -1,27 +1,27 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T05:57:28+00:00",
+ "updated": "2026-11-04T06:02:33+00:00",
  "counts": {
   "S-MT": {
    "cands": {
-    "KURT ALME": 116400,
-    "ALANI BANKHEAD": 29049,
-    "KYLE AUSTIN": 4129,
-    "SETH BODNAR": 98847
+    "KURT ALME": 143039,
+    "ALANI BANKHEAD": 35835,
+    "KYLE AUSTIN": 5423,
+    "SETH BODNAR": 116775
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 118,
+    "u": 135,
     "t": 728,
     "unit": "precincts"
    }
   },
   "H-MT-01": {
    "cands": {
-    "AARON FLINT": 59464,
-    "SAM FORSTAG": 71277,
-    "NICK SHEEDY": 3639
+    "AARON FLINT": 59581,
+    "SAM FORSTAG": 71345,
+    "NICK SHEEDY": 3650
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
@@ -33,73 +33,73 @@
   },
   "H-MT-02": {
    "cands": {
-    "TROY DOWNING": 65773,
-    "BRIAN J MILLER": 36686,
-    "PATRICK MCCRACKEN": 1947,
-    "MICHAEL D EISENHAUER": 9353
+    "TROY DOWNING": 94867,
+    "BRIAN J MILLER": 54737,
+    "PATRICK MCCRACKEN": 2851,
+    "MICHAEL D EISENHAUER": 13482
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 95,
+    "u": 112,
     "t": 383,
     "unit": "precincts"
    }
   },
   "S-OR": {
    "cands": {
-    "David Brock Smith": 537588,
-    "Jeff Merkley": 756502,
-    "Gary Lyndon Dye": 11795,
-    "Chris Henry": 23623,
-    "Write-in": 987
+    "David Brock Smith": 544949,
+    "Jeff Merkley": 781921,
+    "Gary Lyndon Dye": 12081,
+    "Chris Henry": 24701,
+    "Write-in": 1013
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
   },
   "H-OR-01": {
    "cands": {
-    "Barbara J Kahl": 57922,
-    "Suzanne Bonamici": 135073,
-    "Write-in": 266
+    "Barbara J Kahl": 58314,
+    "Suzanne Bonamici": 139614,
+    "Write-in": 273
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
   },
   "H-OR-02": {
    "cands": {
-    "Chris Beck": 100065,
-    "Cliff Bentz": 160762,
-    "Write-in": 352
+    "Chris Beck": 100365,
+    "Cliff Bentz": 161782,
+    "Write-in": 355
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
   },
   "H-OR-03": {
    "cands": {
-    "Maxine E Dexter": 141068,
-    "Loran Ayles": 46024,
-    "Write-in": 426
+    "Maxine E Dexter": 157202,
+    "Loran Ayles": 48464,
+    "Write-in": 452
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
   },
   "H-OR-04": {
    "cands": {
-    "Monique DeSpain": 112827,
-    "Val Hoyle": 144430,
-    "Justin Filip": 7761,
-    "Write-in": 199
+    "Monique DeSpain": 116312,
+    "Val Hoyle": 147508,
+    "Justin Filip": 8133,
+    "Write-in": 210
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
   },
   "H-OR-05": {
    "cands": {
-    "Janelle S Bynum": 143414,
-    "Andrea Townsend": 4827,
-    "Patti Adair": 112401,
-    "Write-in": 252
+    "Janelle S Bynum": 145040,
+    "Andrea Townsend": 4910,
+    "Patti Adair": 112666,
+    "Write-in": 253
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
@@ -115,10 +115,10 @@
   },
   "G-OR": {
    "cands": {
-    "Brett Smith": 34164,
-    "Tina Kotek": 696005,
-    "Christine Drazan": 606121,
-    "Write-in": 1628
+    "Brett Smith": 35136,
+    "Tina Kotek": 720475,
+    "Christine Drazan": 614944,
+    "Write-in": 1680
    },
    "src_name": "Oregon Secretary of State",
    "url": "https://results.oregonvotes.gov/"
