@@ -1,13 +1,13 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T04:18:16+00:00",
+ "updated": "2026-11-04T04:21:35+00:00",
  "counts": {
   "S-MT": {
    "cands": {
-    "KURT ALME": 65443,
-    "ALANI BANKHEAD": 16143,
-    "KYLE AUSTIN": 2423,
-    "SETH BODNAR": 52161
+    "KURT ALME": 65941,
+    "ALANI BANKHEAD": 16291,
+    "KYLE AUSTIN": 2439,
+    "SETH BODNAR": 52396
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
@@ -19,9 +19,9 @@
   },
   "H-MT-01": {
    "cands": {
-    "AARON FLINT": 25747,
-    "SAM FORSTAG": 22974,
-    "NICK SHEEDY": 1705
+    "AARON FLINT": 26087,
+    "SAM FORSTAG": 23290,
+    "NICK SHEEDY": 1731
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
@@ -33,10 +33,10 @@
   },
   "H-MT-02": {
    "cands": {
-    "TROY DOWNING": 44901,
-    "BRIAN J MILLER": 31294,
-    "PATRICK MCCRACKEN": 1455,
-    "MICHAEL D EISENHAUER": 7709
+    "TROY DOWNING": 45088,
+    "BRIAN J MILLER": 31304,
+    "PATRICK MCCRACKEN": 1460,
+    "MICHAEL D EISENHAUER": 7718
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
@@ -271,14 +271,14 @@
   },
   "G-AR": {
    "cands": {
-    "Sarah Huckabee Sanders": 417939,
-    "Fred Love": 299502,
-    "Colt Shelby": 58652
+    "Sarah Huckabee Sanders": 419037,
+    "Fred Love": 300153,
+    "Colt Shelby": 58787
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 89.9
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 90.1
   },
   "G-CO": {
    "cands": {
@@ -292,60 +292,60 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
+   "at": "2026-11-04T04:17:31.000Z",
    "exp": 73.3
   },
   "G-CT": {
    "cands": {
-    "Ned Lamont": 292786,
-    "Ryan Fazio": 210069
+    "Ned Lamont": 316403,
+    "Ryan Fazio": 232851
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 37.5
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 40.9
   },
   "G-GA": {
    "cands": {
-    "Keisha Lance Bottoms": 2176513,
-    "Rick Jackson": 1828487
+    "Keisha Lance Bottoms": 2188788,
+    "Rick Jackson": 1844496
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 90.7
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 91.7
   },
   "G-IA": {
    "cands": {
-    "Rob Sand": 600932,
-    "Zach Lahn": 438313
+    "Rob Sand": 651327,
+    "Zach Lahn": 483150
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 75.2
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 81.9
   },
   "G-MN": {
    "cands": {
-    "Lisa Demuth": 401526,
-    "Amy Klobuchar": 376240,
-    "Steven Young": 13294
+    "Lisa Demuth": 403393,
+    "Amy Klobuchar": 377840,
+    "Steven Young": 13319
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 26.4
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 26.5
   },
   "G-NE": {
    "cands": {
-    "Lynne Walz": 187069,
-    "Jim Pillen": 172830,
-    "Brett Lindstrom": 15596,
-    "Rick Beard": 8580
+    "Lynne Walz": 187083,
+    "Jim Pillen": 173006,
+    "Brett Lindstrom": 15600,
+    "Rick Beard": 8583
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
+   "at": "2026-11-04T04:17:31.000Z",
    "exp": 46.2
   },
   "G-PA": {
@@ -360,49 +360,49 @@
   },
   "G-SC": {
    "cands": {
-    "Alan Wilson": 1044910,
-    "Jermaine Johnson": 949595,
-    "Michael Addison": 16005,
-    "Walid Hakim": 8991
+    "Alan Wilson": 1046012,
+    "Jermaine Johnson": 950396,
+    "Michael Addison": 16016,
+    "Walid Hakim": 8995
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
+   "at": "2026-11-04T04:17:31.000Z",
    "exp": 97.6
   },
   "G-SD": {
    "cands": {
-    "Larry Rhoden": 89182,
-    "Dan Ahlers": 50124
+    "Larry Rhoden": 96643,
+    "Dan Ahlers": 54940
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-dakota-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 42.4
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 46.1
   },
   "G-TX": {
    "cands": {
-    "Gina Hinojosa": 3994529,
-    "Greg Abbott": 2915910,
-    "Pat Dixon": 88852
+    "Gina Hinojosa": 4004327,
+    "Greg Abbott": 2921801,
+    "Pat Dixon": 89197
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 67.2
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 67.3
   },
   "G-VT": {
    "cands": {
-    "Phil Scott": 150143,
-    "Amanda Janoo": 133491,
-    "Brian Judd": 2362,
-    "June Goodband": 1137,
-    "Dean Roy": 1014
+    "Phil Scott": 151239,
+    "Amanda Janoo": 134168,
+    "Brian Judd": 2396,
+    "June Goodband": 1150,
+    "Dean Roy": 1022
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/vermont-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 91.8
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 92.4
   },
   "H-AR-01": {
    "cands": {
@@ -412,18 +412,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 94
   },
   "H-AR-04": {
    "cands": {
-    "Bruce Westerman": 123091,
-    "James Russell": 66072
+    "Bruce Westerman": 124276,
+    "James Russell": 66745
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 93.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 94.7
   },
   "H-CO-01": {
    "cands": {
@@ -435,7 +435,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 73.2
   },
   "H-CO-02": {
@@ -446,7 +446,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 72.9
   },
   "H-CO-03": {
@@ -458,7 +458,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 70.4
   },
   "H-CO-04": {
@@ -469,7 +469,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 75.6
   },
   "H-CO-06": {
@@ -482,7 +482,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 78.5
   },
   "H-CO-07": {
@@ -496,28 +496,28 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 75
   },
   "H-CT-02": {
    "cands": {
-    "Joe Courtney": 99380,
-    "George Austin": 61703
+    "Joe Courtney": 112034,
+    "George Austin": 69412
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 52.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 58.8
   },
   "H-CT-05": {
    "cands": {
-    "Jahana Hayes": 51340,
-    "Chris Shea": 38487
+    "Jahana Hayes": 55294,
+    "Chris Shea": 42185
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 33.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 36.2
   },
   "H-DE-AL": {
    "cands": {
@@ -526,7 +526,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/delaware-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 98.7
   },
   "H-GA-01": {
@@ -536,7 +536,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 95.3
   },
   "H-GA-02": {
@@ -546,18 +546,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 86.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 86.4
   },
   "H-GA-03": {
    "cands": {
-    "Brian Jack": 173671,
-    "Maura Keller": 125539
+    "Brian Jack": 181130,
+    "Maura Keller": 129542
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 89
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 91.7
   },
   "H-GA-04": {
    "cands": {
@@ -566,7 +566,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 94.8
   },
   "H-GA-05": {
@@ -576,8 +576,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 92.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 92.6
   },
   "H-GA-06": {
    "cands": {
@@ -586,18 +586,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 76.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 77.1
   },
   "H-GA-07": {
    "cands": {
-    "Rich McCormick": 180835,
-    "Tony Kozycki": 141102
+    "Rich McCormick": 182867,
+    "Tony Kozycki": 141950
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 91.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 92.1
   },
   "H-GA-08": {
    "cands": {
@@ -606,7 +606,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96
   },
   "H-GA-09": {
@@ -616,18 +616,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 91.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 92.3
   },
   "H-GA-10": {
    "cands": {
-    "Houston Gaines": 167308,
-    "Pamela Delancy": 141484
+    "Houston Gaines": 173152,
+    "Pamela Delancy": 149366
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 93.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 97
   },
   "H-GA-11": {
    "cands": {
@@ -636,7 +636,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 98.3
   },
   "H-GA-12": {
@@ -646,18 +646,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 90.4
   },
   "H-GA-13": {
    "cands": {
-    "Jasmine Clark": 240482,
-    "Jonathan Chavez": 59425
+    "Jasmine Clark": 240573,
+    "Jonathan Chavez": 59441
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-13-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 93.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 94.7
   },
   "H-GA-14": {
    "cands": {
@@ -666,29 +666,29 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-14-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96.7
   },
   "H-IN-01": {
    "cands": {
-    "Frank Mrvan": 124690,
-    "Barb Regnitz": 72473
+    "Frank Mrvan": 129962,
+    "Barb Regnitz": 77756
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 80.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 84.4
   },
   "H-IN-02": {
    "cands": {
-    "Rudy Yakym": 86806,
-    "Jamee Decio": 79307,
-    "William Henry": 4080
+    "Rudy Yakym": 95216,
+    "Jamee Decio": 83642,
+    "William Henry": 4738
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 80.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 86.5
   },
   "H-IN-03": {
    "cands": {
@@ -697,7 +697,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96
   },
   "H-IN-04": {
@@ -707,8 +707,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 90.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 95.8
   },
   "H-IN-05": {
    "cands": {
@@ -717,7 +717,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97.1
   },
   "H-IN-06": {
@@ -727,8 +727,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 68.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 69
   },
   "H-IN-07": {
    "cands": {
@@ -738,7 +738,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 52.8
   },
   "H-IN-08": {
@@ -748,52 +748,52 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 93.9
   },
   "H-IN-09": {
    "cands": {
-    "Erin Houchin": 98703,
-    "Brad Meyer": 79804,
-    "Tonya Hudson": 4425
+    "Erin Houchin": 104310,
+    "Brad Meyer": 82379,
+    "Tonya Hudson": 4762
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 76.6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 80.1
   },
   "H-IA-02": {
    "cands": {
-    "Lindsay James": 143259,
-    "Joe Mitchell": 124556,
-    "Rick Stewart": 7564,
-    "Dave Bushaw": 5257
+    "Lindsay James": 156230,
+    "Joe Mitchell": 132058,
+    "Rick Stewart": 8186,
+    "Dave Bushaw": 5545
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 78.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 84.4
   },
   "H-IA-04": {
    "cands": {
-    "Chris McGowan": 114249,
-    "Dave Dawson": 90560
+    "Chris McGowan": 127145,
+    "Dave Dawson": 95809
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 65.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 70.9
   },
   "H-LA-01": {
    "cands": {
-    "Steve Scalise": 152193,
-    "Lauren Jewett": 76088,
-    "Randall Arrington": 9294,
-    "E. Liddy Glass": 3964
+    "Steve Scalise": 152348,
+    "Lauren Jewett": 76221,
+    "Randall Arrington": 9307,
+    "E. Liddy Glass": 3973
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 92.4
   },
   "H-LA-02": {
@@ -806,7 +806,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 65.6
   },
   "H-LA-03": {
@@ -820,21 +820,21 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 88.4
   },
   "H-LA-04": {
    "cands": {
-    "Mike Johnson": 129221,
-    "Conrad Cable": 51719,
-    "Matt Gromlich": 32206,
-    "Mike Nichols": 6906,
-    "Gordon Heslop": 2423
+    "Mike Johnson": 132443,
+    "Conrad Cable": 52494,
+    "Matt Gromlich": 32583,
+    "Mike Nichols": 7011,
+    "Gordon Heslop": 2498
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 96.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 98.1
   },
   "H-LA-05": {
    "cands": {
@@ -850,7 +850,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97.1
   },
   "H-LA-06": {
@@ -868,7 +868,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/louisiana-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 68
   },
   "H-MN-01": {
@@ -878,7 +878,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 34.6
   },
   "H-NE-01": {
@@ -890,7 +890,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 41.7
   },
   "H-NE-02": {
@@ -901,118 +901,118 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 63.9
   },
   "H-NE-03": {
    "cands": {
-    "Adrian Smith": 63618,
-    "Becky Stille": 21581,
-    "Mark Cohen": 3375,
-    "Macey Budke": 2503,
-    "David Else": 2363
+    "Adrian Smith": 63794,
+    "Becky Stille": 21591,
+    "Mark Cohen": 3379,
+    "Macey Budke": 2508,
+    "David Else": 2366
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 33
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 33.1
   },
   "H-NC-01": {
    "cands": {
-    "Don Davis": 148205,
-    "Laurie Buckhout": 141893,
-    "Tom Bailey": 9619
+    "Don Davis": 148328,
+    "Laurie Buckhout": 141971,
+    "Tom Bailey": 9631
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 94.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 94.2
   },
   "H-NC-02": {
    "cands": {
-    "Deborah Ross": 219775,
-    "Eugene Douglass": 65908,
-    "Matthew Laszacs": 3458
+    "Deborah Ross": 227550,
+    "Eugene Douglass": 70319,
+    "Matthew Laszacs": 3743
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NC-03": {
    "cands": {
-    "Greg Murphy": 108810,
-    "Raymond Smith": 103868,
-    "Daniel Cavender": 2721
+    "Greg Murphy": 115765,
+    "Raymond Smith": 115558,
+    "Daniel Cavender": 2897
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 91.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 98.9
   },
   "H-NC-04": {
    "cands": {
-    "Valerie Foushee": 277641,
-    "Max Ganorkar": 65199,
-    "Guy Meilleur": 6706
+    "Valerie Foushee": 282497,
+    "Max Ganorkar": 67687,
+    "Guy Meilleur": 6939
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NC-05": {
    "cands": {
-    "Virginia Foxx": 135800,
-    "Chuck Hubbard": 134142,
-    "Robert Luffman": 7286
+    "Virginia Foxx": 138702,
+    "Chuck Hubbard": 138169,
+    "Robert Luffman": 7519
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NC-06": {
    "cands": {
-    "Cyril Jefferson": 135533,
-    "Addison McDowell": 131508
+    "Cyril Jefferson": 138897,
+    "Addison McDowell": 133312
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NC-07": {
    "cands": {
-    "David Rouzer": 155235,
-    "Kimberly Hardy": 153205,
-    "Maad Abu-Ghazalah": 3007
+    "David Rouzer": 157356,
+    "Kimberly Hardy": 155553,
+    "Maad Abu-Ghazalah": 3068
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 97.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 98.8
   },
   "H-NC-08": {
    "cands": {
-    "Mark Harris": 146674,
-    "Colby Watson": 141346,
-    "Bo Whitehead": 3168
+    "Mark Harris": 147045,
+    "Colby Watson": 141808,
+    "Bo Whitehead": 3187
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NC-09": {
    "cands": {
-    "Richard Ojeda": 133005,
-    "Richard Hudson": 127871
+    "Richard Ojeda": 135672,
+    "Richard Hudson": 129472
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 97.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 97.9
   },
   "H-NC-10": {
    "cands": {
@@ -1022,7 +1022,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NC-11": {
@@ -1033,28 +1033,28 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NC-12": {
    "cands": {
-    "Alma Adams": 213297,
-    "Jack Codiga": 49429
+    "Alma Adams": 218948,
+    "Jack Codiga": 50607
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 98.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 99
   },
   "H-NC-13": {
    "cands": {
-    "Paul Barringer": 156941,
-    "Brad Knott": 147914,
-    "Steven Swinton": 4327
+    "Paul Barringer": 157304,
+    "Brad Knott": 148567,
+    "Steven Swinton": 4351
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-13-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NC-14": {
@@ -1064,18 +1064,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-carolina-us-house-district-14-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-SC-01": {
    "cands": {
-    "Nancy Lacore": 158209,
-    "Jenny Costa Honeycutt": 155691,
-    "Bill Reeside": 5223
+    "Nancy Lacore": 158877,
+    "Jenny Costa Honeycutt": 156521,
+    "Bill Reeside": 5252
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-SC-02": {
@@ -1086,18 +1086,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 94
   },
   "H-SC-03": {
    "cands": {
-    "Sheri Biggs": 173727,
-    "Eunice Lehmacher": 93752,
+    "Sheri Biggs": 173801,
+    "Eunice Lehmacher": 93821,
     "Brian Corriea": 5094
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 98.1
   },
   "H-SC-04": {
@@ -1108,7 +1108,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97.9
   },
   "H-SC-05": {
@@ -1118,7 +1118,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-SC-06": {
@@ -1128,28 +1128,28 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 92.3
   },
   "H-SC-07": {
    "cands": {
-    "Russell Fry": 172036,
-    "John Vincent": 130825
+    "Russell Fry": 172124,
+    "John Vincent": 130993
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-carolina-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-SD-AL": {
    "cands": {
-    "Marty Jackley": 90591,
-    "Nikki Gronli": 49253
+    "Marty Jackley": 98029,
+    "Nikki Gronli": 54057
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-dakota-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 42.6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 46.3
   },
   "H-TX-01": {
    "cands": {
@@ -1158,7 +1158,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 52.9
   },
   "H-TX-03": {
@@ -1168,7 +1168,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 66.4
   },
   "H-TX-04": {
@@ -1178,7 +1178,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 73.5
   },
   "H-TX-05": {
@@ -1188,7 +1188,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 70.6
   },
   "H-TX-06": {
@@ -1198,7 +1198,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 65.6
   },
   "H-TX-08": {
@@ -1208,18 +1208,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 74.9
   },
   "H-TX-10": {
    "cands": {
-    "Caitlin Rourk": 106699,
-    "Chris Gober": 90218
+    "Caitlin Rourk": 111047,
+    "Chris Gober": 103306
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 61.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 66.5
   },
   "H-TX-11": {
    "cands": {
@@ -1228,7 +1228,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 51
   },
   "H-TX-13": {
@@ -1238,28 +1238,28 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-13-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 47.6
   },
   "H-TX-14": {
    "cands": {
-    "Randy Weber": 108910,
-    "Thurman Bartie": 105705
+    "Randy Weber": 109750,
+    "Thurman Bartie": 106653
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-14-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 73.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 73.7
   },
   "H-TX-15": {
    "cands": {
-    "Bobby Pulido": 89639,
-    "Monica De La Cruz": 38258
+    "Bobby Pulido": 90983,
+    "Monica De La Cruz": 38760
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-15-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 59.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 59.9
   },
   "H-TX-16": {
    "cands": {
@@ -1268,7 +1268,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-16-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 68.5
   },
   "H-TX-17": {
@@ -1278,7 +1278,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-17-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 56.4
   },
   "H-TX-19": {
@@ -1288,18 +1288,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-19-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 19.9
   },
   "H-TX-21": {
    "cands": {
-    "Mark Teixeira": 134070,
-    "Kristin Hook": 129961
+    "Mark Teixeira": 135807,
+    "Kristin Hook": 131756
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-21-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 73.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 74.9
   },
   "H-TX-22": {
    "cands": {
@@ -1308,19 +1308,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-22-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 78.8
   },
   "H-TX-23": {
    "cands": {
-    "Katy Padilla Stout": 94507,
-    "Brandon Herrera": 73474,
-    "Ben Mendoza": 5852
+    "Katy Padilla Stout": 96069,
+    "Brandon Herrera": 75131,
+    "Ben Mendoza": 5996
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-23-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 64.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 65.9
   },
   "H-TX-24": {
    "cands": {
@@ -1329,7 +1329,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-24-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 90.8
   },
   "H-TX-25": {
@@ -1339,7 +1339,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-25-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 50.4
   },
   "H-TX-26": {
@@ -1350,7 +1350,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-26-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 68.5
   },
   "H-TX-27": {
@@ -1360,7 +1360,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-27-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 55.3
   },
   "H-TX-28": {
@@ -1371,7 +1371,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-28-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 57
   },
   "H-TX-30": {
@@ -1381,7 +1381,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-30-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 70.4
   },
   "H-TX-31": {
@@ -1392,7 +1392,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-31-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 64.7
   },
   "H-TX-32": {
@@ -1402,7 +1402,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-32-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 71.6
   },
   "H-TX-33": {
@@ -1412,7 +1412,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-33-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 68.3
   },
   "H-TX-34": {
@@ -1424,18 +1424,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-34-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 83.7
   },
   "H-TX-35": {
    "cands": {
-    "Johnny Garcia": 111147,
-    "Carlos De La Cruz": 78548
+    "Johnny Garcia": 112984,
+    "Carlos De La Cruz": 79542
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-35-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 67.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 68.9
   },
   "H-TX-36": {
    "cands": {
@@ -1444,67 +1444,67 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-36-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 51
   },
   "H-VT-AL": {
    "cands": {
-    "Becca Balint": 186941,
-    "Gerald Malloy": 86708,
-    "Suzanne Seymour": 4071,
-    "Ryan Walton": 2554,
-    "Phoenix Altair": 2153,
-    "Adam Ortiz": 1942
+    "Becca Balint": 188800,
+    "Gerald Malloy": 88172,
+    "Suzanne Seymour": 4118,
+    "Ryan Walton": 2587,
+    "Phoenix Altair": 2185,
+    "Adam Ortiz": 1968
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/vermont-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 91.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 92.8
   },
   "H-VA-01": {
    "cands": {
-    "Shannon Taylor": 204866,
-    "Rob Wittman": 197025
+    "Shannon Taylor": 204931,
+    "Rob Wittman": 197031
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97.3
   },
   "H-VA-02": {
    "cands": {
-    "Elaine Luria": 152659,
-    "Jen Kiggans": 136197,
-    "J. Baker": 4186,
-    "Geral Staten": 2189
+    "Elaine Luria": 154631,
+    "Jen Kiggans": 138648,
+    "J. Baker": 4272,
+    "Geral Staten": 2238
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 85.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 86.7
   },
   "H-VA-03": {
    "cands": {
-    "Bobby Scott": 135789,
-    "Edwin Rivera": 47188,
-    "Makiba Gaines": 3252,
-    "Stephen Woll": 3127
+    "Bobby Scott": 140521,
+    "Edwin Rivera": 49252,
+    "Makiba Gaines": 3350,
+    "Stephen Woll": 3258
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 73.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 76.4
   },
   "H-VA-04": {
    "cands": {
-    "Jennifer McClellan": 187924,
-    "Robert Murray": 77696,
-    "Joan Bell": 3783
+    "Jennifer McClellan": 190365,
+    "Robert Murray": 77913,
+    "Joan Bell": 3829
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 83.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 84.9
   },
   "H-VA-05": {
    "cands": {
@@ -1514,7 +1514,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 94.9
   },
   "H-VA-06": {
@@ -1524,7 +1524,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 90.9
   },
   "H-VA-07": {
@@ -1538,7 +1538,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97
   },
   "H-VA-08": {
@@ -1550,18 +1550,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 86.6
   },
   "H-VA-09": {
    "cands": {
-    "Morgan Griffith": 185168,
-    "Joy Powers": 94984
+    "Morgan Griffith": 185611,
+    "Joy Powers": 95119
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 91.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 91.5
   },
   "H-VA-10": {
    "cands": {
@@ -1571,7 +1571,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97.2
   },
   "H-VA-11": {
@@ -1582,7 +1582,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 67.9
   },
   "H-AR-03": {
@@ -1593,7 +1593,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 77.1
   },
   "H-CO-08": {
@@ -1604,29 +1604,29 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 81
   },
   "H-MN-07": {
    "cands": {
-    "Michelle Fischbach": 79126,
-    "Erik Osberg": 48026
+    "Michelle Fischbach": 81015,
+    "Erik Osberg": 49617
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 37
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 38
   },
   "H-CT-03": {
    "cands": {
-    "Rosa DeLauro": 48076,
-    "Christopher Lancia": 29019,
-    "Thomas Egan": 2186
+    "Rosa DeLauro": 55837,
+    "Christopher Lancia": 36686,
+    "Thomas Egan": 3395
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 29.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 36.1
   },
   "H-TX-02": {
    "cands": {
@@ -1635,19 +1635,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 75.6
   },
   "H-TX-07": {
    "cands": {
-    "Lizzie Fletcher": 129876,
-    "Alexander Hale": 46418,
-    "Espoir Ngabo": 2705
+    "Lizzie Fletcher": 131762,
+    "Alexander Hale": 47278,
+    "Espoir Ngabo": 2797
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 78.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 79.5
   },
   "H-TX-09": {
    "cands": {
@@ -1656,7 +1656,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 63.3
   },
   "H-TX-12": {
@@ -1666,18 +1666,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 75.4
   },
   "H-TX-18": {
    "cands": {
-    "Christian Menefee": 156513,
-    "Ronald Whitfield": 22601
+    "Christian Menefee": 158359,
+    "Ronald Whitfield": 23263
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-18-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 72.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 73.5
   },
   "H-TX-29": {
    "cands": {
@@ -1686,7 +1686,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-29-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 64.8
   },
   "H-TX-38": {
@@ -1697,7 +1697,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-38-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 83.7
   },
   "H-CO-05": {
@@ -1709,7 +1709,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 73.6
   },
   "H-CT-04": {
@@ -1720,18 +1720,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 31.8
   },
   "H-IA-03": {
    "cands": {
-    "Sarah Trone Garriott": 157728,
-    "Zach Nunn": 118230
+    "Sarah Trone Garriott": 167767,
+    "Zach Nunn": 131097
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 77
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 83.5
   },
   "H-MN-08": {
    "cands": {
@@ -1740,7 +1740,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 25.4
   },
   "G-AZ": {
@@ -2984,13 +2984,13 @@
   },
   "H-TX-20": {
    "cands": {
-    "Joaquin Castro": 117068,
-    "Edgardo Baez": 31106
+    "Joaquin Castro": 121586,
+    "Edgardo Baez": 32579
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-20-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 64.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 67.5
   },
   "H-AL-01": {
    "cands": {
@@ -2999,7 +2999,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 64.2
   },
   "H-AL-04": {
@@ -3009,7 +3009,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 75
   },
   "H-AL-02": {
@@ -3019,18 +3019,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 90.9
   },
   "H-AL-03": {
    "cands": {
-    "Mike Rogers": 124955,
-    "Lee McInnis": 72211
+    "Mike Rogers": 136849,
+    "Lee McInnis": 76772
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 78.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 85.8
   },
   "H-AL-05": {
    "cands": {
@@ -3039,7 +3039,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 91.2
   },
   "H-AL-06": {
@@ -3049,8 +3049,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 47.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 47.8
   },
   "H-AL-07": {
    "cands": {
@@ -3059,7 +3059,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 73.1
   },
   "S-AL": {
@@ -3074,13 +3074,13 @@
   },
   "G-AL": {
    "cands": {
-    "Tommy Tuberville": 684662,
-    "Doug Jones": 592830
+    "Tommy Tuberville": 693571,
+    "Doug Jones": 597373
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/alabama-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 68.2
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 69
   },
   "H-AR-02": {
    "cands": {
@@ -3089,19 +3089,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 93.6
   },
   "H-CT-01": {
    "cands": {
-    "Luke Bronin": 56529,
-    "Amy Chai": 27114,
-    "Mary Sanders": 1437
+    "Luke Bronin": 60090,
+    "Amy Chai": 30786,
+    "Mary Sanders": 1559
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 32.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 35.8
   },
   "H-FL-01": {
    "cands": {
@@ -3111,7 +3111,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-02": {
@@ -3121,7 +3121,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-03": {
@@ -3132,7 +3132,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-04": {
@@ -3144,7 +3144,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-05": {
@@ -3154,18 +3154,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-06": {
    "cands": {
-    "Randy Fine": 195246,
-    "Eric Yonce": 132259,
+    "Randy Fine": 195252,
+    "Eric Yonce": 132264,
     "Andrew Parrott": 3725
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-07": {
@@ -3176,7 +3176,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-08": {
@@ -3186,7 +3186,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-09": {
@@ -3196,18 +3196,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-11": {
    "cands": {
-    "Joe Strada": 193358,
-    "James Pericola": 167944,
-    "Ralph Groves": 3947
+    "Joe Strada": 193518,
+    "James Pericola": 168108,
+    "Ralph Groves": 3955
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-12": {
@@ -3218,7 +3218,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-13": {
@@ -3229,7 +3229,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-13-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-14": {
@@ -3240,7 +3240,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-14-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-15": {
@@ -3250,7 +3250,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-15-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-16": {
@@ -3261,7 +3261,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-16-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-17": {
@@ -3272,7 +3272,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-17-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-18": {
@@ -3283,7 +3283,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-18-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-19": {
@@ -3294,7 +3294,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-19-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-20": {
@@ -3305,7 +3305,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-20-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-21": {
@@ -3316,17 +3316,17 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-21-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-22": {
    "cands": {
-    "Pia Dandiya": 152381,
-    "Casey Askar": 141392
+    "Pia Dandiya": 152448,
+    "Casey Askar": 141492
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-22-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-23": {
@@ -3336,7 +3336,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-23-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-24": {
@@ -3346,7 +3346,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-24-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-25": {
@@ -3357,18 +3357,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-25-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 98.8
   },
   "H-FL-26": {
    "cands": {
+    "Nicole Locklin": 115320,
     "Mario Diaz-Balart": 114194,
-    "Nicole Locklin": 112320,
     "Deborah Meidinger Hosey": 2334
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-26-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-27": {
@@ -3378,7 +3378,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-27-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-FL-28": {
@@ -3389,7 +3389,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-28-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "S-FL-sp": {
@@ -3405,18 +3405,18 @@
   },
   "G-FL": {
    "cands": {
-    "Byron Donalds": 4123535,
-    "David Jolly": 4010784,
-    "Scott Jewett": 37729,
-    "Frank Russo": 23118,
-    "Charles Burkett": 15188,
-    "Dean Abrams": 12451,
-    "Jeffrey Datto": 8289,
-    "Moliere Dimanche": 7557
+    "Byron Donalds": 4123875,
+    "David Jolly": 4011045,
+    "Scott Jewett": 37739,
+    "Frank Russo": 23127,
+    "Charles Burkett": 15193,
+    "Dean Abrams": 12458,
+    "Jeffrey Datto": 8290,
+    "Moliere Dimanche": 7561
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
+   "at": "2026-11-04T04:17:31.000Z",
    "exp": 99
   },
   "H-IL-01": {
@@ -3426,18 +3426,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 68.5
   },
   "H-IL-02": {
    "cands": {
-    "Donna Miller": 139350,
-    "Michael Noack": 51289
+    "Donna Miller": 140500,
+    "Michael Noack": 52470
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 68.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 69.3
   },
   "H-IL-03": {
    "cands": {
@@ -3446,7 +3446,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 66.1
   },
   "H-IL-04": {
@@ -3458,7 +3458,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 65.7
   },
   "H-IL-05": {
@@ -3468,7 +3468,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 78.8
   },
   "H-IL-06": {
@@ -3478,7 +3478,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 79.7
   },
   "H-IL-07": {
@@ -3488,7 +3488,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 68.2
   },
   "H-IL-08": {
@@ -3498,7 +3498,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 66.6
   },
   "H-IL-09": {
@@ -3508,7 +3508,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 74.2
   },
   "H-IL-10": {
@@ -3518,7 +3518,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 52.3
   },
   "H-IL-11": {
@@ -3528,18 +3528,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 69.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 70.1
   },
   "H-IL-12": {
    "cands": {
-    "Mike Bost": 168649,
-    "Julie Fortier": 75159
+    "Mike Bost": 170938,
+    "Julie Fortier": 77871
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 76.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 77.8
   },
   "H-IL-13": {
    "cands": {
@@ -3548,7 +3548,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-13-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 56.9
   },
   "H-IL-14": {
@@ -3558,8 +3558,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-14-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 73
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 73.2
   },
   "H-IL-15": {
    "cands": {
@@ -3568,8 +3568,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-15-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 70.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 70.3
   },
   "H-IL-16": {
    "cands": {
@@ -3578,8 +3578,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-16-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 67.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 67.5
   },
   "H-IL-17": {
    "cands": {
@@ -3588,7 +3588,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-17-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 79.3
   },
   "S-IL": {
@@ -3604,47 +3604,47 @@
   },
   "G-IL": {
    "cands": {
-    "JB Pritzker": 2010489,
-    "Darren Bailey": 1238801,
-    "Collin Corbett": 111560
+    "JB Pritzker": 2013536,
+    "Darren Bailey": 1240805,
+    "Collin Corbett": 111728
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 73.9
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 74.1
   },
   "H-IA-01": {
    "cands": {
-    "Christina Bohannan": 137173,
-    "Mariannette Miller-Meeks": 105652,
-    "Michael Bridgford": 9160
+    "Christina Bohannan": 154267,
+    "Mariannette Miller-Meeks": 122983,
+    "Michael Bridgford": 10663
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 73
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 82
   },
   "H-KS-01": {
    "cands": {
-    "Tracey Mann": 130375,
-    "Lauren Reinhold": 87960,
-    "Steven Jacob": 6070
+    "Tracey Mann": 133140,
+    "Lauren Reinhold": 89483,
+    "Steven Jacob": 6212
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kansas-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 77.6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 81.6
   },
   "H-KS-02": {
    "cands": {
-    "Derek Schmidt": 107238,
-    "Don Coover": 102866,
-    "John Hauer": 8418
+    "Derek Schmidt": 110369,
+    "Don Coover": 104164,
+    "John Hauer": 8560
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kansas-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 78.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 84.7
   },
   "H-KS-03": {
    "cands": {
@@ -3654,7 +3654,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kansas-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97.1
   },
   "H-KS-04": {
@@ -3665,7 +3665,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kansas-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 91.7
   },
   "S-KS": {
@@ -3681,13 +3681,13 @@
   },
   "G-KS": {
    "cands": {
-    "Cindy Holscher": 528034,
-    "Ty Masterson": 496755
+    "Cindy Holscher": 531117,
+    "Ty Masterson": 502674
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kansas-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 86.6
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 88.8
   },
   "H-KY-01": {
    "cands": {
@@ -3696,7 +3696,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 98.2
   },
   "H-KY-02": {
@@ -3707,7 +3707,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 98.8
   },
   "H-KY-03": {
@@ -3717,7 +3717,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 82.8
   },
   "H-KY-04": {
@@ -3728,7 +3728,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-KY-05": {
@@ -3740,7 +3740,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-KY-06": {
@@ -3752,7 +3752,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "S-KY": {
@@ -3768,23 +3768,23 @@
   },
   "H-ME-01": {
    "cands": {
-    "Chellie Pingree": 102521,
-    "Ronald Russell": 57552
+    "Chellie Pingree": 106488,
+    "Ronald Russell": 61016
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/maine-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 36.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 38.6
   },
   "H-ME-02": {
    "cands": {
-    "Paul LePage": 83818,
-    "Matthew Dunlap": 73271
+    "Paul LePage": 87356,
+    "Matthew Dunlap": 75837
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/maine-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 42.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 44.8
   },
   "S-ME": {
    "cands": {
@@ -3798,14 +3798,14 @@
   },
   "G-ME": {
    "cands": {
-    "Hannah Pingree": 151201,
-    "Bobby Charles": 122123,
-    "Rick Bennett": 24334
+    "Hannah Pingree": 160824,
+    "Bobby Charles": 129565,
+    "Rick Bennett": 25772
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/maine-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 37.5
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 39.9
   },
   "H-MA-01": {
    "cands": {
@@ -3814,50 +3814,50 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 30.3
   },
   "H-MA-03": {
    "cands": {
-    "Lori Trahan": 52089,
-    "Gary Grossi": 27690,
-    "Dennis Conlon": 2272
+    "Lori Trahan": 54005,
+    "Gary Grossi": 28232,
+    "Dennis Conlon": 2311
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 26.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 27.8
   },
   "H-MA-04": {
    "cands": {
-    "Jake Auchincloss": 59130,
-    "Thomas Stalcup": 27482
+    "Jake Auchincloss": 67596,
+    "Thomas Stalcup": 33107
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 26.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 30.5
   },
   "H-MA-08": {
    "cands": {
-    "Stephen Lynch": 74129,
-    "Robert Burke": 27406,
-    "Rasheed Walters": 4219
+    "Stephen Lynch": 86874,
+    "Robert Burke": 31609,
+    "Rasheed Walters": 4918
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 33.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 38.7
   },
   "H-MA-09": {
    "cands": {
-    "Bill Keating": 89405,
-    "Tyler Macallister": 54561
+    "Bill Keating": 94537,
+    "Tyler Macallister": 57721
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 37.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 39.7
   },
   "S-MA": {
    "cands": {
@@ -3873,76 +3873,76 @@
   },
   "G-MA": {
    "cands": {
-    "Maura Healey": 698924,
-    "Michael Minogue": 358389,
-    "Andrea James": 37185
+    "Maura Healey": 747474,
+    "Michael Minogue": 388281,
+    "Andrea James": 39611
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 38.1
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 41
   },
   "H-MI-01": {
    "cands": {
-    "Jack Bergman": 62113,
-    "Callie Barr": 43673,
-    "Arnett Satterla": 729,
-    "Liz Hakola": 710,
-    "Doc Kovaly": 355,
-    "Zebulon Featherly": 207,
-    "LaVeta Davenport": 184
+    "Jack Bergman": 65986,
+    "Callie Barr": 46696,
+    "Arnett Satterla": 771,
+    "Liz Hakola": 738,
+    "Doc Kovaly": 374,
+    "Zebulon Featherly": 217,
+    "LaVeta Davenport": 198
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 26.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 28.1
   },
   "H-MI-02": {
    "cands": {
-    "John Moolenaar": 86673,
-    "Ben Ambrose": 47178,
-    "Charlotte Magoon": 1403,
-    "Richard Sills": 640
+    "John Moolenaar": 93130,
+    "Ben Ambrose": 50503,
+    "Charlotte Magoon": 1501,
+    "Richard Sills": 684
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 38.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 41.1
   },
   "H-MI-03": {
    "cands": {
-    "Hillary Scholten": 76779,
-    "Terri DeBoer": 35679,
-    "Joe Jock": 2042
+    "Hillary Scholten": 84772,
+    "Terri DeBoer": 41630,
+    "Joe Jock": 2221
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 30.6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 34.4
   },
   "H-MI-04": {
    "cands": {
-    "Bill Huizenga": 14458,
-    "Sean McCann": 8436,
-    "Shafina Barnett": 342
+    "Bill Huizenga": 14996,
+    "Sean McCann": 8830,
+    "Shafina Barnett": 359
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 6.3
   },
   "H-MI-05": {
    "cands": {
-    "Tim Walberg": 63525,
-    "Christian Vukasovich": 32342,
-    "Ronald Muszynski": 961,
-    "Sharon Renier": 906,
-    "Jim Bronke": 360
+    "Tim Walberg": 69895,
+    "Christian Vukasovich": 35664,
+    "Ronald Muszynski": 1054,
+    "Sharon Renier": 978,
+    "Jim Bronke": 397
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 28.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 31.3
   },
   "H-MI-06": {
    "cands": {
@@ -3955,46 +3955,46 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 45.5
   },
   "H-MI-07": {
    "cands": {
-    "Tom Barrett": 112071,
-    "William Lawrence": 91464,
-    "Shane Dedrick": 2559
+    "Tom Barrett": 123760,
+    "William Lawrence": 92205,
+    "Shane Dedrick": 2637
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 51.6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 54.7
   },
   "H-MI-08": {
    "cands": {
-    "Kristen McDonald Rivet": 32960,
-    "Thomas Smith": 30509,
-    "Kathy Goodwin": 873,
-    "C. Pettus": 493,
-    "Jim Casha": 165
+    "Kristen McDonald Rivet": 48187,
+    "Thomas Smith": 43946,
+    "Kathy Goodwin": 1300,
+    "C. Pettus": 703,
+    "Jim Casha": 264
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 17.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 25.8
   },
   "H-MI-09": {
    "cands": {
-    "Lisa McClain": 76808,
-    "Ray Pooley": 42127,
-    "Jim Walkowicz": 1373,
-    "Kevin Vayko": 1245,
-    "Destiny Clayton": 506,
-    "John Vlahos": 494
+    "Lisa McClain": 78159,
+    "Ray Pooley": 42649,
+    "Jim Walkowicz": 1418,
+    "Kevin Vayko": 1262,
+    "Destiny Clayton": 512,
+    "John Vlahos": 501
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 31
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 31.5
   },
   "H-MI-10": {
    "cands": {
@@ -4006,7 +4006,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 21.3
   },
   "H-MI-11": {
@@ -4019,7 +4019,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 66.3
   },
   "H-MI-12": {
@@ -4032,7 +4032,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 12.7
   },
   "H-MI-13": {
@@ -4045,7 +4045,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-13-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 6.7
   },
   "S-MI": {
@@ -4064,49 +4064,49 @@
   },
   "G-MI": {
    "cands": {
-    "Jocelyn Benson": 812499,
-    "John James": 691796,
-    "Anthony Hudson": 14428,
-    "Donna Brandenburg": 5821,
-    "Douglas Campbell": 5352
+    "Jocelyn Benson": 833032,
+    "John James": 718368,
+    "Anthony Hudson": 15036,
+    "Donna Brandenburg": 6030,
+    "Douglas Campbell": 5503
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 31
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 32
   },
   "H-MS-01": {
    "cands": {
-    "Trent Kelly": 109241,
-    "Cliff Johnson": 67590,
-    "Johnny Baucom": 2588
+    "Trent Kelly": 110716,
+    "Cliff Johnson": 68226,
+    "Johnny Baucom": 2619
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/mississippi-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 73.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 74.2
   },
   "H-MS-02": {
    "cands": {
-    "Bennie Thompson": 114763,
-    "Ron Eller": 57168,
-    "Bennie Foster": 4196
+    "Bennie Thompson": 122491,
+    "Ron Eller": 59917,
+    "Bennie Foster": 4385
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/mississippi-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 73.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 78.4
   },
   "H-MS-03": {
    "cands": {
-    "Michael Guest": 138155,
-    "Michael Chiaradio": 98180,
-    "Erik Kiehle": 2993
+    "Michael Guest": 139029,
+    "Michael Chiaradio": 98641,
+    "Erik Kiehle": 3004
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/mississippi-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 91.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 91.7
   },
   "H-MS-04": {
    "cands": {
@@ -4116,7 +4116,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/mississippi-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 88.8
   },
   "S-MS": {
@@ -4133,12 +4133,12 @@
   "H-MO-01": {
    "cands": {
     "Wesley Bell": 189175,
-    "Paul Berry": 32308,
+    "Paul Berry": 32362,
     "Tom Schmitz": 10613
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/missouri-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 95.2
   },
   "H-MO-02": {
@@ -4149,19 +4149,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/missouri-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 95.7
   },
   "H-MO-03": {
    "cands": {
-    "Bob Onder": 134769,
-    "Bethany Mann": 107366,
-    "Jim Higgins": 6789
+    "Bob Onder": 139491,
+    "Bethany Mann": 109042,
+    "Jim Higgins": 6978
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/missouri-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 82.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 85.7
   },
   "H-MO-04": {
    "cands": {
@@ -4171,7 +4171,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/missouri-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 84.1
   },
   "H-MO-05": {
@@ -4182,19 +4182,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/missouri-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-MO-06": {
    "cands": {
-    "Chris Stigall": 140228,
-    "Josh Smead": 92302,
-    "Andy Maidment": 5607
+    "Chris Stigall": 142812,
+    "Josh Smead": 95961,
+    "Andy Maidment": 5762
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/missouri-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 87.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 89.6
   },
   "H-MO-07": {
    "cands": {
@@ -4204,19 +4204,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/missouri-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 80.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 81
   },
   "H-MO-08": {
    "cands": {
-    "Jason Smith": 146098,
-    "Chris Reichard": 63284,
-    "Rebecca Sharpe Lombard": 6631
+    "Jason Smith": 148174,
+    "Chris Reichard": 64015,
+    "Rebecca Sharpe Lombard": 6738
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/missouri-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 83.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 84.8
   },
   "H-NH-01": {
    "cands": {
@@ -4225,19 +4225,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-hampshire-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 80.2
   },
   "H-NH-02": {
    "cands": {
-    "Maggie Goodlander": 127324,
-    "Lily Tang Williams": 78306,
-    "Robbie Mahrou": 4857
+    "Maggie Goodlander": 132036,
+    "Lily Tang Williams": 83257,
+    "Robbie Mahrou": 5115
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-hampshire-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 62.6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 65.6
   },
   "S-NH": {
    "cands": {
@@ -4252,14 +4252,14 @@
   },
   "G-NH": {
    "cands": {
-    "Kelly Ayotte": 246241,
-    "Cinde Warmington": 234503,
-    "Stephen Villee": 8015
+    "Kelly Ayotte": 252031,
+    "Cinde Warmington": 238049,
+    "Stephen Villee": 8223
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-hampshire-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 71.8
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 73.2
   },
   "H-NJ-01": {
    "cands": {
@@ -4268,19 +4268,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 87.3
   },
   "H-NJ-02": {
    "cands": {
-    "Zack Mullock": 104402,
-    "Jeff Van Drew": 95054,
-    "Ramon Mora": 1984
+    "Zack Mullock": 104903,
+    "Jeff Van Drew": 95759,
+    "Ramon Mora": 2003
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 70.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 70.5
   },
   "H-NJ-03": {
    "cands": {
@@ -4291,7 +4291,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 83.4
   },
   "H-NJ-04": {
@@ -4301,7 +4301,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 94
   },
   "H-NJ-05": {
@@ -4312,7 +4312,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 88.6
   },
   "H-NJ-06": {
@@ -4322,7 +4322,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 91.8
   },
   "H-NJ-07": {
@@ -4333,7 +4333,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 85.7
   },
   "H-NJ-08": {
@@ -4345,7 +4345,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 77.3
   },
   "H-NJ-09": {
@@ -4356,7 +4356,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 86.2
   },
   "H-NJ-10": {
@@ -4366,7 +4366,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 87.7
   },
   "H-NJ-11": {
@@ -4377,20 +4377,20 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 86.3
   },
   "H-NJ-12": {
    "cands": {
-    "Adam Hamawy": 143078,
-    "Gregg Mele": 56191,
-    "Andres Jinete": 1691,
-    "Winston Jordan": 1380
+    "Adam Hamawy": 157496,
+    "Gregg Mele": 62510,
+    "Andres Jinete": 1856,
+    "Winston Jordan": 1504
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 80.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 88.7
   },
   "S-NJ": {
    "cands": {
@@ -4406,33 +4406,33 @@
   },
   "H-NM-01": {
    "cands": {
-    "Melanie Stansbury": 31366,
-    "Ndidiamaka Okpareke": 25015
+    "Melanie Stansbury": 33670,
+    "Ndidiamaka Okpareke": 28351
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-mexico-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 20.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 22.2
   },
   "H-NM-02": {
    "cands": {
-    "Gabriel Vasquez": 57078,
-    "Gregory Cunningham": 41390
+    "Gabriel Vasquez": 58233,
+    "Gregory Cunningham": 43011
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-mexico-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 42.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 43.6
   },
   "H-NM-03": {
    "cands": {
-    "Teresa Leger Fernandez": 108948,
-    "Martin Zamora": 67111
+    "Teresa Leger Fernandez": 114435,
+    "Martin Zamora": 69342
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-mexico-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 74.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 77.9
   },
   "S-NM": {
    "cands": {
@@ -4446,33 +4446,33 @@
   },
   "G-NM": {
    "cands": {
-    "Deb Haaland": 187083,
-    "Greggory Hull": 145181
+    "Deb Haaland": 194147,
+    "Greggory Hull": 152205
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-mexico-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 44.5
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 46.3
   },
   "H-NY-02": {
    "cands": {
-    "Patrick Halpin": 106693,
-    "Andrew Garbarino": 106308
+    "Patrick Halpin": 109092,
+    "Andrew Garbarino": 108364
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 67.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 69.4
   },
   "H-NY-03": {
    "cands": {
-    "Thomas Suozzi": 107907,
-    "Michael LiPetri": 80229
+    "Thomas Suozzi": 108231,
+    "Michael LiPetri": 80533
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 62.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 62.8
   },
   "H-NY-04": {
    "cands": {
@@ -4482,7 +4482,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 48.2
   },
   "H-NY-05": {
@@ -4492,18 +4492,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 90.1
   },
   "H-NY-06": {
    "cands": {
-    "Grace Meng": 91188,
-    "Joseph Chou": 40726
+    "Grace Meng": 91450,
+    "Joseph Chou": 40811
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 86
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 86.3
   },
   "H-NY-07": {
    "cands": {
@@ -4513,18 +4513,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 83.8
   },
   "H-NY-08": {
    "cands": {
-    "Hakeem Jeffries": 127035,
-    "Lewis Mizrahi": 31374
+    "Hakeem Jeffries": 127111,
+    "Lewis Mizrahi": 31381
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 86.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 86.4
   },
   "H-NY-09": {
    "cands": {
@@ -4533,7 +4533,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 95.6
   },
   "H-NY-10": {
@@ -4543,7 +4543,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 98.3
   },
   "H-NY-11": {
@@ -4553,30 +4553,30 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 94.3
   },
   "H-NY-12": {
    "cands": {
-    "Micah Lasher": 191420,
-    "Caroline Shinkle": 49687,
-    "Karen Ortiz": 3370,
-    "Wilneida Negron": 2836
+    "Micah Lasher": 192347,
+    "Caroline Shinkle": 49875,
+    "Karen Ortiz": 3388,
+    "Wilneida Negron": 2857
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-NY-13": {
    "cands": {
-    "Darializa Avila Chevalier": 137765,
-    "Jomo Williams": 17929
+    "Darializa Avila Chevalier": 138081,
+    "Jomo Williams": 17969
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-13-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 78
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 78.1
   },
   "H-NY-14": {
    "cands": {
@@ -4585,21 +4585,21 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-14-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 95.4
   },
   "H-NY-15": {
    "cands": {
-    "Ritchie Torres": 92699,
-    "Stylo Sapaskis": 12852,
-    "Andre Easton": 10488,
-    "Jose Vega": 2303,
-    "Gonzalo Duran": 2040
+    "Ritchie Torres": 92856,
+    "Stylo Sapaskis": 12870,
+    "Andre Easton": 10500,
+    "Jose Vega": 2306,
+    "Gonzalo Duran": 2047
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-15-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 92.6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 92.8
   },
   "H-NY-16": {
    "cands": {
@@ -4608,8 +4608,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-16-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 31.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 31.8
   },
   "H-NY-17": {
    "cands": {
@@ -4618,27 +4618,27 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-17-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 57.1
   },
   "H-NY-18": {
    "cands": {
-    "Pat Ryan": 152473,
-    "Jackie Auringer": 89279
+    "Pat Ryan": 157520,
+    "Jackie Auringer": 90724
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-18-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 78.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 80.3
   },
   "H-NY-19": {
    "cands": {
-    "Josh Riley": 159215,
-    "Peter Oberacker": 115871
+    "Josh Riley": 160406,
+    "Peter Oberacker": 116603
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-19-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 84.4
   },
   "H-NY-20": {
@@ -4648,18 +4648,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-20-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 60.7
   },
   "H-NY-21": {
    "cands": {
-    "Anthony Constantino": 129998,
-    "Blake Gendebien": 123073
+    "Anthony Constantino": 134956,
+    "Blake Gendebien": 127611
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-21-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 71.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 73.8
   },
   "H-NY-22": {
    "cands": {
@@ -4668,18 +4668,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-22-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 52.8
   },
   "H-NY-23": {
    "cands": {
-    "Nick Langworthy": 162018,
-    "Aaron Gies": 109818
+    "Nick Langworthy": 163449,
+    "Aaron Gies": 110816
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-23-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 87.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 88
   },
   "H-NY-24": {
    "cands": {
@@ -4688,7 +4688,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-24-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 86.3
   },
   "H-NY-25": {
@@ -4698,7 +4698,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-25-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 65.4
   },
   "H-NY-26": {
@@ -4708,40 +4708,40 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-26-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 81.7
   },
   "G-NY": {
    "cands": {
-    "Kathy Hochul": 3285381,
-    "Bruce Blakeman": 2071659
+    "Kathy Hochul": 3296752,
+    "Bruce Blakeman": 2085357
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 76.3
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 76.6
   },
   "H-ND-AL": {
    "cands": {
-    "Julie Fedorchak": 115016,
-    "Trygve Hammer": 63843,
-    "Charles Tuttle": 8345,
-    "Helene Neville": 3902
+    "Julie Fedorchak": 116125,
+    "Trygve Hammer": 64616,
+    "Charles Tuttle": 8388,
+    "Helene Neville": 3937
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/north-dakota-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 82.2
   },
   "H-OH-01": {
    "cands": {
-    "Greg Landsman": 175919,
-    "Eric Conroy": 139168,
-    "Nathan Weise": 8651
+    "Greg Landsman": 175920,
+    "Eric Conroy": 139171,
+    "Nathan Weise": 8652
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 92.8
   },
   "H-OH-02": {
@@ -4751,7 +4751,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96.9
   },
   "H-OH-03": {
@@ -4761,7 +4761,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97.7
   },
   "H-OH-04": {
@@ -4772,7 +4772,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 97.4
   },
   "H-OH-05": {
@@ -4783,18 +4783,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96.8
   },
   "H-OH-06": {
    "cands": {
-    "Michael Rulli": 160883,
+    "Michael Rulli": 160890,
     "Elizabeth Kirtley": 106534
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 89.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 89.8
   },
   "H-OH-07": {
    "cands": {
@@ -4803,17 +4803,17 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 69.2
   },
   "H-OH-08": {
    "cands": {
-    "Warren Davidson": 165936,
-    "Vanessa Enoch": 152459
+    "Warren Davidson": 168652,
+    "Vanessa Enoch": 154776
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96.9
   },
   "H-OH-09": {
@@ -4823,18 +4823,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 47.3
   },
   "H-OH-10": {
    "cands": {
-    "Kristina Knickerbocker": 148486,
-    "Mike Turner": 143327,
-    "Thomas McMasters": 8862
+    "Kristina Knickerbocker": 149024,
+    "Mike Turner": 144086,
+    "Thomas McMasters": 8906
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-10-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 99
   },
   "H-OH-11": {
@@ -4844,18 +4844,18 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-11-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 37
   },
   "H-OH-12": {
    "cands": {
-    "Troy Balderson": 178869,
-    "Jerrad Christian": 119441
+    "Troy Balderson": 182603,
+    "Jerrad Christian": 122798
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-12-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 90.6
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 92.8
   },
   "H-OH-13": {
    "cands": {
@@ -4865,7 +4865,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-13-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 94.5
   },
   "H-OH-14": {
@@ -4875,7 +4875,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-14-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96.5
   },
   "H-OH-15": {
@@ -4886,7 +4886,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-us-house-district-15-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96.6
   },
   "S-OH-sp": {
@@ -4903,14 +4903,14 @@
   },
   "G-OH": {
    "cands": {
-    "Amy Acton": 2101698,
-    "Vivek Ramaswamy": 1888464,
-    "Don Kissick": 138127
+    "Amy Acton": 2108302,
+    "Vivek Ramaswamy": 1895031,
+    "Don Kissick": 138660
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/ohio-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 87
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 87.3
   },
   "H-OK-01": {
    "cands": {
@@ -4919,7 +4919,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 87
   },
   "H-OK-02": {
@@ -4930,7 +4930,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 91.4
   },
   "H-OK-03": {
@@ -4940,19 +4940,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 94
   },
   "H-OK-04": {
    "cands": {
-    "Tom Cole": 76409,
-    "Mitchell Jacob": 44063,
-    "Rocco Bonacci": 3311
+    "Tom Cole": 111831,
+    "Mitchell Jacob": 75942,
+    "Rocco Bonacci": 5549
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 50.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 79.3
   },
   "H-OK-05": {
    "cands": {
@@ -4963,7 +4963,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 96.6
   },
   "S-OK": {
@@ -4989,7 +4989,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
+   "at": "2026-11-04T04:17:31.000Z",
    "exp": 84.2
   },
   "H-RI-01": {
@@ -5000,7 +5000,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/rhode-island-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 93.3
   },
   "H-RI-02": {
@@ -5010,7 +5010,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/rhode-island-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 95.9
   },
   "S-RI": {
@@ -5034,7 +5034,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/rhode-island-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
+   "at": "2026-11-04T04:17:31.000Z",
    "exp": 94.8
   },
   "H-TN-01": {
@@ -5049,7 +5049,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 72.2
   },
   "H-TN-02": {
@@ -5061,8 +5061,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 87.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 88.4
   },
   "H-TN-03": {
    "cands": {
@@ -5076,8 +5076,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 93.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 93.8
   },
   "H-TN-04": {
    "cands": {
@@ -5088,8 +5088,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 85.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 85.6
   },
   "H-TN-05": {
    "cands": {
@@ -5100,7 +5100,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 81.8
   },
   "H-TN-06": {
@@ -5112,8 +5112,8 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 88.7
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 89.2
   },
   "H-TN-07": {
    "cands": {
@@ -5124,36 +5124,36 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 85.7
   },
   "H-TN-08": {
    "cands": {
     "David Kustoff": 111792,
     "Heidi Kuhn": 98740,
-    "Horace Taylor": 735,
-    "Adam Austill": 716,
-    "Pamela Moses": 711,
-    "Wendell Blankenship": 593,
-    "Antonio Futch": 432,
-    "Henry Ward": 415
+    "Pamela Moses": 990,
+    "Horace Taylor": 827,
+    "Adam Austill": 822,
+    "Wendell Blankenship": 696,
+    "Antonio Futch": 476,
+    "Henry Ward": 466
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 88.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 88.7
   },
   "H-TN-09": {
    "cands": {
-    "Justin Pearson": 106164,
-    "Brent Taylor": 104073,
-    "Dennis Clark": 2253,
-    "Michelle Davis Head": 1727
+    "Brent Taylor": 111411,
+    "Justin Pearson": 108503,
+    "Dennis Clark": 2391,
+    "Michelle Davis Head": 1792
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-9-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 84
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 88
   },
   "S-TN": {
    "cands": {
@@ -5175,26 +5175,26 @@
   },
   "G-TN": {
    "cands": {
-    "Marsha Blackburn": 897634,
-    "Jerri Green": 867120,
-    "David Hatley": 182224,
-    "Lauren Pinkston": 25379,
-    "Dean Brewer": 3833,
-    "Ray Brown": 2696,
-    "Wendell Jackson": 2220,
-    "Robert Vick": 2120,
-    "Eddie Murphy": 2114,
-    "Misam Abidi": 1978,
-    "Charles Van Morgan": 1230,
-    "L. Taylor": 1044,
-    "Dave Seeman": 810,
-    "Victor Scoggin": 769,
-    "Karl Smithson": 456
+    "Marsha Blackburn": 904558,
+    "Jerri Green": 869482,
+    "David Hatley": 182783,
+    "Lauren Pinkston": 25462,
+    "Dean Brewer": 3897,
+    "Ray Brown": 2750,
+    "Wendell Jackson": 2272,
+    "Eddie Murphy": 2158,
+    "Robert Vick": 2154,
+    "Misam Abidi": 2020,
+    "Charles Van Morgan": 1249,
+    "L. Taylor": 1077,
+    "Dave Seeman": 824,
+    "Victor Scoggin": 788,
+    "Karl Smithson": 466
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 87.8
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 88.3
   },
   "H-WV-01": {
    "cands": {
@@ -5204,7 +5204,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/west-virginia-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 95.2
   },
   "H-WV-02": {
@@ -5214,7 +5214,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/west-virginia-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 91.3
   },
   "S-WV": {
@@ -5230,25 +5230,25 @@
   },
   "H-WI-01": {
    "cands": {
-    "Mitchell Berman": 125092,
-    "Bryan Steil": 120882
+    "Mitchell Berman": 130020,
+    "Bryan Steil": 122943
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 81.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 84.2
   },
   "H-WI-03": {
    "cands": {
-    "Rebecca Cooke": 122474,
-    "Derrick Van Orden": 104027,
-    "Alexander Kent": 2778,
-    "Rustin Provance": 1220
+    "Rebecca Cooke": 123709,
+    "Derrick Van Orden": 105273,
+    "Alexander Kent": 2812,
+    "Rustin Provance": 1235
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 68
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 68.6
   },
   "H-WI-04": {
    "cands": {
@@ -5258,7 +5258,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 69.9
   },
   "H-WI-05": {
@@ -5268,63 +5268,63 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 85.2
   },
   "H-WI-06": {
    "cands": {
-    "Glenn Grothman": 136617,
-    "Brad Smith": 104079,
-    "Elizabeth Fitzgibbon": 4164,
-    "Mike Thurow": 3074,
-    "Matthew Arndt": 2734
+    "Glenn Grothman": 140496,
+    "Brad Smith": 106456,
+    "Elizabeth Fitzgibbon": 4266,
+    "Mike Thurow": 3160,
+    "Matthew Arndt": 2805
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 72.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 74.3
   },
   "H-WI-07": {
    "cands": {
-    "Michael Alfonso": 161864,
-    "Fred Clark": 126468
+    "Michael Alfonso": 170257,
+    "Fred Clark": 133285
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-us-house-district-7-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 79.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 85
   },
   "H-WI-08": {
    "cands": {
-    "Tony Wied": 117120,
-    "Rick Crosson": 97615
+    "Tony Wied": 126932,
+    "Rick Crosson": 103478
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 64.5
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 69.2
   },
   "G-WI": {
    "cands": {
-    "David Crowley": 1137876,
-    "Tom Tiffany": 981269
+    "David Crowley": 1158912,
+    "Tom Tiffany": 1002198
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 74.9
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 76.4
   },
   "H-WY-AL": {
    "cands": {
-    "Chuck Gray": 37880,
-    "Lisa Kinney": 22649,
-    "Shawn Johnson": 5045,
-    "Jeffrey Haggit": 3077
+    "Chuck Gray": 39749,
+    "Lisa Kinney": 23042,
+    "Shawn Johnson": 5203,
+    "Jeffrey Haggit": 3116
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wyoming-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 34.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 35.5
   },
   "S-WY": {
    "cands": {
@@ -5338,24 +5338,24 @@
   },
   "G-WY": {
    "cands": {
-    "Eric Barlow": 45282,
-    "Rebecca Bextel": 11124,
-    "Kenneth Casner": 9621
+    "Eric Barlow": 49322,
+    "Rebecca Bextel": 12568,
+    "Kenneth Casner": 10011
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wyoming-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 32.8
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 35.8
   },
   "H-MA-06": {
    "cands": {
-    "Dan Koh": 60443,
-    "Micah Jones": 35251
+    "Dan Koh": 74618,
+    "Micah Jones": 42586
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 27
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 33.1
   },
   "H-MN-02": {
    "cands": {
@@ -5364,27 +5364,27 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 65
   },
   "H-WI-02": {
    "cands": {
-    "Mark Pocan": 258745
+    "Mark Pocan": 265540
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 59.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 61.3
   },
   "H-NY-01": {
    "cands": {
-    "Nicholas LaLota": 138725,
-    "Christopher Gallant": 134035
+    "Nicholas LaLota": 140791,
+    "Christopher Gallant": 135608
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 78.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 80
   },
   "H-MN-06": {
    "cands": {
@@ -5393,7 +5393,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 44.3
   },
   "H-UT-02": {
@@ -5406,7 +5406,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/utah-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 59
   },
   "H-TX-37": {
@@ -5416,7 +5416,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-37-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 71.1
   },
   "H-UT-01": {
@@ -5428,34 +5428,34 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/utah-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 47.4
   },
   "H-UT-03": {
    "cands": {
-    "Celeste Maloy": 61029,
-    "Kent Udell": 32407,
-    "Cassie Easley": 2934,
-    "Michael Stoddard": 1743,
-    "Ayden Scott": 1339,
-    "Adonis Hooslyn": 335
+    "Celeste Maloy": 87547,
+    "Kent Udell": 51766,
+    "Cassie Easley": 3843,
+    "Michael Stoddard": 2623,
+    "Ayden Scott": 2036,
+    "Adonis Hooslyn": 786
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/utah-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 33.1
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 49.3
   },
   "H-UT-04": {
    "cands": {
-    "Mike Kennedy": 49719,
-    "Jonny Larsen": 42341,
-    "Steven Burt": 3369,
-    "Taylor Wright": 2441
+    "Mike Kennedy": 75237,
+    "Jonny Larsen": 58576,
+    "Steven Burt": 5463,
+    "Taylor Wright": 3714
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/utah-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 33
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 48.2
   },
   "S-ID": {
    "cands": {
@@ -5471,61 +5471,61 @@
   },
   "G-ID": {
    "cands": {
-    "Terri Pickens": 47337,
-    "Brad Little": 42484,
-    "John Stegner": 8929,
-    "Paul Sand": 1083,
-    "Pro-Life": 625
+    "Terri Pickens": 52883,
+    "Brad Little": 51500,
+    "John Stegner": 10207,
+    "Paul Sand": 1238,
+    "Pro-Life": 766
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/idaho-governor-results",
-   "at": "2026-11-04T04:11:11.000Z",
-   "exp": 14.7
+   "at": "2026-11-04T04:17:31.000Z",
+   "exp": 17.1
   },
   "H-ID-01": {
    "cands": {
-    "Russ Fulcher": 28177,
-    "Kaylee Peterson": 18860,
-    "Sarah Zabel": 3065,
-    "Brendan Gomez": 232
+    "Russ Fulcher": 32850,
+    "Kaylee Peterson": 21805,
+    "Sarah Zabel": 3616,
+    "Brendan Gomez": 283
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/idaho-us-house-district-1-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 13.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 16.2
   },
   "H-ID-02": {
    "cands": {
-    "Ellie Gilbreath": 32254,
-    "Mike Simpson": 14144,
-    "Tripp Hutchinson": 1244,
-    "Emre Houser": 1014,
-    "Will Johanson": 608
+    "Ellie Gilbreath": 40244,
+    "Mike Simpson": 23898,
+    "Tripp Hutchinson": 1820,
+    "Emre Houser": 1448,
+    "Will Johanson": 883
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/idaho-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 15.4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 21.3
   },
   "H-WA-02": {
    "cands": {
-    "Rick Larsen": 6624,
-    "Edwin Feller": 1755
+    "Rick Larsen": 65133,
+    "Edwin Feller": 31495
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-2-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 2.3
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 26.4
   },
   "H-WA-03": {
    "cands": {
-    "John Braun": 41496,
-    "Marie Gluesenkamp Perez": 31591
+    "Marie Gluesenkamp Perez": 133573,
+    "John Braun": 104879
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-3-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 22.9
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 74.7
   },
   "H-WA-04": {
    "cands": {
@@ -5534,65 +5534,77 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-4-results",
-   "at": "2026-11-04T04:11:12.000Z",
+   "at": "2026-11-04T04:18:45.311Z",
    "exp": 32.5
   },
   "H-WA-05": {
    "cands": {
-    "Michael Baumgartner": 6603,
-    "Carmela Conroy": 2656
+    "Michael Baumgartner": 18131,
+    "Carmela Conroy": 10889
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-5-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 2.8
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 8.7
   },
   "H-WA-08": {
    "cands": {
-    "Spencer Meline": 7598,
-    "Kim Schrier": 6878
+    "Kim Schrier": 81278,
+    "Spencer Meline": 45641
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-8-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 4
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 35.1
   },
   "H-WA-01": {
-   "pcts": {
-    "Suzan DelBene": 75.3,
-    "Mary Silva": 24.3
+   "cands": {
+    "Suzan DelBene": 51538,
+    "Mary Silva": 16634
    },
-   "src_name": "Washington Secretary of State via watch.vote",
-   "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T04:16:22.616Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-1-results",
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 20.6
   },
   "H-WA-06": {
    "cands": {
-    "Emily Randall": 11343,
-    "Teresa Fox": 6361
+    "Emily Randall": 78196,
+    "Teresa Fox": 45781
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-6-results",
-   "at": "2026-11-04T04:11:12.000Z",
-   "exp": 5.2
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 36.4
   },
   "H-WA-07": {
-   "pcts": {
-    "Pramila Jayapal": 87.5,
-    "Nirav Sheth": 12.1
+   "cands": {
+    "Pramila Jayapal": 177700,
+    "Nirav Sheth": 24654
    },
-   "src_name": "Washington Secretary of State via watch.vote",
-   "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T04:16:22.616Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-7-results",
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 53.5
   },
   "H-WA-09": {
+   "cands": {
+    "Adam Smith": 105825,
+    "Doug Basler": 34118
+   },
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/washington-us-house-district-9-results",
+   "at": "2026-11-04T04:18:45.311Z",
+   "exp": 54.7
+  },
+  "H-WA-10": {
    "pcts": {
-    "Adam Smith": 75.1,
-    "Doug Basler": 24.2
+    "Marilyn Strickland": 62.1,
+    "Chris D. Chung": 37.4
    },
    "src_name": "Washington Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T04:16:22.616Z"
+   "at": "2026-11-04T04:20:39.412Z"
   }
  }
 }
