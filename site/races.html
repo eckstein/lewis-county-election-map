@@ -170,7 +170,8 @@
       Lewis County and Washington results come live from the county's and the Secretary of State's official results feeds at
       <a href="https://results.votewa.gov/results/public/washington" target="_blank" rel="noopener">results.votewa.gov</a>.
       Some national counts come from <a href="https://openamerica.io/elections/api/" target="_blank" rel="noopener">Open America</a>'s
-      feed of official state counts, and a few are entered by hand from state and AP results pages where no feed is available.
+      feed of official state counts, some leader percentages come from <a href="https://watch.vote/midterms/2026" target="_blank" rel="noopener">watch.vote</a>'s
+      results feed, and a few are entered by hand from state and AP results pages where no feed is available.
       National results and race ratings come from <a href="https://thepeoplestally.com/" target="_blank" rel="noopener">The People's Tally</a>
       (<a href="https://thepeoplestally.com/open-data/" target="_blank" rel="noopener">open data</a>, CC BY 4.0), which gathers
       unofficial counts from state election offices and race calls from named sources. Ratings are Cook Political Report's.
@@ -254,9 +255,14 @@
   // Hand-entered counts (calls.json "counts") for races with no live feed:
   // {raceId: {cands: {"Name": votes}, exp, at, src}}. Live data wins when it has votes.
   function manualCounts(id) {
-    const m = counts[id] || autoCounts[id];
-    if (!m || !m.cands) return null;
-    const cands = Object.entries(m.cands).map(([name, votes]) => ({ name, votes: Number(votes) || 0 }));
+    // Hand-entered counts win unless the automatic entry is newer.
+    const h = counts[id], a = autoCounts[id];
+    const m = h && a ? ((a.at || "") > (h.at || "") ? a : h) : h || a;
+    if (!m || !(m.cands || m.pcts)) return null;
+    // "pcts" entries (watch.vote) carry only the top two candidates' percents.
+    const cands = m.cands
+      ? Object.entries(m.cands).map(([name, votes]) => ({ name, votes: Number(votes) || 0 }))
+      : Object.entries(m.pcts).map(([name, pct]) => ({ name, pct: Number(pct), votes: null }));
     return { status: "counting", cands, exp: m.exp ?? null, rep: m.rep || null, asof: m.at || null, src: m.src_name || "Hand-entered from AP", url: m.url || "" };
   }
   // Open America's feed of official state counts (openamerica.io/elections/api),
@@ -319,8 +325,8 @@
       if (lead) lead.winner = true;
     }
     const order = { D: 0, R: 1, O: 2 };
-    out.sort((a, b) => (b.votes ?? -1) - (a.votes ?? -1) || order[a.p] - order[b.p] || b.inc - a.inc);
-    return { res, cands: out, total, reporting: total > 0 || res.status === "called" };
+    out.sort((a, b) => (b.votes ?? -1) - (a.votes ?? -1) || (b.pct ?? -1) - (a.pct ?? -1) || order[a.p] - order[b.p] || b.inc - a.inc);
+    return { res, cands: out, total, reporting: total > 0 || out.some((c) => c.pct > 0) || res.status === "called" };
   }
 
   function winnerParty(race) {
@@ -422,6 +428,7 @@
       if (p) { won[p]++; return; }
       const { cands, total: votes } = rows(r);
       if (votes > 0 && cands[0] && (cands[0].votes || 0) > (cands[1]?.votes || 0)) lead[cands[0].p]++;
+      else if (!votes && cands[0]?.pct > 0 && cands[0].pct > (cands[1]?.pct || 0)) lead[cands[0].p]++;
     });
     const open = total - won.D - won.R - won.O - lead.D - lead.R - lead.O;
     const pc = (n) => (n / total) * 100 + "%";
