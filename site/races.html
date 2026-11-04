@@ -130,12 +130,14 @@
     <section id="lv-lewis" class="level">
       <p class="sub">Every contest on Lewis County ballots, with Lewis County's votes. For races that cross county lines, the statewide or whole-district result is shown underneath.</p>
       <p id="lc-status" class="status" role="status">Loading results…</p>
+      <section id="lc-progress" class="card home" hidden></section>
       <div id="lc-list"></div>
     </section>
 
     <section id="lv-wa" class="level" hidden>
       <p class="sub">Statewide measures and races, U.S. House, the courts and the Legislature, counted across all of Washington's counties.</p>
       <p id="wa-status" class="status" role="status">Loading results…</p>
+      <p id="wa-progress" class="muted" hidden></p>
       <div class="filters">
         <label>Legislature <select id="wa-ld"></select></label>
       </div>
@@ -279,8 +281,20 @@
 
   function statusLine(res, reporting) {
     if (res.status === "called") return `<span class="st-called">Called${res.called_by ? " by " + esc(res.called_by) : ""}</span>`;
-    if (reporting) return `<span class="st-counting">Counting${res.exp != null ? " · " + esc(res.exp) + "% of expected vote" : ""}</span>`;
-    return "Not yet reported";
+    const est = counted(res);
+    if (reporting) return `<span class="st-counting">${est ? esc(est) : "Counting"}</span>`;
+    return res.status === "counting" ? "Polls closed · no votes yet" : "Not yet reported";
+  }
+  // How much of the vote is in: The People's Tally's estimate of expected vote
+  // when it has one, otherwise the share of precincts/towns reporting.
+  function counted(res) {
+    if (res.exp != null && res.exp !== "") return `~${Math.round(Number(res.exp))}% of expected vote counted`;
+    const rep = res.rep;
+    if (rep && rep.t) {
+      if (rep.unit === "pct") return `${Number(rep.u) < 1 && Number(rep.u) > 0 ? "<1" : Math.round(Number(rep.u))}% reporting`;
+      return `${fmt(rep.u || 0)} of ${fmt(rep.t)} ${esc(rep.unit || "precincts")} reporting`;
+    }
+    return "";
   }
   function asOf(res) {
     if (!res.asof) return "";
@@ -543,7 +557,41 @@
       (failed[key] ? " · Last check failed, retrying" : "");
   }
 
+  // Share of the ballots the county has received that are counted. Ballots
+  // postmarked by Election Day keep arriving for days, so this is "so far".
+  let returns = null, returnsAt = 0;
+  async function loadReturns() {
+    if (Date.now() - returnsAt < 5 * 60e3) return;
+    returnsAt = Date.now();
+    try {
+      const r = await fetch(`${PROXY}/returns/${ELECTION}`);
+      if (r.ok) returns = (await r.json()).returns || null;
+    } catch (e) {}
+  }
+  function renderProgress() {
+    const el = $("lc-progress");
+    const ballots = feeds.lewis?.election?.ballotsCast || 0;
+    const received = returns?.returned || 0;
+    if (!ballots && !received) { el.hidden = true; return; }
+    el.hidden = false;
+    // Once the count passes the latest received report, the report is out of
+    // date and a percentage would read as "100% counted", so drop it.
+    const ahead = ballots >= received;
+    const denom = received;
+    const share = ahead ? 0 : (ballots / denom) * 100;
+    const asOf = returns?.fileTime ? new Date(returns.fileTime).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "";
+    el.innerHTML = `<h2>Ballots counted in Lewis County</h2>
+      <div style="font-size:15px;margin-bottom:8px">${ahead
+        ? `<b>${fmt(ballots)}</b> counted. That's more than the ${fmt(received)} in the state's last ballots-received report, so the share still to count isn't known until the next report.`
+        : `<b>${fmt(ballots)}</b> counted of <b>${fmt(denom)}</b> received so far · about <b>${Math.round(share)}%</b>`}</div>
+      ${ahead ? "" : `<div class="bar"><span style="width:${share}%;background:var(--accent)"></span></div>`}
+      <p class="muted" style="margin-top:8px">${received
+        ? `"Received" is the Secretary of State's ballot report${asOf ? ` from ${esc(asOf)}` : ""}, so ballots dropped off since then aren't in it yet, and ballots postmarked by Election Day keep arriving by mail for several days. Treat this as a rough guide; the share counted will drop as new ballots are received.`
+        : "Waiting on the state's ballots-received report."}</p>`;
+  }
+
   function renderLewis() {
+    renderProgress();
     $("lc-status").textContent = statusText("lewis", feeds.lewis);
     $("lc-status").className = "status" + (failed.lewis ? " err" : "");
     if (!feeds.lewis) return;
@@ -562,6 +610,10 @@
   }
 
   function renderWA() {
+    const el = feeds.wa?.election, wp = $("wa-progress");
+    const cast = el?.ballotsCast || 0, reg = el?.totalVoters || 0;
+    wp.hidden = !cast;
+    if (cast) wp.textContent = `${fmt(cast)} ballots counted statewide${reg ? ` (${((cast / reg) * 100).toFixed(1)}% of registered voters)` : ""}. Washington votes by mail and counts for days after Election Day, so many ballots are still to come.`;
     $("wa-status").textContent = statusText("wa", feeds.wa);
     $("wa-status").className = "status" + (failed.wa ? " err" : "");
     if (!feeds.wa) return;
@@ -616,7 +668,7 @@
     const keys = level === "lewis" ? ["lewis", "wa"] : ["wa"];
     const due = keys.filter((k) => force || Date.now() - checked[k] >= interval() - 2000);
     if (!due.length) return;
-    await Promise.all(due.map(load));
+    await Promise.all(due.map(load).concat(level === "lewis" ? [loadReturns()] : []));
     renderLewis();
     renderWA();
   }
