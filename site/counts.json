@@ -1,13 +1,13 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T03:02:58+00:00",
+ "updated": "2026-11-04T03:06:17+00:00",
  "counts": {
   "S-MT": {
    "cands": {
-    "KURT ALME": 0,
-    "ALANI BANKHEAD": 0,
-    "KYLE AUSTIN": 0,
-    "SETH BODNAR": 0
+    "KURT ALME": 170,
+    "ALANI BANKHEAD": 38,
+    "KYLE AUSTIN": 5,
+    "SETH BODNAR": 136
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
@@ -19,9 +19,9 @@
   },
   "H-MT-01": {
    "cands": {
-    "AARON FLINT": 0,
-    "SAM FORSTAG": 0,
-    "NICK SHEEDY": 0
+    "AARON FLINT": 176,
+    "SAM FORSTAG": 161,
+    "NICK SHEEDY": 16
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
@@ -125,13 +125,13 @@
   },
   "S-AR": {
    "cands": {
-    "Tom Cotton": 310136,
-    "Hallie Shoffner": 263648,
-    "Jeff Wadlin": 17137
+    "Tom Cotton": 319220,
+    "Hallie Shoffner": 267669,
+    "Jeff Wadlin": 17688
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/arkansas-2026-live-midterm-election-results/story?id=136762515",
-   "at": "2026-11-04T02:59:04.597Z"
+   "at": "2026-11-04T03:02:55.220Z"
   },
   "S-CO": {
    "cands": {
@@ -144,117 +144,119 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-04T02:57:09.963Z"
+   "at": "2026-11-04T03:02:50.653Z"
   },
   "S-DE": {
    "cands": {
     "Chris Coons": 202866,
-    "Michael Katz": 111643
+    "Mike Katz": 111643
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/delaware-2026-live-midterm-election-results/story?id=136763000",
-   "at": "2026-11-04T02:58:51.097Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/delaware-senate-results",
+   "at": "2026-11-04T03:01:25.000Z",
+   "exp": 81.7
   },
   "S-GA": {
    "cands": {
-    "Jon Ossoff": 2094853,
-    "Mike Collins": 1457287
+    "Jon Ossoff": 2114063,
+    "Mike Collins": 1475721
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-04T02:58:51.260Z"
+   "at": "2026-11-04T03:03:14.750Z"
   },
   "S-IA": {
    "cands": {
-    "Josh Turek": 222893,
-    "Ashley Hinson": 155968,
-    "Thomas Laehn": 9594
+    "Josh Turek": 229534,
+    "Ashley Hinson": 164840,
+    "Thomas Laehn": 10284
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/iowa-2026-live-midterm-election-results/story?id=136761477",
-   "at": "2026-11-04T02:59:04.873Z"
+   "at": "2026-11-04T03:03:14.843Z"
   },
   "S-LA": {
    "cands": {
-    "Julia Letlow": 264172,
-    "Jamie Davis": 227719
+    "Julia Letlow": 320640,
+    "Jamie Davis": 261919
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/louisiana-2026-live-midterm-election-results/story?id=136765671",
-   "at": "2026-11-04T02:58:50.117Z"
+   "at": "2026-11-04T03:02:50.160Z"
   },
   "S-MN": {
    "cands": {
-    "Michele Tafoya": 38023,
-    "Peggy Flanagan": 27807,
-    "Marisa Simonetti": 999,
-    "Rebecca Whiting": 757
+    "Michele Tafoya": 39802,
+    "Peggy Flanagan": 30055,
+    "Marisa Simonetti": 1074,
+    "Rebecca Whiting": 798
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/minnesota-2026-live-midterm-election-results/story?id=136765938",
-   "at": "2026-11-04T02:53:09.280Z"
+   "at": "2026-11-04T03:01:30.197Z"
   },
   "S-NE": {
    "cands": {
-    "Dan Osborn": 163422,
-    "Pete Ricketts": 125695,
-    "Robin Richards": 7441,
-    "Mike Marvin": 5691,
-    "Chuck Conboy": 2925
+    "Dan Osborn": 163451,
+    "Pete Ricketts": 125975,
+    "Robin Richards": 7454,
+    "Mike Marvin": 5693,
+    "Chuck Conboy": 2928
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/nebraska-2026-live-midterm-election-results/story?id=136822233",
-   "at": "2026-11-04T02:59:04.020Z"
+   "at": "2026-11-04T03:01:34.980Z"
   },
   "S-NC": {
    "cands": {
-    "Roy Cooper": 2147556,
-    "Michael Whatley": 1430129,
-    "Shannon Bray": 45831,
-    "Michael Dublin": 30241
+    "Roy Cooper": 2182320,
+    "Michael Whatley": 1452846,
+    "Shannon Bray": 46920,
+    "Michael Dublin": 30909
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/north-carolina-2026-live-midterm-election-results/story?id=136761678",
-   "at": "2026-11-04T02:59:04.087Z"
+   "at": "2026-11-04T03:02:59.137Z"
   },
   "S-SC": {
    "cands": {
-    "Annie Andrews": 918263,
-    "Darline Graham": 842905,
-    "Kasie Whitener": 19737,
-    "Mark Hackett": 14394
+    "Annie Andrews": 920662,
+    "Darline Graham": 845785,
+    "Kasie Whitener": 19825,
+    "Mark Hackett": 14470
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/south-carolina-2026-live-midterm-election-results/story?id=136822265",
-   "at": "2026-11-04T02:57:44.210Z"
+   "at": "2026-11-04T03:03:04.620Z"
   },
   "S-SD": {
    "cands": {
-    "Mike Rounds": 25135,
-    "Brian Bengs": 14331
+    "Mike Rounds": 30841,
+    "Brian Bengs": 17930
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/south-dakota-2026-live-midterm-election-results/story?id=136822320",
-   "at": "2026-11-04T02:58:44.073Z"
+   "at": "2026-11-04T03:02:24.570Z"
   },
   "S-TX": {
    "cands": {
-    "James Talarico": 3383252,
-    "Ken Paxton": 2265791,
-    "Ted Brown": 88022
+    "James Talarico": 3385125,
+    "Ken Paxton": 2266502,
+    "Ted Brown": 88097
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/texas-2026-live-midterm-election-results/story?id=136761869",
-   "at": "2026-11-04T02:58:35.583Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/texas-senate-results",
+   "at": "2026-11-04T03:01:25.000Z",
+   "exp": 55.1
   },
   "S-VA": {
    "cands": {
-    "Mark Warner": 1740435,
-    "Bert Mizusawa": 1192104
+    "Mark Warner": 1751431,
+    "Bert Mizusawa": 1197592
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-04T02:58:09.363Z"
+   "at": "2026-11-04T03:03:09.643Z"
   },
   "G-AR": {
    "cands": {
@@ -1162,12 +1164,12 @@
   },
   "H-TX-15": {
    "pcts": {
-    "Monica De La Cruz": 61,
-    "Bobby Pulido": 39
+    "Monica De La Cruz": 60,
+    "Bobby Pulido": 40
    },
    "src_name": "Texas Secretary of State via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T03:00:20.609Z"
+   "at": "2026-11-04T03:04:20.688Z"
   },
   "H-TX-16": {
    "cands": {
@@ -2919,12 +2921,12 @@
   },
   "S-AL": {
    "cands": {
-    "Barry Moore": 440153,
-    "Everett Wess": 290433
+    "Barry Moore": 460877,
+    "Everett Wess": 301041
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/alabama-2026-live-midterm-election-results/story?id=136762408",
-   "at": "2026-11-04T02:58:59.950Z"
+   "at": "2026-11-04T03:03:14.577Z"
   },
   "G-AL": {
    "cands": {
@@ -3219,13 +3221,13 @@
   },
   "S-FL-sp": {
    "cands": {
-    "Ashley Moody": 4184698,
-    "Angie Nixon": 3937285,
-    "Neil Gillespie": 93703
+    "Ashley Moody": 4187876,
+    "Angie Nixon": 3939927,
+    "Neil Gillespie": 93781
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-04T02:59:04.740Z"
+   "at": "2026-11-04T03:03:14.690Z"
   },
   "G-FL": {
    "cands": {
@@ -3400,13 +3402,13 @@
   },
   "S-IL": {
    "cands": {
-    "Juliana Stratton": 1227105,
-    "Don Tracy": 715493,
-    "Whitfield Harrington": 29528
+    "Juliana Stratton": 1349406,
+    "Don Tracy": 757104,
+    "Whitfield Harrington": 32114
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-04T02:59:00.180Z"
+   "at": "2026-11-04T03:03:04.267Z"
   },
   "G-IL": {
    "cands": {
@@ -3471,13 +3473,13 @@
   },
   "S-KS": {
    "cands": {
-    "Adam Hamilton": 413852,
-    "Roger Marshall": 289230,
-    "David Graham": 18213
+    "Adam Hamilton": 420897,
+    "Roger Marshall": 302662,
+    "David Graham": 19320
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/kansas-2026-live-midterm-election-results/story?id=136761554",
-   "at": "2026-11-04T02:59:00.257Z"
+   "at": "2026-11-04T03:03:09.803Z"
   },
   "G-KS": {
    "cands": {
@@ -3557,7 +3559,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/kentucky-2026-live-midterm-election-results/story?id=136765668",
-   "at": "2026-11-04T02:59:04.927Z"
+   "at": "2026-11-04T03:03:04.407Z"
   },
   "H-ME-01": {
    "cands": {
@@ -3579,12 +3581,12 @@
   },
   "S-ME": {
    "cands": {
-    "Troy Jackson": 63000,
-    "Susan Collins": 59020
+    "Troy Jackson": 64313,
+    "Susan Collins": 60711
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/maine-2026-live-midterm-election-results/story?id=136761571",
-   "at": "2026-11-04T02:58:55.587Z"
+   "at": "2026-11-04T03:03:15.020Z"
   },
   "G-ME": {
    "cands": {
@@ -3646,14 +3648,14 @@
   },
   "S-MA": {
    "cands": {
-    "Edward Markey": 283238,
-    "John Deaton": 109400,
-    "Joe Tache": 11602,
-    "Shiva Ayyadurai": 9287
+    "Edward Markey": 323848,
+    "John Deaton": 126264,
+    "Joe Tache": 12978,
+    "Shiva Ayyadurai": 10551
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-04T02:59:05.023Z"
+   "at": "2026-11-04T03:03:04.810Z"
   },
   "G-MA": {
    "cands": {
@@ -3821,16 +3823,16 @@
   },
   "S-MI": {
    "cands": {
-    "Abdul El-Sayed": 499485,
-    "Mike Rogers": 410681,
-    "Lydia Christensen": 8400,
-    "Tim Long": 3779,
-    "Douglas Marsh": 2212,
-    "Walter Kristy": 1113
+    "Abdul El-Sayed": 527769,
+    "Mike Rogers": 426060,
+    "Lydia Christensen": 8800,
+    "Tim Long": 3960,
+    "Douglas Marsh": 2318,
+    "Walter Kristy": 1158
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-04T02:59:05.100Z"
+   "at": "2026-11-04T03:03:04.987Z"
   },
   "G-MI": {
    "cands": {
@@ -3887,13 +3889,13 @@
   },
   "S-MS": {
    "cands": {
-    "Cindy Hyde-Smith": 232927,
-    "Scott Colom": 211551,
-    "Ty Pinkins": 9616
+    "Cindy Hyde-Smith": 253141,
+    "Scott Colom": 220527,
+    "Ty Pinkins": 10598
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/mississippi-2026-live-midterm-election-results/story?id=136767242",
-   "at": "2026-11-04T02:59:05.140Z"
+   "at": "2026-11-04T03:03:15.130Z"
   },
   "H-MO-01": {
    "cands": {
@@ -3996,13 +3998,13 @@
   },
   "S-NH": {
    "cands": {
-    "Chris Pappas": 194596,
-    "John Sununu": 138006,
-    "Edmond Laplante": 5966
+    "Chris Pappas": 204922,
+    "John Sununu": 147138,
+    "Edmond Laplante": 6366
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-hampshire-2026-live-midterm-election-results/story?id=136822238",
-   "at": "2026-11-04T02:58:19.160Z"
+   "at": "2026-11-04T03:02:58.953Z"
   },
   "G-NH": {
    "cands": {
@@ -4136,14 +4138,14 @@
   },
   "S-NJ": {
    "cands": {
-    "Cory Booker": 1426929,
-    "Justin Murphy": 768441,
-    "Veronica Fernandez": 34845,
-    "Joanne Kuniansky": 20521
+    "Cory Booker": 1431305,
+    "Justin Murphy": 772727,
+    "Veronica Fernandez": 34958,
+    "Joanne Kuniansky": 20589
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-04T02:58:44.480Z"
+   "at": "2026-11-04T03:03:04.043Z"
   },
   "H-NM-01": {
    "cands": {
@@ -4174,12 +4176,12 @@
   },
   "S-NM": {
    "cands": {
-    "Ben Lujan": 116265,
-    "Larry Marker": 65339
+    "Ben Lujan": 125507,
+    "Larry Marker": 73667
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-mexico-2026-live-midterm-election-results/story?id=136822247",
-   "at": "2026-11-04T02:58:39.737Z"
+   "at": "2026-11-04T03:02:49.923Z"
   },
   "G-NM": {
    "cands": {
@@ -4587,14 +4589,14 @@
   },
   "S-OH-sp": {
    "cands": {
-    "Sherrod Brown": 1591180,
-    "Jon Husted": 1546369,
-    "William Redpath": 91395,
-    "Greg Levy": 63818
+    "Sherrod Brown": 1635520,
+    "Jon Husted": 1580470,
+    "William Redpath": 93637,
+    "Greg Levy": 65482
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/ohio-2026-live-midterm-election-results/story?id=136761684",
-   "at": "2026-11-04T02:58:54.773Z"
+   "at": "2026-11-04T03:02:50.323Z"
   },
   "G-OH": {
    "cands": {
@@ -4657,15 +4659,15 @@
   },
   "S-OK": {
    "cands": {
-    "Kevin Hern": 498821,
-    "N'Kiyla Thomas": 304805,
-    "Ron Meinhardt": 10764,
-    "Curtis Stinnett": 10741,
-    "Sevier White": 7372
+    "Kevin Hern": 510750,
+    "N'Kiyla Thomas": 319393,
+    "Curtis Stinnett": 11093,
+    "Ron Meinhardt": 11091,
+    "Sevier White": 7635
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/oklahoma-2026-live-midterm-election-results/story?id=136822255",
-   "at": "2026-11-04T02:59:04.230Z"
+   "at": "2026-11-04T03:02:50.423Z"
   },
   "G-OK": {
    "cands": {
@@ -4707,7 +4709,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/rhode-island-2026-live-midterm-election-results/story?id=136822259",
-   "at": "2026-11-04T02:58:43.977Z"
+   "at": "2026-11-04T03:03:14.023Z"
   },
   "G-RI": {
    "cands": {
@@ -4833,20 +4835,20 @@
   },
   "S-TN": {
    "cands": {
-    "Bill Hagerty": 827652,
-    "Marquita Bradshaw": 674534,
-    "Robert Jones": 6728,
-    "Tharon Chandler": 5509,
-    "Andrew Gerena": 3922,
-    "Jeremy Hearn": 3591,
-    "Catherine Whitson": 3580,
-    "David Sutman": 2179,
-    "Yoshi Matthews": 2156,
-    "James Macon": 1917
+    "Bill Hagerty": 844161,
+    "Marquita Bradshaw": 691924,
+    "Robert Jones": 6799,
+    "Tharon Chandler": 5594,
+    "Andrew Gerena": 3962,
+    "Catherine Whitson": 3626,
+    "Jeremy Hearn": 3625,
+    "Yoshi Matthews": 2197,
+    "David Sutman": 2190,
+    "James Macon": 1937
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/tennessee-2026-live-midterm-election-results/story?id=136822436",
-   "at": "2026-11-04T02:58:54.350Z"
+   "at": "2026-11-04T03:03:04.720Z"
   },
   "G-TN": {
    "cands": {
@@ -4892,13 +4894,13 @@
   },
   "S-WV": {
    "cands": {
-    "Shelley Capito": 253813,
-    "Rachel Anderson": 166717,
-    "S. Wilson": 16449
+    "Shelley Capito": 259055,
+    "Rachel Anderson": 169557,
+    "S. Wilson": 16723
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/west-virginia-2026-live-midterm-election-results/story?id=136822571",
-   "at": "2026-11-04T02:58:54.463Z"
+   "at": "2026-11-04T03:03:14.277Z"
   },
   "H-WI-01": {
    "cands": {
@@ -4997,7 +4999,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wyoming-senate-results",
-   "at": "2026-11-04T02:53:05.573Z",
+   "at": "2026-11-04T03:01:25.000Z",
    "exp": 4.3
   },
   "G-WY": {
