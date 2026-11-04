@@ -301,9 +301,11 @@
   }
   function resultCands(res) {
     if (!Array.isArray(res.cands)) return [];
+    // Tickets come as "Donalds / Avila"; keep the top of the ticket so names match.
+    const top = (n) => n.replace(/\s+\/\s+.*$/, "");
     return res.cands.map((c) => Array.isArray(c)
-      ? { name: String(c[0]), pct: c[1] != null ? Number(c[1]) : null, votes: c[2] != null ? Number(c[2]) : null, party: c[3], winner: false }
-      : { name: String(c.name || c.n || ""), pct: (c.pct ?? c.p) != null ? Number(c.pct ?? c.p) : null, votes: (c.votes ?? c.v) != null ? Number(c.votes ?? c.v) : null, party: c.party, winner: !!c.winner });
+      ? { name: top(String(c[0])), pct: c[1] != null ? Number(c[1]) : null, votes: c[2] != null ? Number(c[2]) : null, party: c[3], winner: false }
+      : { name: top(String(c.name || c.n || "")), pct: (c.pct ?? c.p) != null ? Number(c.pct ?? c.p) : null, votes: (c.votes ?? c.v) != null ? Number(c.votes ?? c.v) : null, party: c.party, winner: !!c.winner });
   }
 
   // Merges the candidate list with counts; returns rows sorted by votes (or by party before any count).
