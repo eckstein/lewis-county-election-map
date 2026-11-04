@@ -1,0 +1,953 @@
+{
+ "_about": "Incumbents for Washington's U.S. House seats (from The People's Tally race list) and the Legislature (WA Legislature web services, members of the 2025-26 biennium; appointed replacements appear alongside who they replaced). Used to mark incumbents and which party holds each seat.",
+ "congress": {
+  "1": {
+   "n": "Suzan DelBene",
+   "p": "D"
+  },
+  "2": {
+   "n": "Rick Larsen",
+   "p": "D"
+  },
+  "3": {
+   "n": "Marie Gluesenkamp Perez",
+   "p": "D"
+  },
+  "4": {
+   "n": null,
+   "p": "R"
+  },
+  "5": {
+   "n": "Michael Baumgartner",
+   "p": "R"
+  },
+  "6": {
+   "n": "Emily Randall",
+   "p": "D"
+  },
+  "7": {
+   "n": "Pramila Jayapal",
+   "p": "D"
+  },
+  "8": {
+   "n": "Kim Schrier",
+   "p": "D"
+  },
+  "9": {
+   "n": "Adam Smith",
+   "p": "D"
+  },
+  "10": {
+   "n": "Marilyn Strickland",
+   "p": "D"
+  }
+ },
+ "legislature": {
+  "20": {
+   "House": [
+    {
+     "n": "Peter Abbarno",
+     "p": "R"
+    },
+    {
+     "n": "Ed Orcutt",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "John Braun",
+     "p": "R"
+    }
+   ]
+  },
+  "7": {
+   "House": [
+    {
+     "n": "Hunter Abell",
+     "p": "R"
+    },
+    {
+     "n": "Andrew Engell",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Shelly Short",
+     "p": "R"
+    }
+   ]
+  },
+  "34": {
+   "House": [
+    {
+     "n": "Emily Alvarado",
+     "p": "D"
+    },
+    {
+     "n": "Joe Fitzgibbon",
+     "p": "D"
+    },
+    {
+     "n": "Brianna Thomas",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Emily Alvarado",
+     "p": "D"
+    },
+    {
+     "n": "Joe Nguyen",
+     "p": "D"
+    }
+   ]
+  },
+  "2": {
+   "House": [
+    {
+     "n": "Andrew Barkis",
+     "p": "R"
+    },
+    {
+     "n": "Matt Marshall",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Jim McCune",
+     "p": "R"
+    }
+   ]
+  },
+  "8": {
+   "House": [
+    {
+     "n": "Stephanie Barnard",
+     "p": "R"
+    },
+    {
+     "n": "April Connors",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Matt Boehnke",
+     "p": "R"
+    }
+   ]
+  },
+  "44": {
+   "House": [
+    {
+     "n": "April Berg",
+     "p": "D"
+    },
+    {
+     "n": "Brandy Donaghy",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "John Lovick",
+     "p": "D"
+    }
+   ]
+  },
+  "11": {
+   "House": [
+    {
+     "n": "Steve Bergquist",
+     "p": "D"
+    },
+    {
+     "n": "David Hackney",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Bob Hasegawa",
+     "p": "D"
+    }
+   ]
+  },
+  "24": {
+   "House": [
+    {
+     "n": "Adam Bernbaum",
+     "p": "D"
+    },
+    {
+     "n": "Steve Tharinger",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Mike Chapman",
+     "p": "D"
+    }
+   ]
+  },
+  "36": {
+   "House": [
+    {
+     "n": "Liz Berry",
+     "p": "D"
+    },
+    {
+     "n": "Julia Reed",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Noel Frame",
+     "p": "D"
+    }
+   ]
+  },
+  "28": {
+   "House": [
+    {
+     "n": "Dan Bronoske",
+     "p": "D"
+    },
+    {
+     "n": "Chris Kilduff",
+     "p": "D"
+    },
+    {
+     "n": "Mari Leavitt",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "T'wina Nobles",
+     "p": "D"
+    }
+   ]
+  },
+  "12": {
+   "House": [
+    {
+     "n": "Brian Burnett",
+     "p": "R"
+    },
+    {
+     "n": "Mike Steele",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Keith Goehner",
+     "p": "R"
+    }
+   ]
+  },
+  "5": {
+   "House": [
+    {
+     "n": "Lisa Callan",
+     "p": "D"
+    },
+    {
+     "n": "Zach Hall",
+     "p": "D"
+    },
+    {
+     "n": "Victoria Hunt",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Victoria Hunt",
+     "p": "D"
+    },
+    {
+     "n": "Bill Ramos",
+     "p": "D"
+    }
+   ]
+  },
+  "4": {
+   "House": [
+    {
+     "n": "Rob Chase",
+     "p": "R"
+    },
+    {
+     "n": "Suzanne Schmidt",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Leonard Christian",
+     "p": "R"
+    }
+   ]
+  },
+  "15": {
+   "House": [
+    {
+     "n": "Chris Corry",
+     "p": "R"
+    },
+    {
+     "n": "Jeremie Dufault",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Nikki Torres",
+     "p": "R"
+    }
+   ]
+  },
+  "38": {
+   "House": [
+    {
+     "n": "Julio Cortes",
+     "p": "D"
+    },
+    {
+     "n": "Mary Fosse",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "June Robinson",
+     "p": "D"
+    }
+   ]
+  },
+  "35": {
+   "House": [
+    {
+     "n": "Travis Couture",
+     "p": "R"
+    },
+    {
+     "n": "Dan Griffey",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Drew MacEwen",
+     "p": "R"
+    }
+   ]
+  },
+  "32": {
+   "House": [
+    {
+     "n": "Lauren Davis",
+     "p": "D"
+    },
+    {
+     "n": "Cindy Ryu",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Jesse Salomon",
+     "p": "D"
+    }
+   ]
+  },
+  "13": {
+   "House": [
+    {
+     "n": "Tom Dent",
+     "p": "R"
+    },
+    {
+     "n": "Alex Ybarra",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Judy Warnick",
+     "p": "R"
+    }
+   ]
+  },
+  "22": {
+   "House": [
+    {
+     "n": "Beth Doglio",
+     "p": "D"
+    },
+    {
+     "n": "Lisa Parshley",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Jessica Bateman",
+     "p": "D"
+    }
+   ]
+  },
+  "1": {
+   "House": [
+    {
+     "n": "Davina Duerr",
+     "p": "D"
+    },
+    {
+     "n": "Shelley Kloba",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Derek Stanford",
+     "p": "D"
+    }
+   ]
+  },
+  "9": {
+   "House": [
+    {
+     "n": "Mary Dye",
+     "p": "R"
+    },
+    {
+     "n": "Joe Schmick",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Mark Schoesler",
+     "p": "R"
+    }
+   ]
+  },
+  "47": {
+   "House": [
+    {
+     "n": "Debra Entenman",
+     "p": "D"
+    },
+    {
+     "n": "Chris Stearns",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Claudia Kauffman",
+     "p": "D"
+    }
+   ]
+  },
+  "39": {
+   "House": [
+    {
+     "n": "Carolyn Eslick",
+     "p": "R"
+    },
+    {
+     "n": "Sam Low",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Keith Wagoner",
+     "p": "R"
+    }
+   ]
+  },
+  "46": {
+   "House": [
+    {
+     "n": "Darya Farivar",
+     "p": "D"
+    },
+    {
+     "n": "Gerry Pollet",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Javier Valdez",
+     "p": "D"
+    }
+   ]
+  },
+  "27": {
+   "House": [
+    {
+     "n": "Jake Fey",
+     "p": "D"
+    },
+    {
+     "n": "Laurie Jinkins",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Yasmin Trudeau",
+     "p": "D"
+    }
+   ]
+  },
+  "45": {
+   "House": [
+    {
+     "n": "Roger Goodman",
+     "p": "D"
+    },
+    {
+     "n": "Larry Springer",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Manka Dhingra",
+     "p": "D"
+    }
+   ]
+  },
+  "6": {
+   "House": [
+    {
+     "n": "Jenny Graham",
+     "p": "R"
+    },
+    {
+     "n": "Mike Volz",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Jeff Holy",
+     "p": "R"
+    }
+   ]
+  },
+  "33": {
+   "House": [
+    {
+     "n": "Mia Gregerson",
+     "p": "D"
+    },
+    {
+     "n": "Edwin Obras",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Tina Orwall",
+     "p": "D"
+    }
+   ]
+  },
+  "3": {
+   "House": [
+    {
+     "n": "Natasha Hill",
+     "p": "D"
+    },
+    {
+     "n": "Timm Ormsby",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Marcus Riccelli",
+     "p": "D"
+    }
+   ]
+  },
+  "25": {
+   "House": [
+    {
+     "n": "Cyndy Jacobsen",
+     "p": "R"
+    },
+    {
+     "n": "Michael Keaton",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Chris Gildon",
+     "p": "R"
+    }
+   ]
+  },
+  "16": {
+   "House": [
+    {
+     "n": "Mark Klicker",
+     "p": "R"
+    },
+    {
+     "n": "Skyler Rude",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Perry Dozier",
+     "p": "R"
+    }
+   ]
+  },
+  "40": {
+   "House": [
+    {
+     "n": "Debra Lekanoff",
+     "p": "D"
+    },
+    {
+     "n": "Alex Ramel",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Liz Lovelett",
+     "p": "D"
+    }
+   ]
+  },
+  "18": {
+   "House": [
+    {
+     "n": "John Ley",
+     "p": "R"
+    },
+    {
+     "n": "Stephanie McClintock",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Adrian Cortes",
+     "p": "D"
+    }
+   ]
+  },
+  "43": {
+   "House": [
+    {
+     "n": "Nicole Macri",
+     "p": "D"
+    },
+    {
+     "n": "Shaun Scott",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Jamie Pedersen",
+     "p": "D"
+    }
+   ]
+  },
+  "14": {
+   "House": [
+    {
+     "n": "Deb Manjarrez",
+     "p": "R"
+    },
+    {
+     "n": "Gloria Mendoza",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Curtis King",
+     "p": "R"
+    }
+   ]
+  },
+  "19": {
+   "House": [
+    {
+     "n": "Joel McEntire",
+     "p": "R"
+    },
+    {
+     "n": "Jim Walsh",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Jeff Wilson",
+     "p": "R"
+    }
+   ]
+  },
+  "29": {
+   "House": [
+    {
+     "n": "Sharlett Mena",
+     "p": "D"
+    },
+    {
+     "n": "Melanie Morgan",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Steve Conway",
+     "p": "D"
+    }
+   ]
+  },
+  "23": {
+   "House": [
+    {
+     "n": "Greg Nance",
+     "p": "D"
+    },
+    {
+     "n": "Tarra Simmons",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Drew Hansen",
+     "p": "D"
+    }
+   ]
+  },
+  "21": {
+   "House": [
+    {
+     "n": "Lillian Ortiz-Self",
+     "p": "D"
+    },
+    {
+     "n": "Strom Peterson",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Marko Liias",
+     "p": "D"
+    }
+   ]
+  },
+  "10": {
+   "House": [
+    {
+     "n": "Dave Paul",
+     "p": "D"
+    },
+    {
+     "n": "Clyde Shavers",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Ron Muzzall",
+     "p": "R"
+    }
+   ]
+  },
+  "31": {
+   "House": [
+    {
+     "n": "Joshua Penner",
+     "p": "R"
+    },
+    {
+     "n": "Drew Stokesbary",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Phil Fortunato",
+     "p": "R"
+    }
+   ]
+  },
+  "30": {
+   "House": [
+    {
+     "n": "Kristine Reeves",
+     "p": "D"
+    },
+    {
+     "n": "Jamila Taylor",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Claire Wilson",
+     "p": "D"
+    }
+   ]
+  },
+  "26": {
+   "House": [
+    {
+     "n": "Adison Richards",
+     "p": "D"
+    },
+    {
+     "n": "Michelle Valdez",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Deborah Krishnadasan",
+     "p": "D"
+    }
+   ]
+  },
+  "42": {
+   "House": [
+    {
+     "n": "Alicia Rule",
+     "p": "D"
+    },
+    {
+     "n": "Joe Timmons",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Sharon Shewmake",
+     "p": "D"
+    }
+   ]
+  },
+  "48": {
+   "House": [
+    {
+     "n": "Osman Salahuddin",
+     "p": "D"
+    },
+    {
+     "n": "Amy Walen",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Vandana Slatter",
+     "p": "D"
+    }
+   ]
+  },
+  "37": {
+   "House": [
+    {
+     "n": "Sharon Tomiko Santos",
+     "p": "D"
+    },
+    {
+     "n": "Chipalo Street",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Rebecca Salda\u00f1a",
+     "p": "D"
+    }
+   ]
+  },
+  "41": {
+   "House": [
+    {
+     "n": "Tana Senn",
+     "p": "D"
+    },
+    {
+     "n": "My-Linh Thai",
+     "p": "D"
+    },
+    {
+     "n": "Janice Zahn",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Lisa Wellman",
+     "p": "D"
+    }
+   ]
+  },
+  "49": {
+   "House": [
+    {
+     "n": "Monica Jurado Stonier",
+     "p": "D"
+    },
+    {
+     "n": "Sharon Wylie",
+     "p": "D"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Annette Cleveland",
+     "p": "D"
+    }
+   ]
+  },
+  "17": {
+   "House": [
+    {
+     "n": "David Stuebe",
+     "p": "R"
+    },
+    {
+     "n": "Kevin Waters",
+     "p": "R"
+    }
+   ],
+   "Senate": [
+    {
+     "n": "Paul Harris",
+     "p": "R"
+    }
+   ]
+  }
+ }
+}

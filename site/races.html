@@ -676,7 +676,47 @@
   };
   const pLetter = (o, measure) => measure ? "" : o.party === "DEM" ? "D" : o.party === "REP" ? "R" : o.party ? "•" : "";
 
+  // Incumbents and seat-holding party for Congress and the Legislature
+  // (data/wa-incumbents.json), plus AP calls for WA House seats (calls.json).
+  let incData = null, waCalls = {};
+  const PARTY_NAME = { D: "Democrats", R: "Republicans" };
+  const nameKey = (n) => { const w = String(n).replace(/\b(Jr|Sr|II|III|IV)\.?$/i, "").replace(/[."]/g, "").trim().toLowerCase().split(/\s+/); return w[0][0] + " " + w[w.length - 1]; };
+  function seat(c) {
+    if (!incData) return null;
+    let m = c.name.match(/^Congressional District (\d+)/);
+    if (m) {
+      const x = incData.congress[m[1]] || {};
+      const inc = x.n && c.opts.find((o) => nameKey(o.name) === nameKey(x.n));
+      return { held: x.p, inc: inc ? [inc.name] : [], call: waCalls[`H-WA-${m[1].padStart(2, "0")}`] };
+    }
+    m = c.name.match(/^Legislative District (\d+) - State (Representative|Senator)/);
+    if (!m) return null;
+    const members = (incData.legislature[m[1]] || {})[m[2] === "Senator" ? "Senate" : "House"] || [];
+    const inc = c.opts.filter((o) => members.some((x) => nameKey(x.name || x.n) === nameKey(o.name)));
+    let pool = members;
+    if (inc.length) pool = members.filter((x) => inc.some((o) => nameKey(o.name) === nameKey(x.n)));
+    else if (m[2] === "Representative") {
+      // Two representatives per district: the seat's holder is the one not running for the other position.
+      const others = (feeds.wa?.ballotItems || []).map((i) => en(i.name)).filter((n) => n !== c.name && n.startsWith(`Legislative District ${m[1]} - State Representative`));
+      const running = new Set((feeds.wa?.ballotItems || []).filter((i) => others.includes(en(i.name)))
+        .flatMap((i) => (i.summaryResults?.ballotOptions || []).map((o) => nameKey(en(o.name)))));
+      pool = members.filter((x) => !running.has(nameKey(x.n)));
+    }
+    const parties = [...new Set(pool.map((x) => x.p))];
+    return { held: parties.length === 1 ? parties[0] : null, inc: inc.map((o) => o.name) };
+  }
+  function seatFlag(c, st) {
+    if (!st || !st.held) return "";
+    const w = c.opts.find((o) => o.winner) || (st.call && c.opts.find((o) => nameKey(o.name) === nameKey(st.call.winner)));
+    if (!w) return "";
+    const wp = w.party === "DEM" ? "D" : w.party === "REP" ? "R" : "O";
+    return wp === st.held
+      ? `<span class="rating flag-hold" title="Same party as before">${wp === "D" ? "Dem" : wp === "R" ? "GOP" : "Other"} hold</span>`
+      : `<span class="rating flag-${wp}" title="Seat changes party">${wp === "D" ? "Dem" : wp === "R" ? "GOP" : "Other"} flip</span>`;
+  }
+
   function card(c, wide) {
+    const st = seat(c);
     const total = c.opts.reduce((a, o) => a + o.votes, 0);
     const reporting = total > 0;
     const opts = c.opts.filter((o) => !o.writeIn || o.votes > 0)
@@ -684,8 +724,9 @@
     const list = opts.map((o) => {
       const pct = total ? (o.votes / total) * 100 : null;
       const letter = pLetter(o, c.measure);
-      return `<li class="cand${o.winner ? " win" : ""}">
-        <span class="nm">${letter ? `<span class="pty ${pClass(o, c.measure)}" title="${esc(o.partyName.replace(/[()]/g, ""))}">${letter}</span>` : ""}${esc(o.name)}</span>
+      const won = o.winner || (st?.call && nameKey(o.name) === nameKey(st.call.winner));
+      return `<li class="cand${won ? " win" : ""}">
+        <span class="nm">${letter ? `<span class="pty ${pClass(o, c.measure)}" title="${esc(o.partyName.replace(/[()]/g, ""))}">${letter}</span>` : ""}${esc(o.name)}${st && st.inc.includes(o.name) ? ` <span class="muted">(inc.)</span>` : ""}</span>
         <span class="num">${pct != null ? pct.toFixed(1) + "%" : ""}${reporting ? `<small>${fmt(o.votes)}</small>` : ""}</span>
         ${reporting ? `<span class="cbar"><span class="${pClass(o, c.measure)}" style="width:${pct.toFixed(2)}%"></span></span>` : ""}
       </li>`;
@@ -706,7 +747,8 @@
     const own = !wide && c.counties > 1 && ot && ou > 0 && ou < ot ? ` <span class="muted">· ${fmt(ou)} of ${fmt(ot)} counties reporting${ctyInfo(c.id)}</span>` : "";
     const desc = c.desc ? `<details class="desc"><summary>What it does</summary>${esc(c.desc)}</details>` : "";
     return `<article class="race">
-      <div class="race-h"><strong>${esc(c.name)}</strong></div>
+      <div class="race-h"><strong>${esc(c.name)}</strong>${seatFlag(c, st)}</div>
+      ${st && !st.inc.length && PARTY_NAME[st.held] ? `<div class="inc">Open seat, held by ${PARTY_NAME[st.held]}</div>` : ""}
       ${desc}
       <ul class="cands" style="margin-top:6px">${list}</ul>
       <div class="race-f"><span>${reporting ? `<span class="st-counting">${fmt(total)} votes counted</span>${own}` : "Not yet reported"}</span></div>
@@ -874,7 +916,11 @@
     const keys = level === "lewis" ? ["lewis", "wa"] : ["wa"];
     const due = keys.filter((k) => force || Date.now() - checked[k] >= interval() - 2000);
     if (!due.length) return;
-    await Promise.all(due.map(load).concat(level === "lewis" ? [loadReturns()] : []));
+    const extras = [
+      incData ? null : fetch("data/wa-incumbents.json").then((r) => r.json()).then((d) => { incData = d; }).catch(() => {}),
+      fetch(`calls.json?t=${Date.now()}`).then((r) => r.json()).then((d) => { waCalls = d.calls || {}; }).catch(() => {}),
+    ].filter(Boolean);
+    await Promise.all(due.map(load).concat(level === "lewis" ? [loadReturns()] : [], extras));
     renderLewis();
     renderWA();
   }
