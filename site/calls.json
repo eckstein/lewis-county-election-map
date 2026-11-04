@@ -1,7 +1,53 @@
 {
   "_about": "Race calls added by hand from AP projections, for races The People's Tally feed hasn't called. Keys are People's Tally race ids (S-VA, G-OH, H-WA-03). 'at' is when AP called it; 'src' is where we saw the call.",
   "calls": {
-    "S-VA": { "winner": "Mark Warner", "by": "AP", "at": "2026-11-04T00:00:00Z", "src": "https://www.fox5dc.com/news/va-senate-election-mark-warner-fourth-term" },
-    "H-FL-23": { "winner": "Lois Frankel", "by": "AP", "at": "2026-11-04T00:34:00Z", "src": "https://www.foxnews.com/live-news/election-day-results-11-3-2026" }
+    "S-VA": {
+      "winner": "Mark Warner",
+      "by": "AP",
+      "at": "2026-11-04T00:00:00Z",
+      "src": "https://www.fox5dc.com/news/va-senate-election-mark-warner-fourth-term"
+    },
+    "H-FL-23": {
+      "winner": "Lois Frankel",
+      "by": "AP",
+      "at": "2026-11-04T00:34:00Z",
+      "src": "https://www.foxnews.com/live-news/election-day-results-11-3-2026"
+    },
+    "S-GA": {
+      "winner": "Jon Ossoff",
+      "by": "AP",
+      "at": "2026-11-04T01:05:00Z",
+      "src": "https://www.bostonglobe.com/2026/11/03/nation/massachusetts-election-live-updates-results-2026/"
+    },
+    "S-NH": {
+      "winner": "Chris Pappas",
+      "by": "AP",
+      "at": "2026-11-04T01:20:00Z",
+      "src": "screenshot of AP results from Zac"
+    },
+    "G-MA": {
+      "winner": "Maura Healey",
+      "by": "AP",
+      "at": "2026-11-04T01:06:00Z",
+      "src": "https://www.bostonglobe.com/2026/11/03/nation/massachusetts-election-live-updates-results-2026/"
+    },
+    "S-MA": {
+      "winner": "Ed Markey",
+      "by": "AP",
+      "at": "2026-11-04T01:07:00Z",
+      "src": "https://www.bostonglobe.com/2026/11/03/nation/massachusetts-election-live-updates-results-2026/"
+    },
+    "H-FL-10": {
+      "winner": "Maxwell Frost",
+      "by": "AP",
+      "at": "2026-11-04T00:41:00Z",
+      "src": "https://www.bostonglobe.com/2026/11/03/nation/massachusetts-election-live-updates-results-2026/"
+    },
+    "H-GA-04": {
+      "winner": "Hank Johnson",
+      "by": "AP",
+      "at": "2026-11-04T01:00:00Z",
+      "src": "https://www.cbsnews.com/live-updates/house-election-results-2026/"
+    }
   }
 }
