@@ -475,6 +475,21 @@
   window.addEventListener("levelchange", () => { if (shown() && Date.now() - lastOk > 60e3) refresh(); });
   setInterval(() => { if (shown()) refresh(); }, 60e3);
   if (shown()) refresh();
+  // Hand-entered calls change on their own schedule, and the file is tiny, so
+  // check it every 20 seconds and redraw as soon as it changes.
+  let callsText = "";
+  setInterval(async () => {
+    if (!shown()) return;
+    try {
+      const r = await fetch("calls.json?t=" + Date.now(), { cache: "no-store" });
+      if (!r.ok) return;
+      const t = await r.text();
+      if (t === callsText) return;
+      callsText = t;
+      calls = JSON.parse(t).calls || {};
+      render();
+    } catch (e) {}
+  }, 20e3);
   document.addEventListener("visibilitychange", () => { if (shown() && Date.now() - lastOk > 60e3) refresh(); });
 })();
 </script>
