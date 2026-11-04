@@ -45,7 +45,7 @@
     .bar .d { background: var(--d); } .bar .r { background: var(--r); } .bar .i { background: var(--o); }
     .bar .line { position: absolute; top: -3px; bottom: -3px; left: 50%; width: 2px; background: var(--text); }
     .bal-n { display: flex; justify-content: space-between; font-size: 13px; margin-top: 6px; }
-    .bal-n .dn { color: var(--d); font-weight: 700; } .bal-n .rn { color: var(--r); font-weight: 700; }
+    .bal-n .dn { color: var(--d); font-weight: 700; } .bal-n .rn { color: var(--r); font-weight: 700; text-align: right; }
     .bal .note { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
     .home { margin-bottom: 16px; border-left: 4px solid var(--accent); }
@@ -145,7 +145,7 @@
     </section>
 
     <section id="lv-national" class="level" hidden>
-    <p class="sub">U.S. Senate, U.S. House and governor results as states count them. Races are only marked won when a named source (such as the AP) calls them.</p>
+    <p class="sub">U.S. Senate, U.S. House and governor results as states count them. This page doesn't call races. Leaders are just who's ahead in the count so far, and a race shows as won only once a named source (such as certified results) says so.</p>
     <p id="status" class="status" role="status">Loading results…</p>
 
     <section class="strip" id="strip" aria-label="Balance of power"></section>
@@ -344,19 +344,28 @@
     return `<div class="hrow"><span class="code">${esc(race.loc)}<br>${ratingChip(race.r)}</span>${cell(cands[0])}${cell(cands[1])}<span class="hs">${statusLine(res, reporting)}${asOf(res) ? "<br>" + asOf(res) : ""}</span></div>`;
   }
 
+  // Seats not up + races called (rare: certified results or a named source)
+  // + races where a party's candidate leads the count so far, drawn lighter.
   function balance(name, office, total, notUp, line, note) {
     const races = core.filter((r) => r.o === office);
-    const won = { D: notUp.D, R: notUp.R, O: 0 };
-    races.forEach((r) => { const p = winnerParty(r); if (p) won[p]++; });
-    const open = total - won.D - won.R - won.O;
+    const won = { D: notUp.D, R: notUp.R, O: 0 }, lead = { D: 0, R: 0, O: 0 };
+    races.forEach((r) => {
+      const p = winnerParty(r);
+      if (p) { won[p]++; return; }
+      const { cands, total: votes } = rows(r);
+      if (votes > 0 && cands[0] && (cands[0].votes || 0) > (cands[1]?.votes || 0)) lead[cands[0].p]++;
+    });
+    const open = total - won.D - won.R - won.O - lead.D - lead.R - lead.O;
     const pc = (n) => (n / total) * 100 + "%";
+    const side = (p) => `${won[p]}${lead[p] ? `<br><span style="font-weight:400;font-size:12px">+${lead[p]} leading</span>` : ""}`;
     return `<div class="card bal">
       <div class="bal-h"><strong>${name}</strong><span class="muted">${line}</span></div>
-      <div class="bar" role="img" aria-label="${name}: Democrats ${won.D}, Republicans ${won.R}, ${open} uncalled">
-        <span class="d" style="width:${pc(won.D)}"></span><span class="i" style="width:${pc(won.O)}"></span>
-        <span style="flex:1"></span><span class="r" style="width:${pc(won.R)}"></span>${office === "G" ? "" : '<span class="line"></span>'}
+      <div class="bar" role="img" aria-label="${name}: Democrats ${won.D} plus ${lead.D} leading, Republicans ${won.R} plus ${lead.R} leading, ${open} not yet reporting">
+        <span class="d" style="width:${pc(won.D)}"></span><span class="d" style="width:${pc(lead.D)};opacity:.45"></span>
+        <span class="i" style="width:${pc(won.O + lead.O)}"></span>
+        <span style="flex:1"></span><span class="r" style="width:${pc(lead.R)};opacity:.45"></span><span class="r" style="width:${pc(won.R)}"></span>${office === "G" ? "" : '<span class="line"></span>'}
       </div>
-      <div class="bal-n"><span class="dn">D ${won.D}</span><span class="muted">${open} uncalled${won.O ? " · " + won.O + " other" : ""}</span><span class="rn">R ${won.R}</span></div>
+      <div class="bal-n"><span class="dn">D ${side("D")}</span><span class="muted" style="text-align:center">${open} not reporting${won.O + lead.O ? " · " + (won.O + lead.O) + " other" : ""}</span><span class="rn">R ${side("R")}</span></div>
       <div class="note">${note}</div>
     </div>`;
   }
@@ -364,9 +373,9 @@
   function render() {
     if (!core) return;
     $("strip").innerHTML =
-      balance("Senate", "S", 100, SENATE_NOT_UP, "51 for control", "Seats held but not up this year are included. The vice president breaks 50–50 ties.") +
-      balance("House", "H", 435, { D: 0, R: 0 }, "218 for control", "All 435 seats are up.") +
-      balance("Governors", "G", 50, GOV_NOT_UP, "36 up this year", "Governors not up this year are included.");
+      balance("Senate", "S", 100, SENATE_NOT_UP, "51 for control", "Solid: seats not up this year. Light: leading in the count so far, not called. The vice president breaks 50–50 ties.") +
+      balance("House", "H", 435, { D: 0, R: 0 }, "218 for control", "All 435 seats are up. Light: leading in the count so far, not called.") +
+      balance("Governors", "G", 50, GOV_NOT_UP, "36 up this year", "Solid: governors not up this year. Light: leading so far, not called.");
 
     const home = core.find((r) => r.id === HOME);
     if (home) {
