@@ -296,13 +296,14 @@
     const votes = (r) => resultCands(r).reduce((t, c) => t + (c.votes || 0), 0);
     const fromOA = oaResult(id);
     const m = manualCounts(id);
-    if (live0.status === "called") return live0;
     // Use whichever source has counted the most votes; a feed with more votes is
     // further along (the Tally's hand-entered races can lag by hours).
     const best = [hasVotes ? live0 : null, fromOA, m && m.cands.some((c) => c.votes) ? m : null]
       .filter(Boolean).sort((a, b) => votes(b) - votes(a))[0];
-    if (best === live0) return live0;
-    if (best) return { ...live0, ...best, exp: best.exp ?? null, rep: best.rep ?? null };
+    if (best === live0 || (!best && live0.status === "called")) return live0;
+    // A called race keeps its call (status, winner, caller) but shows the freshest counts.
+    const keep = live0.status === "called" ? { status: "called", winner_name: live0.winner_name, called_by: live0.called_by, leader: live0.leader } : {};
+    if (best) return { ...live0, ...best, exp: best.exp ?? null, rep: best.rep ?? null, ...keep };
     return m ? { ...live0, ...m } : live0;
   }
   function liveResult(id) {
