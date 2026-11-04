@@ -296,10 +296,21 @@
     }
     return "";
   }
+  // Incumbents are marked "(inc.)" on the candidate list, so this line only
+  // appears for open seats, saying which party holds the seat now.
+  function seatLine(race) {
+    const st = race.o === "H" ? esc(STATES[race.st]) : "";
+    const open = /\(open\)/i.test(race.inc || "");
+    const p = race.incP && race.incP.length === 1 ? { D: "Democrats", R: "Republicans" }[race.incP] : "";
+    const text = open ? `Open seat${p ? ", held by " + p : ""}` : "";
+    return st || text ? `<div class="inc">${[st, text].filter(Boolean).join(" · ")}</div>` : '<div style="height:6px"></div>';
+  }
   function asOf(res) {
     if (!res.asof) return "";
     const t = new Date(res.asof);
-    return isNaN(t) ? esc(res.asof) : t.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+    // Some state feeds stamp times in the future (a 12-hour clock read as 24-hour), so skip those.
+    if (isNaN(t) || t - Date.now() > 10 * 60e3) return "";
+    return t.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
   }
   function title(race) {
     if (race.o === "H") return race.loc;
@@ -320,7 +331,7 @@
     const src = res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">${esc(res.src || "Source")}</a>` : "";
     return `<article class="race">
       <div class="race-h"><strong>${esc(title(race))}</strong>${ratingChip(race.r)}</div>
-      <div class="inc">${race.o === "H" ? esc(STATES[race.st]) + " · " : ""}Now: ${esc(race.inc || "—")}${race.incP && race.incP.length === 1 ? " (" + esc(race.incP) + ")" : ""}</div>
+      ${seatLine(race)}
       <ul class="cands">${list}</ul>
       ${rest > 0 ? `<div class="more">+${rest} other candidate${rest > 1 ? "s" : ""}</div>` : ""}
       <div class="race-f"><span>${statusLine(res, reporting)}${asOf(res) ? " · " + asOf(res) : ""}</span><span>${src}</span></div>
