@@ -1,6 +1,6 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T04:03:48+00:00",
+ "updated": "2026-11-04T04:07:15+00:00",
  "counts": {
   "S-MT": {
    "cands": {
@@ -5398,16 +5398,16 @@
    },
    "src_name": "Utah Lieutenant Governor via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T04:00:22.481Z"
+   "at": "2026-11-04T04:04:32.683Z"
   },
   "H-UT-03": {
    "pcts": {
     "Celeste Maloy": 61,
-    "Kent S. Udell": 32.7
+    "Kent S. Udell": 32.6
    },
    "src_name": "Utah Lieutenant Governor via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T04:00:22.481Z"
+   "at": "2026-11-04T04:04:32.683Z"
   },
   "H-UT-04": {
    "pcts": {
@@ -5416,7 +5416,34 @@
    },
    "src_name": "Utah Lieutenant Governor via watch.vote",
    "url": "https://watch.vote/midterms/2026",
-   "at": "2026-11-04T04:00:22.481Z"
+   "at": "2026-11-04T04:04:32.683Z"
+  },
+  "S-ID": {
+   "pcts": {
+    "Jim Risch": 53.5,
+    "Todd Achilles": 34.8
+   },
+   "src_name": "Idaho Secretary of State via watch.vote",
+   "url": "https://watch.vote/midterms/2026",
+   "at": "2026-11-04T04:04:21.102Z"
+  },
+  "G-ID": {
+   "pcts": {
+    "Brad Little": 51.9,
+    "Terri Pickens": 30.4
+   },
+   "src_name": "Idaho Secretary of State via watch.vote",
+   "url": "https://watch.vote/midterms/2026",
+   "at": "2026-11-04T04:04:21.102Z"
+  },
+  "H-ID-01": {
+   "pcts": {
+    "Russ Fulcher": 54,
+    "Kaylee Peterson": 40.4
+   },
+   "src_name": "Idaho Secretary of State via watch.vote",
+   "url": "https://watch.vote/midterms/2026",
+   "at": "2026-11-04T04:04:21.102Z"
   }
  }
 }
