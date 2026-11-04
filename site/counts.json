@@ -1,18 +1,18 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T05:46:36+00:00",
+ "updated": "2026-11-04T05:50:02+00:00",
  "counts": {
   "S-MT": {
    "cands": {
-    "KURT ALME": 113467,
-    "ALANI BANKHEAD": 28757,
-    "KYLE AUSTIN": 4021,
-    "SETH BODNAR": 97880
+    "KURT ALME": 113981,
+    "ALANI BANKHEAD": 28799,
+    "KYLE AUSTIN": 4044,
+    "SETH BODNAR": 98077
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 82,
+    "u": 113,
     "t": 728,
     "unit": "precincts"
    }
@@ -26,22 +26,22 @@
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 8,
+    "u": 24,
     "t": 346,
     "unit": "precincts"
    }
   },
   "H-MT-02": {
    "cands": {
-    "TROY DOWNING": 63507,
-    "BRIAN J MILLER": 36223,
-    "PATRICK MCCRACKEN": 1877,
-    "MICHAEL D EISENHAUER": 9193
+    "TROY DOWNING": 64101,
+    "BRIAN J MILLER": 36338,
+    "PATRICK MCCRACKEN": 1894,
+    "MICHAEL D EISENHAUER": 9242
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 75,
+    "u": 90,
     "t": 383,
     "unit": "precincts"
    }
