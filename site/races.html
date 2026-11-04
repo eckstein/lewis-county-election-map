@@ -213,7 +213,8 @@
   let live = {};
   let feeds = {};           // /api/live st: states The People's Tally has a live feed for
   let sites = {};           // core.json: each state's official elections site
-  let calls = {};           // calls.json: {raceId: {winner, by, at}}            // /api/live res, keyed by state
+  let calls = {};
+  let counts = {};          // calls.json counts: hand-entered vote totals           // calls.json: {raceId: {winner, by, at}}            // /api/live res, keyed by state
   let lastOk = 0, lastErr = "";
   const ui = { office: "S", state: "", comp: true, rep: false };
   try { Object.assign(ui, JSON.parse(localStorage.getItem("national-ui") || "{}")); } catch (e) {}
@@ -246,7 +247,22 @@
     if (!call || base.status === "called") return base;
     return { ...base, status: "called", winner_name: call.winner, called_by: call.by || "AP" };
   }
+  // Hand-entered counts (calls.json "counts") for races with no live feed:
+  // {raceId: {cands: {"Name": votes}, exp, at, src}}. Live data wins when it has votes.
+  function manualCounts(id) {
+    const m = counts[id];
+    if (!m || !m.cands) return null;
+    const cands = Object.entries(m.cands).map(([name, votes]) => ({ name, votes: Number(votes) || 0 }));
+    return { status: "counting", cands, exp: m.exp ?? null, asof: m.at || null, src: m.src_name || "Hand-entered from AP", url: m.url || "" };
+  }
   function baseResult(id) {
+    const live0 = liveResult(id);
+    const hasVotes = Array.isArray(live0.cands) && live0.cands.some((c) => Number(Array.isArray(c) ? c[2] : c.votes ?? c.v) > 0);
+    if (live0.status === "called" || hasVotes) return live0;
+    const m = manualCounts(id);
+    return m ? { ...live0, ...m } : live0;
+  }
+  function liveResult(id) {
     const snap = snapshot[id] || {};
     if (snap.status === "called") return snap;
     const st = live[id.split("-")[1]];
@@ -357,7 +373,7 @@
         <span class="num">${c.pct != null ? c.pct.toFixed(1) + "%" : ""}${c.votes != null ? `<small>${fmt(c.votes)}</small>` : ""}</span>
         ${reporting ? `<span class="cbar"><span class="p${c.p}" style="width:${Math.max(0, Math.min(100, c.pct || 0))}%"></span></span>` : ""}
       </li>`).join("");
-    const src = res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">${esc(res.src || "Source")}</a>` : "";
+    const src = res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">${esc(res.src || "Source")}</a>` : esc(res.src || "");
     const nf = res.status === "called" ? "" : noFeed(race, reporting);
     return `<article class="race">
       <div class="race-h"><strong>${esc(title(race))}</strong>${raceChip(race)}</div>
@@ -466,7 +482,7 @@
     const jobs = [
       getJSON(TALLY + "/data/results.json").then((d) => { snapshot = (d && d.races) || {}; }),
       // Race calls we add by hand from AP's projections (calls.json in this repo).
-      getJSON("calls.json?t=" + Date.now()).then((d) => { calls = (d && d.calls) || {}; }),
+      getJSON("calls.json?t=" + Date.now()).then((d) => { calls = (d && d.calls) || {}; counts = (d && d.counts) || {}; }),
       getJSON(LIVE).then((d) => { live = (d && typeof d.res === "object" && d.res) || {}; feeds = (d && d.st) || {}; }),
     ];
     if (!core || Date.now() - coreAt > 15 * 60e3) {
@@ -508,7 +524,9 @@
       const t = await r.text();
       if (t === callsText) return;
       callsText = t;
-      calls = JSON.parse(t).calls || {};
+      const j = JSON.parse(t);
+      calls = j.calls || {};
+      counts = j.counts || {};
       render();
     } catch (e) {}
   }, 20e3);
