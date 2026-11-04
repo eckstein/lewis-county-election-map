@@ -214,7 +214,8 @@
   let feeds = {};           // /api/live st: states The People's Tally has a live feed for
   let sites = {};           // core.json: each state's official elections site
   let calls = {};
-  let counts = {};          // calls.json counts: hand-entered vote totals           // calls.json: {raceId: {winner, by, at}}            // /api/live res, keyed by state
+  let counts = {};
+  let autoCounts = {};      // counts.json: pulled from state sites with no live feed (Montana, Oregon)          // calls.json counts: hand-entered vote totals           // calls.json: {raceId: {winner, by, at}}            // /api/live res, keyed by state
   let lastOk = 0, lastErr = "";
   const ui = { office: "S", state: "", comp: true, rep: false };
   try { Object.assign(ui, JSON.parse(localStorage.getItem("national-ui") || "{}")); } catch (e) {}
@@ -250,10 +251,10 @@
   // Hand-entered counts (calls.json "counts") for races with no live feed:
   // {raceId: {cands: {"Name": votes}, exp, at, src}}. Live data wins when it has votes.
   function manualCounts(id) {
-    const m = counts[id];
+    const m = counts[id] || autoCounts[id];
     if (!m || !m.cands) return null;
     const cands = Object.entries(m.cands).map(([name, votes]) => ({ name, votes: Number(votes) || 0 }));
-    return { status: "counting", cands, exp: m.exp ?? null, asof: m.at || null, src: m.src_name || "Hand-entered from AP", url: m.url || "" };
+    return { status: "counting", cands, exp: m.exp ?? null, rep: m.rep || null, asof: m.at || null, src: m.src_name || "Hand-entered from AP", url: m.url || "" };
   }
   function baseResult(id) {
     const live0 = liveResult(id);
@@ -287,7 +288,7 @@
       if (m) used.add(m);
       return { name: c.name, p: c.p, inc: c.inc, votes: m ? m.votes : null, pct: m ? m.pct : null, winner: m ? m.winner : false };
     });
-    counted.filter((x) => !used.has(x)).forEach((x) => out.push({ name: x.name, p: party(x.party), inc: false, votes: x.votes, pct: x.pct, winner: x.winner }));
+    counted.filter((x) => !used.has(x) && !(/^write-?in/i.test(x.name) && !x.votes)).forEach((x) => out.push({ name: x.name, p: party(x.party), inc: false, votes: x.votes, pct: x.pct, winner: x.winner }));
     const total = out.reduce((s, c) => s + (c.votes || 0), 0);
     out.forEach((c) => { if (c.pct == null && total && c.votes != null) c.pct = (c.votes / total) * 100; });
     if (res.status === "called" && !out.some((c) => c.winner)) {
@@ -312,7 +313,7 @@
     if (res.status === "called") return `<span class="st-called">Called${res.called_by ? " by " + esc(res.called_by) : ""}</span>`;
     const est = counted(res);
     if (reporting) return `<span class="st-counting">${est ? esc(est) : "Counting"}</span>`;
-    return res.status === "counting" ? "Polls closed · no votes yet" : "Not yet reported";
+    return res.status === "counting" ? "Waiting for first results" : "Not yet reported";
   }
   // How much of the vote is in: The People's Tally's estimate of expected vote
   // when it has one, otherwise the share of precincts/towns reporting.
@@ -336,7 +337,7 @@
   }
   // States The People's Tally has no live feed for get a pointer to the official site instead of a count.
   function noFeed(race, reporting) {
-    if (reporting || feeds[race.st] || !Object.keys(feeds).length) return "";
+    if (reporting || feeds[race.st] || counts[race.id] || autoCounts[race.id] || !Object.keys(feeds).length) return "";
     const url = sites[race.st];
     return `No live count for ${esc(STATES[race.st])}${url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">State results</a>` : ""}`;
   }
@@ -370,7 +371,7 @@
     const list = shown.map((c) => `
       <li class="cand${c.winner ? " win" : ""}">
         <span class="nm"><span class="pty p${c.p}">${c.p === "O" ? "•" : c.p}</span>${esc(c.name)}${c.inc ? ' <span class="muted">(inc.)</span>' : ""}</span>
-        <span class="num">${c.pct != null ? c.pct.toFixed(1) + "%" : ""}${c.votes != null ? `<small>${fmt(c.votes)}</small>` : ""}</span>
+        <span class="num">${c.pct != null ? c.pct.toFixed(1) + "%" : ""}${reporting && c.votes != null ? `<small>${fmt(c.votes)}</small>` : ""}</span>
         ${reporting ? `<span class="cbar"><span class="p${c.p}" style="width:${Math.max(0, Math.min(100, c.pct || 0))}%"></span></span>` : ""}
       </li>`).join("");
     const src = res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">${esc(res.src || "Source")}</a>` : esc(res.src || "");
@@ -483,6 +484,7 @@
       getJSON(TALLY + "/data/results.json").then((d) => { snapshot = (d && d.races) || {}; }),
       // Race calls we add by hand from AP's projections (calls.json in this repo).
       getJSON("calls.json?t=" + Date.now()).then((d) => { calls = (d && d.calls) || {}; counts = (d && d.counts) || {}; }),
+      getJSON("counts.json?t=" + Date.now()).then((d) => { autoCounts = (d && d.counts) || {}; }),
       getJSON(LIVE).then((d) => { live = (d && typeof d.res === "object" && d.res) || {}; feeds = (d && d.st) || {}; }),
     ];
     if (!core || Date.now() - coreAt > 15 * 60e3) {
