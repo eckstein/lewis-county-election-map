@@ -24,7 +24,9 @@
 // /national/pushbuild asks Pushbuild's paid Election Night Results API
 // (api.pushbuild.com, key in the PUSHBUILD_KEY secret, about $0.08 per 1,000
 // rows) for Senate, House and governor rows in states no free feed covers.
-// Each copy is cached for 2 minutes, so open pages don't each cost money.
+// The page never calls it directly: the results poller reads it about every
+// 10 minutes and writes site/counts.json, and Cloudflare caches each answer
+// for 10 minutes so stray requests don't each cost money.
 //
 // Workers Caching is on (wrangler.toml), so Cloudflare serves repeat requests
 // from its cache for as long as each response's Cache-Control allows, and only
@@ -70,7 +72,10 @@ async function nationalLive() {
 }
 
 const PUSHBUILD = "https://api.pushbuild.com/election-night-results/run";
-const PUSHBUILD_STATES = "AZ,CA,ID,MD,NV,NY,PA,UT";
+// States with no free feed. Pushbuild bills per row, so ask only for governor,
+// U.S. Senate and U.S. House contests, and keep each answer 10 minutes.
+const PUSHBUILD_STATES = "AZ,CA,MD,NV,NY,PA";
+const PUSHBUILD_CONTESTS = "^(governor|u\\.? ?s\\.? (senat|rep|house)|united states (senat|rep|house)|rep(resentative)? in congress)";
 
 async function pushbuild(env) {
   const json = { "Content-Type": "application/json; charset=utf-8" };
@@ -80,7 +85,7 @@ async function pushbuild(env) {
     upstream = await fetch(PUSHBUILD, {
       method: "POST",
       headers: { "X-API-Key": env.PUSHBUILD_KEY, "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({ states: PUSHBUILD_STATES, electionDate: "2026-11-03", contestMatch: "senat|governor|house|congress|representative", level: "state", maxItems: 500 }),
+      body: JSON.stringify({ states: PUSHBUILD_STATES, electionDate: "2026-11-03", contestMatch: PUSHBUILD_CONTESTS, level: "state", maxItems: 500 }),
     });
   } catch (err) {
     return reply('{"error":"api.pushbuild.com unreachable"}', 502, { ...json, "Cache-Control": "no-store" });
@@ -88,7 +93,7 @@ async function pushbuild(env) {
   if (!upstream.ok) {
     return reply(JSON.stringify({ error: `upstream returned ${upstream.status}` }), 502, { ...json, "Cache-Control": "no-store" });
   }
-  return reply(upstream.body, 200, { ...json, "Cache-Control": "public, max-age=60, s-maxage=120" });
+  return reply(upstream.body, 200, { ...json, "Cache-Control": "public, max-age=300, s-maxage=600" });
 }
 
 const ALLOWED = [
