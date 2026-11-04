@@ -293,10 +293,16 @@
   function baseResult(id) {
     const live0 = liveResult(id);
     const hasVotes = Array.isArray(live0.cands) && live0.cands.some((c) => Number(Array.isArray(c) ? c[2] : c.votes ?? c.v) > 0);
-    if (live0.status === "called" || hasVotes) return live0;
+    const votes = (r) => resultCands(r).reduce((t, c) => t + (c.votes || 0), 0);
     const fromOA = oaResult(id);
-    if (fromOA) return { ...live0, ...fromOA };
     const m = manualCounts(id);
+    if (live0.status === "called") return live0;
+    // Use whichever source has counted the most votes; a feed with more votes is
+    // further along (the Tally's hand-entered races can lag by hours).
+    const best = [hasVotes ? live0 : null, fromOA, m && m.cands.some((c) => c.votes) ? m : null]
+      .filter(Boolean).sort((a, b) => votes(b) - votes(a))[0];
+    if (best === live0) return live0;
+    if (best) return { ...live0, ...best, exp: best.exp ?? null, rep: best.rep ?? null };
     return m ? { ...live0, ...m } : live0;
   }
   function liveResult(id) {
