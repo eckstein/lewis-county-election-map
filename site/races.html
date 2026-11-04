@@ -234,12 +234,13 @@
   }
 
   // Results for one race: the snapshot, with live counts laid over any race not yet called.
+  // A call can arrive in either feed; the live feed carries manually entered network projections.
   function result(id) {
     const snap = snapshot[id] || {};
     if (snap.status === "called") return snap;
     const st = live[id.split("-")[1]];
     const lv = st && st.races && st.races[id];
-    if (lv) return { ...snap, ...lv, status: snap.status === "leading" ? "leading" : "counting", asof: lv.asof || st.asOf || snap.asof, src: lv.src || st.src || snap.src, url: lv.url || st.url || snap.url };
+    if (lv) return { ...snap, ...lv, status: lv.status === "called" ? "called" : snap.status === "leading" ? "leading" : "counting", asof: lv.asof || st.asOf || snap.asof, src: lv.src || st.src || snap.src, url: lv.url || st.url || snap.url };
     return snap;
   }
   function resultCands(res) {
