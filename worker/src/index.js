@@ -21,6 +21,11 @@
 // than once a minute, so Cloudflare keeps each copy for 60 seconds and all
 // open pages together make about one upstream call a minute.
 //
+// /national/pushbuild asks Pushbuild's paid Election Night Results API
+// (api.pushbuild.com, key in the PUSHBUILD_KEY secret, about $0.08 per 1,000
+// rows) for Senate, House and governor rows in states no free feed covers.
+// Each copy is cached for 2 minutes, so open pages don't each cost money.
+//
 // Workers Caching is on (wrangler.toml), so Cloudflare serves repeat requests
 // from its cache for as long as each response's Cache-Control allows, and only
 // a miss runs this code and calls the county or the state.
@@ -62,6 +67,28 @@ async function nationalLive() {
     return reply(JSON.stringify({ error: `upstream returned ${upstream.status}` }), 502, { ...json, "Cache-Control": "no-store" });
   }
   return reply(upstream.body, 200, { ...json, "Cache-Control": "public, max-age=30, s-maxage=60" });
+}
+
+const PUSHBUILD = "https://api.pushbuild.com/election-night-results/run";
+const PUSHBUILD_STATES = "AZ,CA,ID,MD,NV,NY,PA,UT";
+
+async function pushbuild(env) {
+  const json = { "Content-Type": "application/json; charset=utf-8" };
+  if (!env.PUSHBUILD_KEY) return reply('{"error":"no key"}', 503, { ...json, "Cache-Control": "no-store" });
+  let upstream;
+  try {
+    upstream = await fetch(PUSHBUILD, {
+      method: "POST",
+      headers: { "X-API-Key": env.PUSHBUILD_KEY, "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ states: PUSHBUILD_STATES, electionDate: "2026-11-03", contestMatch: "senat|governor|house|congress|representative", level: "state", maxItems: 500 }),
+    });
+  } catch (err) {
+    return reply('{"error":"api.pushbuild.com unreachable"}', 502, { ...json, "Cache-Control": "no-store" });
+  }
+  if (!upstream.ok) {
+    return reply(JSON.stringify({ error: `upstream returned ${upstream.status}` }), 502, { ...json, "Cache-Control": "no-store" });
+  }
+  return reply(upstream.body, 200, { ...json, "Cache-Control": "public, max-age=60, s-maxage=120" });
 }
 
 const ALLOWED = [
@@ -250,7 +277,7 @@ async function returns(id) {
 }
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     if (request.method === "OPTIONS") return reply(null, 204);
     if (request.method !== "GET") return reply("Method not allowed", 405);
 
@@ -259,6 +286,7 @@ export default {
     const returnsPath = pathname.match(/^\/returns\/(\d{8})$/);
     if (returnsPath) return returns(returnsPath[1]);
     if (pathname === "/national/live") return nationalLive();
+    if (pathname === "/national/pushbuild") return pushbuild(env);
     if (!ALLOWED.some((re) => re.test(pathname))) return reply("Not found", 404);
 
     let upstream;
