@@ -134,37 +134,37 @@
     },
     "G-MI": {
       "src_name": "Michigan results (hand-entered)",
-      "at": "2026-11-04T01:53:00Z",
+      "at": "2026-11-04T02:10:56Z",
       "rep": {
-        "u": 71,
+        "u": 114,
         "t": 3946,
         "unit": "precincts"
       },
       "cands": {
-        "Jocelyn Benson": 281455,
-        "John James": 186916
+        "Jocelyn Benson": 382135,
+        "John James": 272057
       }
     },
     "S-MI": {
       "src_name": "Michigan results (hand-entered)",
-      "at": "2026-11-04T01:53:00Z",
+      "at": "2026-11-04T02:10:46Z",
       "rep": {
-        "u": 71,
+        "u": 161,
         "t": 3946,
         "unit": "precincts"
       },
       "cands": {
-        "Abdul El-Sayed": 279755,
-        "Mike Rogers": 220992
+        "Abdul El-Sayed": 367101,
+        "Mike Rogers": 289770
       }
     },
     "S-ME": {
       "src_name": "AP via news results (hand-entered)",
-      "at": "2026-11-04T01:55:52Z",
-      "exp": 3,
+      "at": "2026-11-04T02:09:48Z",
+      "exp": 5,
       "cands": {
-        "Troy Jackson": 14020,
-        "Susan Collins": 11210
+        "Troy Jackson": 22586,
+        "Susan Collins": 18136
       }
     },
     "S-NH": {
@@ -187,11 +187,11 @@
     },
     "H-NH-01": {
       "src_name": "AP via news results (hand-entered)",
-      "at": "2026-11-04T01:57:00Z",
-      "exp": 42,
+      "at": "2026-11-04T02:10:00Z",
+      "exp": 45,
       "cands": {
-        "Stefany Shaheen": 86868,
-        "Anthony DiLorenzo": 59706
+        "Stefany Shaheen": 92617,
+        "Anthony DiLorenzo": 64295
       }
     },
     "G-NY": {
@@ -201,6 +201,25 @@
       "cands": {
         "Kathy Hochul": 600829,
         "Bruce Blakeman": 171138
+      }
+    },
+    "H-NH-02": {
+      "src_name": "AP via news results (hand-entered)",
+      "at": "2026-11-04T02:09:00Z",
+      "exp": 24,
+      "cands": {
+        "Maggie Goodlander": 52629,
+        "Lily Tang Williams": 29496,
+        "Robbie Mahrou": 1917
+      }
+    },
+    "G-WI": {
+      "src_name": "AP via news results (hand-entered)",
+      "at": "2026-11-04T02:12:10Z",
+      "exp": 1,
+      "cands": {
+        "Tom Tiffany": 3081,
+        "David Crowley": 2563
       }
     }
   }
