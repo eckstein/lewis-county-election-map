@@ -31,6 +31,13 @@
     h2 { font-size: 13px; margin: 0 0 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
     .badge { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; vertical-align: middle; }
     .muted { color: var(--muted); font-size: 13px; }
+    details.cty { display: inline; position: relative; }
+    details.cty > summary { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; border-radius: 50%;
+      border: 1px solid currentColor; font: italic 600 10px/1 Georgia, serif; cursor: pointer; list-style: none; vertical-align: 1px; margin-left: 2px; }
+    details.cty > summary::-webkit-details-marker { display: none; }
+    details.cty .cty-body { position: absolute; z-index: 20; left: -120px; top: 20px; width: 260px; padding: 8px 10px; border-radius: 8px;
+      background: var(--panel, #fff); color: var(--text); border: 1px solid var(--line, #ddd); box-shadow: 0 2px 8px rgba(0,0,0,.15);
+      font-size: 12.5px; line-height: 1.45; font-style: normal; white-space: normal; }
     .sub { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
     .status { font-size: 13px; color: var(--muted); margin: 0 0 16px; }
     .status.err { color: #8a5a00; }
@@ -591,6 +598,42 @@
   "use strict";
   const PROXY = "https://lc-results-proxy.zacharyeckstein.workers.dev";
   const ELECTION = "20261103";
+
+  // The (i) next to "N of M counties reporting": opens a list of which counties
+  // have posted votes for that statewide contest, from the state's per-county
+  // breakdown. Loaded when first opened; kept open across the minute refresh.
+  const ctyCache = new Map(); // contest id -> { html, at }
+  const ctyOpen = new Set();
+  function ctyInfo(id) {
+    if (!id) return "";
+    const body = ctyCache.get(id)?.html || "Loading…";
+    return ` <details class="cty" data-id="${esc(id)}"${ctyOpen.has(id) ? " open" : ""}><summary title="Which counties have reported" aria-label="Which counties have reported">i</summary><div class="cty-body">${body}</div></details>`;
+  }
+  async function loadCounties(id) {
+    const path = `/washington/${ELECTION}/data/ballot-item/${id}`;
+    let d;
+    try { d = await (await fetch(PROXY + path)).json(); }
+    catch (e) { d = await (await fetch("https://results.votewa.gov/results/public/api/elections" + path)).json(); }
+    const rows = d.ballotItemWithBreakdown?.breakdownResults || [];
+    const name = (r) => en(r.locality?.name).replace(/ County$/, "");
+    const done = rows.filter((r) => r.voteTotal > 0).map(name).sort();
+    const wait = rows.filter((r) => !(r.voteTotal > 0)).map(name).sort();
+    const html = rows.length
+      ? `<b>Waiting on:</b> ${wait.length ? esc(wait.join(", ")) : "none"}<br><b>Have posted votes:</b> ${done.length ? esc(done.join(", ")) : "none yet"}`
+      : "County details aren't available.";
+    ctyCache.set(id, { html, at: Date.now() });
+    document.querySelectorAll(`details.cty[data-id="${CSS.escape(id)}"] .cty-body`).forEach((el) => { el.innerHTML = html; });
+  }
+  document.addEventListener("toggle", (e) => {
+    const el = e.target;
+    if (!(el instanceof HTMLDetailsElement) || !el.classList.contains("cty")) return;
+    const id = el.dataset.id;
+    if (el.open) {
+      ctyOpen.add(id);
+      const c = ctyCache.get(id);
+      if (!c || Date.now() - c.at > 60000) loadCounties(id).catch(() => { el.querySelector(".cty-body").textContent = "Couldn't load the county list."; });
+    } else ctyOpen.delete(id);
+  }, true);
   const LEWIS_LDS = ["19", "20"]; // legislative districts with Lewis County voters
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
@@ -654,13 +697,13 @@
       // Counties report on their own schedules; say so until they all have. The feed
       // can show 0 units while votes are in, so only say it once a unit is counted.
       const ru = wide.reporting?.reportingUnits, tu = wide.reporting?.totalUnits;
-      const partial = tu && ru > 0 && ru < tu ? ` <span class="muted">(${fmt(ru)} of ${fmt(tu)} counties reporting so far)</span>` : "";
+      const partial = tu && ru > 0 && ru < tu ? ` <span class="muted">(${fmt(ru)} of ${fmt(tu)} counties reporting so far${ctyInfo(wide.id)})</span>` : "";
       wideLine = `<div class="wide">${label}: ${wt ? wide.opts.filter((o) => !o.writeIn || o.votes).sort((a, b) => b.votes - a.votes).slice(0, 3)
         .map((o) => `<b>${esc(o.name)}</b> ${((o.votes / wt) * 100).toFixed(1)}%`).join(" · ") + ` · ${fmt(wt)} votes` : "no votes counted yet"}${partial}</div>`;
     }
     // On the Washington tab a card is the whole contest, so say how many of its counties have reported.
     const ou = c.reporting?.reportingUnits, ot = c.reporting?.totalUnits;
-    const own = !wide && c.counties > 1 && ot && ou > 0 && ou < ot ? ` <span class="muted">· ${fmt(ou)} of ${fmt(ot)} counties reporting</span>` : "";
+    const own = !wide && c.counties > 1 && ot && ou > 0 && ou < ot ? ` <span class="muted">· ${fmt(ou)} of ${fmt(ot)} counties reporting${ctyInfo(c.id)}</span>` : "";
     const desc = c.desc ? `<details class="desc"><summary>What it does</summary>${esc(c.desc)}</details>` : "";
     return `<article class="race">
       <div class="race-h"><strong>${esc(c.name)}</strong></div>

@@ -98,7 +98,7 @@ async function pushbuild(env) {
 
 const ALLOWED = [
   /^\/(lewis-county-wa|washington)\/\d{8}\/data$/,
-  /^\/lewis-county-wa\/\d{8}\/data\/ballot-item\/[0-9a-f-]{36}$/i,
+  /^\/(lewis-county-wa|washington)\/\d{8}\/data\/ballot-item\/[0-9a-f-]{36}$/i,
 ];
 
 const CORS = {
