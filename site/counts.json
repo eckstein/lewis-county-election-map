@@ -1,32 +1,32 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-04T07:39:45+00:00",
+ "updated": "2026-11-04T07:43:54+00:00",
  "counts": {
   "S-MT": {
    "cands": {
-    "KURT ALME": 182221,
-    "ALANI BANKHEAD": 46178,
-    "KYLE AUSTIN": 6926,
-    "SETH BODNAR": 150173
+    "KURT ALME": 186616,
+    "ALANI BANKHEAD": 46584,
+    "KYLE AUSTIN": 7021,
+    "SETH BODNAR": 151565
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 298,
+    "u": 299,
     "t": 728,
     "unit": "precincts"
    }
   },
   "H-MT-01": {
    "cands": {
-    "AARON FLINT": 81169,
-    "SAM FORSTAG": 100859,
-    "NICK SHEEDY": 5097
+    "AARON FLINT": 85748,
+    "SAM FORSTAG": 102348,
+    "NICK SHEEDY": 5308
    },
    "src_name": "Montana Secretary of State",
    "url": "https://electionresults.mt.gov/",
    "rep": {
-    "u": 92,
+    "u": 93,
     "t": 346,
     "unit": "precincts"
    }
@@ -356,7 +356,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "G-SC": {
    "cands": {
@@ -1745,16 +1745,16 @@
   },
   "G-AZ": {
    "cands": {
-    "Katie Hobbs": 1017904,
-    "Andy Biggs": 724548,
-    "Risa Lombardo": 14103,
-    "Teri Ann Hourihan": 13860,
+    "Katie Hobbs": 1018581,
+    "Andy Biggs": 728454,
+    "Risa Lombardo": 14150,
+    "Teri Ann Hourihan": 13900,
     "Alice Novoa": 6,
     "Gertritrude Gonzalez": 2
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 15,
     "t": 15,
@@ -1771,7 +1771,7 @@
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 1,
     "t": 1,
@@ -1786,7 +1786,7 @@
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 9,
     "t": 9,
@@ -1802,7 +1802,7 @@
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 1,
     "t": 1,
@@ -1818,7 +1818,7 @@
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 1,
     "t": 1,
@@ -1832,7 +1832,7 @@
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 2,
     "t": 2,
@@ -1849,7 +1849,7 @@
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 5,
     "t": 5,
@@ -1863,7 +1863,7 @@
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 6,
     "t": 6,
@@ -1877,7 +1877,7 @@
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 1,
     "t": 1,
@@ -1886,14 +1886,14 @@
   },
   "H-AZ-09": {
    "cands": {
-    "Paul Gosar": 115457,
-    "Danielle \"Dani\" Sterbinsky": 86706,
+    "Paul Gosar": 119470,
+    "Danielle \"Dani\" Sterbinsky": 87339,
     "William Perry": 21,
     "G. Seville Hatch": 11
    },
    "src_name": "Arizona Secretary of State via Pushbuild",
    "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-04T07:25:32.2764978Z",
+   "at": "2026-11-04T07:35:33.2054006Z",
    "rep": {
     "u": 4,
     "t": 4,
@@ -2432,16 +2432,16 @@
   },
   "G-MD": {
    "cands": {
-    "Wes Moore and Aruna Miller": 1159039,
-    "Dan Cox and Rob Krop": 615459,
-    "Andy Ellis and Owen Silverman Andrews": 38149,
-    "Cathy White and Cathy Permut": 36418
+    "Wes Moore and Aruna Miller": 1160555,
+    "Dan Cox and Rob Krop": 615960,
+    "Andy Ellis and Owen Silverman Andrews": 38201,
+    "Cathy White and Cathy Permut": 36465
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_1.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
-    "u": 1957,
+    "u": 1961,
     "t": 1979,
     "unit": "precincts"
    }
@@ -2454,7 +2454,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
     "u": 309,
     "t": 309,
@@ -2463,14 +2463,14 @@
   },
   "H-MD-02": {
    "cands": {
-    "John \"Johnny O\" Olszewski, Jr.": 285382,
-    "Dave Wallace": 178804
+    "John \"Johnny O\" Olszewski, Jr.": 285708,
+    "Dave Wallace": 178880
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
-    "u": 235,
+    "u": 236,
     "t": 241,
     "unit": "precincts"
    }
@@ -2483,7 +2483,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
     "u": 214,
     "t": 214,
@@ -2492,15 +2492,15 @@
   },
   "H-MD-04": {
    "cands": {
-    "Glenn F. Ivey": 288996,
-    "George E. McDermott": 20496,
-    "Sam Husseini": 14722
+    "Glenn F. Ivey": 290724,
+    "George E. McDermott": 20746,
+    "Sam Husseini": 14816
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
-    "u": 226,
+    "u": 227,
     "t": 237,
     "unit": "precincts"
    }
@@ -2513,7 +2513,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
     "u": 227,
     "t": 227,
@@ -2528,7 +2528,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
     "u": 214,
     "t": 214,
@@ -2537,14 +2537,14 @@
   },
   "H-MD-07": {
    "cands": {
-    "Kweisi Mfume": 274132,
-    "Scott M. Collier": 54492
+    "Kweisi Mfume": 275256,
+    "Scott M. Collier": 55144
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
-    "u": 334,
+    "u": 336,
     "t": 338,
     "unit": "precincts"
    }
@@ -2557,7 +2557,7 @@
    },
    "src_name": "Maryland State Board of Elections via Pushbuild",
    "url": "https://elections.maryland.gov/elections/2026/general_results/gen_results_2026_4.html",
-   "at": "2026-11-04T02:06:32",
+   "at": "2026-11-04T02:37:39",
    "rep": {
     "u": 198,
     "t": 199,
@@ -2624,7 +2624,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-10": {
    "cands": {
@@ -2633,7 +2633,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-11": {
    "cands": {
@@ -2642,7 +2642,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-12": {
    "cands": {
@@ -2651,7 +2651,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-13": {
    "cands": {
@@ -2660,7 +2660,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-14": {
    "cands": {
@@ -2669,7 +2669,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-15": {
    "cands": {
@@ -2678,7 +2678,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-16": {
    "cands": {
@@ -2687,7 +2687,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-17": {
    "cands": {
@@ -2696,7 +2696,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-02": {
    "cands": {
@@ -2705,7 +2705,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-03": {
    "cands": {
@@ -2714,7 +2714,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-04": {
    "cands": {
@@ -2723,7 +2723,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-05": {
    "cands": {
@@ -2732,7 +2732,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-06": {
    "cands": {
@@ -2741,7 +2741,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-07": {
    "cands": {
@@ -2750,7 +2750,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-08": {
    "cands": {
@@ -2759,7 +2759,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-PA-09": {
    "cands": {
@@ -2768,7 +2768,7 @@
    },
    "src_name": "Pennsylvania Department of State via Pushbuild",
    "url": "https://www.electionreturns.pa.gov/",
-   "at": "2026-11-04T07:35:58+00:00"
+   "at": "2026-11-04T07:43:09+00:00"
   },
   "H-TX-20": {
    "cands": {
