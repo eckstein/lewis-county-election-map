@@ -85,5 +85,108 @@
       "at": "2026-11-04T01:00:00Z",
       "src": "https://gvwire.com/2026/11/03/democrats-hold-senate-seats-in-delaware-illinois-massachusetts-new-jersey-and-rhode-island/"
     }
+  },
+  "counts": {
+    "S-TX": {
+      "src_name": "Texas Secretary of State (hand-entered)",
+      "url": "https://goelect.txelections.civixapps.com/ivis-enr-ui/races",
+      "at": "2026-11-04T01:37:46Z",
+      "rep": {
+        "u": 48,
+        "t": 254,
+        "unit": "counties"
+      },
+      "cands": {
+        "Ken Paxton": 266914,
+        "James Talarico": 200895,
+        "Ted Brown": 9018
+      }
+    },
+    "H-TX-01": {
+      "src_name": "Texas Secretary of State (hand-entered)",
+      "url": "https://goelect.txelections.civixapps.com/ivis-enr-ui/races",
+      "at": "2026-11-04T01:37:46Z",
+      "rep": {
+        "u": 48,
+        "t": 254,
+        "unit": "counties"
+      },
+      "cands": {
+        "Nathaniel Moran": 26023,
+        "Yolanda Prince": 12900
+      }
+    },
+    "G-PA": {
+      "src_name": "Pennsylvania Dept. of State (hand-entered)",
+      "url": "https://www.electionreturns.pa.gov/",
+      "at": "2026-11-04T01:50:47Z",
+      "cands": {
+        "Josh Shapiro": 587908,
+        "Stacy Garrity": 131593,
+        "Ken Krawchuk": 5901
+      }
+    },
+    "G-MI": {
+      "src_name": "Michigan results (hand-entered)",
+      "at": "2026-11-04T01:53:00Z",
+      "rep": {
+        "u": 71,
+        "t": 3946,
+        "unit": "precincts"
+      },
+      "cands": {
+        "Jocelyn Benson": 281455,
+        "John James": 186916
+      }
+    },
+    "S-MI": {
+      "src_name": "Michigan results (hand-entered)",
+      "at": "2026-11-04T01:53:00Z",
+      "rep": {
+        "u": 71,
+        "t": 3946,
+        "unit": "precincts"
+      },
+      "cands": {
+        "Abdul El-Sayed": 279755,
+        "Mike Rogers": 220992
+      }
+    },
+    "S-ME": {
+      "src_name": "AP via news results (hand-entered)",
+      "at": "2026-11-04T01:55:52Z",
+      "exp": 3,
+      "cands": {
+        "Troy Jackson": 14020,
+        "Susan Collins": 11210
+      }
+    },
+    "S-NH": {
+      "src_name": "AP via news results (hand-entered)",
+      "at": "2026-11-04T01:56:00Z",
+      "exp": 30,
+      "cands": {
+        "Chris Pappas": 123656,
+        "John E. Sununu": 81846
+      }
+    },
+    "G-NH": {
+      "src_name": "AP via news results (hand-entered)",
+      "at": "2026-11-04T01:57:00Z",
+      "exp": 32,
+      "cands": {
+        "Kelly Ayotte": 110492,
+        "Cinde Warmington": 102228
+      }
+    },
+    "H-NH-01": {
+      "src_name": "AP via news results (hand-entered)",
+      "at": "2026-11-04T01:57:00Z",
+      "exp": 42,
+      "cands": {
+        "Stefany Shaheen": 86868,
+        "Anthony DiLorenzo": 59706
+      }
+    }
   }
 }
