@@ -1,6 +1,6 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-05T21:56:00+00:00",
+ "updated": "2026-11-05T21:57:06+00:00",
  "counts": {
   "S-MT": {
    "cands": {
@@ -131,7 +131,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -152,7 +152,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -166,7 +166,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -180,7 +180,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 99
   },
   "S-IA": {
@@ -191,7 +191,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 99
   },
   "S-LA": {
@@ -201,7 +201,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -217,7 +217,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 98.9
   },
   "S-NE": {
@@ -230,7 +230,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 94.1
   },
   "S-NC": {
@@ -242,7 +242,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -258,7 +258,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -268,16 +268,12 @@
   "S-SD": {
    "cands": {
     "Mike Rounds": 184588,
-    "Brian Bengs": 120507
+    "Brian Bengs": 120509
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/south-dakota-senate-results",
+   "at": "2026-11-05T21:56:08.000Z",
+   "exp": 99
   },
   "S-TX": {
    "cands": {
@@ -292,7 +288,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -306,7 +302,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/virginia-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 97.6
   },
   "G-AR": {
@@ -317,7 +313,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -336,7 +332,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 85,
     "t": 100,
@@ -350,7 +346,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 98.4
   },
   "G-GA": {
@@ -360,7 +356,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 99
   },
   "G-IA": {
@@ -370,7 +366,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 99
   },
   "G-MN": {
@@ -381,7 +377,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 98.9
   },
   "G-NE": {
@@ -393,7 +389,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 94.2
   },
   "G-PA": {
@@ -404,7 +400,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 98.7
   },
   "G-SC": {
@@ -416,7 +412,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -426,16 +422,12 @@
   "G-SD": {
    "cands": {
     "Larry Rhoden": 193333,
-    "Dan Ahlers": 111155
+    "Dan Ahlers": 111157
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/south-dakota-governor-results",
+   "at": "2026-11-05T21:56:08.000Z",
+   "exp": 99
   },
   "G-TX": {
    "cands": {
@@ -449,7 +441,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -460,13 +452,13 @@
    "cands": {
     "Phil Scott": 163201,
     "Amanda Janoo": 141622,
-    "Brian Judd": 2614,
+    "Brian Judd": 2613,
     "June Goodband": 1238,
     "Dean Roy": 1137
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/vermont-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 99
   },
   "H-AR-01": {
@@ -477,7 +469,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -491,7 +483,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -511,7 +503,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 69,
     "t": 100,
@@ -526,7 +518,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -542,7 +534,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -558,7 +550,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -575,7 +567,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 71,
     "t": 100,
@@ -593,7 +585,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -608,7 +600,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -631,7 +623,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -645,7 +637,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -659,7 +651,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -673,7 +665,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -687,7 +679,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -719,7 +711,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -733,7 +725,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -747,7 +739,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -761,7 +753,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -775,7 +767,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -789,7 +781,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -803,7 +795,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -817,7 +809,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -851,7 +843,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -866,7 +858,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -899,7 +891,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -954,7 +946,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -971,7 +963,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -989,7 +981,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1006,7 +998,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1027,7 +1019,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1049,7 +1041,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1063,7 +1055,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1079,7 +1071,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1094,7 +1086,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1121,7 +1113,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1136,7 +1128,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1151,7 +1143,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1166,7 +1158,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1181,7 +1173,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1195,7 +1187,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1210,7 +1202,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1225,7 +1217,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1239,7 +1231,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1254,7 +1246,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1269,7 +1261,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1283,7 +1275,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1298,7 +1290,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1312,7 +1304,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1327,7 +1319,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1342,7 +1334,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1357,7 +1349,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1372,7 +1364,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1386,7 +1378,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1400,7 +1392,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1414,7 +1406,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1428,7 +1420,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1442,7 +1434,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1456,7 +1448,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1470,7 +1462,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1484,7 +1476,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1498,7 +1490,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1512,7 +1504,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1526,7 +1518,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1540,7 +1532,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1554,7 +1546,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1568,7 +1560,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1582,7 +1574,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1596,7 +1588,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1619,7 +1611,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1633,7 +1625,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1647,7 +1639,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1662,7 +1654,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1676,7 +1668,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1690,7 +1682,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1705,7 +1697,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1720,7 +1712,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1735,7 +1727,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1749,7 +1741,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1764,7 +1756,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1778,7 +1770,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1793,7 +1785,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1809,7 +1801,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 77,
     "t": 100,
@@ -1823,7 +1815,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1837,7 +1829,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1875,7 +1867,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1891,7 +1883,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1906,7 +1898,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1943,7 +1935,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1959,7 +1951,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1973,7 +1965,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1988,7 +1980,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2003,7 +1995,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2018,7 +2010,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2033,7 +2025,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -2066,7 +2058,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2081,7 +2073,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -2095,7 +2087,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2109,7 +2101,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2123,7 +2115,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2137,7 +2129,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2152,7 +2144,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2169,7 +2161,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -2202,7 +2194,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2211,21 +2203,15 @@
   },
   "G-AZ": {
    "cands": {
-    "Katie Hobbs": 1246992,
-    "Andy Biggs": 958935,
-    "Risa Lombardo": 20138,
-    "Teri Ann Hourihan": 18776,
-    "Alice Novoa": 6,
-    "Gertritrude Gonzalez": 3
+    "Katie Hobbs": 1249574,
+    "Andy Biggs": 964397,
+    "Risa Lombardo": 20226,
+    "Teri Ann Hourihan": 18931
    },
-   "src_name": "Arizona Secretary of State via Pushbuild",
-   "url": "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
-   "at": "2026-11-05T18:08:06.6465317Z",
-   "rep": {
-    "u": 15,
-    "t": 15,
-    "unit": "counties"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/arizona-governor-results",
+   "at": "2026-11-05T21:56:08.000Z",
+   "exp": 86.7
   },
   "H-AZ-01": {
    "cands": {
@@ -3450,7 +3436,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3464,7 +3450,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -3478,7 +3464,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -3492,7 +3478,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -3506,7 +3492,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -3520,7 +3506,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3534,7 +3520,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3548,7 +3534,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3562,7 +3548,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -3576,7 +3562,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -3590,7 +3576,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3615,7 +3601,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3629,7 +3615,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3644,7 +3630,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3660,7 +3646,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3684,7 +3670,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3699,7 +3685,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3713,7 +3699,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3727,7 +3713,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3742,7 +3728,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3757,7 +3743,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3772,7 +3758,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3787,7 +3773,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3801,7 +3787,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3816,7 +3802,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3831,7 +3817,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3846,7 +3832,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3861,7 +3847,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3876,7 +3862,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3891,7 +3877,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3905,7 +3891,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3919,7 +3905,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3982,7 +3968,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-special-elections/florida-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 99
   },
   "G-FL": {
@@ -3998,7 +3984,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 99
   },
   "H-IL-01": {
@@ -4008,7 +3994,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -4022,7 +4008,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 80,
     "t": 100,
@@ -4036,7 +4022,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 69,
     "t": 100,
@@ -4052,7 +4038,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 58,
     "t": 100,
@@ -4066,7 +4052,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -4080,7 +4066,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -4094,7 +4080,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 77,
     "t": 100,
@@ -4108,7 +4094,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 75,
     "t": 100,
@@ -4122,7 +4108,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -4136,7 +4122,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -4150,7 +4136,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -4164,7 +4150,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -4178,7 +4164,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4192,7 +4178,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4206,7 +4192,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -4220,7 +4206,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4234,7 +4220,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 85,
     "t": 100,
@@ -4249,7 +4235,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -4264,7 +4250,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -4279,7 +4265,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4294,7 +4280,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4309,7 +4295,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4324,7 +4310,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4339,7 +4325,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4354,7 +4340,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4368,7 +4354,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4411,7 +4397,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -4427,7 +4413,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -4443,7 +4429,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -4458,7 +4444,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 99
   },
   "H-ME-01": {
@@ -4486,7 +4472,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -4501,7 +4487,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -4510,12 +4496,17 @@
   },
   "H-MA-01": {
    "cands": {
-    "Richard Neal": 177120,
-    "Nadia Milleron": 93589
+    "Richard E. Neal": 177120,
+    "Nadia Donya Milleron": 93589
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T21:54:43.680Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 83,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-MA-03": {
    "cands": {
@@ -4525,7 +4516,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4539,7 +4530,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 90,
     "t": 100,
@@ -4554,7 +4545,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4564,34 +4555,47 @@
   "H-MA-09": {
    "cands": {
     "Bill Keating": 213587,
-    "R. Macallister": 137282
+    "R. Tyler Macallister": 137282
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T21:54:43.680Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 99,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "S-MA": {
    "cands": {
-    "Ed Markey": 1649357,
+    "Edward J. Markey": 1649357,
     "John Deaton": 836797,
     "Shiva Ayyadurai": 59699,
     "Joe Tache": 56136
    },
-   "src_name": "NBC News / AP vote data via Pollgebra",
-   "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
-   "exp": 98.6
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 91,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "G-MA": {
    "cands": {
     "Maura Healey": 1622446,
-    "Michael Minogue": 901561,
+    "Michael Roger Minogue": 901561,
     "Andrea James": 85745
    },
-   "src_name": "NBC News / AP vote data via Pollgebra",
-   "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
-   "exp": 98.6
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 91,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-MI-01": {
    "cands": {
@@ -4605,7 +4609,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4621,7 +4625,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -4636,7 +4640,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4651,7 +4655,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -4668,7 +4672,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -4687,7 +4691,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4702,7 +4706,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4719,7 +4723,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4737,7 +4741,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4754,7 +4758,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4771,7 +4775,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4788,7 +4792,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4805,7 +4809,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4823,7 +4827,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 98.3
   },
   "G-MI": {
@@ -4836,7 +4840,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 98.3
   },
   "H-MS-01": {
@@ -4845,9 +4849,14 @@
     "Cliff Johnson": 96428,
     "Johnny Baucom": 3340
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/mississippi-2026-live-midterm-election-results/story?id=136767242",
-   "at": "2026-11-05T21:54:43.680Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 99,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-MS-02": {
    "cands": {
@@ -4855,9 +4864,14 @@
     "Ron Eller": 73164,
     "Bennie Foster": 5883
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/mississippi-2026-live-midterm-election-results/story?id=136767242",
-   "at": "2026-11-05T21:54:43.680Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 100,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-MS-03": {
    "cands": {
@@ -4865,9 +4879,14 @@
     "Michael Chiaradio": 103164,
     "Erik Kiehle": 3146
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/mississippi-2026-live-midterm-election-results/story?id=136767242",
-   "at": "2026-11-05T21:54:43.680Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 99,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-MS-04": {
    "cands": {
@@ -4875,20 +4894,29 @@
     "Jeffrey Hulum": 76888,
     "Carl Boyanton": 6591
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/mississippi-2026-live-midterm-election-results/story?id=136767242",
-   "at": "2026-11-05T21:54:43.680Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 89,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "S-MS": {
    "cands": {
-    "Scott Colom": 466747,
-    "Cindy Hyde-Smith": 464925,
-    "Ty Pinkins": 20005
+    "Scott Colom": 466849,
+    "Cindy Hyde-Smith": 464956,
+    "Ty Pinkins": 20021
    },
-   "src_name": "NBC News / AP vote data via Pollgebra",
-   "url": "https://www.nbcnews.com/politics/2026-elections/mississippi-senate-results",
-   "at": "2026-11-05T21:51:32.000Z",
-   "exp": 97.2
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 98,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-MO-01": {
    "cands": {
@@ -4898,7 +4926,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4913,7 +4941,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4928,7 +4956,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4943,7 +4971,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4958,7 +4986,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4973,7 +5001,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4988,7 +5016,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -5003,7 +5031,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -5017,7 +5045,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5032,7 +5060,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -5047,7 +5075,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -5062,7 +5090,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5085,7 +5113,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -5118,7 +5146,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -5132,7 +5160,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 80,
     "t": 100,
@@ -5147,7 +5175,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -5161,7 +5189,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 70,
     "t": 100,
@@ -5176,7 +5204,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -5192,7 +5220,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 44,
     "t": 100,
@@ -5207,7 +5235,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 61,
     "t": 100,
@@ -5221,7 +5249,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 69,
     "t": 100,
@@ -5236,7 +5264,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -5252,7 +5280,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 82,
     "t": 100,
@@ -5275,7 +5303,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 81,
     "t": 100,
@@ -5289,7 +5317,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -5312,7 +5340,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -5326,7 +5354,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -5340,7 +5368,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -5382,7 +5410,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5396,7 +5424,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5411,7 +5439,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5425,7 +5453,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5439,7 +5467,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5453,7 +5481,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5467,7 +5495,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5483,7 +5511,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5497,7 +5525,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5511,7 +5539,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5528,7 +5556,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5542,7 +5570,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 43,
     "t": 100,
@@ -5556,7 +5584,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -5570,7 +5598,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5602,7 +5630,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5616,7 +5644,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5630,7 +5658,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -5644,7 +5672,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -5658,7 +5686,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5672,7 +5700,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -5686,7 +5714,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 95.7
   },
   "H-ND-AL": {
@@ -5698,7 +5726,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5713,7 +5741,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5727,7 +5755,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5741,7 +5769,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5756,7 +5784,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5771,7 +5799,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5785,7 +5813,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5801,7 +5829,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5815,7 +5843,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5830,7 +5858,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5845,7 +5873,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5859,7 +5887,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5873,7 +5901,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5888,7 +5916,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5902,7 +5930,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5919,7 +5947,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5938,7 +5966,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5956,7 +5984,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5970,7 +5998,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5985,7 +6013,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5999,7 +6027,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6014,7 +6042,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6030,7 +6058,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6047,7 +6075,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6064,7 +6092,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6079,7 +6107,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 77,
     "t": 100,
@@ -6093,7 +6121,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -6108,7 +6136,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -6125,7 +6153,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -6144,7 +6172,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 80,
     "t": 100,
@@ -6160,7 +6188,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -6179,7 +6207,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -6195,7 +6223,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -6211,7 +6239,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 83,
     "t": 100,
@@ -6227,7 +6255,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -6243,7 +6271,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -6263,7 +6291,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -6279,7 +6307,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -6299,9 +6327,10 @@
     "Yoshi Matthews": 3026,
     "James Macon": 2576
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/tennessee-2026-live-midterm-election-results/story?id=136822436",
-   "at": "2026-11-05T21:53:03.320Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-senate-results",
+   "at": "2026-11-05T21:56:08.000Z",
+   "exp": 99
   },
   "G-TN": {
    "cands": {
@@ -6323,7 +6352,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-governor-results",
-   "at": "2026-11-05T21:51:24.000Z",
+   "at": "2026-11-05T21:56:08.000Z",
    "exp": 98.9
   },
   "H-WV-01": {
@@ -6334,7 +6363,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 68,
     "t": 100,
@@ -6348,7 +6377,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -6363,7 +6392,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 75,
     "t": 100,
@@ -6377,7 +6406,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 81,
     "t": 100,
@@ -6393,7 +6422,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -6408,7 +6437,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 71,
     "t": 100,
@@ -6422,7 +6451,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6439,7 +6468,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -6453,7 +6482,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -6467,7 +6496,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -6490,7 +6519,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -6506,7 +6535,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -6520,7 +6549,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -6535,7 +6564,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -6549,7 +6578,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6563,7 +6592,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6576,7 +6605,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 85,
     "t": 100,
@@ -6590,7 +6619,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6616,7 +6645,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -6630,7 +6659,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6647,7 +6676,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -6676,7 +6705,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 70,
     "t": 100,
@@ -6692,7 +6721,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6710,7 +6739,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6726,7 +6755,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6743,7 +6772,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6757,7 +6786,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -6771,7 +6800,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6785,7 +6814,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 56,
     "t": 100,
@@ -6799,7 +6828,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -6813,7 +6842,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -6827,7 +6856,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -6841,7 +6870,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -6855,7 +6884,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -6869,7 +6898,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 56,
     "t": 100,
@@ -6883,7 +6912,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 71,
     "t": 100,
@@ -6897,7 +6926,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6912,7 +6941,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6926,7 +6955,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6942,7 +6971,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -6958,7 +6987,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 74,
     "t": 100,
@@ -6974,7 +7003,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -6990,7 +7019,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 75,
     "t": 100,
@@ -7004,7 +7033,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -7018,7 +7047,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -7027,14 +7056,14 @@
   },
   "S-US": {
    "cands": {
-    "Democrats": 39728482,
-    "Republicans": 33601615,
-    "Independent": 1260588,
+    "Democrats": 39732649,
+    "Republicans": 33604773,
+    "Independent": 1260746,
     "Libertarians": 667687,
     "Other Party": 94509,
     "Forward": 63448,
     "American Center Party": 63040,
-    "Socialism and Liberation": 56072,
+    "Socialism and Liberation": 56136,
     "Green": 48897,
     "Constitution": 46027,
     "Nonpartisan": 37964,
@@ -7042,7 +7071,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -7056,7 +7085,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -7065,9 +7094,9 @@
   },
   "G-US": {
    "cands": {
-    "Democrats": 48696566,
-    "Republicans": 38323788,
-    "Independent": 884674,
+    "Democrats": 48700055,
+    "Republicans": 38326713,
+    "Independent": 884878,
     "Libertarians": 573472,
     "Green": 136694,
     "Pacific Green": 43680,
@@ -7080,7 +7109,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -7093,7 +7122,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 54,
     "t": 100,
@@ -7106,7 +7135,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T21:55:51+00:00",
+   "at": "2026-11-05T21:56:55+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -7115,11 +7144,16 @@
   },
   "H-MA-02": {
    "cands": {
-    "James McGovern": 97840
+    "James P. McGovern": 97840
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T21:54:43.680Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T21:56:55+00:00",
+   "rep": {
+    "u": 31,
+    "t": 100,
+    "unit": "pct"
+   }
   }
  }
 }
