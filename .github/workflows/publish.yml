@@ -1,15 +1,18 @@
 # Publishes site/ to GitHub Pages. Results load live in the browser, so this
-# only has to keep the daily ballot-return totals current: every hour it
-# downloads the county's matchback file from the Secretary of State, and when
-# the precinct totals change it commits them and republishes. Pushes to main
-# publish too. The voter-level file is never committed.
+# only has to keep the daily ballot-return totals current: once a day, after
+# the Secretary of State posts its file (~4:40-5pm Pacific), it downloads the
+# county's matchback file, and when the precinct totals change it commits them
+# and republishes. The Worker already serves live totals from the same file, so
+# this is only a fallback. Pushes to main publish too. The voter-level file is
+# never committed.
 name: Publish map
 
 on:
   push:
     branches: [main]
   schedule:
-    - cron: "20 * * * *"
+    # 01:30 UTC = 5:30pm PST (6:30pm PDT in summer).
+    - cron: "30 1 * * *"
   workflow_dispatch:
 
 permissions:
