@@ -19,6 +19,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  deployments: read
 
 concurrency:
   group: pages
@@ -69,5 +70,18 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # Pages sometimes leaves a timed-out deployment marked "in progress",
+      # and then refuses every later deploy until it is cancelled. Only one
+      # deploy job runs at a time (concurrency group), so any deployment still
+      # in progress now is stale: cancel recent ones before deploying.
+      - name: Cancel stuck Pages deployments
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/deployments?environment=github-pages&per_page=15" \
+            --jq '.[].sha' | sort -u | grep -v "^$GITHUB_SHA$" | while read -r sha; do
+            gh api -X POST "repos/$GITHUB_REPOSITORY/pages/deployments/$sha/cancel" \
+              >/dev/null 2>&1 && echo "Cancelled $sha" || true
+          done
       - id: deployment
         uses: actions/deploy-pages@v4
