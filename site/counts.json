@@ -1,6 +1,6 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-05T18:03:06+00:00",
+ "updated": "2026-11-05T18:04:15+00:00",
  "counts": {
   "S-MT": {
    "cands": {
@@ -148,7 +148,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -162,7 +162,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -171,13 +171,12 @@
   },
   "S-GA": {
    "cands": {
-    "Jon Ossoff": 2466233,
-    "Mike Collins": 1712055
+    "Jon Ossoff": 2466235,
+    "Mike Collins": 1712056
    },
-   "src_name": "NBC News / AP vote data via Pollgebra",
-   "url": "https://www.nbcnews.com/politics/2026-elections/georgia-senate-results",
-   "at": "2026-11-05T17:59:36.000Z",
-   "exp": 99
+   "src_name": "ABC News via Pollgebra",
+   "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
+   "at": "2026-11-05T18:00:58.620Z"
   },
   "S-IA": {
    "cands": {
@@ -187,7 +186,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -201,7 +200,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -217,7 +216,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -246,7 +245,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -262,7 +261,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -276,7 +275,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -295,7 +294,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -309,7 +308,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -324,7 +323,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "G-CO": {
@@ -339,7 +338,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -349,21 +348,21 @@
   "G-CT": {
    "cands": {
     "Ned Lamont": 765107,
-    "Ryan Fazio": 529002
+    "Ryan Fazio": 529389
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 98.4
   },
   "G-GA": {
    "cands": {
-    "Keisha Lance Bottoms": 2271403,
-    "Rick Jackson": 1909161
+    "Keisha Lance Bottoms": 2271404,
+    "Rick Jackson": 1909163
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "G-IA": {
@@ -373,7 +372,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/iowa-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "G-MN": {
@@ -384,7 +383,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -400,7 +399,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 94.2
   },
   "G-PA": {
@@ -422,7 +421,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -436,7 +435,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -451,7 +450,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "G-VT": {
@@ -464,7 +463,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/vermont-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "H-AR-01": {
@@ -475,7 +474,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/arkansas-2026-live-midterm-election-results/story?id=136762515",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-AR-04": {
    "cands": {
@@ -484,7 +483,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/arkansas-2026-live-midterm-election-results/story?id=136762515",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-CO-01": {
    "cands": {
@@ -499,7 +498,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 69,
     "t": 100,
@@ -514,7 +513,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 90,
     "t": 100,
@@ -530,7 +529,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -546,7 +545,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -563,7 +562,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 67,
     "t": 100,
@@ -581,7 +580,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -595,7 +594,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-CT-05": {
    "cands": {
@@ -604,7 +603,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-DE-AL": {
    "cands": {
@@ -613,7 +612,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -627,7 +626,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -636,17 +635,12 @@
   },
   "H-GA-02": {
    "cands": {
-    "Sanford Bishop": 148193,
-    "Matt Day": 95263
+    "Sanford Bishop": 148195,
+    "Matt Day": 95264
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "ABC News via Pollgebra",
+   "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-GA-03": {
    "cands": {
@@ -655,7 +649,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -669,7 +663,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -683,7 +677,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-GA-06": {
    "cands": {
@@ -692,7 +686,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-GA-07": {
    "cands": {
@@ -701,7 +695,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -715,7 +709,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-GA-09": {
    "cands": {
@@ -724,7 +718,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -738,7 +732,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-GA-11": {
    "cands": {
@@ -747,7 +741,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-GA-12": {
    "cands": {
@@ -756,7 +750,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-GA-13": {
    "cands": {
@@ -765,7 +759,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -779,7 +773,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -793,7 +787,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IN-02": {
    "cands": {
@@ -803,7 +797,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IN-03": {
    "cands": {
@@ -812,7 +806,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IN-04": {
    "cands": {
@@ -822,7 +816,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -836,7 +830,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IN-06": {
    "cands": {
@@ -845,7 +839,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IN-07": {
    "cands": {
@@ -855,7 +849,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -869,7 +863,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IN-09": {
    "cands": {
@@ -879,7 +873,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IA-02": {
    "cands": {
@@ -890,7 +884,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -904,7 +898,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -920,7 +914,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -937,7 +931,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -955,7 +949,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -972,7 +966,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -993,7 +987,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1015,7 +1009,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1029,7 +1023,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1045,7 +1039,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1060,7 +1054,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1077,7 +1071,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/nebraska-2026-live-midterm-election-results/story?id=136822233",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NC-01": {
    "cands": {
@@ -1087,7 +1081,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1102,7 +1096,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1117,7 +1111,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1132,7 +1126,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1147,7 +1141,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1161,7 +1155,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1176,7 +1170,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1191,7 +1185,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1205,7 +1199,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1220,7 +1214,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1235,7 +1229,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1249,7 +1243,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1264,7 +1258,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1278,7 +1272,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1293,7 +1287,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1308,7 +1302,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1323,7 +1317,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1338,7 +1332,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1352,7 +1346,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1366,7 +1360,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1380,7 +1374,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1394,7 +1388,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1408,7 +1402,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -1422,7 +1416,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1436,7 +1430,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1450,7 +1444,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -1464,7 +1458,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1478,7 +1472,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1492,7 +1486,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1506,7 +1500,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 85,
     "t": 100,
@@ -1520,7 +1514,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -1534,7 +1528,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/texas-2026-live-midterm-election-results/story?id=136761869",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-TX-15": {
    "cands": {
@@ -1543,7 +1537,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -1557,7 +1551,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -1571,7 +1565,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1585,7 +1579,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -1599,7 +1593,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1613,7 +1607,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/texas-2026-live-midterm-election-results/story?id=136761869",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-TX-23": {
    "cands": {
@@ -1623,7 +1617,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/texas-2026-live-midterm-election-results/story?id=136761869",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-TX-24": {
    "cands": {
@@ -1632,7 +1626,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1646,7 +1640,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1661,7 +1655,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1676,7 +1670,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1691,7 +1685,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 66,
     "t": 100,
@@ -1705,7 +1699,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -1720,7 +1714,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1734,7 +1728,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1749,7 +1743,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -1765,7 +1759,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 77,
     "t": 100,
@@ -1779,7 +1773,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -1793,7 +1787,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -1811,7 +1805,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/vermont-2026-live-midterm-election-results/story?id=136822562",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-VA-01": {
    "cands": {
@@ -1820,7 +1814,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1836,7 +1830,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1852,7 +1846,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-VA-04": {
    "cands": {
@@ -1862,7 +1856,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-VA-05": {
    "cands": {
@@ -1872,7 +1866,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1886,7 +1880,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-VA-07": {
    "cands": {
@@ -1899,7 +1893,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-VA-08": {
    "cands": {
@@ -1910,7 +1904,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-VA-09": {
    "cands": {
@@ -1919,7 +1913,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-VA-10": {
    "cands": {
@@ -1929,7 +1923,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-VA-11": {
    "cands": {
@@ -1939,7 +1933,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-AR-03": {
    "cands": {
@@ -1949,7 +1943,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1964,7 +1958,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 71,
     "t": 100,
@@ -1978,7 +1972,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1993,7 +1987,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-TX-02": {
    "cands": {
@@ -2002,7 +1996,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -2017,7 +2011,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/texas-2026-live-midterm-election-results/story?id=136761869",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-TX-09": {
    "cands": {
@@ -2026,7 +2020,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 64,
     "t": 100,
@@ -2040,7 +2034,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -2054,7 +2048,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/texas-2026-live-midterm-election-results/story?id=136761869",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-TX-29": {
    "cands": {
@@ -2063,7 +2057,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 68,
     "t": 100,
@@ -2078,7 +2072,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -2095,7 +2089,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -2110,7 +2104,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IA-03": {
    "cands": {
@@ -2119,7 +2113,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/iowa-2026-live-midterm-election-results/story?id=136761477",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MN-08": {
    "cands": {
@@ -2128,7 +2122,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3381,7 +3375,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -3395,7 +3389,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -3409,7 +3403,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -3423,7 +3417,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -3437,7 +3431,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -3451,7 +3445,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3465,7 +3459,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3479,7 +3473,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3493,7 +3487,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -3507,7 +3501,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -3521,17 +3515,17 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/arkansas-2026-live-midterm-election-results/story?id=136762515",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-CT-01": {
    "cands": {
-    "Luke Bronin": 170231,
-    "Amy Chai": 79136,
+    "Luke Bronin": 170239,
+    "Amy Chai": 79137,
     "Mary Sanders": 4417
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-FL-01": {
    "cands": {
@@ -3541,7 +3535,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3555,7 +3549,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3570,7 +3564,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3586,7 +3580,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3600,7 +3594,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-FL-06": {
    "cands": {
@@ -3610,7 +3604,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3625,7 +3619,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3639,7 +3633,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3653,7 +3647,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3668,7 +3662,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3683,7 +3677,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3698,7 +3692,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3713,7 +3707,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3727,7 +3721,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3742,7 +3736,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3757,7 +3751,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3772,7 +3766,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3787,7 +3781,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3802,7 +3796,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3817,7 +3811,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3831,7 +3825,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3845,7 +3839,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3859,7 +3853,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-FL-25": {
    "cands": {
@@ -3869,7 +3863,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-FL-26": {
    "cands": {
@@ -3879,7 +3873,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-FL-27": {
    "cands": {
@@ -3888,7 +3882,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-FL-28": {
    "cands": {
@@ -3898,7 +3892,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "S-FL-sp": {
    "cands": {
@@ -3924,7 +3918,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "H-IL-01": {
@@ -3934,7 +3928,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-02": {
    "cands": {
@@ -3943,7 +3937,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-03": {
    "cands": {
@@ -3952,7 +3946,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-04": {
    "cands": {
@@ -3963,7 +3957,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-05": {
    "cands": {
@@ -3972,7 +3966,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-06": {
    "cands": {
@@ -3981,7 +3975,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-07": {
    "cands": {
@@ -3990,7 +3984,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-08": {
    "cands": {
@@ -3999,7 +3993,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-09": {
    "cands": {
@@ -4008,7 +4002,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-10": {
    "cands": {
@@ -4017,7 +4011,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-11": {
    "cands": {
@@ -4026,7 +4020,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-12": {
    "cands": {
@@ -4035,7 +4029,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-13": {
    "cands": {
@@ -4044,7 +4038,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4058,7 +4052,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 85,
     "t": 100,
@@ -4072,7 +4066,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-IL-16": {
    "cands": {
@@ -4081,7 +4075,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4095,7 +4089,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "S-IL": {
    "cands": {
@@ -4116,7 +4110,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 91.6
   },
   "H-IA-01": {
@@ -4127,7 +4121,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4142,7 +4136,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4157,7 +4151,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4172,7 +4166,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4187,7 +4181,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4202,7 +4196,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4216,7 +4210,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4230,7 +4224,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/kentucky-2026-live-midterm-election-results/story?id=136765668",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-KY-02": {
    "cands": {
@@ -4240,7 +4234,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/kentucky-2026-live-midterm-election-results/story?id=136765668",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-KY-03": {
    "cands": {
@@ -4249,7 +4243,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/kentucky-2026-live-midterm-election-results/story?id=136765668",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-KY-04": {
    "cands": {
@@ -4259,7 +4253,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -4275,7 +4269,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -4291,7 +4285,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -4304,10 +4298,9 @@
     "Charles Booker": 612357,
     "Christopher Campbell": 29892
    },
-   "src_name": "NBC News / AP vote data via Pollgebra",
-   "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-senate-results",
-   "at": "2026-11-05T17:59:36.000Z",
-   "exp": 99
+   "src_name": "ABC News via Pollgebra",
+   "url": "https://abcnews.com/Politics/kentucky-2026-live-midterm-election-results/story?id=136765668",
+   "at": "2026-11-05T18:01:23.703Z"
   },
   "H-ME-01": {
    "cands": {
@@ -4316,7 +4309,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/maine-2026-live-midterm-election-results/story?id=136761571",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-ME-02": {
    "cands": {
@@ -4325,7 +4318,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/maine-2026-live-midterm-election-results/story?id=136761571",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "S-ME": {
    "cands": {
@@ -4345,7 +4338,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/maine-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 93.3
   },
   "H-MA-01": {
@@ -4355,7 +4348,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MA-03": {
    "cands": {
@@ -4365,7 +4358,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MA-04": {
    "cands": {
@@ -4374,7 +4367,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MA-08": {
    "cands": {
@@ -4384,7 +4377,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MA-09": {
    "cands": {
@@ -4393,7 +4386,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "S-MA": {
    "cands": {
@@ -4415,7 +4408,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 97.7
   },
   "H-MI-01": {
@@ -4430,7 +4423,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MI-02": {
    "cands": {
@@ -4441,7 +4434,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MI-03": {
    "cands": {
@@ -4451,7 +4444,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4466,7 +4459,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MI-05": {
    "cands": {
@@ -4478,7 +4471,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -4497,7 +4490,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4512,7 +4505,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MI-08": {
    "cands": {
@@ -4524,7 +4517,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MI-09": {
    "cands": {
@@ -4537,7 +4530,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MI-10": {
    "cands": {
@@ -4549,7 +4542,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4566,7 +4559,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4583,7 +4576,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MI-13": {
    "cands": {
@@ -4595,7 +4588,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4626,7 +4619,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 98.3
   },
   "H-MS-01": {
@@ -4637,7 +4630,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4652,7 +4645,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4667,7 +4660,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4682,7 +4675,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -4697,7 +4690,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -4712,7 +4705,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4727,7 +4720,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4742,7 +4735,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4757,7 +4750,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4772,7 +4765,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4787,7 +4780,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4802,7 +4795,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4817,7 +4810,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -4831,7 +4824,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -4846,7 +4839,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -4861,7 +4854,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -4876,7 +4869,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 90,
     "t": 100,
@@ -4890,7 +4883,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-02": {
    "cands": {
@@ -4900,7 +4893,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-03": {
    "cands": {
@@ -4911,7 +4904,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-04": {
    "cands": {
@@ -4920,7 +4913,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-05": {
    "cands": {
@@ -4930,7 +4923,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -4944,7 +4937,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-07": {
    "cands": {
@@ -4954,7 +4947,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-08": {
    "cands": {
@@ -4965,7 +4958,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-09": {
    "cands": {
@@ -4975,7 +4968,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-10": {
    "cands": {
@@ -4984,7 +4977,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-11": {
    "cands": {
@@ -4994,7 +4987,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NJ-12": {
    "cands": {
@@ -5005,7 +4998,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "S-NJ": {
    "cands": {
@@ -5026,7 +5019,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -5040,7 +5033,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -5054,7 +5047,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -5068,7 +5061,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -5082,7 +5075,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -5096,7 +5089,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-03": {
    "cands": {
@@ -5105,7 +5098,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-04": {
    "cands": {
@@ -5115,7 +5108,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-05": {
    "cands": {
@@ -5124,7 +5117,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5138,7 +5131,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5153,7 +5146,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5167,7 +5160,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5181,7 +5174,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5195,7 +5188,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5209,7 +5202,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5225,7 +5218,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5239,7 +5232,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5253,7 +5246,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5270,7 +5263,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5284,7 +5277,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-17": {
    "cands": {
@@ -5293,7 +5286,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-18": {
    "cands": {
@@ -5302,7 +5295,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5316,7 +5309,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-20": {
    "cands": {
@@ -5325,7 +5318,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-21": {
    "cands": {
@@ -5334,7 +5327,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-22": {
    "cands": {
@@ -5343,7 +5336,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-23": {
    "cands": {
@@ -5352,7 +5345,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -5366,7 +5359,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -5380,7 +5373,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-26": {
    "cands": {
@@ -5389,7 +5382,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -5403,7 +5396,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 95.7
   },
   "H-ND-AL": {
@@ -5415,7 +5408,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5430,7 +5423,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5444,7 +5437,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5458,7 +5451,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5473,7 +5466,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5488,7 +5481,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5502,7 +5495,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5518,7 +5511,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5532,7 +5525,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5547,7 +5540,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -5562,7 +5555,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5576,7 +5569,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5590,7 +5583,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5605,7 +5598,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5619,7 +5612,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5636,7 +5629,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5655,7 +5648,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -5673,7 +5666,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -5687,7 +5680,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5702,7 +5695,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5716,7 +5709,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5731,7 +5724,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/oklahoma-2026-live-midterm-election-results/story?id=136822255",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-OK-05": {
    "cands": {
@@ -5742,7 +5735,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5772,7 +5765,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "H-RI-01": {
@@ -5783,7 +5776,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/rhode-island-2026-live-midterm-election-results/story?id=136822259",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-RI-02": {
    "cands": {
@@ -5792,7 +5785,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/rhode-island-2026-live-midterm-election-results/story?id=136822259",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "S-RI": {
    "cands": {
@@ -5815,7 +5808,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/rhode-island-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 98
   },
   "H-TN-01": {
@@ -5830,7 +5823,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 80,
     "t": 100,
@@ -5846,7 +5839,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -5865,7 +5858,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -5881,7 +5874,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -5897,7 +5890,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 83,
     "t": 100,
@@ -5913,7 +5906,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -5929,7 +5922,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -5949,7 +5942,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -5965,7 +5958,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/tennessee-2026-live-midterm-election-results/story?id=136822436",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "S-TN": {
    "cands": {
@@ -6005,7 +5998,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 98.9
   },
   "H-WV-01": {
@@ -6016,7 +6009,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 68,
     "t": 100,
@@ -6030,7 +6023,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -6045,7 +6038,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 75,
     "t": 100,
@@ -6059,7 +6052,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 81,
     "t": 100,
@@ -6075,7 +6068,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -6090,7 +6083,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 71,
     "t": 100,
@@ -6104,7 +6097,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/wisconsin-2026-live-midterm-election-results/story?id=136822690",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-WI-06": {
    "cands": {
@@ -6116,7 +6109,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -6130,7 +6123,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/wisconsin-2026-live-midterm-election-results/story?id=136822690",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-WI-08": {
    "cands": {
@@ -6139,7 +6132,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -6153,7 +6146,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/wisconsin-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 98.9
   },
   "H-WY-AL": {
@@ -6165,7 +6158,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -6179,7 +6172,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -6194,7 +6187,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -6208,7 +6201,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MN-02": {
    "cands": {
@@ -6217,7 +6210,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6230,7 +6223,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/wisconsin-2026-live-midterm-election-results/story?id=136822690",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-NY-01": {
    "cands": {
@@ -6239,7 +6232,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6253,7 +6246,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6270,7 +6263,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -6284,7 +6277,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6301,7 +6294,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -6319,7 +6312,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -6335,7 +6328,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 70,
     "t": 100,
@@ -6364,7 +6357,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/idaho-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "H-ID-01": {
@@ -6376,7 +6369,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/idaho-2026-live-midterm-election-results/story?id=136765423",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-ID-02": {
    "cands": {
@@ -6388,7 +6381,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/idaho-2026-live-midterm-election-results/story?id=136765423",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-WA-02": {
    "cands": {
@@ -6397,7 +6390,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -6411,7 +6404,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6425,7 +6418,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 56,
     "t": 100,
@@ -6439,7 +6432,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -6453,7 +6446,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -6467,7 +6460,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -6481,7 +6474,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -6495,7 +6488,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -6509,7 +6502,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 56,
     "t": 100,
@@ -6523,7 +6516,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 71,
     "t": 100,
@@ -6537,7 +6530,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6552,7 +6545,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6566,7 +6559,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6582,7 +6575,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -6598,7 +6591,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 74,
     "t": 100,
@@ -6614,7 +6607,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -6630,7 +6623,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/hawaii-2026-live-midterm-election-results/story?id=136765248",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-HI-02": {
    "cands": {
@@ -6639,7 +6632,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/hawaii-2026-live-midterm-election-results/story?id=136765248",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "G-HI": {
    "cands": {
@@ -6648,14 +6641,14 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/hawaii-governor-results",
-   "at": "2026-11-05T17:59:36.000Z",
+   "at": "2026-11-05T18:03:30.000Z",
    "exp": 99
   },
   "S-US": {
    "cands": {
-    "Democrats": 39439138,
-    "Republicans": 33627391,
-    "Independent": 1248794,
+    "Democrats": 39443211,
+    "Republicans": 33630184,
+    "Independent": 1248966,
     "Libertarians": 664964,
     "Other Party": 94509,
     "American Center Party": 62618,
@@ -6668,7 +6661,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -6682,7 +6675,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6691,22 +6684,22 @@
   },
   "G-US": {
    "cands": {
-    "Democrats": 48243706,
-    "Republicans": 38032327,
-    "Independent": 866933,
-    "Libertarians": 571877,
+    "Democrats": 48247864,
+    "Republicans": 38034990,
+    "Independent": 867041,
+    "Libertarians": 571961,
     "Green": 136273,
     "Pacific Green": 43680,
     "Constitution": 40798,
     "Working Class": 36702,
-    "Nonpartisan": 35138,
     "America First": 32592,
+    "Nonpartisan": 29612,
     "U.S. Taxpayers": 19990,
     "Legal Marijuana Now": 19682
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T18:02:43+00:00",
+   "at": "2026-11-05T18:04:02+00:00",
    "rep": {
     "u": 85,
     "t": 100,
@@ -6719,7 +6712,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MA-05": {
    "cands": {
@@ -6727,7 +6720,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   },
   "H-MA-02": {
    "cands": {
@@ -6735,7 +6728,7 @@
    },
    "src_name": "ABC News via Pollgebra",
    "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T17:57:03.270Z"
+   "at": "2026-11-05T18:02:13.680Z"
   }
  }
 }
