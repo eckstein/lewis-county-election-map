@@ -1,6 +1,6 @@
 {
  "_about": "Vote counts pulled automatically from official state results sites The People's Tally has no feed for (Montana, Oregon), plus leader percents from watch.vote's feed of official state results.",
- "updated": "2026-11-05T00:13:04+00:00",
+ "updated": "2026-11-05T00:15:01+00:00",
  "counts": {
   "S-MT": {
    "cands": {
@@ -155,7 +155,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -180,7 +180,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -194,7 +194,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -235,7 +235,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -251,7 +251,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -280,7 +280,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -294,7 +294,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -309,23 +309,23 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "G-CO": {
    "cands": {
-    "Phil Weiser": 1387059,
-    "Victor Marx": 769305,
-    "Greg Lopez": 63444,
-    "Eric Mulder": 35565,
-    "Stephen Hamilton": 14094,
-    "Erik Underwood": 7113,
-    "Jeff Peckman": 4503
+    "Phil Weiser": 1391594,
+    "Victor Marx": 774329,
+    "Greg Lopez": 63752,
+    "Eric Mulder": 35780,
+    "Stephen Hamilton": 14192,
+    "Erik Underwood": 7168,
+    "Jeff Peckman": 4531
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/colorado-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
-   "exp": 80.9
+   "at": "2026-11-05T00:13:07.000Z",
+   "exp": 81.3
   },
   "G-CT": {
    "cands": {
@@ -334,7 +334,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 95.9
   },
   "G-GA": {
@@ -344,7 +344,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/georgia-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "G-IA": {
@@ -354,7 +354,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -369,19 +369,19 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 98.9
   },
   "G-NE": {
    "cands": {
     "Jim Pillen": 376248,
-    "Lynne Walz": 312633,
-    "Brett Lindstrom": 32592,
+    "Lynne Walz": 312635,
+    "Brett Lindstrom": 32593,
     "Rick Beard": 19682
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 92.5
   },
   "G-PA": {
@@ -392,7 +392,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 98.7
   },
   "G-SC": {
@@ -404,7 +404,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -418,7 +418,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/south-dakota-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "G-TX": {
@@ -429,7 +429,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/texas-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "G-VT": {
@@ -442,7 +442,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/vermont-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "H-AR-01": {
@@ -451,18 +451,20 @@
     "Terri Yarbrough Green": 60074,
     "Steve Parsons": 6938
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/arkansas-2026-live-midterm-election-results/story?id=136762515",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-AR-04": {
    "cands": {
     "Bruce Westerman": 131289,
     "James Russell": 69175
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/arkansas-2026-live-midterm-election-results/story?id=136762515",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-CO-01": {
    "cands": {
@@ -472,9 +474,10 @@
     "Chad Humphrey": 3968,
     "Critter Milton": 865
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 78.1
   },
   "H-CO-02": {
    "cands": {
@@ -482,30 +485,33 @@
     "Kelley Dennison": 71756,
     "Gaylon Kent": 5088
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 75.6
   },
   "H-CO-03": {
    "cands": {
-    "Jeff Hurd": 158308,
-    "Dwayne Romero": 152859,
-    "Cory Robertson": 5267,
-    "Clifton Brown": 5089
+    "Jeff Hurd": 159892,
+    "Dwayne Romero": 154048,
+    "Cory Robertson": 5306,
+    "Clifton Brown": 5125
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 86.3
   },
   "H-CO-04": {
    "cands": {
-    "Eileen Laubacher": 171897,
-    "Lauren Boebert": 167628,
-    "Douglas Mangeris": 11099
+    "Eileen Laubacher": 171914,
+    "Lauren Boebert": 167720,
+    "Douglas Mangeris": 11105
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 84.9
   },
   "H-CO-06": {
    "cands": {
@@ -515,40 +521,44 @@
     "Samir Witta": 1739,
     "Meredith Ryan": 1185
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-6-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 78.5
   },
   "H-CO-07": {
    "cands": {
-    "Brittany Pettersen": 206610,
-    "Tim Bennett": 123765,
+    "Brittany Pettersen": 206624,
+    "Tim Bennett": 123770,
     "Joe Krzeczkowski": 3789,
     "Dan Sallis": 3439,
     "Susan Hall": 1490,
     "Lawrence Clark": 1099
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-7-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 86.2
   },
   "H-CT-02": {
    "cands": {
     "Joe Courtney": 175794,
     "George Austin": 105742
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 95.9
   },
   "H-CT-05": {
    "cands": {
     "Jahana Hayes": 140184,
     "Chris Shea": 101289
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-5-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 94.3
   },
   "H-DE-AL": {
    "cands": {
@@ -557,7 +567,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -571,7 +581,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -585,7 +595,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -599,7 +609,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -613,7 +623,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -625,18 +635,20 @@
     "Nikema Williams": 274618,
     "John Salvesen": 29843
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-5-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-GA-06": {
    "cands": {
     "Lucy McBath": 263795,
     "Kevin Martin": 62334
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-6-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.7
   },
   "H-GA-07": {
    "cands": {
@@ -645,7 +657,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -659,7 +671,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -673,7 +685,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -685,9 +697,10 @@
     "Houston Gaines": 174274,
     "Pamela Delancy": 150901
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-10-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-GA-11": {
    "cands": {
@@ -696,7 +709,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -708,9 +721,10 @@
     "Rick Allen": 140842,
     "Ceretta Smith": 129500
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/georgia-2026-live-midterm-election-results/story?id=136761373",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/georgia-us-house-district-12-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.3
   },
   "H-GA-13": {
    "cands": {
@@ -719,7 +733,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -733,7 +747,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -745,9 +759,10 @@
     "Frank Mrvan": 142213,
     "Barb Regnitz": 83468
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 96.1
   },
   "H-IN-02": {
    "cands": {
@@ -755,9 +770,10 @@
     "Jamee Decio": 89173,
     "William Henry": 4908
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.1
   },
   "H-IN-03": {
    "cands": {
@@ -767,7 +783,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -779,9 +795,10 @@
     "Jim Baird": 115013,
     "Drew Cox": 97142
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-IN-05": {
    "cands": {
@@ -790,7 +807,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -802,9 +819,10 @@
     "Jefferson Shreve": 111116,
     "Cynthia Wirth": 90576
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-6-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-IN-07": {
    "cands": {
@@ -812,9 +830,10 @@
     "Patrick McAuley": 42208,
     "James Sceniak": 5452
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-7-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-IN-08": {
    "cands": {
@@ -823,7 +842,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -836,9 +855,10 @@
     "Brad Meyer": 98480,
     "Tonya Hudson": 5530
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/indiana-2026-live-midterm-election-results/story?id=136765598",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/indiana-us-house-district-9-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.6
   },
   "H-IA-02": {
    "cands": {
@@ -849,7 +869,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -863,7 +883,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -879,7 +899,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -896,7 +916,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -914,7 +934,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -931,7 +951,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -952,7 +972,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -974,7 +994,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -988,7 +1008,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1004,7 +1024,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1019,7 +1039,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1030,13 +1050,14 @@
    "cands": {
     "Adrian Smith": 173227,
     "Becky Stille": 48842,
-    "Mark Cohen": 8064,
+    "Mark Cohen": 8066,
     "David Else": 7074,
-    "Macey Budke": 6823
+    "Macey Budke": 6824
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/nebraska-2026-live-midterm-election-results/story?id=136822233",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/nebraska-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.4
   },
   "H-NC-01": {
    "cands": {
@@ -1046,7 +1067,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1061,7 +1082,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1076,7 +1097,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1091,7 +1112,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1106,7 +1127,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1120,7 +1141,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1135,7 +1156,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1150,7 +1171,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1164,7 +1185,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1179,7 +1200,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1194,7 +1215,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1208,7 +1229,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1223,7 +1244,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1237,7 +1258,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1252,7 +1273,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1267,7 +1288,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1282,7 +1303,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1297,7 +1318,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1311,7 +1332,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1325,7 +1346,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1339,7 +1360,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1349,11 +1370,12 @@
   "H-SD-AL": {
    "cands": {
     "Marty Jackley": 195583,
-    "Nicole Gronli": 109985
+    "Nikki Gronli": 109985
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/south-dakota-2026-live-midterm-election-results/story?id=136822320",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/south-dakota-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-TX-01": {
    "cands": {
@@ -1362,7 +1384,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -1376,7 +1398,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1390,7 +1412,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1404,7 +1426,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -1418,7 +1440,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1432,7 +1454,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1446,7 +1468,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1460,7 +1482,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 85,
     "t": 100,
@@ -1474,7 +1496,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -1488,7 +1510,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1502,7 +1524,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -1516,7 +1538,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -1530,7 +1552,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1544,7 +1566,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -1558,7 +1580,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1572,7 +1594,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1585,9 +1607,10 @@
     "Brandon Herrera": 119795,
     "Ben Mendoza": 10610
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/texas-2026-live-midterm-election-results/story?id=136761869",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-23-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-TX-24": {
    "cands": {
@@ -1596,7 +1619,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1610,7 +1633,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1625,7 +1648,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1640,7 +1663,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1655,7 +1678,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 66,
     "t": 100,
@@ -1669,7 +1692,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -1684,7 +1707,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1698,7 +1721,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1713,7 +1736,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -1729,7 +1752,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 77,
     "t": 100,
@@ -1743,7 +1766,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -1757,7 +1780,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -1773,9 +1796,10 @@
     "Phoenix Altair": 2352,
     "Adam Ortiz": 2194
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/vermont-2026-live-midterm-election-results/story?id=136822562",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/vermont-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-VA-01": {
    "cands": {
@@ -1784,7 +1808,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1800,7 +1824,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1809,14 +1833,15 @@
   },
   "H-VA-03": {
    "cands": {
-    "Robert Scott": 179594,
+    "Bobby Scott": 179594,
     "Edwin Rivera": 59523,
     "Makiba Gaines": 3932,
     "Stephen Woll": 3912
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98
   },
   "H-VA-04": {
    "cands": {
@@ -1824,9 +1849,10 @@
     "Robert Murray": 81148,
     "Joan Bell": 4150
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.7
   },
   "H-VA-05": {
    "cands": {
@@ -1836,7 +1862,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1848,9 +1874,10 @@
     "Ben Cline": 175797,
     "Beth Macy": 140216
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-6-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.2
   },
   "H-VA-07": {
    "cands": {
@@ -1861,9 +1888,10 @@
     "Randall Terry": 1197,
     "Joshua Ertle": 785
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-7-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.9
   },
   "H-VA-08": {
    "cands": {
@@ -1872,9 +1900,10 @@
     "Tim Sharman": 3893,
     "Shelly Arnoldi": 3650
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-8-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 95.3
   },
   "H-VA-09": {
    "cands": {
@@ -1883,7 +1912,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1896,9 +1925,10 @@
     "Dave Beckwith": 120509,
     "Ahsen Malik": 5898
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-10-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.4
   },
   "H-VA-11": {
    "cands": {
@@ -1906,9 +1936,10 @@
     "Arthur Purves": 81357,
     "Dianne Blais": 4078
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/virginia-2026-live-midterm-election-results/story?id=136822566",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/virginia-us-house-district-11-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 95.7
   },
   "H-AR-03": {
    "cands": {
@@ -1918,7 +1949,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1931,9 +1962,10 @@
     "Gabe Evans": 92834,
     "Dave Wood": 8487
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-8-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 81
   },
   "H-MN-07": {
    "cands": {
@@ -1942,7 +1974,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -1955,9 +1987,10 @@
     "Christopher Lancia": 86895,
     "Thomas Egan": 7613
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.7
   },
   "H-TX-02": {
    "cands": {
@@ -1966,7 +1999,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -1981,7 +2014,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -1995,7 +2028,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 64,
     "t": 100,
@@ -2009,7 +2042,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -2023,7 +2056,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -2037,7 +2070,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 68,
     "t": 100,
@@ -2052,7 +2085,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -2061,14 +2094,15 @@
   },
   "H-CO-05": {
    "cands": {
-    "Jessica Killin": 133070,
-    "Jeff Crank": 119689,
-    "Mark Elworth": 4534,
-    "Christopher Mitchell": 4122
+    "Jessica Killin": 136461,
+    "Jeff Crank": 123210,
+    "Mark Elworth": 4722,
+    "Christopher Mitchell": 4306
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/colorado-2026-live-midterm-election-results/story?id=136762521",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-5-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 82.1
   },
   "H-CT-04": {
    "cands": {
@@ -2076,9 +2110,10 @@
     "Michael Goldstein": 78005,
     "Benjamin Wesley": 4583
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.2
   },
   "H-IA-03": {
    "cands": {
@@ -2087,7 +2122,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -2099,9 +2134,10 @@
     "Pete Stauber": 190744,
     "Trina Swanson": 168350
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/minnesota-2026-live-midterm-election-results/story?id=136765938",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-8-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.8
   },
   "G-AZ": {
    "cands": {
@@ -2741,9 +2777,10 @@
     "Eric Jones": 61929,
     "Mike Thompson": 57671
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/california-2026-live-midterm-election-results/story?id=136761262",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/california-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 40.7
   },
   "H-CA-40": {
    "cands": {
@@ -3140,7 +3177,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 80,
     "t": 100,
@@ -3166,7 +3203,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -3192,7 +3229,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -3213,9 +3250,10 @@
     "Janelle Stelson": 173845,
     "Scott Perry": 142059
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/pennsylvania-2026-live-midterm-election-results/story?id=136761690",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-us-house-district-10-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-PA-11": {
    "cands": {
@@ -3359,7 +3397,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 78,
     "t": 100,
@@ -3373,7 +3411,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -3387,7 +3425,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -3401,7 +3439,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -3415,7 +3453,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -3429,7 +3467,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3443,7 +3481,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3457,7 +3495,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -3471,7 +3509,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -3485,7 +3523,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -3497,9 +3535,10 @@
     "French Hill": 127437,
     "Chris Jones": 123032
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/arkansas-2026-live-midterm-election-results/story?id=136762515",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/arkansas-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-CT-01": {
    "cands": {
@@ -3507,9 +3546,10 @@
     "Amy Chai": 77744,
     "Mary Sanders": 3965
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/connecticut-2026-live-midterm-election-results/story?id=136762524",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 94
   },
   "H-FL-01": {
    "cands": {
@@ -3517,23 +3557,20 @@
     "Gay Valimont": 103429,
     "Tyler Davis": 5322
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-02": {
    "cands": {
     "Austin Rogers": 160968,
     "Amanda Green": 147792
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-03": {
    "cands": {
@@ -3543,7 +3580,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3557,28 +3594,20 @@
     "Todd Schaefer": 3191,
     "Mike Sell": 1832
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-05": {
    "cands": {
     "John Rutherford": 187917,
     "Rachel Grage": 145121
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-5-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-06": {
    "cands": {
@@ -3586,9 +3615,14 @@
     "Eric Yonce": 132264,
     "Andrew Parrott": 3725
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T00:14:50+00:00",
+   "rep": {
+    "u": 100,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-FL-07": {
    "cands": {
@@ -3596,27 +3630,34 @@
     "Bale Dalton": 159488,
     "Christopher Dennison": 3480
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-7-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-08": {
    "cands": {
     "Mike Haridopolos": 169863,
     "Jennifer Jenkins": 149586
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-8-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-09": {
    "cands": {
     "Darren Soto": 143174,
     "Dan Green": 141697
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T00:14:50+00:00",
+   "rep": {
+    "u": 100,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-FL-11": {
    "cands": {
@@ -3624,9 +3665,14 @@
     "James Pericola": 168108,
     "Ralph Groves": 3955
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T00:14:50+00:00",
+   "rep": {
+    "u": 100,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-FL-12": {
    "cands": {
@@ -3634,24 +3680,21 @@
     "Kimberly Overman": 131309,
     "Branden Scrivener": 3783
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-12-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-13": {
    "cands": {
-    "Anna Luna": 155117,
+    "Anna Paulina Luna": 155117,
     "Leela Gray": 152600,
     "Tony D'Arrigo": 5779
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-13-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-14": {
    "cands": {
@@ -3661,7 +3704,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3673,14 +3716,10 @@
     "Laurel Lee": 163251,
     "Robert People": 137390
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-15-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-16": {
    "cands": {
@@ -3688,9 +3727,14 @@
     "Kelly Kirschner": 160942,
     "Mark Davis": 6275
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/florida-2026-live-midterm-election-results/story?id=136763079",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "civicAPI",
+   "url": "https://civicapi.org/",
+   "at": "2026-11-05T00:14:50+00:00",
+   "rep": {
+    "u": 100,
+    "t": 100,
+    "unit": "pct"
+   }
   },
   "H-FL-17": {
    "cands": {
@@ -3700,7 +3744,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3715,7 +3759,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3730,7 +3774,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3745,7 +3789,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3758,42 +3802,30 @@
     "James Martin": 152430,
     "Alexander Cooke": 4454
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-21-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-22": {
    "cands": {
     "Pia Dandiya": 153047,
     "Casey Askar": 141886
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-22-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-23": {
    "cands": {
     "Lois Frankel": 169831,
     "Deborah Adeimy": 88876
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-23-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-24": {
    "cands": {
@@ -3802,7 +3834,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3815,14 +3847,10 @@
     "Scott Singer": 130789,
     "Peter Jassenoff": 5876
    },
-   "src_name": "civicAPI",
-   "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
-   "rep": {
-    "u": 100,
-    "t": 100,
-    "unit": "pct"
-   }
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/florida-us-house-district-25-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-FL-26": {
    "cands": {
@@ -3832,7 +3860,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3846,7 +3874,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3861,7 +3889,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -3892,7 +3920,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/florida-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "H-IL-01": {
@@ -3900,27 +3928,30 @@
     "Jonathan Jackson": 153398,
     "Christian Maxwell": 64739
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 81.6
   },
   "H-IL-02": {
    "cands": {
     "Donna Miller": 151587,
     "Michael Noack": 56756
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 84.9
   },
   "H-IL-03": {
    "cands": {
     "Delia Ramirez": 137104,
     "Angel Oakley": 43679
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 80.7
   },
   "H-IL-04": {
    "cands": {
@@ -3929,81 +3960,90 @@
     "Chris Getty": 14129,
     "Ed Hershey": 5327
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 82.3
   },
   "H-IL-05": {
    "cands": {
     "Mike Quigley": 182716,
     "Tommy Hanson": 59162
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-5-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 92.4
   },
   "H-IL-06": {
    "cands": {
     "Sean Casten": 158082,
     "Niki Conforti": 94840
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-6-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 92.1
   },
   "H-IL-07": {
    "cands": {
     "La Shawn Ford": 162350,
     "Chad Koppie": 20012
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-7-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 74.6
   },
   "H-IL-08": {
    "cands": {
     "Melissa Bean": 116575,
     "Jennifer Davis": 63262
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-8-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 76.3
   },
   "H-IL-09": {
    "cands": {
     "Daniel Biss": 184004,
     "John Elleson": 58628
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-9-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 94.2
   },
   "H-IL-10": {
    "cands": {
     "Brad Schneider": 160849,
     "Carl Lambrecht": 69583
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-10-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 96.2
   },
   "H-IL-11": {
    "cands": {
     "Bill Foster": 150391,
     "Jeff Walter": 79669
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-11-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 83.1
   },
   "H-IL-12": {
    "cands": {
     "Mike Bost": 193259,
     "Julie Fortier": 84190
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-12-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.5
   },
   "H-IL-13": {
    "cands": {
@@ -4012,7 +4052,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4026,7 +4066,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 85,
     "t": 100,
@@ -4038,9 +4078,10 @@
     "Mary Miller": 186458,
     "Jennifer Todd": 93971
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-15-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 95
   },
   "H-IL-16": {
    "cands": {
@@ -4049,7 +4090,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4061,9 +4102,10 @@
     "Eric Sorensen": 141531,
     "Dillan Vancil": 93936
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/illinois-2026-live-midterm-election-results/story?id=136765428",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/illinois-us-house-district-17-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 95
   },
   "S-IL": {
    "cands": {
@@ -4084,7 +4126,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/illinois-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 91.2
   },
   "H-IA-01": {
@@ -4095,7 +4137,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4105,12 +4147,12 @@
   "H-KS-01": {
    "cands": {
     "Tracey Mann": 150329,
-    "Lauren Reinhold": 95739,
+    "Lauren Reinhold": 95740,
     "Steven Jacob": 6846
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4121,11 +4163,11 @@
    "cands": {
     "Derek Schmidt": 125625,
     "Don Coover": 110227,
-    "John Hauer": 9163
+    "John Hauer": 9164
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4140,7 +4182,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4155,7 +4197,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4164,13 +4206,13 @@
   },
   "S-KS": {
    "cands": {
-    "Adam Hamilton": 559795,
+    "Adam Hamilton": 559798,
     "Roger Marshall": 504903,
     "David C Graham": 33112
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4179,12 +4221,12 @@
   },
   "G-KS": {
    "cands": {
-    "Cindy Holscher": 549917,
+    "Cindy Holscher": 549919,
     "Ty Masterson": 542875
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4196,28 +4238,31 @@
     "James Comer": 154910,
     "John Williams": 74260
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/kentucky-2026-live-midterm-election-results/story?id=136765668",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-KY-02": {
    "cands": {
-    "S. Guthrie": 145139,
+    "Brett Guthrie": 145139,
     "Megan Wingfield": 81112,
     "Thomas Loecken": 4807
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/kentucky-2026-live-midterm-election-results/story?id=136765668",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-KY-03": {
    "cands": {
     "Morgan McGarvey": 174781,
     "Maria Rodriguez": 73719
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/kentucky-2026-live-midterm-election-results/story?id=136765668",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/kentucky-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-KY-04": {
    "cands": {
@@ -4227,7 +4272,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -4243,7 +4288,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -4259,7 +4304,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -4282,18 +4327,20 @@
     "Chellie Pingree": 246117,
     "Ronald Russell": 125671
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/maine-2026-live-midterm-election-results/story?id=136761571",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/maine-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 96.5
   },
   "H-ME-02": {
    "cands": {
     "Paul LePage": 158825,
     "Matthew Dunlap": 156995
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/maine-2026-live-midterm-election-results/story?id=136761571",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/maine-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 91.8
   },
   "S-ME": {
    "cands": {
@@ -4313,7 +4360,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/maine-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 93.3
   },
   "H-MA-01": {
@@ -4321,9 +4368,10 @@
     "Richard Neal": 168982,
     "Nadia Milleron": 90397
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 93.9
   },
   "H-MA-03": {
    "cands": {
@@ -4331,18 +4379,20 @@
     "Gary Grossi": 75134,
     "Dennis Conlon": 6196
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 91.9
   },
   "H-MA-04": {
    "cands": {
     "Jake Auchincloss": 163838,
     "Thomas Stalcup": 90901
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 86.2
   },
   "H-MA-08": {
    "cands": {
@@ -4350,18 +4400,20 @@
     "Robert Burke": 75503,
     "Rasheed Walters": 10552
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-8-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-MA-09": {
    "cands": {
     "Bill Keating": 208847,
-    "R. Macallister": 132820
+    "Tyler Macallister": 132820
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-9-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 94.1
   },
   "S-MA": {
    "cands": {
@@ -4383,7 +4435,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 95.4
   },
   "H-MI-01": {
@@ -4398,7 +4450,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4412,9 +4464,10 @@
     "Charlotte Magoon": 3839,
     "Richard Sills": 1754
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.7
   },
   "H-MI-03": {
    "cands": {
@@ -4424,7 +4477,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4437,9 +4490,10 @@
     "Bill Huizenga": 178741,
     "Shafina Barnett": 5679
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.9
   },
   "H-MI-05": {
    "cands": {
@@ -4451,7 +4505,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -4470,7 +4524,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4483,9 +4537,10 @@
     "Tom Barrett": 189482,
     "Shane Dedrick": 4974
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-7-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.5
   },
   "H-MI-08": {
    "cands": {
@@ -4495,9 +4550,10 @@
     "C. Pettus": 2857,
     "Jim Casha": 1044
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-8-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-MI-09": {
    "cands": {
@@ -4508,9 +4564,10 @@
     "John Vlahos": 1578,
     "Destiny Clayton": 1377
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-9-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.9
   },
   "H-MI-10": {
    "cands": {
@@ -4522,7 +4579,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4539,7 +4596,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4554,9 +4611,10 @@
     "Brenda Sanders": 3365,
     "Marc Sosnowski": 2036
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/michigan-2026-live-midterm-election-results/story?id=136761671",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-12-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-MI-13": {
    "cands": {
@@ -4568,7 +4626,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4599,7 +4657,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/michigan-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 98.3
   },
   "H-MS-01": {
@@ -4610,7 +4668,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4625,7 +4683,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -4640,7 +4698,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4655,7 +4713,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -4670,7 +4728,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 98,
     "t": 100,
@@ -4685,7 +4743,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4700,7 +4758,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4715,7 +4773,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4730,7 +4788,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4745,7 +4803,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4760,7 +4818,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4775,7 +4833,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -4790,7 +4848,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -4804,7 +4862,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -4819,7 +4877,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -4834,7 +4892,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -4849,7 +4907,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 90,
     "t": 100,
@@ -4861,9 +4919,10 @@
     "Donald Norcross": 176763,
     "Damon Galdo": 75193
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 93.2
   },
   "H-NJ-02": {
    "cands": {
@@ -4871,9 +4930,10 @@
     "Jeff Van Drew": 129620,
     "Ramon Mora": 2817
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 95.8
   },
   "H-NJ-03": {
    "cands": {
@@ -4882,9 +4942,10 @@
     "Ryan Kelly": 3580,
     "Steven Welzer": 1646
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 93.4
   },
   "H-NJ-04": {
    "cands": {
@@ -4893,7 +4954,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -4908,7 +4969,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -4922,7 +4983,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 70,
     "t": 100,
@@ -4932,12 +4993,13 @@
   "H-NJ-07": {
    "cands": {
     "Rebecca Bennett": 186879,
-    "Thomas Kean": 135392,
+    "Thomas Kean Jr.": 135392,
     "Seamus O'Toole": 5023
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-7-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 94.6
   },
   "H-NJ-08": {
    "cands": {
@@ -4946,28 +5008,31 @@
     "Aristotle Eliopoulos": 5182,
     "Da'Shone Hughey": 3614
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-8-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 81
   },
   "H-NJ-09": {
    "cands": {
-    "Nelida Pou": 123133,
+    "Nellie Pou": 123133,
     "Rosie Pino": 58682,
     "Terrisa Bukovinac": 2704
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-9-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-NJ-10": {
    "cands": {
     "LaMonica McIver": 147445,
     "Carmen Bucco": 27265
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-jersey-2026-live-midterm-election-results/story?id=136822242",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-us-house-district-10-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 89.3
   },
   "H-NJ-11": {
    "cands": {
@@ -4977,7 +5042,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -4993,7 +5058,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 81,
     "t": 100,
@@ -5019,7 +5084,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -5033,7 +5098,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -5047,7 +5112,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -5061,7 +5126,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -5075,7 +5140,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -5087,18 +5152,20 @@
     "Andrew Garbarino": 128090,
     "Patrick Halpin": 120157
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.1
   },
   "H-NY-03": {
    "cands": {
     "Thomas Suozzi": 148216,
     "Michael LiPetri": 121623
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-3-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97
   },
   "H-NY-04": {
    "cands": {
@@ -5106,9 +5173,10 @@
     "Jeanine Driscoll": 124259,
     "Blay Tarnoff": 714
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97
   },
   "H-NY-05": {
    "cands": {
@@ -5117,7 +5185,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5131,7 +5199,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5146,7 +5214,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5160,7 +5228,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5174,7 +5242,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5188,7 +5256,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5202,7 +5270,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5218,7 +5286,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5232,7 +5300,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5246,7 +5314,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5263,7 +5331,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5275,18 +5343,20 @@
     "George Latimer": 78965,
     "Joseph Cinquemani": 17363
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-16-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 92.7
   },
   "H-NY-17": {
    "cands": {
     "Cait Conley": 134454,
     "Mike Lawler": 123289
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-17-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.9
   },
   "H-NY-18": {
    "cands": {
@@ -5295,7 +5365,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5307,36 +5377,40 @@
     "Josh Riley": 167360,
     "Peter Oberacker": 124566
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-19-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.2
   },
   "H-NY-20": {
    "cands": {
     "Paul Tonko": 181290,
     "Ralph Ambrosio": 103846
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-20-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 96
   },
   "H-NY-21": {
    "cands": {
     "Anthony Constantino": 140119,
     "Blake Gendebien": 134390
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-21-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 96
   },
   "H-NY-22": {
    "cands": {
     "John Mannion": 159544,
     "Kailee Buller": 113721
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-22-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 94.4
   },
   "H-NY-23": {
    "cands": {
@@ -5345,7 +5419,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -5359,7 +5433,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -5371,9 +5445,10 @@
     "Joseph Morelle": 176401,
     "Virginia McIntyre": 103430
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/new-york-2026-live-midterm-election-results/story?id=136761674",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/new-york-us-house-district-25-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 98.9
   },
   "H-NY-26": {
    "cands": {
@@ -5382,7 +5457,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -5396,7 +5471,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/new-york-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 95.7
   },
   "H-ND-AL": {
@@ -5408,7 +5483,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5423,7 +5498,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5437,7 +5512,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5451,7 +5526,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5466,7 +5541,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5481,7 +5556,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5495,7 +5570,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5511,7 +5586,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5525,7 +5600,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5540,7 +5615,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -5555,7 +5630,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5569,7 +5644,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5583,7 +5658,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5598,7 +5673,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5612,7 +5687,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5629,7 +5704,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5648,7 +5723,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -5666,7 +5741,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 96,
     "t": 100,
@@ -5680,7 +5755,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5695,7 +5770,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5709,7 +5784,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5722,9 +5797,10 @@
     "Mitchell Jacob": 86051,
     "Rocco Bonacci": 6381
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/oklahoma-2026-live-midterm-election-results/story?id=136822255",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-us-house-district-4-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-OK-05": {
    "cands": {
@@ -5735,7 +5811,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -5765,27 +5841,29 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/oklahoma-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "H-RI-01": {
    "cands": {
-    "Gabriel Amo": 110625,
+    "Gabe Amo": 110625,
     "Kellie Keenan": 44669,
     "Pedro DeSouza": 6123
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/rhode-island-2026-live-midterm-election-results/story?id=136822259",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/rhode-island-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.8
   },
   "H-RI-02": {
    "cands": {
     "Seth Magaziner": 119683,
     "Victor Mellor": 73471
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/rhode-island-2026-live-midterm-election-results/story?id=136822259",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/rhode-island-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 97.2
   },
   "S-RI": {
    "cands": {
@@ -5808,7 +5886,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/rhode-island-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 97.6
   },
   "H-TN-01": {
@@ -5823,7 +5901,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 80,
     "t": 100,
@@ -5839,7 +5917,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 97,
     "t": 100,
@@ -5858,7 +5936,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 91,
     "t": 100,
@@ -5874,7 +5952,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -5890,7 +5968,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 83,
     "t": 100,
@@ -5906,7 +5984,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 93,
     "t": 100,
@@ -5922,7 +6000,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 94,
     "t": 100,
@@ -5942,7 +6020,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -5956,9 +6034,10 @@
     "Dennis Clark": 2413,
     "Michelle Davis Head": 1804
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/tennessee-2026-live-midterm-election-results/story?id=136822436",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-us-house-district-9-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "S-TN": {
    "cands": {
@@ -5998,7 +6077,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/tennessee-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 98.9
   },
   "H-WV-01": {
@@ -6009,7 +6088,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 68,
     "t": 100,
@@ -6023,7 +6102,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -6038,7 +6117,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 75,
     "t": 100,
@@ -6052,7 +6131,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 81,
     "t": 100,
@@ -6068,7 +6147,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -6083,7 +6162,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 71,
     "t": 100,
@@ -6097,7 +6176,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6114,7 +6193,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -6128,7 +6207,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 88,
     "t": 100,
@@ -6142,7 +6221,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -6165,7 +6244,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 89,
     "t": 100,
@@ -6181,7 +6260,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -6195,7 +6274,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -6210,7 +6289,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 86,
     "t": 100,
@@ -6222,18 +6301,20 @@
     "Dan Koh": 206244,
     "Micah Jones": 119112
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/massachusetts-2026-live-midterm-election-results/story?id=136767237",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/massachusetts-us-house-district-6-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-MN-02": {
    "cands": {
     "Matt Little": 214255,
     "Eric Pratt": 160636
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/minnesota-2026-live-midterm-election-results/story?id=136765938",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-WI-02": {
    "cands": {
@@ -6241,7 +6322,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 80,
     "t": 100,
@@ -6255,7 +6336,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6269,7 +6350,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6286,7 +6367,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 77,
     "t": 100,
@@ -6300,7 +6381,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 99,
     "t": 100,
@@ -6317,7 +6398,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 76,
     "t": 100,
@@ -6326,18 +6407,18 @@
   },
   "H-UT-03": {
    "cands": {
-    "Celeste Maloy": 101946,
-    "Kent Udell": 61309,
-    "Cassie Easley": 4963,
-    "Michael R. Stoddard": 3386,
-    "Ayden Scott": 2530,
-    "Adonis Hooslyn": 1019
+    "Celeste Maloy": 102643,
+    "Kent Udell": 62844,
+    "Cassie Easley": 5005,
+    "Michael R. Stoddard": 3410,
+    "Ayden Scott": 2538,
+    "Adonis Hooslyn": 1027
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
-    "u": 67,
+    "u": 68,
     "t": 100,
     "unit": "pct"
    }
@@ -6351,7 +6432,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 66,
     "t": 100,
@@ -6380,7 +6461,7 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/idaho-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "H-ID-01": {
@@ -6390,9 +6471,10 @@
     "Sarah Zabel": 23004,
     "Brendan Gomez": 3413
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/idaho-2026-live-midterm-election-results/story?id=136765423",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/idaho-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-ID-02": {
    "cands": {
@@ -6402,9 +6484,10 @@
     "Emre Houser": 7848,
     "Will Johanson": 7139
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/idaho-2026-live-midterm-election-results/story?id=136765423",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/idaho-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-WA-02": {
    "cands": {
@@ -6413,7 +6496,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 84,
     "t": 100,
@@ -6427,7 +6510,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 95,
     "t": 100,
@@ -6436,14 +6519,14 @@
   },
   "H-WA-04": {
    "cands": {
-    "Amanda McKinney": 76505,
-    "John Duresky": 64710
+    "Amanda McKinney": 78493,
+    "John Duresky": 65846
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
-    "u": 52,
+    "u": 53,
     "t": 100,
     "unit": "pct"
    }
@@ -6455,7 +6538,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 71,
     "t": 100,
@@ -6469,7 +6552,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 79,
     "t": 100,
@@ -6483,7 +6566,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 67,
     "t": 100,
@@ -6497,7 +6580,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 87,
     "t": 100,
@@ -6511,7 +6594,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 69,
     "t": 100,
@@ -6525,7 +6608,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 50,
     "t": 100,
@@ -6539,7 +6622,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 59,
     "t": 100,
@@ -6553,7 +6636,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6568,7 +6651,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6582,7 +6665,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6598,7 +6681,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -6614,7 +6697,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 74,
     "t": 100,
@@ -6630,7 +6713,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 73,
     "t": 100,
@@ -6644,18 +6727,20 @@
     "Jordan Conley": 5792,
     "Nathan Berning": 2097
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/hawaii-2026-live-midterm-election-results/story?id=136765248",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/hawaii-us-house-district-1-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "H-HI-02": {
    "cands": {
     "Jill Tokuda": 126197,
     "Brenton Awa": 61839
    },
-   "src_name": "ABC News via Pollgebra",
-   "url": "https://abcnews.com/Politics/hawaii-2026-live-midterm-election-results/story?id=136765248",
-   "at": "2026-11-05T00:07:38.773Z"
+   "src_name": "NBC News / AP vote data via Pollgebra",
+   "url": "https://www.nbcnews.com/politics/2026-elections/hawaii-us-house-district-2-results",
+   "at": "2026-11-05T00:13:08.000Z",
+   "exp": 99
   },
   "G-HI": {
    "cands": {
@@ -6664,14 +6749,14 @@
    },
    "src_name": "NBC News / AP vote data via Pollgebra",
    "url": "https://www.nbcnews.com/politics/2026-elections/hawaii-governor-results",
-   "at": "2026-11-05T00:08:08.000Z",
+   "at": "2026-11-05T00:13:07.000Z",
    "exp": 99
   },
   "S-US": {
    "cands": {
-    "Democrats": 39271565,
-    "Republicans": 33505915,
-    "Independent": 1235925,
+    "Democrats": 39275554,
+    "Republicans": 33508345,
+    "Independent": 1236017,
     "Libertarians": 659482,
     "Other Party": 94509,
     "American Center Party": 62618,
@@ -6684,7 +6769,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 92,
     "t": 100,
@@ -6698,7 +6783,7 @@
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 100,
     "t": 100,
@@ -6707,22 +6792,22 @@
   },
   "G-US": {
    "cands": {
-    "Democrats": 47760157,
-    "Republicans": 37782325,
-    "Independent": 860186,
-    "Libertarians": 567128,
+    "Democrats": 47764284,
+    "Republicans": 37784614,
+    "Independent": 860246,
+    "Libertarians": 567167,
     "Green": 135465,
     "Pacific Green": 41294,
     "Constitution": 40798,
-    "Nonpartisan": 38099,
     "Working Class": 36632,
     "America First": 32592,
+    "Nonpartisan": 30354,
     "U.S. Taxpayers": 19990,
     "Legal Marijuana Now": 19682
    },
    "src_name": "civicAPI",
    "url": "https://civicapi.org/",
-   "at": "2026-11-05T00:12:52+00:00",
+   "at": "2026-11-05T00:14:50+00:00",
    "rep": {
     "u": 85,
     "t": 100,
