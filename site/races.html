@@ -54,7 +54,6 @@
     .bal-n { display: flex; justify-content: space-between; font-size: 13px; margin-top: 6px; }
     .bal-n .dn { color: var(--d); font-weight: 700; } .bal-n .rn { color: var(--r); font-weight: 700; text-align: right; }
     .bal .note { font-size: 12px; color: var(--muted); margin-top: 4px; }
-    .frozen { margin: 0 0 12px; padding: 10px 12px; border-left: 4px solid #c9a227; background: rgba(201,162,39,.12); border-radius: 4px; font-weight: 600; }
 
     .home { margin-bottom: 16px; border-left: 4px solid var(--accent); }
 
@@ -156,7 +155,6 @@
 
     <section id="lv-national" class="level" hidden>
     <p class="sub">U.S. Senate, U.S. House and governor results as states count them. Leaders are who's ahead in the count so far. A race is marked won (✓) only when the AP projects a winner, which we add by hand as calls come in.</p>
-    <p class="frozen">Live counts have been frozen until certification. Final numbers will appear here then.</p>
     <p id="status" class="status" role="status">Loading results…</p>
 
     <section class="strip" id="strip" aria-label="Balance of power"></section>
@@ -178,10 +176,12 @@
     <footer>
       Lewis County and Washington results come live from the county's and the Secretary of State's official results feeds at
       <a href="https://results.votewa.gov/results/public/washington" target="_blank" rel="noopener">results.votewa.gov</a>.
-      Some national counts come from <a href="https://openamerica.io/elections/api/" target="_blank" rel="noopener">Open America</a>'s
-      feed of official state counts, some leader percentages come from <a href="https://watch.vote/midterms/2026" target="_blank" rel="noopener">watch.vote</a>'s
-      results feed, Pushbuild's API, <a href="https://civicapi.org/" target="_blank" rel="noopener">civicAPI</a> and <a href="https://pollgebra.com/" target="_blank" rel="noopener">Pollgebra</a>
-      (which gathers network results pages) fill in states without a free feed, and a few are entered by hand from state and AP results pages where no feed is available.
+      Most national counts come from <a href="https://civicapi.org/" target="_blank" rel="noopener">civicAPI</a>, with
+      <a href="https://openamerica.io/elections/api/" target="_blank" rel="noopener">Open America</a>'s feed of official state counts;
+      each race shows whichever source has counted the most votes. On election night some counts also came from
+      <a href="https://watch.vote/midterms/2026" target="_blank" rel="noopener">watch.vote</a>, Pushbuild's API,
+      <a href="https://pollgebra.com/" target="_blank" rel="noopener">Pollgebra</a> (which gathers network results pages)
+      and state results pages.
       National results and race ratings come from <a href="https://thepeoplestally.com/" target="_blank" rel="noopener">The People's Tally</a>
       (<a href="https://thepeoplestally.com/open-data/" target="_blank" rel="noopener">open data</a>, CC BY 4.0), which gathers
       unofficial counts from state election offices and race calls from named sources. Ratings are Cook Political Report's.
@@ -213,6 +213,8 @@
   const TALLY = "https://thepeoplestally.com";
   // /api/live has no CORS header, so the Worker relays it (and caches it for a minute).
   const LIVE = "https://lc-results-proxy.zacharyeckstein.workers.dev/national/live";
+  // civicAPI counts for every state, trimmed and cached by our Worker.
+  const CIVIC = "https://lc-results-proxy.zacharyeckstein.workers.dev/national/civic";
   const HOME = "H-WA-03"; // Lewis County's district
   const RATINGS = ["Solid D", "Likely D", "Lean D", "Toss Up", "Lean R", "Likely R", "Solid R"];
   const OFFICE = { S: "Senate", H: "House", G: "Governor" };
@@ -229,6 +231,8 @@
   let calls = {};
   const oa = {};            // Open America results.json by office letter: {S, G, H}
   let counts = {};
+  let civicAt = null;
+  let civic = {};           // /national/civic: {raceId: {c: {name: votes}, pct}}
   let autoCounts = {};      // counts.json: pulled from state sites with no live feed (Montana, Oregon)          // calls.json counts: hand-entered vote totals           // calls.json: {raceId: {winner, by, at}}            // /api/live res, keyed by state
   let lastOk = 0, lastErr = "";
   const ui = { office: "S", state: "", comp: true, rep: false };
@@ -299,15 +303,29 @@
       url: "https://openamerica.io/elections/",
     };
   }
+  // civicAPI (civicapi.org) through the Worker: counts for nearly every race.
+  function civicResult(id) {
+    const r = civic[id];
+    if (!r || !r.c) return null;
+    return {
+      status: "counting",
+      cands: Object.entries(r.c).map(([name, votes]) => ({ name, votes })),
+      rep: r.pct != null ? { u: r.pct, t: 100, unit: "pct" } : null,
+      asof: civicAt,
+      src: "civicAPI",
+      url: "https://civicapi.org/",
+    };
+  }
   function baseResult(id) {
     const live0 = liveResult(id);
     const hasVotes = Array.isArray(live0.cands) && live0.cands.some((c) => Number(Array.isArray(c) ? c[2] : c.votes ?? c.v) > 0);
     const votes = (r) => resultCands(r).reduce((t, c) => t + (c.votes || 0), 0);
     const fromOA = oaResult(id);
+    const fromCivic = civicResult(id);
     const m = manualCounts(id);
     // Use whichever source has counted the most votes; a feed with more votes is
     // further along (the Tally's hand-entered races can lag by hours).
-    const best = [hasVotes ? live0 : null, fromOA, m && m.cands.some((c) => c.votes) ? m : null]
+    const best = [hasVotes ? live0 : null, fromOA, fromCivic, m && m.cands.some((c) => c.votes) ? m : null]
       .filter(Boolean).sort((a, b) => votes(b) - votes(a))[0];
     if (best === live0 || (!best && live0.status === "called")) return live0;
     // A called race keeps its call (status, winner, caller) but shows the freshest counts.
@@ -391,7 +409,7 @@
   }
   // States The People's Tally has no live feed for get a pointer to the official site instead of a count.
   function noFeed(race, reporting) {
-    if (reporting || feeds[race.st] || counts[race.id] || autoCounts[race.id] || oaResult(race.id) || !Object.keys(feeds).length) return "";
+    if (reporting || feeds[race.st] || counts[race.id] || autoCounts[race.id] || oaResult(race.id) || civic[race.id] || !Object.keys(feeds).length) return "";
     const url = sites[race.st];
     return `No live count for ${esc(STATES[race.st])}${url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">State results</a>` : ""}`;
   }
@@ -542,6 +560,8 @@
       getJSON("counts.json?t=" + Date.now()).then((d) => { autoCounts = (d && d.counts) || {}; }),
       ...[["S", "senate"], ["G", "governor"], ["H", "house"]].map(([k, office]) =>
         getJSON(`https://openamerica.io/elections/results.json?office=${office}`).then((d) => { if (d && d.races) oa[k] = d; })),
+      // Optional: if civicAPI is down, the other feeds still fill in.
+      getJSON(CIVIC).then((d) => { if (d && d.races) { civic = d.races; civicAt = d.fetched || null; } }).catch(() => {}),
       getJSON(LIVE).then((d) => { live = (d && typeof d.res === "object" && d.res) || {}; feeds = (d && d.st) || {}; }),
     ];
     if (!core || Date.now() - coreAt > 15 * 60e3) {

@@ -28,6 +28,13 @@
 // minutes and writes site/counts.json, and Cloudflare caches each answer
 // for 4 minutes so stray requests don't each cost money.
 //
+// /national/civic serves Senate, governor and House counts for every state
+// from civicAPI (civicapi.org, free, credit link required). Its answers are
+// large (about 1 MB, with past races and primaries), so the Worker keeps only
+// this year's general-election races in a small JSON that Cloudflare caches
+// for a minute, and the page never calls civicAPI directly. civicAPI's own
+// "winner" flags are dropped: checkmarks come only from AP calls.
+//
 // Workers Caching is on (wrangler.toml), so Cloudflare serves repeat requests
 // from its cache for as long as each response's Cache-Control allows, and only
 // a miss runs this code and calls the county or the state.
@@ -69,6 +76,49 @@ async function nationalLive() {
     return reply(JSON.stringify({ error: `upstream returned ${upstream.status}` }), 502, { ...json, "Cache-Control": "no-store" });
   }
   return reply(upstream.body, 200, { ...json, "Cache-Control": "public, max-age=30, s-maxage=60" });
+}
+
+const CIVIC = "https://civicapi.org/api/v2/race/search?limit=1000&type=";
+const CIVIC_DATE = "2026-11-03";
+
+async function nationalCivic() {
+  const json = { "Content-Type": "application/json; charset=utf-8" };
+  const races = {};
+  const kinds = [["US%20Senate", "S"], ["Governor", "G"], ["House%20of%20Representatives", "H"]];
+  let got = 0;
+  await Promise.all(kinds.map(async ([type, pre]) => {
+    let d;
+    try {
+      const r = await fetch(CIVIC + type, { headers: { Accept: "application/json", "User-Agent": "votemapwa.org national page (github.com/eckstein/lewis-county-election-map)" } });
+      if (!r.ok) return;
+      d = await r.json();
+    } catch (err) {
+      return;
+    }
+    got++;
+    for (const r of d.races || []) {
+      const name = r.election_name || "";
+      if (!String(r.election_date || "").startsWith(CIVIC_DATE) || /primary|runoff/i.test(name)) continue;
+      let id;
+      if (pre === "H") {
+        const m = String(r.district || "").match(/^([A-Z]{2})-(AL|\d+)$/);
+        if (!m) continue;
+        id = `H-${r.province}-${m[2] === "AL" ? "AL" : m[2].padStart(2, "0")}`;
+      } else {
+        id = `${pre}-${r.province}${pre === "S" && /special/i.test(name) ? "-sp" : ""}`;
+      }
+      const c = {};
+      for (const x of r.candidates || []) {
+        const n = String(x.name || "").trim();
+        if (n && !/write-?in/i.test(n)) c[n] = (c[n] || 0) + (Number(x.votes) || 0);
+      }
+      if (!Object.values(c).some((v) => v > 0)) continue;
+      races[id] = { c, pct: r.percent_reporting ?? null };
+    }
+  }));
+  if (!got) return reply('{"error":"civicapi.org unreachable"}', 502, { ...json, "Cache-Control": "no-store" });
+  const body = JSON.stringify({ fetched: new Date().toISOString(), races });
+  return reply(body, 200, { ...json, "Cache-Control": "public, max-age=30, s-maxage=60" });
 }
 
 const PUSHBUILD = "https://api.pushbuild.com/election-night-results/run";
@@ -291,6 +341,7 @@ export default {
     const returnsPath = pathname.match(/^\/returns\/(\d{8})$/);
     if (returnsPath) return returns(returnsPath[1]);
     if (pathname === "/national/live") return nationalLive();
+    if (pathname === "/national/civic") return nationalCivic();
     if (pathname === "/national/pushbuild") return pushbuild(env);
     if (!ALLOWED.some((re) => re.test(pathname))) return reply("Not found", 404);
 
