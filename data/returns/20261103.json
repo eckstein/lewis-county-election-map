@@ -2,14 +2,14 @@
  "returns": {
   "available": true,
   "source": "Lewis.csv",
-  "fileTime": "2026-11-07T21:43:41+00:00",
-  "returned": 39173,
-  "accepted": 38820,
-  "challenged": 353,
+  "fileTime": "2026-11-10T00:44:04+00:00",
+  "returned": 39204,
+  "accepted": 38852,
+  "challenged": 352,
   "unmatched": 0,
   "statusCounts": {
-   "Accepted": 38820,
-   "Rejected": 353
+   "Accepted": 38852,
+   "Rejected": 352
   },
   "daily": [
    [
@@ -71,11 +71,15 @@
    [
     "2026-11-06",
     88
+   ],
+   [
+    "2026-11-09",
+    31
    ]
   ],
   "methods": {
    "Drop Box": 27905,
-   "Mail": 11173,
+   "Mail": 11204,
    "Email": 95
   },
   "locations": {
@@ -97,9 +101,9 @@
  },
  "precincts": {
   "CENTRALIA #2": {
-   "returned": 690,
-   "accepted": 683,
-   "challenged": 7
+   "returned": 691,
+   "accepted": 685,
+   "challenged": 6
   },
   "ELK CRK": {
    "returned": 230,
@@ -113,13 +117,13 @@
   },
   "CENTRALIA #11": {
    "returned": 644,
-   "accepted": 638,
-   "challenged": 6
+   "accepted": 639,
+   "challenged": 5
   },
   "CENTRALIA #3": {
-   "returned": 278,
-   "accepted": 274,
-   "challenged": 4
+   "returned": 280,
+   "accepted": 275,
+   "challenged": 5
   },
   "NEWAUKUM": {
    "returned": 639,
@@ -132,14 +136,14 @@
    "challenged": 8
   },
   "CHEHALIS #4": {
-   "returned": 342,
-   "accepted": 337,
-   "challenged": 5
+   "returned": 344,
+   "accepted": 338,
+   "challenged": 6
   },
   "ADNA": {
-   "returned": 1001,
+   "returned": 1002,
    "accepted": 994,
-   "challenged": 7
+   "challenged": 8
   },
   "LOGAN": {
    "returned": 667,
@@ -152,8 +156,8 @@
    "challenged": 10
   },
   "WHEALDON": {
-   "returned": 386,
-   "accepted": 379,
+   "returned": 387,
+   "accepted": 380,
    "challenged": 7
   },
   "SEARS": {
@@ -162,8 +166,8 @@
    "challenged": 2
   },
   "DRYAD": {
-   "returned": 206,
-   "accepted": 204,
+   "returned": 207,
+   "accepted": 205,
    "challenged": 2
   },
   "CHEHALIS #3": {
@@ -183,8 +187,8 @@
   },
   "ETHEL": {
    "returned": 815,
-   "accepted": 803,
-   "challenged": 12
+   "accepted": 804,
+   "challenged": 11
   },
   "AGATE": {
    "returned": 296,
@@ -192,13 +196,13 @@
    "challenged": 1
   },
   "BIG BOTTOM": {
-   "returned": 555,
+   "returned": 556,
    "accepted": 554,
-   "challenged": 1
+   "challenged": 2
   },
   "SALMON CREEK": {
-   "returned": 614,
-   "accepted": 611,
+   "returned": 615,
+   "accepted": 612,
    "challenged": 3
   },
   "EADON": {
@@ -206,19 +210,19 @@
    "accepted": 376
   },
   "WINLOCK #1": {
-   "returned": 849,
-   "accepted": 842,
+   "returned": 850,
+   "accepted": 843,
    "challenged": 7
   },
   "LINCOLN CREEK": {
-   "returned": 538,
-   "accepted": 533,
+   "returned": 540,
+   "accepted": 535,
    "challenged": 5
   },
   "FORDS PRAIRIE": {
    "returned": 553,
-   "accepted": 547,
-   "challenged": 6
+   "accepted": 548,
+   "challenged": 5
   },
   "CHEHALIS #2": {
    "returned": 295,
@@ -226,8 +230,8 @@
    "challenged": 2
   },
   "BOISTFORT": {
-   "returned": 231,
-   "accepted": 228,
+   "returned": 233,
+   "accepted": 230,
    "challenged": 3
   },
   "ONALASKA": {
@@ -241,9 +245,9 @@
    "challenged": 6
   },
   "COWLITZ": {
-   "returned": 994,
+   "returned": 995,
    "accepted": 988,
-   "challenged": 6
+   "challenged": 7
   },
   "CENTRALIA #12": {
    "returned": 712,
@@ -257,8 +261,8 @@
   },
   "CENTRALIA #8": {
    "returned": 398,
-   "accepted": 392,
-   "challenged": 6
+   "accepted": 394,
+   "challenged": 4
   },
   "SKOOKUMCHUCK": {
    "returned": 609,
@@ -266,13 +270,13 @@
    "challenged": 10
   },
   "CHEHALIS #6": {
-   "returned": 588,
+   "returned": 589,
    "accepted": 587,
-   "challenged": 1
+   "challenged": 2
   },
   "CREGO EAST": {
-   "returned": 693,
-   "accepted": 688,
+   "returned": 694,
+   "accepted": 689,
    "challenged": 5
   },
   "SALKUM": {
@@ -292,8 +296,7 @@
   },
   "ALPHA": {
    "returned": 802,
-   "accepted": 801,
-   "challenged": 1
+   "accepted": 802
   },
   "MESKILL": {
    "returned": 103,
@@ -336,12 +339,12 @@
   },
   "CENTRALIA #13": {
    "returned": 793,
-   "accepted": 784,
-   "challenged": 9
+   "accepted": 785,
+   "challenged": 8
   },
   "JACKSON": {
-   "returned": 715,
-   "accepted": 705,
+   "returned": 717,
+   "accepted": 707,
    "challenged": 10
   },
   "CENTRALIA #6": {
@@ -390,8 +393,8 @@
    "challenged": 1
   },
   "DREWS PRAIRIE": {
-   "returned": 286,
-   "accepted": 283,
+   "returned": 287,
+   "accepted": 284,
    "challenged": 3
   },
   "CENTRALIA #10": {
@@ -400,8 +403,8 @@
    "challenged": 2
   },
   "CHEHALIS #7": {
-   "returned": 100,
-   "accepted": 98,
+   "returned": 101,
+   "accepted": 99,
    "challenged": 2
   },
   "SEMINARY HILL": {
@@ -410,14 +413,14 @@
    "challenged": 1
   },
   "VERNDALE": {
-   "returned": 453,
-   "accepted": 449,
+   "returned": 455,
+   "accepted": 451,
    "challenged": 4
   },
   "NAPAVINE #1": {
    "returned": 865,
-   "accepted": 853,
-   "challenged": 12
+   "accepted": 854,
+   "challenged": 11
   },
   "URQUHART": {
    "returned": 289,
@@ -429,8 +432,8 @@
    "challenged": 5
   },
   "TEMPLE": {
-   "returned": 549,
-   "accepted": 543,
+   "returned": 550,
+   "accepted": 544,
    "challenged": 6
   },
   "BERWICK": {
@@ -464,13 +467,13 @@
    "challenged": 2
   },
   "PARCUVIA": {
-   "returned": 116,
-   "accepted": 116
+   "returned": 117,
+   "accepted": 117
   },
   "MORTON": {
-   "returned": 486,
+   "returned": 487,
    "accepted": 476,
-   "challenged": 10
+   "challenged": 11
   },
   "SILVER CREEK": {
    "returned": 630,
@@ -506,8 +509,8 @@
    "accepted": 17
   },
   "TOLEDO": {
-   "returned": 279,
-   "accepted": 278,
+   "returned": 280,
+   "accepted": 279,
    "challenged": 1
   },
   "MEIER": {
@@ -515,13 +518,14 @@
    "accepted": 236
   },
   "PACKWOOD": {
-   "returned": 162,
-   "accepted": 162
+   "returned": 165,
+   "accepted": 163,
+   "challenged": 2
   },
   "STILLWATER EAST": {
    "returned": 183,
-   "accepted": 181,
-   "challenged": 2
+   "accepted": 182,
+   "challenged": 1
   },
   "CHEHALIS #11": {
    "returned": 217,
