@@ -2,14 +2,14 @@
  "returns": {
   "available": true,
   "source": "Lewis.csv",
-  "fileTime": "2026-11-13T00:40:09+00:00",
-  "returned": 39269,
-  "accepted": 38927,
-  "challenged": 342,
+  "fileTime": "2026-11-14T00:46:36+00:00",
+  "returned": 39274,
+  "accepted": 38935,
+  "challenged": 339,
   "unmatched": 0,
   "statusCounts": {
-   "Accepted": 38927,
-   "Rejected": 342
+   "Accepted": 38935,
+   "Rejected": 339
   },
   "daily": [
    [
@@ -83,11 +83,15 @@
    [
     "2026-11-12",
     14
+   ],
+   [
+    "2026-11-13",
+    5
    ]
   ],
   "methods": {
    "Drop Box": 27905,
-   "Mail": 11269,
+   "Mail": 11274,
    "Email": 95
   },
   "locations": {
@@ -184,8 +188,8 @@
    "challenged": 3
   },
   "HARMONY": {
-   "returned": 659,
-   "accepted": 653,
+   "returned": 660,
+   "accepted": 654,
    "challenged": 6
   },
   "CHEHALIS #12": {
@@ -219,8 +223,8 @@
   },
   "WINLOCK #1": {
    "returned": 851,
-   "accepted": 844,
-   "challenged": 7
+   "accepted": 845,
+   "challenged": 6
   },
   "LINCOLN CREEK": {
    "returned": 540,
@@ -254,8 +258,8 @@
   },
   "COWLITZ": {
    "returned": 996,
-   "accepted": 989,
-   "challenged": 7
+   "accepted": 990,
+   "challenged": 6
   },
   "CENTRALIA #12": {
    "returned": 712,
@@ -316,8 +320,8 @@
    "accepted": 323
   },
   "CREGO WEST": {
-   "returned": 705,
-   "accepted": 699,
+   "returned": 706,
+   "accepted": 700,
    "challenged": 6
   },
   "EVALINE WEST": {
@@ -371,8 +375,8 @@
    "challenged": 5
   },
   "CLAQUATO": {
-   "returned": 578,
-   "accepted": 573,
+   "returned": 579,
+   "accepted": 574,
    "challenged": 5
   },
   "CHEHALIS #5": {
@@ -421,14 +425,14 @@
    "challenged": 1
   },
   "VERNDALE": {
-   "returned": 456,
-   "accepted": 452,
+   "returned": 457,
+   "accepted": 453,
    "challenged": 4
   },
   "NAPAVINE #1": {
    "returned": 868,
-   "accepted": 857,
-   "challenged": 11
+   "accepted": 858,
+   "challenged": 10
   },
   "URQUHART": {
    "returned": 289,
@@ -541,8 +545,8 @@
    "challenged": 1
   },
   "PARADISE": {
-   "returned": 85,
-   "accepted": 85
+   "returned": 86,
+   "accepted": 86
   },
   "ROSWELL": {
    "returned": 16,
