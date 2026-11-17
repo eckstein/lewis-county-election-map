@@ -2,14 +2,14 @@
  "returns": {
   "available": true,
   "source": "Lewis.csv",
-  "fileTime": "2026-11-14T00:46:36+00:00",
-  "returned": 39274,
-  "accepted": 38935,
-  "challenged": 339,
+  "fileTime": "2026-11-17T00:44:01+00:00",
+  "returned": 39278,
+  "accepted": 38941,
+  "challenged": 337,
   "unmatched": 0,
   "statusCounts": {
-   "Accepted": 38935,
-   "Rejected": 339
+   "Accepted": 38941,
+   "Rejected": 337
   },
   "daily": [
    [
@@ -87,11 +87,15 @@
    [
     "2026-11-13",
     5
+   ],
+   [
+    "2026-11-16",
+    4
    ]
   ],
   "methods": {
    "Drop Box": 27905,
-   "Mail": 11274,
+   "Mail": 11278,
    "Email": 95
   },
   "locations": {
@@ -134,8 +138,8 @@
   },
   "CENTRALIA #3": {
    "returned": 281,
-   "accepted": 276,
-   "challenged": 5
+   "accepted": 277,
+   "challenged": 4
   },
   "NEWAUKUM": {
    "returned": 641,
@@ -179,8 +183,8 @@
   },
   "DRYAD": {
    "returned": 207,
-   "accepted": 205,
-   "challenged": 2
+   "accepted": 206,
+   "challenged": 1
   },
   "CHEHALIS #3": {
    "returned": 334,
@@ -189,13 +193,13 @@
   },
   "HARMONY": {
    "returned": 660,
-   "accepted": 654,
-   "challenged": 6
+   "accepted": 655,
+   "challenged": 5
   },
   "CHEHALIS #12": {
-   "returned": 639,
+   "returned": 640,
    "accepted": 634,
-   "challenged": 5
+   "challenged": 6
   },
   "ETHEL": {
    "returned": 819,
@@ -262,9 +266,9 @@
    "challenged": 6
   },
   "CENTRALIA #12": {
-   "returned": 712,
+   "returned": 713,
    "accepted": 709,
-   "challenged": 3
+   "challenged": 4
   },
   "CINEBAR": {
    "returned": 484,
@@ -320,8 +324,8 @@
    "accepted": 323
   },
   "CREGO WEST": {
-   "returned": 706,
-   "accepted": 700,
+   "returned": 707,
+   "accepted": 701,
    "challenged": 6
   },
   "EVALINE WEST": {
@@ -361,8 +365,8 @@
   },
   "CENTRALIA #6": {
    "returned": 732,
-   "accepted": 723,
-   "challenged": 9
+   "accepted": 724,
+   "challenged": 8
   },
   "RANDLE EAST": {
    "returned": 447,
@@ -526,8 +530,8 @@
    "challenged": 1
   },
   "MEIER": {
-   "returned": 237,
-   "accepted": 237
+   "returned": 238,
+   "accepted": 238
   },
   "PACKWOOD": {
    "returned": 165,
