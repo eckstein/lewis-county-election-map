@@ -2,14 +2,14 @@
  "returns": {
   "available": true,
   "source": "Lewis.csv",
-  "fileTime": "2026-11-18T00:45:10+00:00",
-  "returned": 39282,
-  "accepted": 38961,
-  "challenged": 321,
+  "fileTime": "2026-11-19T00:27:37+00:00",
+  "returned": 39283,
+  "accepted": 38964,
+  "challenged": 319,
   "unmatched": 0,
   "statusCounts": {
-   "Accepted": 38961,
-   "Rejected": 321
+   "Accepted": 38964,
+   "Rejected": 319
   },
   "daily": [
    [
@@ -95,11 +95,15 @@
    [
     "2026-11-17",
     4
+   ],
+   [
+    "2026-11-18",
+    1
    ]
   ],
   "methods": {
    "Drop Box": 27905,
-   "Mail": 11282,
+   "Mail": 11283,
    "Email": 95
   },
   "locations": {
@@ -137,8 +141,8 @@
   },
   "CENTRALIA #11": {
    "returned": 644,
-   "accepted": 639,
-   "challenged": 5
+   "accepted": 640,
+   "challenged": 4
   },
   "CENTRALIA #3": {
    "returned": 281,
@@ -147,8 +151,8 @@
   },
   "NEWAUKUM": {
    "returned": 641,
-   "accepted": 636,
-   "challenged": 5
+   "accepted": 637,
+   "challenged": 4
   },
   "FOREST": {
    "returned": 614,
@@ -171,8 +175,8 @@
    "challenged": 6
   },
   "CHEHALIS #10": {
-   "returned": 423,
-   "accepted": 414,
+   "returned": 424,
+   "accepted": 415,
    "challenged": 9
   },
   "WHEALDON": {
