@@ -2,14 +2,14 @@
  "returns": {
   "available": true,
   "source": "Lewis.csv",
-  "fileTime": "2026-11-24T00:35:45+00:00",
+  "fileTime": "2026-11-25T01:13:01+00:00",
   "returned": 39283,
-  "accepted": 38979,
-  "challenged": 304,
+  "accepted": 38980,
+  "challenged": 303,
   "unmatched": 0,
   "statusCounts": {
-   "Accepted": 38979,
-   "Rejected": 304
+   "Accepted": 38980,
+   "Rejected": 303
   },
   "daily": [
    [
@@ -270,8 +270,8 @@
   },
   "COWLITZ": {
    "returned": 996,
-   "accepted": 990,
-   "challenged": 6
+   "accepted": 991,
+   "challenged": 5
   },
   "CENTRALIA #12": {
    "returned": 713,
